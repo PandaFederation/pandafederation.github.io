@@ -80,6 +80,8 @@ nav.tabs a[aria-current="page"] {
     url("../assets/hq-still.png") center/cover no-repeat;
 }
 .hero.no-webgl #hero-canvas { display: none; }
+.hero.webgl-on .hero-fallback { display: none; }
+
 .hero-copy {
   position: relative; z-index: 2;
   max-width: var(--max); width: 100%;
