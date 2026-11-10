@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-10T08:45:00-07:00",
-  "generated_note": "Inventory updated 2026-11-10 (America/Phoenix) to add three newly public Store Actors (Colorado New Business Leads, France Company Leads, RSS & Atom Feed Monitor). Other listings were last verified on 2026-11-09.",
+  "generated_at": "2026-11-10T10:23:00-07:00",
+  "generated_note": "Inventory updated 2026-11-10 (America/Phoenix) to match v0.2.0 / umbrella v1.8.0 tool counts (research 8, funding 10, leads 15, web security 7, 40 total) and to keep WebMCP catalogs in sync.",
   "canonical_site": {
     "repo": "https://github.com/PandaFederation/pandafederation.github.io",
     "pages_url": "https://pandafederation.com/",
     "custom_domain": "pandafederation.com",
-    "custom_domain_note": "Official site lives at https://pandafederation.com/ (CNAME pandafederation.com \u2192 GitHub Pages; repo PandaFederation/pandafederation.github.io). Project Pages for other repos (panda-federation-tools, quiet-file-team-mcp) remain on pandadad0214.github.io until those repos move."
+    "custom_domain_note": "Official site lives at https://pandafederation.com/ (CNAME pandafederation.com → GitHub Pages; repo PandaFederation/pandafederation.github.io). Project Pages for other repos (panda-federation-tools, quiet-file-team-mcp) remain on pandadad0214.github.io until those repos move."
   },
   "brand": {
     "name": "Panda Federation",
@@ -23,10 +23,10 @@
     {
       "id": "panda-research-tools",
       "name": "Panda Research Tools",
-      "blurb": "MCP server: 7 research-integrity tools \u2014 fake/retracted citation checks, OpenAlex, PubMed, experts.",
+      "blurb": "MCP server: 8 research-integrity tools — fake/retracted citation checks, OpenAlex, PubMed, experts, Wayback, topic trends.",
       "repo": "https://github.com/pandadad0214/panda-research-tools",
       "pypi": "https://pypi.org/project/panda-research-tools/",
-      "pypi_version": "0.1.0",
+      "pypi_version": "0.2.0",
       "registry_name": "io.github.pandadad0214/panda-research-tools",
       "registry_search": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-tools",
       "listings": {
@@ -47,10 +47,10 @@
     {
       "id": "panda-public-funding-tools",
       "name": "Panda Public Funding Tools",
-      "blurb": "MCP server: 8 US federal money tools \u2014 grants, contracts, SBIR/STTR, SEC financials, recalls.",
+      "blurb": "MCP server: 10 public funding tools — grants, contracts, SAM.gov, SBIR/STTR, SEC financials, recalls, EU tenders.",
       "repo": "https://github.com/pandadad0214/panda-public-funding-tools",
       "pypi": "https://pypi.org/project/panda-public-funding-tools/",
-      "pypi_version": "0.1.0",
+      "pypi_version": "0.2.0",
       "registry_name": "io.github.pandadad0214/panda-public-funding-tools",
       "registry_search": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-public-funding-tools",
       "listings": {
@@ -72,10 +72,10 @@
     {
       "id": "panda-leads-tools",
       "name": "Panda Leads Tools",
-      "blurb": "MCP server: 15 public lead tools \u2014 local businesses, NPI, hiring signals, new businesses, permits.",
+      "blurb": "MCP server: 15 public lead tools — local businesses, NPI, hiring signals, new businesses, permits.",
       "repo": "https://github.com/pandadad0214/panda-leads-tools",
       "pypi": "https://pypi.org/project/panda-leads-tools/",
-      "pypi_version": "0.1.0",
+      "pypi_version": "0.2.0",
       "registry_name": "io.github.pandadad0214/panda-leads-tools",
       "registry_search": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-leads-tools",
       "listings": {
@@ -102,10 +102,10 @@
     {
       "id": "panda-web-security-tools",
       "name": "Panda Web Security Tools",
-      "blurb": "MCP server: 6 site and email safety tools \u2014 SPF/DKIM/DMARC, AI/SEO audit, prompt-injection scan.",
+      "blurb": "MCP server: 7 site and email safety tools — SPF/DKIM/DMARC, AI/SEO audit, prompt-injection scan, RSS.",
       "repo": "https://github.com/pandadad0214/panda-web-security-tools",
       "pypi": "https://pypi.org/project/panda-web-security-tools/",
-      "pypi_version": "0.1.0",
+      "pypi_version": "0.2.0",
       "registry_name": "io.github.pandadad0214/panda-web-security-tools",
       "registry_search": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-web-security-tools",
       "listings": {
@@ -124,11 +124,11 @@
     {
       "id": "panda-federation-tools",
       "name": "Panda Federation Tools (umbrella)",
-      "blurb": "Give Claude, Cursor or any MCP client 36 public-data tools on Apify: research, federal funding, leads, web security.",
+      "blurb": "Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, federal funding, leads, web security.",
       "repo": "https://github.com/pandadad0214/panda-federation-tools",
       "homepage": "https://pandadad0214.github.io/panda-federation-tools/",
       "pypi": "https://pypi.org/project/panda-federation-tools/",
-      "pypi_version": "1.7.0",
+      "pypi_version": "1.8.0",
       "registry_name": null,
       "registry_note": "The four focused domain servers are on the Official MCP Registry. A registry record for this umbrella package was not returned by a name search on 2026-11-09.",
       "listings": {
@@ -582,7 +582,7 @@
       "editions": [
         {
           "name": "Free sample",
-          "where": "Apify Store \u2014 start a run with Free sample ticked, or with files and links left empty; no key required.",
+          "where": "Apify Store — start a run with Free sample ticked, or with files and links left empty; no key required.",
           "url": "https://apify.com/pandadad0214/manual-remake"
         },
         {
@@ -614,7 +614,7 @@
       "editions": [
         {
           "name": "Free kit",
-          "where": "GitHub repository \u2014 clone and follow the README.",
+          "where": "GitHub repository — clone and follow the README.",
           "url": "https://github.com/pandadad0214/quiet-file-team"
         },
         {
@@ -1055,7 +1055,7 @@
     "Official MCP Registry has no record (by name search) for the umbrella panda-federation-tools package or for quiet-file-team-mcp. The four focused servers are listed.",
     "PyPI packages exist for the four focused servers and the umbrella; not for quiet-file-team-mcp.",
     "cursor.directory: only panda-public-funding-tools is included as a live plugin URL from earlier notes. The umbrella listing was unpublished / scan-failed; quiet-file-team-mcp was still pending a security scan. Other focused plugin URLs were not independently confirmed this session (directory returned 429 from the box).",
-    "www.uneed.best/tool/quiet-file-team-mcp redirected to a category page (waiting-line / not yet a stable public tool URL) \u2014 omitted.",
+    "www.uneed.best/tool/quiet-file-team-mcp redirected to a category page (waiting-line / not yet a stable public tool URL) — omitted.",
     "Smithery submit path is closed; no Smithery listing URLs are included.",
     "Product Hunt hunt/post page is not live yet (scheduled Nov 10, 2026). Product URL is linked.",
     "AlternativeTo pages returned 403 from this box; HQ and Quiet File Team MCP URLs from promo notes are included as documented listings.",

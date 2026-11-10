@@ -1,0 +1,20 @@
+{
+  "version": "1",
+  "name": "Quiet File Team MCP",
+  "description": "Six free offline MCP tools for file-first agent teams.",
+  "url": "https://pandafederation.com/quiet-file-team-mcp/",
+  "spec": "https://webmachinelearning.github.io/webmcp/",
+  "catalog": "https://pandafederation.com/quiet-file-team-mcp/webmcp-catalog.json",
+  "llms_txt": "https://pandafederation.com/quiet-file-team-mcp/llms.txt",
+  "tools": [
+    "list_servers",
+    "list_tools",
+    "get_install_command",
+    "get_links",
+    "list_editions"
+  ],
+  "registration": "document.modelContext.registerTool",
+  "annotations": {
+    "readOnlyHint": true
+  }
+}

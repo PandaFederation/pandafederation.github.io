@@ -1,0 +1,23 @@
+{
+  "version": "1",
+  "name": "Panda Federation",
+  "description": "Official Panda Federation site. Read-only WebMCP tools for MCP servers, Apify Actors and install commands.",
+  "url": "https://pandafederation.com/",
+  "spec": "https://webmachinelearning.github.io/webmcp/",
+  "catalog": "https://pandafederation.com/webmcp-catalog.json",
+  "llms_txt": "https://pandafederation.com/llms.txt",
+  "tools": [
+    "list_servers",
+    "list_tools",
+    "search_tools",
+    "get_install_command",
+    "get_links",
+    "list_actors",
+    "list_apps",
+    "list_editions"
+  ],
+  "registration": "document.modelContext.registerTool",
+  "annotations": {
+    "readOnlyHint": true
+  }
+}

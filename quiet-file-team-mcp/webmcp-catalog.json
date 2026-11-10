@@ -1,0 +1,127 @@
+{
+  "version": "2026-11-10",
+  "generated_at": "2026-11-10T10:23:00-07:00",
+  "site": {
+    "name": "Quiet File Team MCP",
+    "description": "Six free offline MCP tools that explain, configure and check a Quiet File Team. No network calls, no paid APIs, no disk reads of your machine.",
+    "url": "https://pandadad0214.github.io/quiet-file-team-mcp/",
+    "links": {
+      "github": "https://github.com/pandadad0214/quiet-file-team-mcp",
+      "official_site": "https://pandafederation.com/quiet-file-team-mcp/",
+      "free_core": "https://github.com/pandadad0214/quiet-file-team",
+      "apify": "https://apify.com/pandadad0214/quiet-file-team-setup",
+      "agensi": "https://agensi.io/skills/quiet-file-team-setup-kit",
+      "glama": "https://glama.ai/mcp/servers/pandadad0214/quiet-file-team-mcp",
+      "llms_txt": "https://pandadad0214.github.io/quiet-file-team-mcp/llms.txt",
+      "catalog": "https://pandadad0214.github.io/quiet-file-team-mcp/webmcp-catalog.json"
+    }
+  },
+  "servers": [
+    {
+      "id": "quiet-file-team-mcp",
+      "name": "Quiet File Team MCP",
+      "tool_count": 6,
+      "description": "Six free offline MCP tools that explain, configure and check a Quiet File Team. No network calls, no paid APIs, no disk reads of your machine.",
+      "repo": "https://github.com/pandadad0214/quiet-file-team-mcp",
+      "homepage": "https://pandafederation.com/quiet-file-team-mcp/",
+      "pypi": null,
+      "pypi_version": null,
+      "registry": null,
+      "listings": {
+        "glama": "https://glama.ai/mcp/servers/pandadad0214/quiet-file-team-mcp",
+        "mcprepository": "https://mcprepository.com/pandadad0214/quiet-file-team-mcp",
+        "devhunt": "https://devhunt.org/tool/quiet-file-team-mcp"
+      },
+      "install": {
+        "uvx": "uvx --from git+https://github.com/pandadad0214/quiet-file-team-mcp.git@v0.1.0 quiet-file-team-mcp",
+        "args": [
+          "--from",
+          "git+https://github.com/pandadad0214/quiet-file-team-mcp.git@v0.1.0",
+          "quiet-file-team-mcp"
+        ],
+        "requires": [],
+        "notes": "Python 3.11+ and uv. No APIFY_TOKEN. Use with the free Bash core or the paid setup kit."
+      },
+      "tools": [
+        {
+          "name": "explain_method",
+          "title": "Explain method",
+          "description": "Explain Quiet File Team concepts and trust limits before an exercise. Offline; no network calls.",
+          "apify": null,
+          "url": null
+        },
+        {
+          "name": "generate_team_config",
+          "title": "Generate team config",
+          "description": "Return safe roster and zone defaults with a lead-only coordinator. Offline; no disk writes.",
+          "apify": null,
+          "url": null
+        },
+        {
+          "name": "generate_early_exit",
+          "title": "Generate early exit",
+          "description": "Draft a quoted early-exit block for a supplied role and path.",
+          "apify": null,
+          "url": null
+        },
+        {
+          "name": "validate_layout_manifest",
+          "title": "Validate layout manifest",
+          "description": "Compare supplied relative paths against the expected layout. It does not scan a real filesystem.",
+          "apify": null,
+          "url": null
+        },
+        {
+          "name": "draft_workflow",
+          "title": "Draft workflow",
+          "description": "Draft fictional practice steps for the default roster.",
+          "apify": null,
+          "url": null
+        },
+        {
+          "name": "draft_owner_batch",
+          "title": "Draft owner batch",
+          "description": "Deduplicate owner questions and keep unresolved task references.",
+          "apify": null,
+          "url": null
+        }
+      ]
+    }
+  ],
+  "editions": [
+    {
+      "product": "Quiet File Team",
+      "editions": [
+        {
+          "name": "Free MCP companion",
+          "kind": "free",
+          "url": "https://pandafederation.com/quiet-file-team-mcp/",
+          "notes": "Six offline MCP tools. Install with uvx from the GitHub repo."
+        },
+        {
+          "name": "Free Bash core",
+          "kind": "free",
+          "url": "https://github.com/pandadad0214/quiet-file-team",
+          "notes": "Clone the repo, set TEAM_DIR, and follow the README."
+        },
+        {
+          "name": "Quiet File Team Setup Kit",
+          "kind": "paid",
+          "url": "https://agensi.io/skills/quiet-file-team-setup-kit",
+          "notes": "Paid Agensi skill. Guided local install and practice files. Live price is on the listing."
+        },
+        {
+          "name": "Setup kit generator",
+          "kind": "paid",
+          "url": "https://apify.com/pandadad0214/quiet-file-team-setup",
+          "notes": "Paid Apify Actor that builds a configured starter ZIP. Live price is on the Store page."
+        }
+      ]
+    }
+  ],
+  "page_links": {
+    "github": "https://github.com/pandadad0214/quiet-file-team-mcp",
+    "free_core": "https://github.com/pandadad0214/quiet-file-team",
+    "product_page": "https://pandafederation.com/quiet-file-team-mcp/"
+  }
+}

@@ -1,0 +1,20 @@
+# Quiet File Team MCP
+
+> Six free offline MCP tools that explain, configure and check a Quiet File Team (several bots sharing one computer through files). No network calls, no paid APIs, no disk reads of your machine.
+
+Install (Python 3.11+ and uv, no token):
+
+```
+uvx --from git+https://github.com/pandadad0214/quiet-file-team-mcp.git@v0.1.0 quiet-file-team-mcp
+```
+
+Tools: explain_method, generate_team_config, generate_early_exit, validate_layout_manifest, draft_workflow, draft_owner_batch.
+
+Editions:
+
+- Free MCP companion (this page): https://pandadad0214.github.io/quiet-file-team-mcp/ and https://pandafederation.com/quiet-file-team-mcp/
+- Free Bash core: https://github.com/pandadad0214/quiet-file-team
+- Paid Agensi setup kit (live price on the listing): https://agensi.io/skills/quiet-file-team-setup-kit
+- Paid Apify setup-kit generator (live price on the Store): https://apify.com/pandadad0214/quiet-file-team-setup
+
+This page exposes read-only WebMCP tools: list_servers, list_tools, get_install_command, get_links, list_editions. Catalog: webmcp-catalog.json

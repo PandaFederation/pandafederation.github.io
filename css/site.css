@@ -274,3 +274,6 @@ pre {
 @media (max-width: 800px) {
   .product-hero { flex-direction: column; align-items: flex-start; }
 }
+
+/* Visually hidden WebMCP declarative forms (scanners still read the markup). */
+.webmcp-tools{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
