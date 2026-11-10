@@ -144,7 +144,7 @@
       "name": "Quiet File Team MCP",
       "blurb": "Six free offline MCP tools that explain, configure and check a Quiet File Team (bots sharing files).",
       "repo": "https://github.com/pandadad0214/quiet-file-team-mcp",
-      "homepage": "https://pandadad0214.github.io/quiet-file-team-mcp/",
+      "homepage": "https://pandafederation.com/quiet-file-team-mcp/",
       "pypi": null,
       "registry_name": null,
       "listings": {
@@ -608,7 +608,7 @@
       "blurb": "Free Bash kit that lets several AI bots share one computer through files: task queue, pair notes, early exit. A paid setup-kit generator is on the Apify Store and Agensi; a free MCP companion explains and checks a team.",
       "repo": "https://github.com/pandadad0214/quiet-file-team",
       "mcp_repo": "https://github.com/pandadad0214/quiet-file-team-mcp",
-      "mcp_pages": "https://pandadad0214.github.io/quiet-file-team-mcp/",
+      "mcp_pages": "https://pandafederation.com/quiet-file-team-mcp/",
       "apify": "https://apify.com/pandadad0214/quiet-file-team-setup",
       "agensi": "https://agensi.io/skills/quiet-file-team-setup-kit",
       "editions": [
@@ -619,8 +619,8 @@
         },
         {
           "name": "Free MCP companion",
-          "where": "quiet-file-team-mcp, also on GitHub Pages.",
-          "url": "https://github.com/pandadad0214/quiet-file-team-mcp"
+          "where": "Product page on pandafederation.com, plus the GitHub repo.",
+          "url": "https://pandafederation.com/quiet-file-team-mcp/"
         },
         {
           "name": "Setup kit generator",

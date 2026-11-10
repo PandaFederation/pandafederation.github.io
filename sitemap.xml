@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://pandafederation.com/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://pandafederation.com/mcp.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://pandafederation.com/quiet-file-team-mcp/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://pandafederation.com/apify.html</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://pandafederation.com/apps.html</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://pandafederation.com/books.html</loc><changefreq>weekly</changefreq></url>

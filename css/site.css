@@ -234,3 +234,43 @@ footer .oath { color: var(--sub); font-style: italic; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+code { font-size: 0.95em; }
+pre {
+  background: #0b101c;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px 16px;
+  overflow: auto;
+  color: var(--text);
+  font-size: 13.5px;
+  line-height: 1.5;
+  margin: 0;
+}
+.product-hero {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.product-hero img {
+  width: 96px;
+  height: 96px;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: #0b101c;
+  flex-shrink: 0;
+}
+.product-hero .page-head { margin: 0; }
+.tool-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.tool-grid div { color: var(--sub); font-size: 14.5px; }
+.tool-grid strong { color: var(--head); display: block; margin-bottom: 2px; }
+.stack { display: flex; flex-direction: column; gap: 16px; }
+@media (max-width: 800px) {
+  .product-hero { flex-direction: column; align-items: flex-start; }
+}
