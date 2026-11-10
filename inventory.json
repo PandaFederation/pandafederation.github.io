@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-09T17:45:00-07:00",
-  "generated_note": "Inventory compiled 2026-11-09 (America/Phoenix). Only URLs that were verified this session or are first-party public listing URLs documented in promo notes are included. HTTP 403/429 from this box is noted; those URLs were not invented. Unpublished or redirecting listings are omitted or marked as gaps.",
+  "generated_at": "2026-11-10T08:45:00-07:00",
+  "generated_note": "Inventory updated 2026-11-10 (America/Phoenix) to add three newly public Store Actors (Colorado New Business Leads, France Company Leads, RSS & Atom Feed Monitor). Other listings were last verified on 2026-11-09.",
   "canonical_site": {
     "repo": "https://github.com/PandaFederation/pandafederation.github.io",
     "pages_url": "https://pandafederation.com/",
@@ -511,6 +511,33 @@
       "categories": "Developer tools, automation, business",
       "url": "https://apify.com/pandadad0214/broken-link-checker",
       "verified": "store_http_200_2026-11-09"
+    },
+    {
+      "id": "colorado-new-business-leads",
+      "title": "Colorado New Business Leads: New SOS Filings Daily",
+      "blurb": "New Colorado LLCs, corporations and nonprofits from official Secretary of State open data, with a likely-owner flag.",
+      "family": "leads",
+      "categories": "Lead generation, business, automation",
+      "url": "https://apify.com/pandadad0214/colorado-new-business-leads",
+      "verified": "store_http_200_2026-11-10"
+    },
+    {
+      "id": "france-company-leads",
+      "title": "France Company Leads: SIREN, Directors, Revenue",
+      "blurb": "French B2B lead lists from the official SIRENE and RNE company directory, including directors and revenue when published.",
+      "family": "leads",
+      "categories": "Lead generation, business, automation",
+      "url": "https://apify.com/pandadad0214/france-company-leads",
+      "verified": "store_http_200_2026-11-10"
+    },
+    {
+      "id": "rss-feed-monitor",
+      "title": "RSS & Atom Feed Monitor: Only New Items",
+      "blurb": "Watch many RSS, Atom or JSON feeds (or websites, with feed autodiscovery) and get only the items that are new since the last run.",
+      "family": "security",
+      "categories": "News, automation, developer tools",
+      "url": "https://apify.com/pandadad0214/rss-feed-monitor",
+      "verified": "store_http_200_2026-11-10"
     }
   ],
   "apps_and_repos": [
@@ -1025,7 +1052,6 @@
   },
   "gaps": [
     "No published book / Amazon / KDP URLs.",
-    "Apify Actors rss-feed-monitor, france-company-leads and colorado-new-business-leads exist in the owner API but their Store pages returned 404 \u2014 omitted until public.",
     "Official MCP Registry has no record (by name search) for the umbrella panda-federation-tools package or for quiet-file-team-mcp. The four focused servers are listed.",
     "PyPI packages exist for the four focused servers and the umbrella; not for quiet-file-team-mcp.",
     "cursor.directory: only panda-public-funding-tools is included as a live plugin URL from earlier notes. The umbrella listing was unpublished / scan-failed; quiet-file-team-mcp was still pending a security scan. Other focused plugin URLs were not independently confirmed this session (directory returned 429 from the box).",
@@ -1062,7 +1088,7 @@
   },
   "counts": {
     "mcp_servers": 6,
-    "apify_actors_public": 39,
+    "apify_actors_public": 42,
     "apps_and_repos": 9,
     "fiverr_gigs": 4,
     "agensi_skills_live": 36,
