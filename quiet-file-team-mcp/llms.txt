@@ -18,3 +18,4 @@ Editions:
 - Paid Apify setup-kit generator (live price on the Store): https://apify.com/pandadad0214/quiet-file-team-setup
 
 This page exposes read-only WebMCP tools: list_servers, list_tools, get_install_command, get_links, list_editions. Catalog: webmcp-catalog.json
+- X: https://x.com/PandaFedHQ  (Follow on X: @PandaFedHQ)

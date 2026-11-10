@@ -20,6 +20,7 @@ Focused servers need an `APIFY_TOKEN`. Sources are official or public. Actors bi
 - Apify Store: https://apify.com/pandadad0214
 - Official MCP Registry: https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214
 - GitHub: https://github.com/pandadad0214
+- X: https://x.com/PandaFedHQ  (Follow on X: @PandaFedHQ)
 - Product Hunt: https://www.producthunt.com/products/panda-federation-tools
 - Inventory: https://pandafederation.com/inventory.json
 - Full tool notes: https://pandadad0214.github.io/panda-federation-tools/llms.txt
