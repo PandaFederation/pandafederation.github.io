@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="40" role="img" aria-label="Part of Panda Federation">
+  <title>Part of Panda Federation</title>
+  <rect width="220" height="40" rx="8" fill="#0f1420"/>
+  <rect x="0.5" y="0.5" width="219" height="39" rx="8" fill="none" stroke="#2a3550"/>
+  <rect x="0" y="0" width="8" height="40" rx="8" fill="#7dd3a8"/>
+  <text x="22" y="26" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#7dd3a8">Part of Panda Federation</text>
+</svg>
