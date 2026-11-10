@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://pandafederation.github.io/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pandafederation.github.io/mcp.html</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pandafederation.github.io/apify.html</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pandafederation.github.io/apps.html</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pandafederation.github.io/books.html</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pandafederation.github.io/services.html</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pandafederation.github.io/about.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://pandafederation.com/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://pandafederation.com/mcp.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://pandafederation.com/apify.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://pandafederation.com/apps.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://pandafederation.com/books.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://pandafederation.com/services.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://pandafederation.com/about.html</loc><changefreq>weekly</changefreq></url>
 </urlset>

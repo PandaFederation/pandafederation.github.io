@@ -1,8 +1,8 @@
 # Panda Federation — official website
 
-This repository is the official public catalog for [Panda Federation](https://pandafederation.github.io/).
+This repository is the official public catalog for [Panda Federation](https://pandafederation.com/).
 
-It is a static site hosted on GitHub Pages at the root of the `PandaFederation/pandafederation.github.io` org repo, so a custom domain can be pointed here later without a subpath. There is no `CNAME` in the repo yet.
+It is a static site hosted on GitHub Pages at the root of the `PandaFederation/pandafederation.github.io` org repo, with custom domain `pandafederation.com` (CNAME file in repo; GitHub Pages custom domain).
 
 ## What is on the site
 

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-09T17:10:00-07:00",
+  "generated_at": "2026-11-09T17:45:00-07:00",
   "generated_note": "Inventory compiled 2026-11-09 (America/Phoenix). Only URLs that were verified this session or are first-party public listing URLs documented in promo notes are included. HTTP 403/429 from this box is noted; those URLs were not invented. Unpublished or redirecting listings are omitted or marked as gaps.",
   "canonical_site": {
     "repo": "https://github.com/PandaFederation/pandafederation.github.io",
-    "pages_url": "https://pandafederation.github.io/",
-    "custom_domain": null,
-    "custom_domain_note": "Official site now lives at https://pandafederation.github.io/ (GitHub org PandaFederation, repo PandaFederation/pandafederation.github.io). A custom domain can still be pointed here later; CNAME is omitted until then. Project Pages for other repos (panda-federation-tools, quiet-file-team-mcp) remain on the pandadad0214 account until those repos move."
+    "pages_url": "https://pandafederation.com/",
+    "custom_domain": "pandafederation.com",
+    "custom_domain_note": "Official site lives at https://pandafederation.com/ (CNAME pandafederation.com \u2192 GitHub Pages; repo PandaFederation/pandafederation.github.io). Project Pages for other repos (panda-federation-tools, quiet-file-team-mcp) remain on pandadad0214.github.io until those repos move."
   },
   "brand": {
     "name": "Panda Federation",
