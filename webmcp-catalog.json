@@ -29,7 +29,7 @@
     "web_security": 7,
     "quiet_file_team_mcp": 6,
     "apify_actors_public": 43,
-    "apps_and_repos": 9
+    "apps_and_repos": 7
   },
   "servers": [
     {
@@ -896,22 +896,6 @@
       "repo": "https://github.com/pandadad0214/Spirit_Panda",
       "homepage": null,
       "listings": {}
-    },
-    {
-      "id": "Orchid_Panda",
-      "name": "Orchid Panda",
-      "description": "Orchid Panda, a Panda Federation module.",
-      "repo": "https://github.com/pandadad0214/Orchid_Panda",
-      "homepage": null,
-      "listings": {}
-    },
-    {
-      "id": "Mythical_Panda",
-      "name": "Mythical Panda",
-      "description": "Mythical Panda, the creative and lore engine of the Panda Federation.",
-      "repo": "https://github.com/pandadad0214/Mythical_Panda",
-      "homepage": null,
-      "listings": {}
     }
   ],
   "editions": [
@@ -983,6 +967,18 @@
           "notes": "The free skill is listed on the Panda Federation Agensi creator page."
         }
       ]
+    }
+  ],
+  "planned_modules": [
+    {
+      "id": "Orchid_Panda",
+      "repo": "https://github.com/pandadad0214/Orchid_Panda",
+      "status": "placeholder, no code"
+    },
+    {
+      "id": "Mythical_Panda",
+      "repo": "https://github.com/pandadad0214/Mythical_Panda",
+      "status": "placeholder, no code"
     }
   ]
 }

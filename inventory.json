@@ -660,18 +660,6 @@
       "name": "Spirit Panda",
       "blurb": "Sovereign local-first AI companion with identity, memory, and adaptive prosody.",
       "repo": "https://github.com/pandadad0214/Spirit_Panda"
-    },
-    {
-      "id": "Orchid_Panda",
-      "name": "Orchid Panda",
-      "blurb": "Orchid Panda, a Panda Federation module.",
-      "repo": "https://github.com/pandadad0214/Orchid_Panda"
-    },
-    {
-      "id": "Mythical_Panda",
-      "name": "Mythical Panda",
-      "blurb": "Mythical Panda, the creative and lore engine of the Panda Federation.",
-      "repo": "https://github.com/pandadad0214/Mythical_Panda"
     }
   ],
   "books": {
@@ -1098,12 +1086,24 @@
   "counts": {
     "mcp_servers": 6,
     "apify_actors_public": 43,
-    "apps_and_repos": 9,
+    "apps_and_repos": 7,
     "fiverr_gigs": 4,
     "agensi_skills_live": 36,
     "devto_articles": 7,
     "books_with_store_url": 0,
     "books_coming_soon": 3,
     "snippet_candidate_repos": 16
-  }
+  },
+  "planned_modules": [
+    {
+      "id": "Orchid_Panda",
+      "repo": "https://github.com/pandadad0214/Orchid_Panda",
+      "status": "placeholder, no code"
+    },
+    {
+      "id": "Mythical_Panda",
+      "repo": "https://github.com/pandadad0214/Mythical_Panda",
+      "status": "placeholder, no code"
+    }
+  ]
 }
