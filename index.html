@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Panda Federation</title>
-<meta name="description" content="Official site of the Panda Federation — public-data tools, MCP servers, local-first apps, and services.">
+<meta name="description" content="Free public-data tools for AI agents: check references, find federal grants and bids, pull official lead lists and audit domains. On Apify and as MCP servers.">
 <link rel="canonical" href="https://pandafederation.com">
 <meta name="theme-color" content="#0f1420">
 <meta property="og:type" content="website">
@@ -76,21 +76,35 @@
   <div class="hero-fallback" role="img" aria-label="Panda Federation headquarters still"></div>
   <canvas id="hero-canvas" aria-hidden="true"></canvas>
   <div class="hero-copy">
-    <p class="kicker">Official site</p>
-    <h1>One home for the Federation’s work.</h1>
-    <p class="lede">Self-healing, local-first AI systems and data tools that run themselves.</p>
+    <p class="kicker">Free public-data tools for AI agents</p>
+    <h1>Official public data your agent can check, cite and use.</h1>
+    <p class="lede">Catch fake or retracted references, find federal grants and bids, pull official lead lists, and audit domains. Every tool reads official sources and runs in the browser on Apify or inside Claude, Cursor and other MCP clients.</p>
     <div class="cta-row">
-      <a class="btn" href="mcp.html">MCP servers</a>
-      <a class="btn ghost" href="apify.html">Apify tools</a>
-      <a class="btn ghost" href="https://github.com/pandadad0214" rel="noopener">GitHub</a>
+      <a class="btn" href="apify.html">Find a tool</a>
+      <a class="text-link" href="mcp.html">or add the MCP servers →</a>
     </div>
   </div>
 </section>
 <main id="main" class="wrap home-sections">
   <p class="note"><span data-gen="mcp_servers">6</span> MCP servers · <span data-gen="apify_actors">43</span> public Apify Actors · <span data-gen="apps">9</span> apps &amp; repos · <span data-gen="agensi_skills">36</span> live Agensi skills. Counts update automatically from the Apify Store, PyPI and GitHub. Prices live on each store page, not here.</p>
-  <h2>Start with the tool you need</h2>
+  <h2>Start free</h2>
+  <div class="flagships">
+    <article class="card"><p class="kicker">Free guide</p><h3>Data broker removal guide + state law map</h3><p>Official opt-out links for people-search sites, the steps that actually work, and a state-by-state map of who has a legal right to deletion. Opt-out links checked November 10, 2026. Not legal advice.</p><div class="links"><a class="btn" href="data-broker-removal/">Open the guide</a> <a href="data-broker-removal/state-law-map.json">State map JSON</a></div></article>
+    <article class="card"><p class="kicker">Free kit · MIT</p><h3>Quiet File Team</h3><p>A small Bash kit that lets several AI bots share one computer through plain files: an append-only task queue, pair notes, and an early exit so idle routines stop instead of spending tokens. No server, no chat bus, no model calls.</p><div class="links"><a class="btn" href="quiet-file-team/">Get the free kit</a> <a href="quiet-file-team-mcp/">Free MCP companion</a></div></article>
+  </div>
+  <h2>Real output from real runs</h2>
+  <p class="note">Rows copied from our own test runs of the live Actors (not mock-ups). Each table says when it ran and how many rows it returned.</p>
+  <div class="samples">
+<!-- gen:samples -->
+<article class="card sample"><h3>Reference Checker</h3><div class="table-wrap"><table><thead><tr><th scope="col">Cited title</th><th scope="col">Verdict</th><th scope="col">Why</th></tr></thead><tbody><tr><td>Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and…</td><td>Real</td><td>Retracted (Retraction Watch notice)</td></tr><tr><td>Hydroxychloroquine or chloroquine with or without a macrolide for…</td><td>Real</td><td>Retracted (Retraction Watch notice)</td></tr><tr><td>Deep residual learning for image recognition</td><td>Real, minor mismatch</td><td>journal: cited Proc, actual 2016 IEEE Conference on Computer Vision and…</td></tr><tr><td>Deep learning</td><td>Real, major mismatch</td><td>year: cited 2017, actual 2015</td></tr><tr><td>Neural lattice frameworks for quantum basket weaving in arid climates</td><td>Not found</td><td>No matching record (likely fabricated)</td></tr></tbody></table></div><p class="note">Platform test run of Reference Checker v0.1 (October 2026), 48 references; 5 rows shown.</p><div class="links"><a href="https://apify.com/pandadad0214/reference-checker" rel="noopener">Open on Apify Store</a></div></article>
+<article class="card sample"><h3>SAM.gov Contract Opportunities</h3><div class="table-wrap"><table><thead><tr><th scope="col">Posted</th><th scope="col">Notice type</th><th scope="col">Title</th><th scope="col">Agency</th><th scope="col">Set-aside</th></tr></thead><tbody><tr><td>2026-11-09</td><td>Award Notice</td><td><a href="https://sam.gov/opp/34024d55d7654668bcdfcb81acc19b68/view" rel="noopener">DA10--New Action: TIC Application Firewall Maintenance Renewal…</a></td><td>Veterans Affairs, Department of</td><td>Service-Disabled Veteran-Owned Small Business</td></tr><tr><td>2026-11-09</td><td>Presolicitation</td><td><a href="https://sam.gov/opp/b2c8f63a5b5b476fb1aee7dddbbaef67/view" rel="noopener">C1DA--657-27-209JB Renovate Main Lobby, Bldgs 1 &amp; 53</a></td><td>Veterans Affairs, Department of</td><td>Service-Disabled Veteran-Owned Small Business</td></tr><tr><td>2026-11-09</td><td>Combined Synopsis/Solicitation</td><td><a href="https://sam.gov/opp/73d918da3ba340a28a2d7e5d23c270b1/view" rel="noopener">30 RS Mission Planning Software Tool (MPST)</a></td><td>Dept. of Defense</td><td>Small Business Set Aside - Total</td></tr><tr><td>2026-11-06</td><td>Sources Sought</td><td><a href="https://sam.gov/opp/cc0fd029e4f94dd28f101314a39d38cd/view" rel="noopener">C1DA--Renovate Specialty Clinics on 2nd</a></td><td>Veterans Affairs, Department of</td><td>Service-Disabled Veteran-Owned Small Business</td></tr><tr><td>2026-11-06</td><td>Presolicitation</td><td><a href="https://sam.gov/opp/557503071f3d4719a8196424d78b2b7b/view" rel="noopener">B533--VANIHCS SPS Water Testing (VA-27-00000760)</a></td><td>Veterans Affairs, Department of</td><td>Service-Disabled Veteran-Owned Small Business</td></tr></tbody></table></div><p class="note">Platform test run, build 0.1.1, checked 2026-11-10: NAICS 5415/5413, last 7 days, small-business set-asides; 38 notices, 5 shown. Contact fields omitted here.</p><div class="links"><a href="https://apify.com/pandadad0214/sam-gov-opportunities" rel="noopener">Open on Apify Store</a></div></article>
+<article class="card sample"><h3>SPF, DKIM &amp; DMARC Checker</h3><div class="table-wrap"><table><thead><tr><th scope="col">Domain</th><th scope="col">Grade</th><th scope="col">Score</th><th scope="col">DMARC policy</th><th scope="col">SPF ends with</th><th scope="col">Mail provider</th></tr></thead><tbody><tr><td>apify.com</td><td>A</td><td>100</td><td>reject</td><td>-all (fail)</td><td>Google Workspace</td></tr><tr><td>github.com</td><td>B</td><td>87</td><td>quarantine</td><td>~all (softfail)</td><td>Microsoft 365</td></tr><tr><td>harvard.edu</td><td>B</td><td>87</td><td>quarantine</td><td>~all (softfail)</td><td>Proofpoint</td></tr><tr><td>mayoclinic.org</td><td>C</td><td>65</td><td>none</td><td>-all (fail)</td><td>Self-hosted / other</td></tr><tr><td>asu.edu</td><td>B</td><td>80</td><td>none</td><td>~all (softfail)</td><td>Self-hosted / other</td></tr></tbody></table></div><p class="note">Platform test run, build 0.1.1, checked 2026-11-02; 11 inputs, 5 shown.</p><div class="links"><a href="https://apify.com/pandadad0214/email-domain-security-checker" rel="noopener">Open on Apify Store</a></div></article>
+<article class="card sample"><h3>Bulk Domain WHOIS &amp; Expiry Checker (RDAP)</h3><div class="table-wrap"><table><thead><tr><th scope="col">Domain</th><th scope="col">Registered</th><th scope="col">Registrar</th><th scope="col">Created</th><th scope="col">Expires</th></tr></thead><tbody><tr><td>nytimes.com</td><td>yes</td><td>MarkMonitor Inc.</td><td>1994-01-18</td><td>2027-01-19</td></tr><tr><td>bbc.co.uk</td><td>yes</td><td>British Broadcasting Corporation</td><td>1994-12-13</td><td>2034-12-13</td></tr><tr><td>apify.com</td><td>yes</td><td>Amazon Registrar, Inc.</td><td>2009-06-02</td><td>2035-06-02</td></tr><tr><td>t.co</td><td>yes</td><td>CSC Corporate Domains, Inc.</td><td>2010-04-26</td><td>2027-04-25</td></tr><tr><td>zzqx-panda-unregistered-2026.com</td><td>no (available)</td><td>—</td><td>—</td><td>—</td></tr></tbody></table></div><p class="note">Platform test run, build 0.1.1, checked 2026-11-05; 12 domains, 5 shown.</p><div class="links"><a href="https://apify.com/pandadad0214/bulk-domain-whois-expiry" rel="noopener">Open on Apify Store</a></div></article>
+<!-- /gen:samples -->
+  </div>
+
+  <h2>Everything else</h2>
   <div class="grid">
-    <article class="card"><h3>Free data broker removal guide</h3><p>Official opt-out links for people-search sites, the steps that work, and a state-by-state map of who has a legal right to deletion. Verified November 10, 2026. Not legal advice.</p><div class="links"><a href="data-broker-removal/">Open the guide</a> <a href="data-broker-removal/state-law-map.json">State map JSON</a></div></article>
     <article class="card"><h3>MCP servers</h3><p>Four focused public-data servers, the umbrella package, and Quiet File Team MCP — on GitHub, PyPI, Glama, and the Official MCP Registry where listed.</p><div class="links"><a href="mcp.html" rel="noopener">Browse servers</a> <a href="quiet-file-team-mcp/" rel="noopener">Quiet File Team MCP</a></div></article>
     <article class="card"><h3>Apify tools</h3><p>Public-data Actors for research, federal funding, leads, and site safety. Each card links the Store page and the matching Agensi skill when one exists.</p><div class="links"><a href="apify.html" rel="noopener">Browse Actors</a> <a href="https://apify.com/pandadad0214" rel="noopener">Apify Store</a></div></article>
     <article class="card"><h3>Apps &amp; repos</h3><p>Steel Panda, Watchdog Panda, Manual Remake, Quiet File Team, Hidden AI Instructions Watch, and the 3D H.Q.</p><div class="links"><a href="apps.html" rel="noopener">Browse apps</a> <a href="quiet-file-team/" rel="noopener">Quiet File Team</a></div></article>
@@ -109,8 +123,7 @@
   <h2>Free and paid editions stay linked</h2>
   <p>When a tool has a free sample or kit and a paid edition, both are named on the tool’s card, with the exact place to switch. Live prices stay on the Store or Agensi listing.</p>
 </main>
-<script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
-<script src="js/hero.js"></script>
+<script src="js/hero-loader.js" defer></script>
 <footer class="site">
   <div class="foot-inner">
     <div>

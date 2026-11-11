@@ -1,0 +1,203 @@
+[
+  {
+    "id": "reference-checker",
+    "title": "Reference Checker",
+    "actor": "https://apify.com/pandadad0214/reference-checker",
+    "source": "Platform test run of Reference Checker v0.1 (October 2026), 48 references; 5 rows shown.",
+    "columns": [
+      "Cited title",
+      "Verdict",
+      "Why"
+    ],
+    "rows": [
+      [
+        "Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and…",
+        "Real",
+        "Retracted (Retraction Watch notice)"
+      ],
+      [
+        "Hydroxychloroquine or chloroquine with or without a macrolide for…",
+        "Real",
+        "Retracted (Retraction Watch notice)"
+      ],
+      [
+        "Deep residual learning for image recognition",
+        "Real, minor mismatch",
+        "journal: cited Proc, actual 2016 IEEE Conference on Computer Vision and…"
+      ],
+      [
+        "Deep learning",
+        "Real, major mismatch",
+        "year: cited 2017, actual 2015"
+      ],
+      [
+        "Neural lattice frameworks for quantum basket weaving in arid climates",
+        "Not found",
+        "No matching record (likely fabricated)"
+      ]
+    ]
+  },
+  {
+    "id": "sam-gov-opportunities",
+    "title": "SAM.gov Contract Opportunities",
+    "actor": "https://apify.com/pandadad0214/sam-gov-opportunities",
+    "source": "Platform test run, build 0.1.1, checked 2026-11-10: NAICS 5415/5413, last 7 days, small-business set-asides; 38 notices, 5 shown. Contact fields omitted here.",
+    "columns": [
+      "Posted",
+      "Notice type",
+      "Title",
+      "Agency",
+      "Set-aside"
+    ],
+    "rows": [
+      [
+        "2026-11-09",
+        "Award Notice",
+        "DA10--New Action: TIC Application Firewall Maintenance Renewal…",
+        "Veterans Affairs, Department of",
+        "Service-Disabled Veteran-Owned Small Business"
+      ],
+      [
+        "2026-11-09",
+        "Presolicitation",
+        "C1DA--657-27-209JB Renovate Main Lobby, Bldgs 1 & 53",
+        "Veterans Affairs, Department of",
+        "Service-Disabled Veteran-Owned Small Business"
+      ],
+      [
+        "2026-11-09",
+        "Combined Synopsis/Solicitation",
+        "30 RS Mission Planning Software Tool (MPST)",
+        "Dept. of Defense",
+        "Small Business Set Aside - Total"
+      ],
+      [
+        "2026-11-06",
+        "Sources Sought",
+        "C1DA--Renovate Specialty Clinics on 2nd",
+        "Veterans Affairs, Department of",
+        "Service-Disabled Veteran-Owned Small Business"
+      ],
+      [
+        "2026-11-06",
+        "Presolicitation",
+        "B533--VANIHCS SPS Water Testing (VA-27-00000760)",
+        "Veterans Affairs, Department of",
+        "Service-Disabled Veteran-Owned Small Business"
+      ]
+    ],
+    "links": [
+      "https://sam.gov/opp/34024d55d7654668bcdfcb81acc19b68/view",
+      "https://sam.gov/opp/b2c8f63a5b5b476fb1aee7dddbbaef67/view",
+      "https://sam.gov/opp/73d918da3ba340a28a2d7e5d23c270b1/view",
+      "https://sam.gov/opp/cc0fd029e4f94dd28f101314a39d38cd/view",
+      "https://sam.gov/opp/557503071f3d4719a8196424d78b2b7b/view"
+    ]
+  },
+  {
+    "id": "email-domain-security-checker",
+    "title": "SPF, DKIM & DMARC Checker",
+    "actor": "https://apify.com/pandadad0214/email-domain-security-checker",
+    "source": "Platform test run, build 0.1.1, checked 2026-11-02; 11 inputs, 5 shown.",
+    "columns": [
+      "Domain",
+      "Grade",
+      "Score",
+      "DMARC policy",
+      "SPF ends with",
+      "Mail provider"
+    ],
+    "rows": [
+      [
+        "apify.com",
+        "A",
+        100,
+        "reject",
+        "-all (fail)",
+        "Google Workspace"
+      ],
+      [
+        "github.com",
+        "B",
+        87,
+        "quarantine",
+        "~all (softfail)",
+        "Microsoft 365"
+      ],
+      [
+        "harvard.edu",
+        "B",
+        87,
+        "quarantine",
+        "~all (softfail)",
+        "Proofpoint"
+      ],
+      [
+        "mayoclinic.org",
+        "C",
+        65,
+        "none",
+        "-all (fail)",
+        "Self-hosted / other"
+      ],
+      [
+        "asu.edu",
+        "B",
+        80,
+        "none",
+        "~all (softfail)",
+        "Self-hosted / other"
+      ]
+    ]
+  },
+  {
+    "id": "bulk-domain-whois-expiry",
+    "title": "Bulk Domain WHOIS & Expiry Checker (RDAP)",
+    "actor": "https://apify.com/pandadad0214/bulk-domain-whois-expiry",
+    "source": "Platform test run, build 0.1.1, checked 2026-11-05; 12 domains, 5 shown.",
+    "columns": [
+      "Domain",
+      "Registered",
+      "Registrar",
+      "Created",
+      "Expires"
+    ],
+    "rows": [
+      [
+        "nytimes.com",
+        "yes",
+        "MarkMonitor Inc.",
+        "1994-01-18",
+        "2027-01-19"
+      ],
+      [
+        "bbc.co.uk",
+        "yes",
+        "British Broadcasting Corporation",
+        "1994-12-13",
+        "2034-12-13"
+      ],
+      [
+        "apify.com",
+        "yes",
+        "Amazon Registrar, Inc.",
+        "2009-06-02",
+        "2035-06-02"
+      ],
+      [
+        "t.co",
+        "yes",
+        "CSC Corporate Domains, Inc.",
+        "2010-04-26",
+        "2027-04-25"
+      ],
+      [
+        "zzqx-panda-unregistered-2026.com",
+        "no (available)",
+        "—",
+        "—",
+        "—"
+      ]
+    ]
+  }
+]
