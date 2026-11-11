@@ -187,7 +187,7 @@ def main() -> int:
         changed.append("inventory.json")
 
     # extra build steps (changelog, digest, chrome) live in sibling modules
-    for mod in ("samples", "changelog", "digest", "chrome"):
+    for mod in ("chrome", "samples", "changelog", "digest"):
         path = os.path.join(ROOT, "scripts", f"{mod}.py")
         if os.path.exists(path):
             ns: dict = {"__file__": path, "__name__": f"build_{mod}"}

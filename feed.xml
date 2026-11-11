@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Panda Federation: What's New</title>
+  <subtitle>Releases, new Apify Actors, MCP Registry listings and site launches.</subtitle>
+  <link href="https://pandafederation.com/feed.xml" rel="self"/>
+  <link href="https://pandafederation.com/whats-new/"/>
+  <id>https://pandafederation.com/whats-new/</id>
+  <updated>2026-11-11T21:27:12Z</updated>
+  <author><name>Panda Federation</name><uri>https://pandafederation.com/</uri></author>
+  <entry>
+    <title>quiet-file-team-mcp v0.1.1</title>
+    <link href="https://github.com/pandadad0214/quiet-file-team-mcp/releases/tag/v0.1.1"/>
+    <id>tag:pandafederation.com,2026:54ec2c00adbe55c43c16605ec00a126f400c01a4</id>
+    <updated>2026-11-11T21:27:12Z</updated>
+    <summary>Six free offline MCP tools that explain, configure and check a Quiet File Team (bots sharing files).</summary>
+  </entry>
+  <entry>
+    <title>Quiet File Team product page</title>
+    <link href="https://pandafederation.com/quiet-file-team/"/>
+    <id>tag:pandafederation.com,2026:2311b07640e4f8c553f2ee4df4e56f95e568c1fa</id>
+    <updated>2026-11-11T19:00:00Z</updated>
+    <summary>Free Bash kit for several bots sharing one computer through files.</summary>
+  </entry>
+  <entry>
+    <title>New homepage, real sample output and MCP install blocks</title>
+    <link href="https://pandafederation.com/"/>
+    <id>tag:pandafederation.com,2026:5b1131045756593fe3561f70ef6555a39460eba0</id>
+    <updated>2026-11-11T19:00:00Z</updated>
+    <summary>Counts now rebuild automatically from the Apify Store, PyPI and GitHub.</summary>
+  </entry>
+  <entry>
+    <title>Read-only WebMCP tools across the official site</title>
+    <link href="https://pandafederation.com/.well-known/webmcp.json"/>
+    <id>tag:pandafederation.com,2026:7a3b29b651050ff27bcfb526957954fcb8425f2c</id>
+    <updated>2026-11-10T19:00:00Z</updated>
+    <summary>Agents in WebMCP-capable browsers can query the catalog directly.</summary>
+  </entry>
+  <entry>
+    <title>Free data broker removal guide + state law map</title>
+    <link href="https://pandafederation.com/data-broker-removal/"/>
+    <id>tag:pandafederation.com,2026:e305fd4b9cb683a059e8ea0356bad5d8ced784c9</id>
+    <updated>2026-11-10T19:00:00Z</updated>
+    <summary>Official people-search opt-out links checked November 10, 2026, with JSON for agents.</summary>
+  </entry>
+  <entry>
+    <title>panda-web-security-tools v0.2.0</title>
+    <link href="https://github.com/pandadad0214/panda-web-security-tools/releases/tag/v0.2.0"/>
+    <id>tag:pandafederation.com,2026:58a9b893333ab26c20800a60b980a10e06f3f98b</id>
+    <updated>2026-11-10T15:54:25Z</updated>
+    <summary>MCP server: 7 site and email safety tools - SPF/DKIM/DMARC, AI/SEO audit, prompt-injection scan, RSS monitor.</summary>
+  </entry>
+  <entry>
+    <title>panda-research-tools v0.2.0</title>
+    <link href="https://github.com/pandadad0214/panda-research-tools/releases/tag/v0.2.0"/>
+    <id>tag:pandafederation.com,2026:82bd12913a53f27beb35f3ca6f7a073b3bed0c40</id>
+    <updated>2026-11-10T15:54:14Z</updated>
+    <summary>MCP server: 8 research-integrity tools - fake/retracted citation checks, OpenAlex, PubMed, experts, PDF tables, trends.</summary>
+  </entry>
+  <entry>
+    <title>panda-public-funding-tools v0.2.0</title>
+    <link href="https://github.com/pandadad0214/panda-public-funding-tools/releases/tag/v0.2.0"/>
+    <id>tag:pandafederation.com,2026:d9202cf1fe7f2c518494bb2ea462bd5e1f424676</id>
+    <updated>2026-11-10T15:54:13Z</updated>
+    <summary>MCP server: 10 public-money tools - grants, contracts, SAM.gov, SBIR/STTR, SEC financials, recalls, EU tenders.</summary>
+  </entry>
+  <entry>
+    <title>panda-leads-tools v0.2.0</title>
+    <link href="https://github.com/pandadad0214/panda-leads-tools/releases/tag/v0.2.0"/>
+    <id>tag:pandafederation.com,2026:de3cf26eeb7dc770aabe135d8471c5b4099659e8</id>
+    <updated>2026-11-10T15:54:02Z</updated>
+    <summary>MCP server: 15 public lead tools - local businesses, NPI, hiring signals, new businesses, permits.</summary>
+  </entry>
+  <entry>
+    <title>panda-federation-tools v1.8.0</title>
+    <link href="https://github.com/pandadad0214/panda-federation-tools/releases/tag/v1.8.0"/>
+    <id>tag:pandafederation.com,2026:08f0c08e4944f1f4f4ac899deafe41f3e1a0ccc3</id>
+    <updated>2026-11-10T15:51:33Z</updated>
+    <summary>Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, public funding, leads, web security.</summary>
+  </entry>
+  <entry>
+    <title>Panda Research MCP (hosted subset) 1.8.0 on the Official MCP Registry</title>
+    <link href="https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-mcp"/>
+    <id>tag:pandafederation.com,2026:90d9c9d7a92dfb53c42268866487bd52211e61ae</id>
+    <updated>2026-11-10T15:51:06Z</updated>
+    <summary>Hosted research subset: check citations, catch fake/retracted papers, search OpenAlex &amp; PubMed.</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: SAM.gov Contract Opportunities: Open Federal Bids, No API Key</title>
+    <link href="https://apify.com/pandadad0214/sam-gov-opportunities"/>
+    <id>tag:pandafederation.com,2026:68ea90d0df618a52bda2faef61da914a4b6d4113</id>
+    <updated>2026-11-10T15:27:50Z</updated>
+    <summary>Use this to find open federal contract opportunities from the official SAM.gov public data extract, no API key: solicitations, sources sought, award notices.…</summary>
+  </entry>
+  <entry>
+    <title>panda-web-security-tools v0.1.0</title>
+    <link href="https://github.com/pandadad0214/panda-web-security-tools/releases/tag/v0.1.0"/>
+    <id>tag:pandafederation.com,2026:b0841f0c4a9cc7d65e466e251e27b511b9702ac1</id>
+    <updated>2026-11-09T21:14:39Z</updated>
+    <summary>MCP server: 7 site and email safety tools - SPF/DKIM/DMARC, AI/SEO audit, prompt-injection scan, RSS monitor.</summary>
+  </entry>
+  <entry>
+    <title>panda-leads-tools v0.1.0</title>
+    <link href="https://github.com/pandadad0214/panda-leads-tools/releases/tag/v0.1.0"/>
+    <id>tag:pandafederation.com,2026:eba5feb0e6a73b03375fd29c92445b8698ecfe98</id>
+    <updated>2026-11-09T21:12:15Z</updated>
+    <summary>MCP server: 15 public lead tools - local businesses, NPI, hiring signals, new businesses, permits.</summary>
+  </entry>
+  <entry>
+    <title>panda-public-funding-tools v0.1.0</title>
+    <link href="https://github.com/pandadad0214/panda-public-funding-tools/releases/tag/v0.1.0"/>
+    <id>tag:pandafederation.com,2026:79045bb8f3d4495723241267ca83c2923b785988</id>
+    <updated>2026-11-09T21:12:10Z</updated>
+    <summary>MCP server: 10 public-money tools - grants, contracts, SAM.gov, SBIR/STTR, SEC financials, recalls, EU tenders.</summary>
+  </entry>
+  <entry>
+    <title>panda-research-tools v0.1.0</title>
+    <link href="https://github.com/pandadad0214/panda-research-tools/releases/tag/v0.1.0"/>
+    <id>tag:pandafederation.com,2026:a4e5de08b4467c7fba21767ffd16f7e71e6ac894</id>
+    <updated>2026-11-09T21:12:04Z</updated>
+    <summary>MCP server: 8 research-integrity tools - fake/retracted citation checks, OpenAlex, PubMed, experts, PDF tables, trends.</summary>
+  </entry>
+  <entry>
+    <title>pandafederation.com goes live</title>
+    <link href="https://pandafederation.com/"/>
+    <id>tag:pandafederation.com,2026:655995efcff9408cd85516949e263e5d92fe9117</id>
+    <updated>2026-11-09T19:00:00Z</updated>
+    <summary>Official catalog site for the MCP servers, Apify Actors and apps.</summary>
+  </entry>
+  <entry>
+    <title>quiet-file-team v0.1.0</title>
+    <link href="https://github.com/pandadad0214/quiet-file-team/releases/tag/v0.1.0"/>
+    <id>tag:pandafederation.com,2026:7008519aa129c38c599f2efbbb49b035ad6f3e9f</id>
+    <updated>2026-11-09T16:54:04Z</updated>
+    <summary>Free Bash kit that lets several AI bots share one computer through files: task queue, pair notes, early exit.</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: Colorado New Business Leads: New SOS Filings Daily</title>
+    <link href="https://apify.com/pandadad0214/colorado-new-business-leads"/>
+    <id>tag:pandafederation.com,2026:880f5c8f6e716d87c97bec9a1966c7d1d81e2a97</id>
+    <updated>2026-11-09T15:27:04Z</updated>
+    <summary>Get new Colorado LLCs, corporations and nonprofits from official Secretary of State open data. Name, type, formation date, address, registered agent and a…</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: France Company Leads: SIREN, Directors, Revenue</title>
+    <link href="https://apify.com/pandadad0214/france-company-leads"/>
+    <id>tag:pandafederation.com,2026:bc388e870cc51d2883fb22e4859625da7b4d40dd</id>
+    <updated>2026-11-09T15:27:04Z</updated>
+    <summary>Build French B2B lead lists from the official company directory (SIRENE + RNE). SIREN, SIRET, VAT, NAF activity, size, address, revenue and directors; filter…</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: RSS &amp; Atom Feed Monitor: Only New Items</title>
+    <link href="https://apify.com/pandadad0214/rss-feed-monitor"/>
+    <id>tag:pandafederation.com,2026:88e6a546175ddb44a6f4d3720fb0dd8a07c1200a</id>
+    <updated>2026-11-09T15:27:04Z</updated>
+    <summary>Watch many RSS, Atom or JSON feeds — or just website URLs, with feed autodiscovery — and get only items that are new since your last run. Keyword and age…</summary>
+  </entry>
+  <entry>
+    <title>panda-federation-tools v1.7.0</title>
+    <link href="https://github.com/pandadad0214/panda-federation-tools/releases/tag/v1.7.0"/>
+    <id>tag:pandafederation.com,2026:e0eb594228b8033cf8c6a6873fc8d976d1a9423f</id>
+    <updated>2026-11-09T01:27:55Z</updated>
+    <summary>Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, public funding, leads, web security.</summary>
+  </entry>
+  <entry>
+    <title>Panda Research MCP (hosted subset) 1.7.0 on the Official MCP Registry</title>
+    <link href="https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-mcp"/>
+    <id>tag:pandafederation.com,2026:890b8da9693748015ddaa0522641bac35c639ac7</id>
+    <updated>2026-11-09T01:27:27Z</updated>
+    <summary>Hosted research subset: check citations, catch fake/retracted papers, search OpenAlex &amp; PubMed.</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: Broken Link Checker: 404s, Redirects and Dead Links</title>
+    <link href="https://apify.com/pandadad0214/broken-link-checker"/>
+    <id>tag:pandafederation.com,2026:2163545560b014c7e265186727769f9f8530d269</id>
+    <updated>2026-11-08T15:29:02Z</updated>
+    <summary>Find broken links on a website: crawl your start pages (optional same-host follow) and check every unique http(s) link. Status, final URL, redirect and broken…</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: EU TED Tenders: Public Procurement Notices</title>
+    <link href="https://apify.com/pandadad0214/eu-ted-tenders"/>
+    <id>tag:pandafederation.com,2026:c2aaaa52412961773d9bf7eb6781908fcbe65597</id>
+    <updated>2026-11-08T15:27:56Z</updated>
+    <summary>Search official EU public procurement notices from TED (Tenders Electronic Daily). Title, publication date, buyer country, CPV, procedure and notice type…</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: New York New Business Leads: New DOS Filings</title>
+    <link href="https://apify.com/pandadad0214/new-york-new-business-leads"/>
+    <id>tag:pandafederation.com,2026:1ca1b726086c6d0b44251c447fafc1d0f3a95fbd</id>
+    <updated>2026-11-08T15:25:05Z</updated>
+    <summary>Get new New York LLCs, corporations and other DOS entities from the official data.ny.gov Active Corporations dataset. Name, entity type, filing date, county…</summary>
+  </entry>
+  <entry>
+    <title>panda-federation-tools v1.6.0</title>
+    <link href="https://github.com/pandadad0214/panda-federation-tools/releases/tag/v1.6.0"/>
+    <id>tag:pandafederation.com,2026:48e17bf9b1fedd40dd0370dd30e057195b34c7ad</id>
+    <updated>2026-11-08T01:25:20Z</updated>
+    <summary>Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, public funding, leads, web security.</summary>
+  </entry>
+  <entry>
+    <title>Panda Research MCP (hosted subset) 1.6.0 on the Official MCP Registry</title>
+    <link href="https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-mcp"/>
+    <id>tag:pandafederation.com,2026:22d700e457f6b334a005800e09e8396ed684d94c</id>
+    <updated>2026-11-08T01:24:53Z</updated>
+    <summary>Hosted research subset: check citations, catch fake/retracted papers, search OpenAlex &amp; PubMed.</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: Quiet File Team Setup Kit Generator</title>
+    <link href="https://apify.com/pandadad0214/quiet-file-team-setup"/>
+    <id>tag:pandafederation.com,2026:3ad5d2751f0d4528aa6d718785f113c67323efd5</id>
+    <updated>2026-11-06T21:14:32Z</updated>
+    <summary>Generate a configured Quiet File Team starter ZIP (several bots sharing one computer through files) with rules, guided install and acceptance checks. $29 per…</summary>
+  </entry>
+  <entry>
+    <title>quiet-file-team-mcp v0.1.0</title>
+    <link href="https://github.com/pandadad0214/quiet-file-team-mcp/releases/tag/v0.1.0"/>
+    <id>tag:pandafederation.com,2026:a66821048e4b4d7b62093029cd2bd8c962301ba8</id>
+    <updated>2026-11-06T21:14:10Z</updated>
+    <summary>Six free offline MCP tools that explain, configure and check a Quiet File Team (bots sharing files).</summary>
+  </entry>
+  <entry>
+    <title>Watchdog_Panda v0.2.0</title>
+    <link href="https://github.com/pandadad0214/Watchdog_Panda/releases/tag/v0.2.0"/>
+    <id>tag:pandafederation.com,2026:4cca21649e69882c4cf09564fe74192eeb959fe9</id>
+    <updated>2026-11-06T17:02:00Z</updated>
+    <summary>Restart a local process when it disappears, with backoff, a restart cap and a failure hook. Bash only.</summary>
+  </entry>
+  <entry>
+    <title>Steel_Panda v0.3.0</title>
+    <link href="https://github.com/pandadad0214/Steel_Panda/releases/tag/v0.3.0"/>
+    <id>tag:pandafederation.com,2026:4bbcbc1a09ce7882e42ca1f2fb15607f5d62c8a0</id>
+    <updated>2026-11-06T16:59:23Z</updated>
+    <summary>Run every shell script in a folder, log each exit code, fail if any task fails. Local Bash, no network.</summary>
+  </entry>
+  <entry>
+    <title>manual-remake v0.1.4</title>
+    <link href="https://github.com/pandadad0214/manual-remake/releases/tag/v0.1.4"/>
+    <id>tag:pandafederation.com,2026:a9396dd1a228b98913512be5a43a8199acc69ab7</id>
+    <updated>2026-11-06T15:46:18Z</updated>
+    <summary>Rewrite a confusing manual (PDF or photos) into a clear, printable English PDF. Free sample on Apify.</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: Wayback Machine Snapshot Finder: Archive Dates &amp; URLs</title>
+    <link href="https://apify.com/pandadad0214/wayback-snapshot-finder"/>
+    <id>tag:pandafederation.com,2026:a774f5bde48e6897318781b24a698c635b747389</id>
+    <updated>2026-11-06T15:36:29Z</updated>
+    <summary>Find Internet Archive Wayback Machine snapshots for pages or whole domains via the official CDX API. Capture dates, archive URLs, status, MIME type and first…</summary>
+  </entry>
+  <entry>
+    <title>panda-federation-tools v1.5.0</title>
+    <link href="https://github.com/pandadad0214/panda-federation-tools/releases/tag/v1.5.0"/>
+    <id>tag:pandafederation.com,2026:a63cc5d60928ed9336b17487f04e137e925c8487</id>
+    <updated>2026-11-06T15:36:23Z</updated>
+    <summary>Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, public funding, leads, web security.</summary>
+  </entry>
+  <entry>
+    <title>Panda Research MCP (hosted subset) 1.5.0 on the Official MCP Registry</title>
+    <link href="https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-mcp"/>
+    <id>tag:pandafederation.com,2026:7ef170cdb1565f55bd0ee6756624861abe655efc</id>
+    <updated>2026-11-06T15:35:51Z</updated>
+    <summary>Hosted research subset: check citations, catch fake/retracted papers, search OpenAlex &amp; PubMed.</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: H-1B LCA Visa Sponsor Leads: DOL Employers, Jobs &amp; Wages</title>
+    <link href="https://apify.com/pandadad0214/h1b-lca-sponsor-leads"/>
+    <id>tag:pandafederation.com,2026:ce0214ba06aea9d5cc2f862871d6e762353720c1</id>
+    <updated>2026-11-06T15:33:01Z</updated>
+    <summary>Find H-1B, H-1B1 and E-3 visa sponsors from official DOL OFLC LCA disclosure data. One row per case with employer, job title, SOC, worksite, wage and status…</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: Texas New Business Leads: New Franchise Taxpayers</title>
+    <link href="https://apify.com/pandadad0214/texas-new-business-leads"/>
+    <id>tag:pandafederation.com,2026:9c0e3d57f07c83670eaf52c1c1d8f78db81d4267</id>
+    <updated>2026-11-06T15:31:28Z</updated>
+    <summary>Get new Texas LLCs and corporations from official Comptroller franchise taxpayer open data. Name, address, county, org type, SOS file number, charter date and…</summary>
+  </entry>
+  <entry>
+    <title>manual-remake v0.1.3</title>
+    <link href="https://github.com/pandadad0214/manual-remake/releases/tag/v0.1.3"/>
+    <id>tag:pandafederation.com,2026:5a8d5b8337bac34885524cb0e8d97a7f06fcde26</id>
+    <updated>2026-11-06T07:17:41Z</updated>
+    <summary>Rewrite a confusing manual (PDF or photos) into a clear, printable English PDF. Free sample on Apify.</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: Manual Remake: Confusing Manual to Clear Printable PDF</title>
+    <link href="https://apify.com/pandadad0214/manual-remake"/>
+    <id>tag:pandafederation.com,2026:b809126176788aecce6336919bbcca208846ae29</id>
+    <updated>2026-11-06T06:40:37Z</updated>
+    <summary>Rewrite a confusing manual (PDF or photos) into a clear, printable English PDF. Free sample: tick Free sample or leave files empty, no key. Text-only $9…</summary>
+  </entry>
+  <entry>
+    <title>Panda Research MCP (hosted subset) 1.4.0 on the Official MCP Registry</title>
+    <link href="https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-mcp"/>
+    <id>tag:pandafederation.com,2026:34b22c2fb216760eb3c249371b417c6da86eda64</id>
+    <updated>2026-11-06T00:35:02Z</updated>
+    <summary>Hosted research subset: check citations, catch fake/retracted papers, search OpenAlex &amp; PubMed.</summary>
+  </entry>
+  <entry>
+    <title>panda-federation-tools v1.4.0</title>
+    <link href="https://github.com/pandadad0214/panda-federation-tools/releases/tag/v1.4.0"/>
+    <id>tag:pandafederation.com,2026:b197c50eb819736b4bf0f6c76fbae0a79f1bc5dd</id>
+    <updated>2026-11-06T00:33:39Z</updated>
+    <summary>Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, public funding, leads, web security.</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: Building Permit Leads: New Permits, Contractors &amp; Job Values</title>
+    <link href="https://apify.com/pandadad0214/building-permit-leads"/>
+    <id>tag:pandafederation.com,2026:61c5793d9cbb85f93ba44028933b4f8f04e01099</id>
+    <updated>2026-11-05T15:37:24Z</updated>
+    <summary>Get newly issued building permits from 8 US city open-data portals (NYC, LA, Chicago, SF, Seattle, Austin, New Orleans, Cambridge). Address, work, trade…</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: Bulk Domain WHOIS &amp; Expiry Checker (RDAP): Registrar &amp; Dates</title>
+    <link href="https://apify.com/pandadad0214/bulk-domain-whois-expiry"/>
+    <id>tag:pandafederation.com,2026:06333206ecd7180995bea7152c4472dcb5ebeeca</id>
+    <updated>2026-11-05T15:37:24Z</updated>
+    <summary>Check many domains at once with official RDAP (WHOIS fallback) for availability and expiry. Registrar, created and expiry dates, days left, locks…</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: Florida New Business Leads: New LLCs &amp; Corporations Daily</title>
+    <link href="https://apify.com/pandadad0214/florida-new-business-leads"/>
+    <id>tag:pandafederation.com,2026:732ddadeeec798e7a310126cabc3dea9add5d359</id>
+    <updated>2026-11-05T15:37:24Z</updated>
+    <summary>Get every new Florida LLC, corporation and nonprofit from official Sunbiz daily data. Address, officers and managers, registered agent, EIN when filed and an…</summary>
+  </entry>
+  <entry>
+    <title>panda-federation-tools v1.3.0</title>
+    <link href="https://github.com/pandadad0214/panda-federation-tools/releases/tag/v1.3.0"/>
+    <id>tag:pandafederation.com,2026:f65185c3123711a04314926db5b12bc8476b635d</id>
+    <updated>2026-11-05T01:28:11Z</updated>
+    <summary>Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, public funding, leads, web security.</summary>
+  </entry>
+  <entry>
+    <title>Panda Research MCP 1.3.0 on the Official MCP Registry</title>
+    <link href="https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-mcp"/>
+    <id>tag:pandafederation.com,2026:31e63476a89bf007cac983b6f74ed34bdbd96aec</id>
+    <updated>2026-11-05T01:27:39Z</updated>
+    <summary>Check citations, catch fake/retracted papers, search OpenAlex &amp; PubMed, format references.</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: Clinical Trial Leads: Sponsors, Sites &amp; Contacts</title>
+    <link href="https://apify.com/pandadad0214/clinical-trial-leads"/>
+    <id>tag:pandafederation.com,2026:54c338e52b73170fc3f646ac9a426e53039ca8fb</id>
+    <updated>2026-11-04T23:45:38Z</updated>
+    <summary>Find clinical trials and the people running them from the official ClinicalTrials.gov API. Search by condition, drug, sponsor, phase, status and location; get…</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: Nonprofit Leads: IRS Charities &amp; Foundations by State</title>
+    <link href="https://apify.com/pandadad0214/nonprofit-leads-irs"/>
+    <id>tag:pandafederation.com,2026:fcbcc10a04e6e1fc8e7de94ff681a785cabef5fb</id>
+    <updated>2026-11-04T23:45:38Z</updated>
+    <summary>Build nonprofit and foundation lead lists from the official IRS Exempt Organizations file. EIN, name, address, in-care-of contact, NTEE cause, 501(c) type…</summary>
+  </entry>
+  <entry>
+    <title>New Apify Actor: VIN Decoder + Recalls: Bulk NHTSA Specs &amp; Safety Recalls</title>
+    <link href="https://apify.com/pandadad0214/vin-decoder-recalls"/>
+    <id>tag:pandafederation.com,2026:9c8053535f66a6a232f884470bb2c05f116467fd</id>
+    <updated>2026-11-04T23:45:38Z</updated>
+    <summary>Bulk-decode VINs with the official NHTSA vPIC API and add safety recalls in the same run. Year, make, model, trim, body, engine, fuel, drivetrain, GVWR, plant…</summary>
+  </entry>
+</feed>

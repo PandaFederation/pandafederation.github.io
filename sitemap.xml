@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://pandafederation.com/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pandafederation.com/mcp.html</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pandafederation.com/quiet-file-team/</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq></url>
-  <url><loc>https://pandafederation.com/quiet-file-team-mcp/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pandafederation.com/apify.html</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pandafederation.com/apps.html</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pandafederation.com/books.html</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pandafederation.com/services.html</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pandafederation.com/data-broker-removal/</loc><lastmod>2026-11-10</lastmod><changefreq>monthly</changefreq></url>
-  <url><loc>https://pandafederation.com/about.html</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://pandafederation.com/</loc></url>
+  <url><loc>https://pandafederation.com/about.html</loc></url>
+  <url><loc>https://pandafederation.com/apify.html</loc></url>
+  <url><loc>https://pandafederation.com/apps.html</loc></url>
+  <url><loc>https://pandafederation.com/books.html</loc></url>
+  <url><loc>https://pandafederation.com/mcp.html</loc></url>
+  <url><loc>https://pandafederation.com/services.html</loc></url>
+  <url><loc>https://pandafederation.com/data-broker-removal/</loc></url>
+  <url><loc>https://pandafederation.com/digest/</loc></url>
+  <url><loc>https://pandafederation.com/quiet-file-team-mcp/</loc></url>
+  <url><loc>https://pandafederation.com/quiet-file-team/</loc></url>
+  <url><loc>https://pandafederation.com/whats-new/</loc></url>
 </urlset>

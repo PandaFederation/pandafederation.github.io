@@ -1,0 +1,7 @@
+[
+  {"date": "2026-11-09", "kind": "site", "title": "pandafederation.com goes live", "url": "https://pandafederation.com/", "note": "Official catalog site for the MCP servers, Apify Actors and apps."},
+  {"date": "2026-11-10", "kind": "site", "title": "Read-only WebMCP tools across the official site", "url": "https://pandafederation.com/.well-known/webmcp.json", "note": "Agents in WebMCP-capable browsers can query the catalog directly."},
+  {"date": "2026-11-10", "kind": "guide", "title": "Free data broker removal guide + state law map", "url": "https://pandafederation.com/data-broker-removal/", "note": "Official people-search opt-out links checked November 10, 2026, with JSON for agents."},
+  {"date": "2026-11-11", "kind": "site", "title": "Quiet File Team product page", "url": "https://pandafederation.com/quiet-file-team/", "note": "Free Bash kit for several bots sharing one computer through files."},
+  {"date": "2026-11-11", "kind": "site", "title": "New homepage, real sample output and MCP install blocks", "url": "https://pandafederation.com/", "note": "Counts now rebuild automatically from the Apify Store, PyPI and GitHub."}
+]
