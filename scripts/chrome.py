@@ -31,7 +31,7 @@ FOOT_LINKS = [
     ("books.html", "Books"),
     ("about.html", "About / contact"),
 ]
-BEACON_TOKEN = ""  # Cloudflare Web Analytics site token (public, cookie-free); empty = off
+BEACON_TOKEN = "4c08ba2f90764497865713996270e0e5"  # Cloudflare Web Analytics site token (public, cookie-free); empty = off
 SKIP = ("node_modules/", ".git/")
 
 
