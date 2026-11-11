@@ -9,12 +9,13 @@
       "github": "https://github.com/pandadad0214/quiet-file-team-mcp",
       "official_site": "https://pandafederation.com/quiet-file-team-mcp/",
       "x": "https://x.com/PandaFedHQ",
-      "free_core": "https://github.com/pandadad0214/quiet-file-team",
+      "free_core": "https://pandafederation.com/quiet-file-team/",
       "apify": "https://apify.com/pandadad0214/quiet-file-team-setup",
       "agensi": "https://agensi.io/skills/quiet-file-team-setup-kit",
       "glama": "https://glama.ai/mcp/servers/pandadad0214/quiet-file-team-mcp",
       "llms_txt": "https://pandadad0214.github.io/quiet-file-team-mcp/llms.txt",
-      "catalog": "https://pandadad0214.github.io/quiet-file-team-mcp/webmcp-catalog.json"
+      "catalog": "https://pandadad0214.github.io/quiet-file-team-mcp/webmcp-catalog.json",
+      "free_core_repo": "https://github.com/pandadad0214/quiet-file-team"
     }
   },
   "servers": [
@@ -102,8 +103,8 @@
         {
           "name": "Free Bash core",
           "kind": "free",
-          "url": "https://github.com/pandadad0214/quiet-file-team",
-          "notes": "Clone the repo, set TEAM_DIR, and follow the README."
+          "url": "https://pandafederation.com/quiet-file-team/",
+          "notes": "Product page plus the GitHub repo. Clone, set TEAM_DIR, and follow the README. This MCP does not install those scripts."
         },
         {
           "name": "Quiet File Team Setup Kit",
@@ -122,7 +123,8 @@
   ],
   "page_links": {
     "github": "https://github.com/pandadad0214/quiet-file-team-mcp",
-    "free_core": "https://github.com/pandadad0214/quiet-file-team",
-    "product_page": "https://pandafederation.com/quiet-file-team-mcp/"
+    "free_core": "https://pandafederation.com/quiet-file-team/",
+    "product_page": "https://pandafederation.com/quiet-file-team-mcp/",
+    "free_core_repo": "https://github.com/pandadad0214/quiet-file-team"
   }
 }

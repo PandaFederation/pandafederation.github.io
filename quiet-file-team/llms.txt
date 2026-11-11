@@ -1,0 +1,27 @@
+# Quiet File Team
+
+> Free, MIT-licensed Bash kit that lets several AI bots share one computer through plain files: pair notes, an append-only task queue, a board and a NO WORK early-exit check. No server, chat bus or LLM inside. Not a hosted service.
+
+Install (Linux, Bash 4+, GNU coreutils, awk, sed, tar, util-linux flock):
+
+```
+curl -fsSL https://github.com/pandadad0214/quiet-file-team/archive/refs/tags/v0.1.0.tar.gz | tar xz && mv quiet-file-team-0.1.0 team
+export TEAM_DIR="$PWD/team"
+bash "$TEAM_DIR/has-work.sh" helper
+```
+
+Or `git clone https://github.com/pandadad0214/quiet-file-team.git team`. Name bots in `team/team.conf`, set `TEAM_TZ` (default UTC), and stop every routine when `has-work.sh` prints exactly `NO WORK`.
+
+Commands: has-work.sh, task.sh (new, claim, set, list, owner, stale, show), pair.sh, post.sh, backup.sh.
+
+Editions:
+
+- Free Bash core (this page): https://pandafederation.com/quiet-file-team/ and https://github.com/pandadad0214/quiet-file-team
+- Free MCP companion: https://pandafederation.com/quiet-file-team-mcp/ — `uvx --from git+https://github.com/pandadad0214/quiet-file-team-mcp.git@v0.1.0 quiet-file-team-mcp`
+- Paid Apify setup-kit generator, $29 per successfully generated kit on the live Store: https://apify.com/pandadad0214/quiet-file-team-setup
+- Paid Agensi setup kit, $29 one-time on the live listing: https://agensi.io/skills/quiet-file-team-setup-kit
+
+Paid → free: keep scripts, drop optional kit rules, or clone a clean copy and re-enter active tasks deliberately; never merge .seen cursors blindly.
+
+This page exposes read-only WebMCP tools: list_servers, list_tools, get_install_command, get_links, list_editions. Catalog: webmcp-catalog.json
+- X: https://x.com/PandaFedHQ  (Follow on X: @PandaFedHQ)

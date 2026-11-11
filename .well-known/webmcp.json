@@ -31,6 +31,28 @@
         "get_removal_steps",
         "get_links"
       ]
+    },
+    {
+      "url": "https://pandafederation.com/quiet-file-team/",
+      "catalog": "https://pandafederation.com/quiet-file-team/webmcp-catalog.json",
+      "tools": [
+        "list_servers",
+        "list_tools",
+        "get_install_command",
+        "get_links",
+        "list_editions"
+      ]
+    },
+    {
+      "url": "https://pandafederation.com/quiet-file-team-mcp/",
+      "catalog": "https://pandafederation.com/quiet-file-team-mcp/webmcp-catalog.json",
+      "tools": [
+        "list_servers",
+        "list_tools",
+        "get_install_command",
+        "get_links",
+        "list_editions"
+      ]
     }
   ]
 }

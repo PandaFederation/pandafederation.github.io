@@ -13,7 +13,7 @@ Tools: explain_method, generate_team_config, generate_early_exit, validate_layou
 Editions:
 
 - Free MCP companion (this page): https://pandadad0214.github.io/quiet-file-team-mcp/ and https://pandafederation.com/quiet-file-team-mcp/
-- Free Bash core: https://github.com/pandadad0214/quiet-file-team
+- Free Bash core: https://pandafederation.com/quiet-file-team/ and https://github.com/pandadad0214/quiet-file-team
 - Paid Agensi setup kit (live price on the listing): https://agensi.io/skills/quiet-file-team-setup-kit
 - Paid Apify setup-kit generator (live price on the Store): https://apify.com/pandadad0214/quiet-file-team-setup
 

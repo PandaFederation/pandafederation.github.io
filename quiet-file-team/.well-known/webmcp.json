@@ -1,0 +1,20 @@
+{
+  "version": "1",
+  "name": "Quiet File Team",
+  "description": "Free local Bash kit for file-first agent teams on one shared machine.",
+  "url": "https://pandafederation.com/quiet-file-team/",
+  "spec": "https://webmachinelearning.github.io/webmcp/",
+  "catalog": "https://pandafederation.com/quiet-file-team/webmcp-catalog.json",
+  "llms_txt": "https://pandafederation.com/quiet-file-team/llms.txt",
+  "tools": [
+    "list_servers",
+    "list_tools",
+    "get_install_command",
+    "get_links",
+    "list_editions"
+  ],
+  "registration": "document.modelContext.registerTool",
+  "annotations": {
+    "readOnlyHint": true
+  }
+}

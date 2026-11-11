@@ -1,6 +1,6 @@
 {
   "version": "2026-11-10",
-  "generated_at": "2026-11-10T10:23:00-07:00",
+  "generated_at": "2026-11-11T11:21:00-07:00",
   "source": "Panda Federation public catalog. Tool counts come from this file, not from page copy.",
   "site": {
     "name": "Panda Federation",
@@ -870,7 +870,7 @@
       "name": "Quiet File Team",
       "description": "Free Bash kit that lets several AI bots share one computer through files: task queue, pair notes, early exit. A paid setup-kit generator is on the Apify Store and Agensi; a free MCP companion explains and checks a team.",
       "repo": "https://github.com/pandadad0214/quiet-file-team",
-      "homepage": null,
+      "homepage": "https://pandafederation.com/quiet-file-team/",
       "listings": {}
     },
     {
@@ -922,8 +922,8 @@
         {
           "name": "Free Bash core",
           "kind": "free",
-          "url": "https://github.com/pandadad0214/quiet-file-team",
-          "notes": "Clone the repo, set TEAM_DIR, and follow the README."
+          "url": "https://pandafederation.com/quiet-file-team/",
+          "notes": "Product page plus the GitHub repo. Clone, set TEAM_DIR, and follow the README."
         },
         {
           "name": "Quiet File Team Setup Kit",

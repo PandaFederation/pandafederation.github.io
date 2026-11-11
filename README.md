@@ -9,7 +9,7 @@ It is a static site hosted on GitHub Pages at the root of the `PandaFederation/p
 - **Home** — 3D Federation emblem (three.js, with a still-image fallback), plus paths into every catalog tab
 - **MCP Servers** — the four focused domain servers, the umbrella package, and Quiet File Team MCP, with verified GitHub, PyPI, Glama, Official MCP Registry, and directory links
 - **Apify Tools** — every public Store Actor, with Agensi skills and free/paid edition switch notes where they apply
-- **Apps & Repos** — Steel Panda, Watchdog Panda, Manual Remake, Quiet File Team, Hidden AI Instructions Watch, H.Q., and related modules
+- **Apps & Repos** — Steel Panda, Watchdog Panda, Manual Remake, Quiet File Team (product page: https://pandafederation.com/quiet-file-team/), Hidden AI Instructions Watch, H.Q., and related modules
 - **Books** — Spiral Saga titles that are in progress; no store links until a book is actually published
 - **Services** — public Fiverr gigs, Upwork profile, live Agensi skills, dev.to writing, Product Hunt, and X
 - **About** — contact is GitHub and X only

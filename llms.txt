@@ -15,6 +15,10 @@ Use WebMCP tools on this site when a browser or scanner exposes document.modelCo
 
 Focused servers need an `APIFY_TOKEN`. Sources are official or public. Actors bill pay-per-result.
 
+## Local-first apps
+
+- Quiet File Team (free Bash core): https://pandafederation.com/quiet-file-team/ — pair notes, append-only task queue, NO WORK early exits on one shared Linux machine. Repo: https://github.com/pandadad0214/quiet-file-team — read-only WebMCP tools there: list_servers, list_tools, get_install_command, get_links, list_editions. Agent notes: https://pandafederation.com/quiet-file-team/llms.txt
+
 ## Free guides
 
 - Free data broker removal guide + US state law map (verified 2026-11-10, not legal advice): https://pandafederation.com/data-broker-removal/ — JSON: https://pandafederation.com/data-broker-removal/state-law-map.json and https://pandafederation.com/data-broker-removal/optout-sites.json — read-only WebMCP tools there: get_state_rights, list_states_with_rights, list_optout_sites, get_removal_steps, get_links. Agent notes: https://pandafederation.com/data-broker-removal/llms.txt
