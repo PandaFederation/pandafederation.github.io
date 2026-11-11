@@ -49,7 +49,7 @@ Arizona has no comprehensive consumer privacy law, so Arizona residents have no 
 | Minnesota | Yes (in effect) | 2025-07-31 | statute text not yet re-read by us | https://www.revisor.mn.gov/ |
 | Mississippi | No | — | — | — |
 | Missouri | No | — | — | — |
-| Montana | Yes (in effect) | 2024-10-01 | statute text not yet re-read by us | https://archive.legmt.gov/bills/2023/billhtml/SB0384.htm |
+| Montana | Yes (in effect) | 2024-10-01 | statute text not yet re-read by us | https://mca.legmt.gov/bills/mca/title_0300/chapter_0140/part_0280/sections_index.html |
 | Nebraska | Yes (in effect) | 2025-01-01 | statute text not yet re-read by us | https://nebraskalegislature.gov/ |
 | Nevada | No | — | — | — |
 | New Hampshire | Yes (in effect) | 2025-01-01 | statute text not yet re-read by us | https://www.gencourt.state.nh.us/rsa/html/NHTOC/NHTOC-LII-507-H.htm |

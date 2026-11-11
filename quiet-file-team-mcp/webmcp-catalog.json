@@ -35,10 +35,8 @@
         "devhunt": "https://devhunt.org/tool/quiet-file-team-mcp"
       },
       "install": {
-        "uvx": "uvx --from git+https://github.com/pandadad0214/quiet-file-team-mcp.git@v0.1.0 quiet-file-team-mcp",
+        "uvx": "uvx quiet-file-team-mcp",
         "args": [
-          "--from",
-          "git+https://github.com/pandadad0214/quiet-file-team-mcp.git@v0.1.0",
           "quiet-file-team-mcp"
         ],
         "requires": [],
@@ -98,7 +96,7 @@
           "name": "Free MCP companion",
           "kind": "free",
           "url": "https://pandafederation.com/quiet-file-team-mcp/",
-          "notes": "Six offline MCP tools. Install with uvx from the GitHub repo."
+          "notes": "Six offline MCP tools. Install with uvx from PyPI (uvx quiet-file-team-mcp)."
         },
         {
           "name": "Free Bash core",

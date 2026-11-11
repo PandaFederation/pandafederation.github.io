@@ -11,7 +11,7 @@ Use WebMCP tools on this site when a browser or scanner exposes document.modelCo
 - Panda Leads Tools (15): `uvx --from panda-federation-tools panda-leads-tools` — NPI, podcasts, local businesses, hiring, enrichment, teams, trucking, nonprofits, permits, new FL/TX/NY/CO businesses, H-1B, France. https://github.com/pandadad0214/panda-leads-tools
 - Panda Web Security Tools (7): `uvx --from panda-federation-tools panda-web-security-tools` — email security, AI/SEO audit, hidden-AI scanner, WHOIS, broken links, change monitor, RSS. https://github.com/pandadad0214/panda-web-security-tools
 - Panda Federation Tools umbrella (40): `uvx panda-federation-tools` — prefer a focused server for new installs. https://pandadad0214.github.io/panda-federation-tools/
-- Quiet File Team MCP (6, offline, no token): `uvx --from git+https://github.com/pandadad0214/quiet-file-team-mcp.git@v0.1.0 quiet-file-team-mcp` — https://pandafederation.com/quiet-file-team-mcp/
+- Quiet File Team MCP (6, offline, no token): `uvx quiet-file-team-mcp` — https://pandafederation.com/quiet-file-team-mcp/
 
 Focused servers need an `APIFY_TOKEN`. Sources are official or public. Actors bill pay-per-result.
 

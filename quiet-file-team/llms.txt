@@ -17,9 +17,9 @@ Commands: has-work.sh, task.sh (new, claim, set, list, owner, stale, show), pair
 Editions:
 
 - Free Bash core (this page): https://pandafederation.com/quiet-file-team/ and https://github.com/pandadad0214/quiet-file-team
-- Free MCP companion: https://pandafederation.com/quiet-file-team-mcp/ — `uvx --from git+https://github.com/pandadad0214/quiet-file-team-mcp.git@v0.1.0 quiet-file-team-mcp`
-- Paid Apify setup-kit generator, $29 per successfully generated kit on the live Store: https://apify.com/pandadad0214/quiet-file-team-setup
-- Paid Agensi setup kit, $29 one-time on the live listing: https://agensi.io/skills/quiet-file-team-setup-kit
+- Free MCP companion: https://pandafederation.com/quiet-file-team-mcp/ — `uvx quiet-file-team-mcp`
+- Paid Apify setup-kit generator (live price on the Store page): https://apify.com/pandadad0214/quiet-file-team-setup
+- Paid Agensi setup kit (live price on the listing): https://agensi.io/skills/quiet-file-team-setup-kit
 
 Paid → free: keep scripts, drop optional kit rules, or clone a clean copy and re-enter active tasks deliberately; never merge .seen cursors blindly.
 

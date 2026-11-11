@@ -5,7 +5,7 @@
 Install (Python 3.11+ and uv, no token):
 
 ```
-uvx --from git+https://github.com/pandadad0214/quiet-file-team-mcp.git@v0.1.0 quiet-file-team-mcp
+uvx quiet-file-team-mcp
 ```
 
 Tools: explain_method, generate_team_config, generate_early_exit, validate_layout_manifest, draft_workflow, draft_owner_batch.

@@ -28,7 +28,7 @@
     "leads": 15,
     "web_security": 7,
     "quiet_file_team_mcp": 6,
-    "apify_actors_public": 42,
+    "apify_actors_public": 43,
     "apps_and_repos": 9
   },
   "servers": [
@@ -473,10 +473,8 @@
         "devhunt": "https://devhunt.org/tool/quiet-file-team-mcp"
       },
       "install": {
-        "uvx": "uvx --from git+https://github.com/pandadad0214/quiet-file-team-mcp.git@v0.1.0 quiet-file-team-mcp",
+        "uvx": "uvx quiet-file-team-mcp",
         "args": [
-          "--from",
-          "git+https://github.com/pandadad0214/quiet-file-team-mcp.git@v0.1.0",
           "quiet-file-team-mcp"
         ],
         "requires": [],
@@ -789,6 +787,13 @@
       "url": "https://apify.com/pandadad0214/new-york-new-business-leads"
     },
     {
+      "id": "sam-gov-opportunities",
+      "title": "SAM.gov Contract Opportunities: Open Federal Bids, No API Key",
+      "description": "Find open federal contract opportunities from the official SAM.gov public data extract: solicitations, sources sought and award notices.",
+      "family": "funding",
+      "url": "https://apify.com/pandadad0214/sam-gov-opportunities"
+    },
+    {
       "id": "eu-ted-tenders",
       "title": "EU TED Tenders: Public Procurement Notices",
       "description": "Search official EU TED (Tenders Electronic Daily) public procurement notices.",
@@ -917,7 +922,7 @@
           "name": "Free MCP companion",
           "kind": "free",
           "url": "https://pandafederation.com/quiet-file-team-mcp/",
-          "notes": "Six offline MCP tools. Install with uvx from the GitHub repo."
+          "notes": "Six offline MCP tools. Install with uvx from PyPI (uvx quiet-file-team-mcp)."
         },
         {
           "name": "Free Bash core",

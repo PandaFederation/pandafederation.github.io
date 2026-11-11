@@ -1,0 +1,43 @@
+name: Rebuild generated site data
+
+# Regenerates counts, versions, the What's New changelog and feed, and digest
+# pages from public data (Apify Store, GitHub, PyPI, MCP Registry), then
+# commits any change back to main. GitHub Pages deploys main as usual.
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "whats-new/**"
+      - "feed.xml"
+  schedule:
+    - cron: "17 13 * * *"   # daily, 6:17 AM Arizona time
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-site
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild generated content
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/build.py
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then echo "No changes"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Rebuild generated site data [automated]"
+          git push

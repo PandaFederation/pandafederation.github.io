@@ -89,10 +89,8 @@
         "devhunt": "https://devhunt.org/tool/quiet-file-team-mcp"
       },
       "install": {
-        "uvx": "uvx --from git+https://github.com/pandadad0214/quiet-file-team-mcp.git@v0.1.0 quiet-file-team-mcp",
+        "uvx": "uvx quiet-file-team-mcp",
         "args": [
-          "--from",
-          "git+https://github.com/pandadad0214/quiet-file-team-mcp.git@v0.1.0",
           "quiet-file-team-mcp"
         ],
         "requires": [],
@@ -164,13 +162,13 @@
           "name": "Setup kit generator",
           "kind": "paid",
           "url": "https://apify.com/pandadad0214/quiet-file-team-setup",
-          "notes": "Paid Apify Actor, $29 per successfully generated kit on the live Store page. Fill roster, time zone and coordinator, allow at least $29, Start, and unpack OUTPUT.zip into a new folder."
+          "notes": "Paid Apify Actor, charged per successfully generated kit; the live price is on the Store page. Fill roster, time zone and coordinator, allow at least the listed price, Start, and unpack OUTPUT.zip into a new folder."
         },
         {
           "name": "Quiet File Team Setup Kit",
           "kind": "paid",
           "url": "https://agensi.io/skills/quiet-file-team-setup-kit",
-          "notes": "Paid Agensi skill, $29 one-time on the live listing. Keep the core folder, load the skill, practice in a new folder, and finish the acceptance checklist."
+          "notes": "Paid Agensi skill, one-time price on the live listing. Keep the core folder, load the skill, practice in a new folder, and finish the acceptance checklist."
         }
       ]
     }
