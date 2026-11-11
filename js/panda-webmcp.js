@@ -21,7 +21,7 @@
  *          data-webmcp-catalog="webmcp-catalog.json"
  *          data-webmcp-scope="site"></script>
  *
- * Scopes: site | pft | qft | hidden-ai | privacy
+ * Scopes: site | pft | qft | hidden-ai | privacy | broker-removal
  */
 (function (global) {
   "use strict";
@@ -199,7 +199,7 @@
       });
     }
 
-    if (scope !== "privacy") {
+    if (scope !== "privacy" && scope !== "broker-removal") {
       add({
         name: "list_tools",
         title: "List tools",
@@ -365,6 +365,96 @@
         inputSchema: { type: "object", properties: {}, additionalProperties: false },
         execute: function () {
           return (catalog && catalog.policy) || { error: "Policy not in catalog." };
+        },
+        annotations: READ_ONLY
+      });
+    }
+
+
+    if (scope === "broker-removal") {
+      var br = (catalog && catalog.broker_removal) || {};
+      var STATE_NAMES = {};
+      (br.states || []).forEach(function (s) { STATE_NAMES[norm(s.name)] = s.state; });
+      function findState(value) {
+        var v = norm(value);
+        if (!v) return null;
+        var code = v.length === 2 ? v.toUpperCase() : STATE_NAMES[v];
+        var list = br.states || [];
+        for (var i = 0; i < list.length; i++) if (list[i].state === code) return list[i];
+        return null;
+      }
+      add({
+        name: "get_state_rights",
+        title: "Get state deletion rights",
+        description: "Return whether a US state gives residents a legal right to have data deleted (in effect or upcoming), the effective date, limits such as public-records exemptions, and official source URLs. Not legal advice.",
+        inputSchema: {
+          type: "object",
+          properties: { state: { type: "string", description: "Two-letter code or state name, for example AZ, TX or California." } },
+          required: ["state"],
+          additionalProperties: false
+        },
+        execute: function (input) {
+          input = input || {};
+          var row = findState(input.state);
+          if (!row) return { error: "Unknown state. Use a two-letter code such as AZ or a full name.", verified_as_of: br.verified_as_of || null };
+          var out = { verified_as_of: br.verified_as_of || null, disclaimer: br.disclaimer || null, state: row, public_records_note: br.pai_note || null };
+          if (row.state === "AZ") out.arizona = br.arizona || null;
+          if (row.state === "CA") out.drop_portal = "https://consumer.drop.privacy.ca.gov/";
+          return out;
+        },
+        annotations: READ_ONLY
+      });
+      add({
+        name: "list_states_with_rights",
+        title: "List states with deletion rights",
+        description: "List US states whose comprehensive privacy law gives a right to delete, with effective dates. Optionally include enacted laws that have not started yet.",
+        inputSchema: {
+          type: "object",
+          properties: { include_upcoming: { type: "boolean", description: "Also list enacted laws with a future effective date." } },
+          additionalProperties: false
+        },
+        execute: function (input) {
+          input = input || {};
+          var up = input.include_upcoming === true || input.include_upcoming === "true";
+          var rows = (br.states || []).filter(function (s) {
+            if (s.limited_scope_deletion_right) return true;
+            if (!s.comprehensive_deletion_right) return false;
+            return s.in_effect_as_of_verification || up;
+          }).map(function (s) { return { state: s.state, name: s.name, status: s.status, effective_date: s.effective_date || null, limits: s.limits || null }; });
+          return { verified_as_of: br.verified_as_of || null, count: rows.length, states: rows, disclaimer: br.disclaimer || null };
+        },
+        annotations: READ_ONLY
+      });
+      add({
+        name: "list_optout_sites",
+        title: "List people-search opt-out links",
+        description: "List official opt-out links for people-search and data-broker sites with the date checked, status and notes. The user opens and submits each form; this tool submits nothing.",
+        inputSchema: {
+          type: "object",
+          properties: {
+            query: { type: "string", description: "Optional site name filter, for example Spokeo." },
+            category: { type: "string", enum: ["opt_out", "state_limited", "official", "skip"], description: "Optional category filter." }
+          },
+          additionalProperties: false
+        },
+        execute: function (input) {
+          input = input || {};
+          var q = text(input.query);
+          var cat = text(input.category);
+          var rows = (br.sites || []).filter(function (s) { return (!cat || s.category === cat) && matches(s.name, q); });
+          return { verified_as_of: br.verified_as_of || null, status_key: br.status_key || null, count: rows.length, sites: rows, rule: "Never pay a people-search site. Open each link in your own browser." };
+        },
+        annotations: READ_ONLY
+      });
+      add({
+        name: "get_removal_steps",
+        title: "Get removal steps",
+        description: "Return the ordered removal steps, pitfalls and the tracking checklist columns from this free guide.",
+        inputSchema: { type: "object", properties: {}, additionalProperties: false },
+        execute: function () {
+          return { verified_as_of: br.verified_as_of || null, steps: br.steps || [], pitfalls: br.pitfalls || [],
+            checklist_columns: ["Site", "Link used", "Date sent", "Verify email clicked", "Receipt saved", "Result", "Recheck date", "Still listed?"],
+            disclaimer: br.disclaimer || null };
         },
         annotations: READ_ONLY
       });

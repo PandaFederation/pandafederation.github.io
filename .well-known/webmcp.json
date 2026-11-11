@@ -19,5 +19,18 @@
   "registration": "document.modelContext.registerTool",
   "annotations": {
     "readOnlyHint": true
-  }
+  },
+  "pages": [
+    {
+      "url": "https://pandafederation.com/data-broker-removal/",
+      "catalog": "https://pandafederation.com/data-broker-removal/webmcp-catalog.json",
+      "tools": [
+        "get_state_rights",
+        "list_states_with_rights",
+        "list_optout_sites",
+        "get_removal_steps",
+        "get_links"
+      ]
+    }
+  ]
 }

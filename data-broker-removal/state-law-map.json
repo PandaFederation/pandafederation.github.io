@@ -1,0 +1,717 @@
+{
+  "title": "US state consumer deletion rights relevant to data brokers / people-search",
+  "verified_as_of": "2026-11-10",
+  "timezone_note": "Verification date is America/Phoenix local (UTC-7).",
+  "disclaimer": "Not legal advice. A research map of enacted statutes and official agency pages, checked on the date shown. Publicly available information exemptions often limit people-search removal even where a deletion right is in effect. Check the official source before relying on any row.",
+  "counts": {
+    "comprehensive_in_effect_with_deletion_right": 19,
+    "limited_scope_in_effect_with_deletion_right": 1,
+    "in_effect_total_including_limited_scope": 20,
+    "enacted_not_yet_effective": 4,
+    "enacted_not_yet_effective_note": "OK and LA effective 2027-01-01; AL effective 2027-05-01; VT comprehensive deletion effective 2028-01-01. VT already has a data-broker registry.",
+    "arizona_has_statutory_deletion_right": false,
+    "arkansas_comprehensive_law_verified": false,
+    "in_effect_states": [
+      "CA",
+      "CO",
+      "CT",
+      "DE",
+      "IN",
+      "IA",
+      "KY",
+      "MD",
+      "MN",
+      "MT",
+      "NE",
+      "NH",
+      "NJ",
+      "OR",
+      "RI",
+      "TN",
+      "TX",
+      "UT",
+      "VA"
+    ],
+    "limited_scope_states": [
+      "FL"
+    ],
+    "enacted_not_yet_effective_states": [
+      "AL",
+      "LA",
+      "OK",
+      "VT"
+    ]
+  },
+  "pai_general_note": "Most comprehensive state privacy laws exclude publicly available information (government records and certain other public data) from 'personal data,' so a deletion right may not reach typical people-search listings.",
+  "data_broker_registries": [
+    {
+      "state": "CA",
+      "portal": "https://consumer.drop.privacy.ca.gov/",
+      "agency": "https://cppa.ca.gov/data_brokers/",
+      "central_deletion": true,
+      "residents": "CA only"
+    },
+    {
+      "state": "TX",
+      "portal": "https://www.sos.texas.gov/statdoc/data-brokers.shtml",
+      "statute": "Tex. Bus. & Com. Code ch. 510",
+      "official_text": "https://tcss.legis.texas.gov/resources/BC/htm/BC.510.htm",
+      "central_deletion": false
+    },
+    {
+      "state": "OR",
+      "statute_pdf": "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2023orLaw0395.pdf",
+      "agency": "Oregon Department of Consumer and Business Services",
+      "central_deletion": false
+    },
+    {
+      "state": "VT",
+      "agency": "https://sos.vermont.gov/business-services/other-filings/data-broker",
+      "statute": "https://legislature.vermont.gov/statutes/section/09/062/02446",
+      "central_deletion": false
+    }
+  ],
+  "states": [
+    {
+      "state": "AL",
+      "name": "Alabama",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": false,
+      "effective_date": "2027-05-01",
+      "law_name": "Alabama Personal Data Protection Act (H.B. 351, 2026)",
+      "official_urls": [
+        "https://alison.legislature.state.al.us/"
+      ],
+      "body_verified": false,
+      "pai_exemption": "uncertain",
+      "notes": "Signed-law effective date from IAPP Sept 8, 2026 chart; enrolled text not fetched this session.",
+      "people_search_note": null
+    },
+    {
+      "state": "AK",
+      "name": "Alaska",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "body_verified": false,
+      "notes": "No enacted comprehensive law verified.",
+      "people_search_note": null
+    },
+    {
+      "state": "AZ",
+      "name": "Arizona",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [
+        "https://www.azag.gov/consumer/data-breach/faq",
+        "https://www.azleg.gov/legtext/57leg/2r/bills/sb1815p.htm"
+      ],
+      "body_verified": true,
+      "pai_exemption": "not_applicable",
+      "notes": "No enacted comprehensive consumer privacy law. AG pages cover breach notification. SB 1815 is introduced only (2026). Residents have no general statutory right to force people-search deletion; courtesy opt-out forms may still work.",
+      "people_search_note": null
+    },
+    {
+      "state": "AR",
+      "name": "Arkansas",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [
+        "https://arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2023/2023R&file=549.pdf&path=%2FACTS%2F2023R%2FPublic%2F"
+      ],
+      "body_verified": true,
+      "notes": "Secondary sites attributing a privacy law to Act 549 of 2023 are wrong. Official Act 549 (HB 1547) defines 'loaded firearm,' approved 2023-04-11. No enacted comprehensive privacy law verified.",
+      "people_search_note": null
+    },
+    {
+      "state": "CA",
+      "name": "California",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2020-01-01",
+      "cpra_amendments_effective": "2023-01-01",
+      "drop_broker_processing_start": "2026-08-01",
+      "law_name": "CCPA / CPRA; Delete Act (SB 362, 2023)",
+      "citation": "Cal. Civ. Code \u00a7 1798.105; Delete Act including \u00a7 1798.99.86",
+      "official_urls": [
+        "https://oag.ca.gov/privacy/ccpa",
+        "https://privacy.ca.gov/drop/about-drop-and-the-delete-act/",
+        "https://consumer.drop.privacy.ca.gov/",
+        "https://cppa.ca.gov/data_brokers/",
+        "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.105"
+      ],
+      "body_verified": true,
+      "body_verified_via": "Official AG and CPPA/CalPrivacy pages (leginfo 403 to automated fetch)",
+      "pai_exemption": "partial_exceptions_plus_delete_act",
+      "central_deletion_portal": "https://consumer.drop.privacy.ca.gov/",
+      "data_broker_registry": true,
+      "people_search_practical_effect": "Strongest official multi-broker path (DROP), California residents only.",
+      "people_search_note": null
+    },
+    {
+      "state": "CO",
+      "name": "Colorado",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2023-07-01",
+      "law_name": "Colorado Privacy Act",
+      "citation": "C.R.S. \u00a7 6-1-1301 et seq. (rights at \u00a7 6-1-1306)",
+      "official_urls": [
+        "https://coag.gov/resources/colorado-privacy-act/"
+      ],
+      "body_verified": true,
+      "pai_exemption": "yes",
+      "pai_notes": "Official AG FAQ: personal data excludes information made publicly available by government or by the consumer.",
+      "people_search_note": null
+    },
+    {
+      "state": "CT",
+      "name": "Connecticut",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2023-07-01",
+      "law_name": "Connecticut Data Privacy Act (Public Act 22-15)",
+      "citation": "Conn. Gen. Stat. \u00a7\u00a7 42-515 to 42-525 (deletion right at \u00a7 42-518)",
+      "official_urls": [
+        "https://www.cga.ct.gov/current/pub/chap_743jj.htm"
+      ],
+      "body_verified": true,
+      "pai_exemption": "yes",
+      "notes": "Official current code chapter verified: right to delete personal data provided by, or obtained about, the consumer; publicly available information is excluded from personal data.",
+      "deletion_scope": "provided_by_or_obtained_about",
+      "people_search_note": null
+    },
+    {
+      "state": "DE",
+      "name": "Delaware",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2025-01-01",
+      "law_name": "Delaware Personal Data Privacy Act",
+      "citation": "6 Del. C. \u00a7 12D-104",
+      "official_urls": [
+        "https://delcode.delaware.gov/title6/c012d/index.html"
+      ],
+      "body_verified": true,
+      "pai_exemption": "yes",
+      "deletion_scope": "provided_by_or_obtained_about",
+      "people_search_note": null
+    },
+    {
+      "state": "FL",
+      "name": "Florida",
+      "comprehensive_deletion_right": false,
+      "limited_scope_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2024-07-01",
+      "law_name": "Florida Digital Bill of Rights",
+      "citation": "Fla. Stat. \u00a7\u00a7 501.701\u2013501.721 (rights at \u00a7 501.705; definitions/thresholds at \u00a7 501.702)",
+      "official_urls": [
+        "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.701.html",
+        "https://flsenate.gov/Laws/Statutes/2026/501.702",
+        "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.705.html"
+      ],
+      "body_verified": true,
+      "pai_exemption": "yes",
+      "controller_threshold_note": "Controller must make in excess of $1 billion global gross annual revenues and meet an additional listed business-model test. Most people-search operators are unlikely to qualify.",
+      "people_search_practical_effect": "Statutory deletion right exists but probably does not reach typical people-search sites.",
+      "people_search_note": null
+    },
+    {
+      "state": "GA",
+      "name": "Georgia",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive law verified.",
+      "people_search_note": null
+    },
+    {
+      "state": "HI",
+      "name": "Hawaii",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive law verified.",
+      "people_search_note": null
+    },
+    {
+      "state": "ID",
+      "name": "Idaho",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive law verified.",
+      "people_search_note": null
+    },
+    {
+      "state": "IL",
+      "name": "Illinois",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive law verified. Other Illinois privacy statutes (e.g. BIPA) are outside this map.",
+      "people_search_note": null
+    },
+    {
+      "state": "IN",
+      "name": "Indiana",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2026-01-01",
+      "law_name": "Indiana Consumer Data Protection Act",
+      "citation": "Ind. Code art. 24-15 (rights commonly at \u00a7 24-15-3-1)",
+      "official_urls": [
+        "https://iga.in.gov/laws/2025/ic/titles/24#24-15"
+      ],
+      "body_verified": false,
+      "pai_exemption": "uncertain",
+      "notes": "Official code page was a JavaScript shell in this fetch.",
+      "people_search_note": null
+    },
+    {
+      "state": "IA",
+      "name": "Iowa",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2025-01-01",
+      "law_name": "Iowa Consumer Data Protection Act",
+      "citation": "Iowa Code \u00a7 715D.3",
+      "official_urls": [
+        "https://www.legis.iowa.gov/docs/code/715D.pdf"
+      ],
+      "body_verified": true,
+      "pai_exemption": "yes",
+      "deletion_scope": "provided_by_the_consumer_only",
+      "notes": "Narrower than most VCDPA-style laws: delete data provided by the consumer, not 'obtained about' the consumer.",
+      "people_search_note": null
+    },
+    {
+      "state": "KS",
+      "name": "Kansas",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive law verified.",
+      "people_search_note": null
+    },
+    {
+      "state": "KY",
+      "name": "Kentucky",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2026-01-01",
+      "law_name": "Kentucky Consumer Data Protection Act (2024 H.B. 15)",
+      "official_urls": [
+        "https://legislature.ky.gov/"
+      ],
+      "body_verified": false,
+      "pai_exemption": "uncertain",
+      "people_search_note": null
+    },
+    {
+      "state": "LA",
+      "name": "Louisiana",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": false,
+      "effective_date": "2027-01-01",
+      "law_name": "Louisiana Data Privacy Act (S.B. 386, 2026)",
+      "official_urls": [
+        "https://www.legis.la.gov/"
+      ],
+      "body_verified": false,
+      "people_search_note": null
+    },
+    {
+      "state": "ME",
+      "name": "Maine",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive law verified.",
+      "people_search_note": null
+    },
+    {
+      "state": "MD",
+      "name": "Maryland",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2025-10-01",
+      "law_name": "Maryland Online Data Privacy Act",
+      "citation": "Md. Code, Com. Law \u00a7\u00a7 14-4701 et seq.",
+      "official_urls": [
+        "https://mgaleg.maryland.gov/"
+      ],
+      "body_verified": false,
+      "pai_exemption": "uncertain",
+      "people_search_note": null
+    },
+    {
+      "state": "MA",
+      "name": "Massachusetts",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "Active bills on IAPP chart; not signed as of that Sept 8, 2026 chart.",
+      "people_search_note": null
+    },
+    {
+      "state": "MI",
+      "name": "Michigan",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "Active bills on IAPP chart; not signed as of that Sept 8, 2026 chart.",
+      "people_search_note": null
+    },
+    {
+      "state": "MN",
+      "name": "Minnesota",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2025-07-31",
+      "law_name": "Minnesota Consumer Data Privacy Act (2024 H.F. 4757)",
+      "official_urls": [
+        "https://www.revisor.mn.gov/"
+      ],
+      "body_verified": false,
+      "pai_exemption": "uncertain",
+      "people_search_note": null
+    },
+    {
+      "state": "MS",
+      "name": "Mississippi",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive law verified.",
+      "people_search_note": null
+    },
+    {
+      "state": "MO",
+      "name": "Missouri",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive law verified.",
+      "people_search_note": null
+    },
+    {
+      "state": "MT",
+      "name": "Montana",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2024-10-01",
+      "law_name": "Montana Consumer Data Privacy Act (2023 S.B. 384)",
+      "official_urls": [
+        "https://archive.legmt.gov/bills/2023/billhtml/SB0384.htm"
+      ],
+      "body_verified": false,
+      "pai_exemption": "uncertain",
+      "people_search_note": null
+    },
+    {
+      "state": "NE",
+      "name": "Nebraska",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2025-01-01",
+      "law_name": "Nebraska Data Privacy Act (2024 L.B. 1074)",
+      "official_urls": [
+        "https://nebraskalegislature.gov/"
+      ],
+      "body_verified": false,
+      "pai_exemption": "uncertain",
+      "people_search_note": null
+    },
+    {
+      "state": "NV",
+      "name": "Nevada",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "Has other privacy / sale-opt-out style rules not treated here as a general comprehensive deletion right. Recheck if a comprehensive law is enacted.",
+      "people_search_note": null
+    },
+    {
+      "state": "NH",
+      "name": "New Hampshire",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2025-01-01",
+      "law_name": "2024 S.B. 255 (commonly RSA 507-H)",
+      "official_urls": [
+        "https://www.gencourt.state.nh.us/rsa/html/NHTOC/NHTOC-LII-507-H.htm"
+      ],
+      "body_verified": false,
+      "pai_exemption": "uncertain",
+      "people_search_note": null
+    },
+    {
+      "state": "NJ",
+      "name": "New Jersey",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2025-01-15",
+      "law_name": "2024 S.B. 332 comprehensive consumer privacy law",
+      "official_urls": [
+        "https://www.njleg.state.nj.us/"
+      ],
+      "body_verified": false,
+      "pai_exemption": "uncertain",
+      "notes": "Distinct from Daniel's Law (N.J.S.A. 56:8-166.1).",
+      "people_search_note": null
+    },
+    {
+      "state": "NM",
+      "name": "New Mexico",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive law verified.",
+      "people_search_note": null
+    },
+    {
+      "state": "NY",
+      "name": "New York",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "Bills on IAPP chart; no signed comprehensive law on that Sept 8, 2026 chart.",
+      "people_search_note": null
+    },
+    {
+      "state": "NC",
+      "name": "North Carolina",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "Active bills on IAPP chart; not signed as of that chart.",
+      "people_search_note": null
+    },
+    {
+      "state": "ND",
+      "name": "North Dakota",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive law verified.",
+      "people_search_note": null
+    },
+    {
+      "state": "OH",
+      "name": "Ohio",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive law verified.",
+      "people_search_note": null
+    },
+    {
+      "state": "OK",
+      "name": "Oklahoma",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": false,
+      "effective_date": "2027-01-01",
+      "law_name": "Oklahoma Consumer Data Privacy Act (S.B. 546, 2026)",
+      "official_urls": [
+        "https://www.okhouse.gov/posts/news-20260323_2",
+        "https://www.oklegislature.gov/"
+      ],
+      "body_verified": false,
+      "people_search_note": null
+    },
+    {
+      "state": "OR",
+      "name": "Oregon",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2024-07-01",
+      "law_name": "Oregon Consumer Privacy Act (enrolled S.B. 619, 2023)",
+      "official_urls": [
+        "https://olis.oregonlegislature.gov/liz/2023R1/Downloads/MeasureDocument/SB619/Enrolled",
+        "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2023orLaw0395.pdf"
+      ],
+      "body_verified": true,
+      "pai_exemption": "yes",
+      "deletion_scope": "about_the_consumer_including_provided_obtained_and_derived",
+      "data_broker_registry": true,
+      "notes": "Strong deletion wording, but personal data still excludes government records and widely distributed media.",
+      "people_search_note": null
+    },
+    {
+      "state": "PA",
+      "name": "Pennsylvania",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "Active bills on IAPP chart; not signed as of that chart.",
+      "people_search_note": null
+    },
+    {
+      "state": "RI",
+      "name": "Rhode Island",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2026-01-01",
+      "law_name": "Rhode Island Data Transparency and Privacy Protection Act (2024 H. 7787)",
+      "official_urls": [
+        "http://webserver.rilin.state.ri.us/Statutes/TITLE6/6-48.1/INDEX.HTM"
+      ],
+      "body_verified": false,
+      "pai_exemption": "uncertain",
+      "people_search_note": null
+    },
+    {
+      "state": "SC",
+      "name": "South Carolina",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive law verified.",
+      "people_search_note": null
+    },
+    {
+      "state": "SD",
+      "name": "South Dakota",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive law verified.",
+      "people_search_note": null
+    },
+    {
+      "state": "TN",
+      "name": "Tennessee",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2025-07-01",
+      "law_name": "Tennessee Information Protection Act (2023 H.B. 1181)",
+      "official_urls": [
+        "https://www.capitol.tn.gov/"
+      ],
+      "body_verified": false,
+      "pai_exemption": "uncertain",
+      "people_search_note": null
+    },
+    {
+      "state": "TX",
+      "name": "Texas",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2024-07-01",
+      "law_name": "Texas Data Privacy and Security Act; Data Brokers ch. 510",
+      "citation": "Tex. Bus. & Com. Code \u00a7\u00a7 541.051, 541.003 definitions; ch. 510",
+      "official_urls": [
+        "https://tcss.legis.texas.gov/resources/BC/htm/BC.541.htm",
+        "https://tcss.legis.texas.gov/resources/BC/htm/BC.510.htm",
+        "https://www.sos.texas.gov/statdoc/data-brokers.shtml"
+      ],
+      "body_verified": true,
+      "pai_exemption": "yes",
+      "deletion_scope": "provided_by_or_obtained_about",
+      "data_broker_registry": true,
+      "people_search_note": null
+    },
+    {
+      "state": "UT",
+      "name": "Utah",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2023-12-31",
+      "law_name": "Utah Consumer Privacy Act",
+      "citation": "Utah Code \u00a7 13-61-201(2)",
+      "official_urls": [
+        "https://le.utah.gov/xcode/Title13/Chapter61/13-61-S201.html"
+      ],
+      "body_verified": true,
+      "pai_exemption": "uncertain",
+      "deletion_scope": "provided_by_the_consumer_only",
+      "notes": "Official text: the right to delete personal data that the consumer provided to the controller. This does not on its face reach data a people-search site got from public records or other sources.",
+      "people_search_note": null
+    },
+    {
+      "state": "VT",
+      "name": "Vermont",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": false,
+      "effective_date": "2028-01-01",
+      "law_name": "Vermont Data Privacy and Online Surveillance Act; existing data-broker registration at 9 V.S.A. \u00a7\u00a7 2430, 2446",
+      "official_urls": [
+        "https://legislature.vermont.gov/statutes/section/09/061a/02415d",
+        "https://legislature.vermont.gov/statutes/section/09/062/02446",
+        "https://sos.vermont.gov/business-services/other-filings/data-broker"
+      ],
+      "body_verified": true,
+      "pai_exemption": "uncertain",
+      "deletion_scope": "provided_by_or_obtained_about",
+      "data_broker_registry": true,
+      "notes": "\u00a7 2415d body verified, effective January 1, 2028. Registry is already in force and is not a general deletion right.",
+      "people_search_note": null
+    },
+    {
+      "state": "VA",
+      "name": "Virginia",
+      "comprehensive_deletion_right": true,
+      "in_effect_as_of_verification": true,
+      "effective_date": "2023-01-01",
+      "law_name": "Virginia Consumer Data Protection Act",
+      "citation": "Va. Code \u00a7 59.1-577",
+      "official_urls": [
+        "https://law.lis.virginia.gov/vacode/title59.1/chapter53/section59.1-577/"
+      ],
+      "body_verified": true,
+      "pai_exemption": "uncertain",
+      "deletion_scope": "provided_by_or_obtained_about",
+      "notes": "Deletion clause body verified. Confirm PAI definition in \u00a7 59.1-575 on recheck.",
+      "people_search_note": null
+    },
+    {
+      "state": "WA",
+      "name": "Washington",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive consumer privacy law verified on the IAPP Sept 8, 2026 signed list. Other Washington privacy laws are outside this map.",
+      "people_search_note": null
+    },
+    {
+      "state": "WV",
+      "name": "West Virginia",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive law verified.",
+      "people_search_note": null
+    },
+    {
+      "state": "WI",
+      "name": "Wisconsin",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive law verified.",
+      "people_search_note": null
+    },
+    {
+      "state": "WY",
+      "name": "Wyoming",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive law verified.",
+      "people_search_note": null
+    },
+    {
+      "state": "DC",
+      "name": "District of Columbia",
+      "comprehensive_deletion_right": false,
+      "in_effect_as_of_verification": false,
+      "official_urls": [],
+      "notes": "No enacted comprehensive law verified.",
+      "people_search_note": null
+    }
+  ],
+  "publisher": "Panda Federation",
+  "source_page": "https://pandafederation.com/data-broker-removal/"
+}

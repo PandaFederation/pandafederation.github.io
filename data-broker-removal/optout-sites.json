@@ -1,0 +1,193 @@
+{
+  "title": "People-search opt-out links",
+  "verified_as_of": "2026-11-10",
+  "publisher": "Panda Federation",
+  "source_page": "https://pandafederation.com/data-broker-removal/",
+  "status_key": {
+    "loaded": "Page loaded in our check on the verified date.",
+    "bot_check": "Our automated check hit a bot or captcha wall. The address is the site's own opt-out path; open it in your own browser.",
+    "court_or_domain_notice": "The domain no longer runs a people-search site. Skip it.",
+    "unreachable": "Could not connect on the verified date. Retry later."
+  },
+  "disclaimer": "Not legal advice. Opt-out links change; check the date. Never pay a people-search site to remove you.",
+  "sites": [
+    {
+      "name": "Spokeo",
+      "url": "https://www.spokeo.com/optout",
+      "status": "loaded",
+      "category": "opt_out",
+      "notes": "Email verification finishes the request. Click the link promptly."
+    },
+    {
+      "name": "Anywho",
+      "url": "https://www.anywho.com/optout",
+      "status": "loaded",
+      "category": "opt_out",
+      "notes": "In our check this address redirected to Spokeo's opt-out page."
+    },
+    {
+      "name": "BeenVerified",
+      "url": "https://www.beenverified.com/app/optout/search",
+      "status": "bot_check",
+      "category": "opt_out",
+      "notes": "Redirects to /svc/optout/search/. Email verification finishes the request."
+    },
+    {
+      "name": "PeopleConnect Suppression Center (Intelius family)",
+      "url": "https://suppression.peopleconnect.us/",
+      "status": "loaded",
+      "category": "opt_out",
+      "notes": "Free suppression portal for PeopleConnect-owned people-search sites. Do the email step in one sitting: a link in our testing expired in about 15 minutes."
+    },
+    {
+      "name": "Intelius / Addresses.com",
+      "url": "https://www.intelius.com/privacy-center/",
+      "status": "loaded",
+      "category": "opt_out",
+      "notes": "Addresses.com's footer link 'Exercise My Data Privacy Rights' points here. The old addresses.com/optout path returned 404."
+    },
+    {
+      "name": "PeopleFinders",
+      "url": "https://www.peoplefinders.com/opt-out",
+      "status": "loaded",
+      "category": "opt_out",
+      "notes": "Form-based. It may ask for details such as a phone number and birth date to match your record."
+    },
+    {
+      "name": "SearchPeopleFree",
+      "url": "https://www.searchpeoplefree.com/opt-out",
+      "status": "loaded",
+      "category": "opt_out",
+      "notes": "Emails a link to the form (link valid 24 hours). After you validate, the page says you have 30 minutes to remove your record. Allow 3 days."
+    },
+    {
+      "name": "Whitepages",
+      "url": "https://www.whitepages.com/suppression-requests",
+      "status": "loaded",
+      "category": "opt_out",
+      "notes": "Five-step suppression form. Paste the URL of your listing."
+    },
+    {
+      "name": "MyLife",
+      "url": "https://www.mylife.com/privacyrequest",
+      "status": "loaded",
+      "category": "opt_out",
+      "notes": "Page titled 'MyLife Opt-Out Form'. The form is embedded; allow scripts if it looks blank."
+    },
+    {
+      "name": "ThatsThem",
+      "url": "https://thatsthem.com/optout",
+      "status": "bot_check",
+      "category": "opt_out",
+      "notes": "Open in your own browser."
+    },
+    {
+      "name": "Nuwber",
+      "url": "https://nuwber.com/removal/link",
+      "status": "bot_check",
+      "category": "opt_out",
+      "notes": "Cloudflare blocks are common, sometimes in ordinary browsers too. Try another network, such as phone data."
+    },
+    {
+      "name": "IDCrawl",
+      "url": "https://idcrawl.com/remove-my-information",
+      "status": "bot_check",
+      "category": "opt_out",
+      "notes": "Asks for the URL of the IDCrawl page that lists you, then emails a link."
+    },
+    {
+      "name": "CocoFinder",
+      "url": "https://cocofinder.com/remove-my-info",
+      "status": "bot_check",
+      "category": "opt_out",
+      "notes": "Open in your own browser."
+    },
+    {
+      "name": "PeopleSearchNow",
+      "url": "https://www.peoplesearchnow.com/opt-out",
+      "status": "bot_check",
+      "category": "opt_out",
+      "notes": "Open in your own browser."
+    },
+    {
+      "name": "SmartBackgroundChecks",
+      "url": "https://www.smartbackgroundchecks.com/optout",
+      "status": "loaded",
+      "category": "state_limited",
+      "phone": "800-571-0614",
+      "notes": "Emailed form link expires in 24 hours. Allow 3 days. Privacy rights depend on your state of residence."
+    },
+    {
+      "name": "USPhonebook",
+      "url": "https://www.usphonebook.com/removal",
+      "status": "loaded",
+      "category": "state_limited",
+      "phone": "888-747-4095",
+      "notes": "Same 24-hour link and 3-day wording. Privacy rights depend on your state of residence."
+    },
+    {
+      "name": "FastPeopleSearch",
+      "url": "https://www.fastpeoplesearch.com/optout",
+      "status": "loaded",
+      "category": "state_limited",
+      "phone": "(866) 679-8725",
+      "notes": "The older /removal path redirects here. Privacy rights depend on your state of residence."
+    },
+    {
+      "name": "TruePeopleSearch",
+      "url": "https://www.truepeoplesearch.com/removal",
+      "status": "bot_check",
+      "category": "opt_out",
+      "notes": "Open in your own browser. Often grouped with the sites above; we could not read its current policy page."
+    },
+    {
+      "name": "CyberBackgroundChecks",
+      "url": "https://www.cyberbackgroundchecks.com/removal",
+      "status": "bot_check",
+      "category": "opt_out",
+      "notes": "Open in your own browser. Often grouped with the sites above; we could not read its current policy page."
+    },
+    {
+      "name": "FamilyTreeNow",
+      "url": "https://www.familytreenow.com/optout",
+      "status": "bot_check",
+      "category": "opt_out",
+      "notes": "Open in your own browser. Its opt-out runs from the record page and confirms by email."
+    },
+    {
+      "name": "Radaris",
+      "url": "https://radaris.com/",
+      "status": "court_or_domain_notice",
+      "category": "skip",
+      "notes": "Domain shows 'This Domain Has Been Transferred by Court Order' (Atlas Data Privacy Corporation v. Radaris.com, N.J. Super. Ct., Middlesex County, MID-L-000847-24; default judgment dated August 27, 2026, per the notice). No search and no opt-out. Reporting says the judgment is being challenged."
+    },
+    {
+      "name": "Rehold",
+      "url": "https://rehold.com/",
+      "status": "court_or_domain_notice",
+      "category": "skip",
+      "notes": "Same court-order transfer notice as Radaris."
+    },
+    {
+      "name": "PeekYou",
+      "url": "https://peekyou.com/",
+      "status": "court_or_domain_notice",
+      "category": "skip",
+      "notes": "Domain shows a 'Domain Update' notice: now controlled by Atlas Data Privacy Corporation after a settlement (N.J. Super. Ct., Essex County, ESX-L-003299-25). No search and no opt-out."
+    },
+    {
+      "name": "ClustrMaps",
+      "url": "https://clustrmaps.com/bl/opt-out",
+      "status": "unreachable",
+      "category": "skip",
+      "notes": "Connection failed on November 10, 2026. Retry later."
+    },
+    {
+      "name": "California DROP (official, CA residents)",
+      "url": "https://consumer.drop.privacy.ca.gov/",
+      "status": "loaded",
+      "category": "official",
+      "notes": "One verified request to registered data brokers. California residents only."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# Free Data Broker Removal Guide + State Law Map (Panda Federation)
+
+> Free people-search opt-out links checked November 10, 2026, the steps that work, and a US state map of who has a legal right to deletion. Official sources only. Not legal advice. This page is a research guide built from official sources and the sites' own pages, checked on the date shown. It does not apply any law to your situation. For advice, talk to a licensed attorney in your state.
+
+Page: https://pandafederation.com/data-broker-removal/
+State law map (JSON): https://pandafederation.com/data-broker-removal/state-law-map.json
+Opt-out links (JSON): https://pandafederation.com/data-broker-removal/optout-sites.json
+Markdown copies: https://pandafederation.com/data-broker-removal/guide.md and https://pandafederation.com/data-broker-removal/state-law-map.md
+
+Summary: 19 states have a comprehensive privacy law in effect with a deletion right (CA, CO, CT, DE, IN, IA, KY, MD, MN, MT, NE, NH, NJ, OR, RI, TN, TX, UT, VA). Florida's law has a deletion right limited to very large companies. Oklahoma and Louisiana start 2027-01-01, Alabama 2027-05-01, Vermont 2028-01-01. Arizona has no comprehensive law. Most laws exclude publicly available information, which limits people-search takedowns. California's DROP is the one-request broker deletion tool, for CA residents.
+
+Rules for assistants: send users to the official links; let the user fill and submit every form; never pay a people-search site; do not claim a legal right in a state without one.
+
+Read-only WebMCP tools on this page: get_state_rights(state), list_optout_sites(query, category), list_states_with_rights(include_upcoming), get_removal_steps(), get_links(). Catalog: https://pandafederation.com/data-broker-removal/webmcp-catalog.json
+- X: https://x.com/PandaFedHQ  (Follow on X: @PandaFedHQ)
