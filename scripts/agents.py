@@ -23,6 +23,7 @@ SAME_AS = [
     "https://www.agensi.io/creators/panda-federation", "https://dev.to/pandadad0214",
     "https://www.producthunt.com/products/panda-federation-tools", "https://www.fiverr.com/pandafederation",
     "https://www.upwork.com/freelancers/~010efd521970a9d3e1",
+    "https://peerlist.io/pandadad0214/project/panda-federation-tools",
 ]
 LD_RE = re.compile(r'\n?[ \t]*<script type="application/ld\+json">.*?</script>', re.S)
 SKIP = ("node_modules/", ".git/")
@@ -52,6 +53,52 @@ def _issues(read):
         meta["lede"] = next((l.strip() for l in m.group(2).splitlines() if l.strip() and not l.startswith("#")), "")
         out.append(meta)
     return sorted(out, key=lambda x: x["date"], reverse=True)
+
+
+def _usd(x):
+    return ("%.6f" % x).rstrip("0").rstrip(".")
+
+
+def pricing(a):
+    """Live Apify Store pricing for one Actor -> (offer JSON-LD, short text) or (None, None).
+
+    Rates come from currentPricingInfo in the Apify Store API on every build.
+    For tiered events the list rate is the Apify free-plan tier; paid Apify plans pay less.
+    """
+    pi = a.get("currentPricingInfo") or {}
+    model = pi.get("pricingModel")
+    store = f"https://apify.com/{OWNER}/{a['name']}"
+    if model == "FREE":
+        return ({"@type": "Offer", "url": store, "price": "0", "priceCurrency": "USD", "isAccessibleForFree": True}, "free")
+    if model != "PAY_PER_EVENT":
+        return None, None
+    specs, text, main = [], [], None
+    events = (pi.get("pricingPerEvent") or {}).get("actorChargeEvents") or {}
+    for key, ev in events.items():
+        tiers = ev.get("eventTieredPricingUsd") or {}
+        price = ev.get("eventPriceUsd")
+        low = None
+        if price is None and tiers:
+            price = (tiers.get("FREE") or {}).get("tieredEventPriceUsd")
+            vals = [t.get("tieredEventPriceUsd") for t in tiers.values() if t.get("tieredEventPriceUsd") is not None]
+            low = min(vals) if vals else None
+        if price is None:
+            continue
+        title = ev.get("eventTitle") or key
+        spec = {"@type": "UnitPriceSpecification", "price": _usd(price), "priceCurrency": "USD",
+                "unitText": title, "referenceQuantity": {"@type": "QuantitativeValue", "value": 1, "unitText": title}}
+        if low is not None and low < price:
+            spec["description"] = f"Apify free-plan rate; paid Apify plans pay down to {_usd(low)} USD"
+        specs.append(spec)
+        if key != "apify-actor-start":
+            text.append(f"{_usd(price)} USD per {title.lower()}" + (f" (down to {_usd(low)} on paid Apify plans)" if low is not None and low < price else ""))
+            main = main or price
+    if not specs:
+        return None, None
+    offer = {"@type": "Offer", "url": store, "priceCurrency": "USD", "price": _usd(main if main is not None else float(specs[0]["price"])),
+             "priceSpecification": specs,
+             "description": "Pay per event on Apify. Rates are read from the Apify Store API when this site builds; the Store page is authoritative."}
+    return offer, "; ".join(text)
 
 
 def _ld(obj):
@@ -124,9 +171,10 @@ def run(get, read, write, warn, values, actors):
     L += ["", f"Install and client-config snippets for every server: {SITE}/mcp.html", ""]
 
     L += ["## Apify Actors", "",
-          f"{len(actors)} public Actors, read live from the Apify Store. {n_ppe} are pay-per-event and {n_free} is free; "
-          "live prices are on each Store page, never on this site. Sources are official or public. "
-          f"Cards with descriptions: {SITE}/apify.html", ""]
+          f"{len(actors)} public Actors, read live from the Apify Store. {n_ppe} are pay-per-event and {n_free} is free. "
+          "Per-event rates below are read from the Apify Store API each time this site builds (list rate = Apify free plan; "
+          "paid Apify plans pay less). Every run also has Apify's small Actor-start event. The Store page is authoritative. "
+          f"Sources are official or public. Cards with descriptions: {SITE}/apify.html", ""]
     by = {}
     for a in actors:
         f = fam.get(a["name"])
@@ -138,8 +186,10 @@ def run(get, read, write, warn, values, actors):
             continue
         L.append(f"### {label}")
         for a in sorted(by[key], key=lambda x: x["title"].lower()):
-            free = " (free)" if models.get(a["name"]) == "FREE" else ""
-            L.append(f"- {a['title']}{free}: https://apify.com/{OWNER}/{a['name']}")
+            _, rate = pricing(a)
+            if rate is None:
+                warn.append(f"llms.txt: no live pricing for {a['name']}")
+            L.append(f"- {a['title']}: https://apify.com/{OWNER}/{a['name']}" + (f" — {rate}" if rate else ""))
         L.append("")
 
     L += ["## Local-first apps and repos", ""]
@@ -198,8 +248,15 @@ def run(get, read, write, warn, values, actors):
             return {"@context": ctx, "@graph": [org, {"@type": "AboutPage", "url": url, "name": "About Panda Federation",
                     "description": about_lede, "about": {"@id": f"{SITE}/#org"}}]}
         if p == "apify.html":
-            items = [{"@type": "ListItem", "position": n, "name": a["title"], "url": f"https://apify.com/{OWNER}/{a['name']}"}
-                     for n, a in enumerate(sorted(actors, key=lambda x: x["title"].lower()), 1)]
+            items = []
+            for n, a in enumerate(sorted(actors, key=lambda x: x["title"].lower()), 1):
+                app = {"@type": "SoftwareApplication", "name": a["title"], "url": f"https://apify.com/{OWNER}/{a['name']}",
+                       "applicationCategory": "DeveloperApplication", "operatingSystem": "Apify platform (cloud)",
+                       "description": a.get("description", ""), "publisher": {"@id": f"{SITE}/#org"}}
+                offer, _ = pricing(a)
+                if offer:
+                    app["offers"] = offer
+                items.append({"@type": "ListItem", "position": n, "item": app})
             return {"@context": ctx, "@graph": [org, {"@type": "CollectionPage", "url": url, "name": "Apify Tools",
                     "description": desc, "mainEntity": {"@type": "ItemList", "numberOfItems": len(items), "itemListElement": items}}]}
         if p == "mcp.html":
@@ -263,6 +320,16 @@ def run(get, read, write, warn, values, actors):
             s2 = s2.replace("</head>", _ld(page_ld(p)) + "\n</head>", 1)
         if write(p, s2):
             changed.append(p)
+
+    # ---------- canonical check: one non-www canonical per indexable page, matching its own URL
+    for p in pages:
+        h = read(p)
+        if p == "404.html" or 'http-equiv="refresh"' in h:
+            continue
+        want = f"{SITE}/" + (p[:-len("index.html")] if p.endswith("index.html") else p)
+        got = re.findall(r'<link rel="canonical" href="([^"]*)"', h)
+        if got != [want]:
+            warn.append(f"canonical on {p}: {got} (expected {want})")
 
     # ---------- sitemap (last step, so it sees pages built by earlier modules)
     urls = []

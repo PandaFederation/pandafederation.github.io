@@ -19,60 +19,60 @@ Install and client-config snippets for every server: https://pandafederation.com
 
 ## Apify Actors
 
-43 public Actors, read live from the Apify Store. 42 are pay-per-event and 1 is free; live prices are on each Store page, never on this site. Sources are official or public. Cards with descriptions: https://pandafederation.com/apify.html
+43 public Actors, read live from the Apify Store. 42 are pay-per-event and 1 is free. Per-event rates below are read from the Apify Store API each time this site builds (list rate = Apify free plan; paid Apify plans pay less). Every run also has Apify's small Actor-start event. The Store page is authoritative. Sources are official or public. Cards with descriptions: https://pandafederation.com/apify.html
 
 ### Research
-- Academic Research MCP Server: OpenAlex, PubMed & Citation Check: https://apify.com/pandadad0214/panda-research-mcp
-- Citation Generator API: DOI to APA, MLA, Chicago & BibTeX: https://apify.com/pandadad0214/citation-formatter
-- Google Scholar Author Alternative: Find Experts & KOLs by Topic: https://apify.com/pandadad0214/researcher-expert-finder
-- Google Scholar Scraper Alternative: Papers, Citations & BibTeX: https://apify.com/pandadad0214/literature-search
-- PDF Table Extractor: PDF to Excel & CSV Converter with OCR: https://apify.com/pandadad0214/pdf-table-extractor
-- PubMed Scraper: Articles, Abstracts & Evidence Table to Excel: https://apify.com/pandadad0214/pubmed-evidence-table
-- Reference Checker: Fake, AI-Hallucinated & Retracted Citations: https://apify.com/pandadad0214/reference-checker
-- Wayback Machine Snapshot Finder: Archive Dates & URLs: https://apify.com/pandadad0214/wayback-snapshot-finder
+- Academic Research MCP Server: OpenAlex, PubMed & Citation Check: https://apify.com/pandadad0214/panda-research-mcp — 0.01 USD per reference tool call (down to 0.007 on paid Apify plans); 0.02 USD per search tool call (down to 0.014 on paid Apify plans)
+- Citation Generator API: DOI to APA, MLA, Chicago & BibTeX: https://apify.com/pandadad0214/citation-formatter — 0.003 USD per citation formatted (down to 0.0021 on paid Apify plans)
+- Google Scholar Author Alternative: Find Experts & KOLs by Topic: https://apify.com/pandadad0214/researcher-expert-finder — 0.0025 USD per expert found (down to 0.00175 on paid Apify plans)
+- Google Scholar Scraper Alternative: Papers, Citations & BibTeX: https://apify.com/pandadad0214/literature-search — 0.003 USD per paper found (down to 0.0021 on paid Apify plans)
+- PDF Table Extractor: PDF to Excel & CSV Converter with OCR: https://apify.com/pandadad0214/pdf-table-extractor — 0.001 USD per page analysed (down to 0.0007 on paid Apify plans); 0.003 USD per table extracted (down to 0.0021 on paid Apify plans); 0.02 USD per scanned page ocr (down to 0.014 on paid Apify plans)
+- PubMed Scraper: Articles, Abstracts & Evidence Table to Excel: https://apify.com/pandadad0214/pubmed-evidence-table — 0.004 USD per article found (down to 0.0028 on paid Apify plans)
+- Reference Checker: Fake, AI-Hallucinated & Retracted Citations: https://apify.com/pandadad0214/reference-checker — 0.01 USD per reference checked (down to 0.007 on paid Apify plans)
+- Wayback Machine Snapshot Finder: Archive Dates & URLs: https://apify.com/pandadad0214/wayback-snapshot-finder — 0.001 USD per snapshot returned (down to 0.0007 on paid Apify plans)
 
 ### Public funding
-- Clinical Trial Leads: Sponsors, Sites & Contacts: https://apify.com/pandadad0214/clinical-trial-leads
-- EU TED Tenders: Public Procurement Notices: https://apify.com/pandadad0214/eu-ted-tenders
-- Federal Register Monitor: New Rules & Comment Deadlines: https://apify.com/pandadad0214/federal-register-monitor
-- Grants.gov Scraper: Federal Grants, NIH & NSF Awards API: https://apify.com/pandadad0214/grants-finder
-- Product Recall Monitor: FDA Food, Drug, Device & CPSC Recalls: https://apify.com/pandadad0214/product-recall-monitor
-- SAM.gov Contract Opportunities: Open Federal Bids, No API Key: https://apify.com/pandadad0214/sam-gov-opportunities
-- SBIR/STTR Topic Radar: Open Topics, Deadlines & DoD Q&A: https://apify.com/pandadad0214/sbir-sttr-topic-radar
-- SEC Financials to Excel: EDGAR XBRL Comps & Model Data: https://apify.com/pandadad0214/sec-financials-excel
-- USAspending Scraper: Federal Contract Awards & Recompete Finder: https://apify.com/pandadad0214/federal-contract-finder
+- Clinical Trial Leads: Sponsors, Sites & Contacts: https://apify.com/pandadad0214/clinical-trial-leads — 0.002 USD per trial returned (down to 0.0014 on paid Apify plans)
+- EU TED Tenders: Public Procurement Notices: https://apify.com/pandadad0214/eu-ted-tenders — 0.002 USD per notice returned (down to 0.0014 on paid Apify plans)
+- Federal Register Monitor: New Rules & Comment Deadlines: https://apify.com/pandadad0214/federal-register-monitor — 0.001 USD per document returned (down to 0.0007 on paid Apify plans)
+- Grants.gov Scraper: Federal Grants, NIH & NSF Awards API: https://apify.com/pandadad0214/grants-finder — 0.003 USD per grant found (down to 0.0021 on paid Apify plans)
+- Product Recall Monitor: FDA Food, Drug, Device & CPSC Recalls: https://apify.com/pandadad0214/product-recall-monitor — 0.0015 USD per recall returned (down to 0.00105 on paid Apify plans)
+- SAM.gov Contract Opportunities: Open Federal Bids, No API Key: https://apify.com/pandadad0214/sam-gov-opportunities — 0.0015 USD per opportunity returned (down to 0.00105 on paid Apify plans)
+- SBIR/STTR Topic Radar: Open Topics, Deadlines & DoD Q&A: https://apify.com/pandadad0214/sbir-sttr-topic-radar — 0.003 USD per topic found (down to 0.0021 on paid Apify plans)
+- SEC Financials to Excel: EDGAR XBRL Comps & Model Data: https://apify.com/pandadad0214/sec-financials-excel — 0.002 USD per company-year of financials (down to 0.0014 on paid Apify plans)
+- USAspending Scraper: Federal Contract Awards & Recompete Finder: https://apify.com/pandadad0214/federal-contract-finder — 0.002 USD per contract found (down to 0.0014 on paid Apify plans)
 
 ### Leads
-- Building Permit Leads: New Permits, Contractors & Job Values: https://apify.com/pandadad0214/building-permit-leads
-- Colorado New Business Leads: New SOS Filings Daily: https://apify.com/pandadad0214/colorado-new-business-leads
-- Company Hiring Signals: Job Openings & Hiring Intent by Company: https://apify.com/pandadad0214/company-hiring-signals
-- Company Team & Decision-Maker Finder: Names, Titles, Emails: https://apify.com/pandadad0214/company-team-finder
-- Company Website Enricher: Tech Stack, Emails & Socials: https://apify.com/pandadad0214/company-website-enricher
-- Florida New Business Leads: New LLCs & Corporations Daily: https://apify.com/pandadad0214/florida-new-business-leads
-- France Company Leads: SIREN, Directors, Revenue: https://apify.com/pandadad0214/france-company-leads
-- H-1B LCA Visa Sponsor Leads: DOL Employers, Jobs & Wages: https://apify.com/pandadad0214/h1b-lca-sponsor-leads
-- Local Business Leads: Google Maps Alternative (OpenStreetMap): https://apify.com/pandadad0214/local-business-leads
-- New York New Business Leads: New DOS Filings: https://apify.com/pandadad0214/new-york-new-business-leads
-- Nonprofit Leads: IRS Charities & Foundations by State: https://apify.com/pandadad0214/nonprofit-leads-irs
-- NPI Registry Scraper: US Doctors & Healthcare Provider Leads: https://apify.com/pandadad0214/npi-provider-lists
-- Podcast Leads Finder: Podcast Host Emails & Guest Booking List: https://apify.com/pandadad0214/podcast-leads-finder
-- Texas New Business Leads: New Franchise Taxpayers: https://apify.com/pandadad0214/texas-new-business-leads
-- Topic Trends Tracker: Google Trends Alternative, Real Numbers: https://apify.com/pandadad0214/topic-trends-tracker
-- Trucking Company Leads: New FMCSA Carriers, Email & Phone: https://apify.com/pandadad0214/trucking-company-leads
-- VIN Decoder + Recalls: Bulk NHTSA Specs & Safety Recalls: https://apify.com/pandadad0214/vin-decoder-recalls
+- Building Permit Leads: New Permits, Contractors & Job Values: https://apify.com/pandadad0214/building-permit-leads — 0.0015 USD per permit returned (down to 0.00105 on paid Apify plans)
+- Colorado New Business Leads: New SOS Filings Daily: https://apify.com/pandadad0214/colorado-new-business-leads — 0.0015 USD per business returned (down to 0.00105 on paid Apify plans)
+- Company Hiring Signals: Job Openings & Hiring Intent by Company: https://apify.com/pandadad0214/company-hiring-signals — 0.003 USD per company analyzed (down to 0.0021 on paid Apify plans)
+- Company Team & Decision-Maker Finder: Names, Titles, Emails: https://apify.com/pandadad0214/company-team-finder — 0.002 USD per person found (down to 0.0014 on paid Apify plans)
+- Company Website Enricher: Tech Stack, Emails & Socials: https://apify.com/pandadad0214/company-website-enricher — 0.003 USD per domain enriched (down to 0.0021 on paid Apify plans)
+- Florida New Business Leads: New LLCs & Corporations Daily: https://apify.com/pandadad0214/florida-new-business-leads — 0.0015 USD per business returned (down to 0.00105 on paid Apify plans)
+- France Company Leads: SIREN, Directors, Revenue: https://apify.com/pandadad0214/france-company-leads — 0.002 USD per company returned (down to 0.0014 on paid Apify plans)
+- H-1B LCA Visa Sponsor Leads: DOL Employers, Jobs & Wages: https://apify.com/pandadad0214/h1b-lca-sponsor-leads — 0.002 USD per lca case returned (down to 0.0014 on paid Apify plans)
+- Local Business Leads: Google Maps Alternative (OpenStreetMap): https://apify.com/pandadad0214/local-business-leads — 0.001 USD per business found (down to 0.0007 on paid Apify plans)
+- New York New Business Leads: New DOS Filings: https://apify.com/pandadad0214/new-york-new-business-leads — 0.0015 USD per business returned (down to 0.00105 on paid Apify plans)
+- Nonprofit Leads: IRS Charities & Foundations by State: https://apify.com/pandadad0214/nonprofit-leads-irs — 0.001 USD per nonprofit returned (down to 0.0007 on paid Apify plans)
+- NPI Registry Scraper: US Doctors & Healthcare Provider Leads: https://apify.com/pandadad0214/npi-provider-lists — 0.0015 USD per provider in list (down to 0.00105 on paid Apify plans)
+- Podcast Leads Finder: Podcast Host Emails & Guest Booking List: https://apify.com/pandadad0214/podcast-leads-finder — 0.004 USD per podcast found (down to 0.0028 on paid Apify plans)
+- Texas New Business Leads: New Franchise Taxpayers: https://apify.com/pandadad0214/texas-new-business-leads — 0.0015 USD per business returned (down to 0.00105 on paid Apify plans)
+- Topic Trends Tracker: Google Trends Alternative, Real Numbers: https://apify.com/pandadad0214/topic-trends-tracker — 0.002 USD per topic tracked (down to 0.0014 on paid Apify plans)
+- Trucking Company Leads: New FMCSA Carriers, Email & Phone: https://apify.com/pandadad0214/trucking-company-leads — 0.002 USD per carrier returned (down to 0.0014 on paid Apify plans)
+- VIN Decoder + Recalls: Bulk NHTSA Specs & Safety Recalls: https://apify.com/pandadad0214/vin-decoder-recalls — 0.001 USD per vin decoded (down to 0.0007 on paid Apify plans)
 
 ### Web and email security
-- AI Search & SEO Audit: GEO, llms.txt & Schema Checker: https://apify.com/pandadad0214/ai-search-seo-audit
-- Broken Link Checker: 404s, Redirects and Dead Links: https://apify.com/pandadad0214/broken-link-checker
-- Bulk Domain WHOIS & Expiry Checker (RDAP): Registrar & Dates: https://apify.com/pandadad0214/bulk-domain-whois-expiry
-- Hidden AI Instructions Scanner: Prompt Injection Detector (free): https://apify.com/pandadad0214/hidden-ai-instructions-scanner
-- RSS & Atom Feed Monitor: Only New Items: https://apify.com/pandadad0214/rss-feed-monitor
-- SPF, DKIM & DMARC Checker: Bulk Email Domain Security Audit: https://apify.com/pandadad0214/email-domain-security-checker
-- Website Change Monitor: Page Diffs, Price & Keyword Alerts: https://apify.com/pandadad0214/website-change-monitor
+- AI Search & SEO Audit: GEO, llms.txt & Schema Checker: https://apify.com/pandadad0214/ai-search-seo-audit — 0.004 USD per page audited (down to 0.0028 on paid Apify plans)
+- Broken Link Checker: 404s, Redirects and Dead Links: https://apify.com/pandadad0214/broken-link-checker — 0.001 USD per link checked (down to 0.0007 on paid Apify plans)
+- Bulk Domain WHOIS & Expiry Checker (RDAP): Registrar & Dates: https://apify.com/pandadad0214/bulk-domain-whois-expiry — 0.001 USD per domain checked (down to 0.0007 on paid Apify plans)
+- Hidden AI Instructions Scanner: Prompt Injection Detector: https://apify.com/pandadad0214/hidden-ai-instructions-scanner — free
+- RSS & Atom Feed Monitor: Only New Items: https://apify.com/pandadad0214/rss-feed-monitor — 0.0005 USD per feed item returned (down to 0.00035 on paid Apify plans)
+- SPF, DKIM & DMARC Checker: Bulk Email Domain Security Audit: https://apify.com/pandadad0214/email-domain-security-checker — 0.002 USD per domain checked (down to 0.0014 on paid Apify plans)
+- Website Change Monitor: Page Diffs, Price & Keyword Alerts: https://apify.com/pandadad0214/website-change-monitor — 0.0015 USD per page checked (down to 0.00105 on paid Apify plans)
 
 ### Apps and kits
-- Manual Remake: Confusing Manual to Clear Printable PDF: https://apify.com/pandadad0214/manual-remake
-- Quiet File Team Setup Kit Generator: https://apify.com/pandadad0214/quiet-file-team-setup
+- Manual Remake: Confusing Manual to Clear Printable PDF: https://apify.com/pandadad0214/manual-remake — 39 USD per standard remake; 9 USD per text-only remake
+- Quiet File Team Setup Kit Generator: https://apify.com/pandadad0214/quiet-file-team-setup — 29 USD per complete setup kit
 
 ## Local-first apps and repos
 
