@@ -15,6 +15,13 @@
     <summary>Five things from the last few days that matter if your agent works with public data, with our take on each, and then what we shipped.</summary>
   </entry>
   <entry>
+    <title>quiet-file-team-mcp v0.1.2</title>
+    <link href="https://github.com/pandadad0214/quiet-file-team-mcp/releases/tag/v0.1.2"/>
+    <id>tag:pandafederation.com,2026:237868466ccd10be8d88873adf192df4e4fa883c</id>
+    <updated>2026-11-12T04:06:41Z</updated>
+    <summary>Six free offline MCP tools that explain, configure and check a Quiet File Team (bots sharing files).</summary>
+  </entry>
+  <entry>
     <title>quiet-file-team-mcp v0.1.1</title>
     <link href="https://github.com/pandadad0214/quiet-file-team-mcp/releases/tag/v0.1.1"/>
     <id>tag:pandafederation.com,2026:54ec2c00adbe55c43c16605ec00a126f400c01a4</id>
@@ -349,12 +356,5 @@
     <id>tag:pandafederation.com,2026:54c338e52b73170fc3f646ac9a426e53039ca8fb</id>
     <updated>2026-11-04T23:45:38Z</updated>
     <summary>Find clinical trials and the people running them from the official ClinicalTrials.gov API. Search by condition, drug, sponsor, phase, status and location; get…</summary>
-  </entry>
-  <entry>
-    <title>New Apify Actor: Nonprofit Leads: IRS Charities &amp; Foundations by State</title>
-    <link href="https://apify.com/pandadad0214/nonprofit-leads-irs"/>
-    <id>tag:pandafederation.com,2026:fcbcc10a04e6e1fc8e7de94ff681a785cabef5fb</id>
-    <updated>2026-11-04T23:45:38Z</updated>
-    <summary>Build nonprofit and foundation lead lists from the official IRS Exempt Organizations file. EIN, name, address, in-care-of contact, NTEE cause, 501(c) type…</summary>
   </entry>
 </feed>
