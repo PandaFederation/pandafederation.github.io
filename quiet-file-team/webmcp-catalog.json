@@ -80,9 +80,9 @@
       "description": "Six free offline MCP tools that explain, configure and check a Quiet File Team. No network calls, no paid APIs, no disk reads of your machine.",
       "repo": "https://github.com/pandadad0214/quiet-file-team-mcp",
       "homepage": "https://pandafederation.com/quiet-file-team-mcp/",
-      "pypi": null,
-      "pypi_version": null,
-      "registry": null,
+      "pypi": "https://pypi.org/project/quiet-file-team-mcp/",
+      "pypi_version": "0.1.1",
+      "registry": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/quiet-file-team-mcp",
       "listings": {
         "glama": "https://glama.ai/mcp/servers/pandadad0214/quiet-file-team-mcp",
         "mcprepository": "https://mcprepository.com/pandadad0214/quiet-file-team-mcp",

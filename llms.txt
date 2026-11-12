@@ -1,27 +1,113 @@
 # Panda Federation
 
-> Public-data MCP servers, Apify Actors, local-first apps and services. Official site: https://pandafederation.com/
+> Official public data your agent can check, cite and use. Free public-data tools for AI agents: check references, find federal grants and bids, pull official lead lists and audit domains. On Apify and as MCP servers. Official site: https://pandafederation.com/
 
-Use WebMCP tools on this site when a browser or scanner exposes document.modelContext (list_servers, list_tools, search_tools, get_install_command, get_links, list_actors, list_apps, list_editions). The machine-readable catalog is https://pandafederation.com/webmcp-catalog.json — tool counts come from that file so they cannot drift from the listings.
+At a glance: 43 public Apify Actors, 6 MCP servers (40 tools across the four focused domain servers), 7 apps and repos, 36 Agensi skills. These numbers are rebuilt from the Apify Store, PyPI, the MCP Registry and GitHub on every site build.
 
-## MCP servers (v0.2.0 focused, umbrella v1.8.0)
+Use WebMCP tools on this site when a browser or scanner exposes document.modelContext (list_servers, list_tools, search_tools, get_install_command, get_links, list_actors, list_apps, list_editions). Machine-readable catalog: https://pandafederation.com/webmcp-catalog.json
 
-- Panda Research Tools (8): `uvx --from panda-federation-tools panda-research-tools` — citations, literature, PubMed, experts, PDF tables, Wayback, topic trends. https://github.com/pandadad0214/panda-research-tools
-- Panda Public Funding Tools (10): `uvx --from panda-federation-tools panda-public-funding-tools` — grants, contracts, SAM.gov, SBIR/STTR, SEC, trials, Federal Register, recalls, VIN, EU TED. https://github.com/pandadad0214/panda-public-funding-tools
-- Panda Leads Tools (15): `uvx --from panda-federation-tools panda-leads-tools` — NPI, podcasts, local businesses, hiring, enrichment, teams, trucking, nonprofits, permits, new FL/TX/NY/CO businesses, H-1B, France. https://github.com/pandadad0214/panda-leads-tools
-- Panda Web Security Tools (7): `uvx --from panda-federation-tools panda-web-security-tools` — email security, AI/SEO audit, hidden-AI scanner, WHOIS, broken links, change monitor, RSS. https://github.com/pandadad0214/panda-web-security-tools
-- Panda Federation Tools umbrella (40): `uvx panda-federation-tools` — prefer a focused server for new installs. https://pandadad0214.github.io/panda-federation-tools/
-- Quiet File Team MCP (6, offline, no token): `uvx quiet-file-team-mcp` — https://pandafederation.com/quiet-file-team-mcp/
+## MCP servers
 
-Focused servers need an `APIFY_TOKEN`. Sources are official or public. Actors bill pay-per-result.
+- Panda Research Tools (8 tools): `uvx --from panda-federation-tools panda-research-tools` — 8 research-integrity tools: citation checks, OpenAlex and literature search, PubMed evidence tables, experts, PDF tables, Wayback snapshots and topic trends. Needs `APIFY_TOKEN`. https://github.com/pandadad0214/panda-research-tools · https://pandadad0214.github.io/panda-federation-tools/ · PyPI 0.2.0: https://pypi.org/project/panda-research-tools/ · Official MCP Registry: io.github.pandadad0214/panda-research-tools
+- Panda Public Funding Tools (10 tools): `uvx --from panda-federation-tools panda-public-funding-tools` — 10 public-funding tools: grants, contracts, SAM.gov bids, SBIR/STTR, SEC financials, clinical trials, Federal Register, recalls, VIN decode and EU tenders. Needs `APIFY_TOKEN`. https://github.com/pandadad0214/panda-public-funding-tools · https://pandadad0214.github.io/panda-federation-tools/ · PyPI 0.2.0: https://pypi.org/project/panda-public-funding-tools/ · Official MCP Registry: io.github.pandadad0214/panda-public-funding-tools
+- Panda Leads Tools (15 tools): `uvx --from panda-federation-tools panda-leads-tools` — 15 public lead tools: NPI, podcasts, local businesses, hiring, enrichment, teams, trucking, IRS nonprofits, building permits, new Florida, Texas, New York and Colorado businesses, H-1B sponsors and French companies. Needs `APIFY_TOKEN`. https://github.com/pandadad0214/panda-leads-tools · https://pandadad0214.github.io/panda-federation-tools/ · PyPI 0.2.0: https://pypi.org/project/panda-leads-tools/ · Official MCP Registry: io.github.pandadad0214/panda-leads-tools
+- Panda Web Security Tools (7 tools): `uvx --from panda-federation-tools panda-web-security-tools` — 7 site and email safety tools: SPF/DKIM/DMARC, AI/SEO audit, hidden-AI scanner, domain WHOIS/expiry, broken links, website change monitor and RSS feed monitor. Needs `APIFY_TOKEN`. https://github.com/pandadad0214/panda-web-security-tools · https://pandadad0214.github.io/panda-federation-tools/ · PyPI 0.2.0: https://pypi.org/project/panda-web-security-tools/ · Official MCP Registry: io.github.pandadad0214/panda-web-security-tools
+- Panda Federation Tools (umbrella) (40 tools): `uvx panda-federation-tools` — Index package for all 40 public-data tools across the four focused servers. Prefer a focused server unless an older config still loads the umbrella. Needs `APIFY_TOKEN`. https://github.com/pandadad0214/panda-federation-tools · https://pandadad0214.github.io/panda-federation-tools/ · PyPI 1.8.0: https://pypi.org/project/panda-federation-tools/
+- Quiet File Team MCP (6 tools): `uvx quiet-file-team-mcp` — Six free offline MCP tools that explain, configure and check a Quiet File Team. No network calls, no paid APIs, no disk reads of your machine. No token needed. https://github.com/pandadad0214/quiet-file-team-mcp · https://pandafederation.com/quiet-file-team-mcp/ · PyPI 0.1.1: https://pypi.org/project/quiet-file-team-mcp/ · Official MCP Registry: io.github.pandadad0214/quiet-file-team-mcp
 
-## Local-first apps
+Install and client-config snippets for every server: https://pandafederation.com/mcp.html
 
-- Quiet File Team (free Bash core): https://pandafederation.com/quiet-file-team/ — pair notes, append-only task queue, NO WORK early exits on one shared Linux machine. Repo: https://github.com/pandadad0214/quiet-file-team — read-only WebMCP tools there: list_servers, list_tools, get_install_command, get_links, list_editions. Agent notes: https://pandafederation.com/quiet-file-team/llms.txt
+## Apify Actors
+
+43 public Actors, read live from the Apify Store. 42 are pay-per-event and 1 is free; live prices are on each Store page, never on this site. Sources are official or public. Cards with descriptions: https://pandafederation.com/apify.html
+
+### Research
+- Academic Research MCP Server: OpenAlex, PubMed & Citation Check: https://apify.com/pandadad0214/panda-research-mcp
+- Citation Generator API: DOI to APA, MLA, Chicago & BibTeX: https://apify.com/pandadad0214/citation-formatter
+- Google Scholar Author Alternative: Find Experts & KOLs by Topic: https://apify.com/pandadad0214/researcher-expert-finder
+- Google Scholar Scraper Alternative: Papers, Citations & BibTeX: https://apify.com/pandadad0214/literature-search
+- PDF Table Extractor: PDF to Excel & CSV Converter with OCR: https://apify.com/pandadad0214/pdf-table-extractor
+- PubMed Scraper: Articles, Abstracts & Evidence Table to Excel: https://apify.com/pandadad0214/pubmed-evidence-table
+- Reference Checker: Fake, AI-Hallucinated & Retracted Citations: https://apify.com/pandadad0214/reference-checker
+- Wayback Machine Snapshot Finder: Archive Dates & URLs: https://apify.com/pandadad0214/wayback-snapshot-finder
+
+### Public funding
+- Clinical Trial Leads: Sponsors, Sites & Contacts: https://apify.com/pandadad0214/clinical-trial-leads
+- EU TED Tenders: Public Procurement Notices: https://apify.com/pandadad0214/eu-ted-tenders
+- Federal Register Monitor: New Rules & Comment Deadlines: https://apify.com/pandadad0214/federal-register-monitor
+- Grants.gov Scraper: Federal Grants, NIH & NSF Awards API: https://apify.com/pandadad0214/grants-finder
+- Product Recall Monitor: FDA Food, Drug, Device & CPSC Recalls: https://apify.com/pandadad0214/product-recall-monitor
+- SAM.gov Contract Opportunities: Open Federal Bids, No API Key: https://apify.com/pandadad0214/sam-gov-opportunities
+- SBIR/STTR Topic Radar: Open Topics, Deadlines & DoD Q&A: https://apify.com/pandadad0214/sbir-sttr-topic-radar
+- SEC Financials to Excel: EDGAR XBRL Comps & Model Data: https://apify.com/pandadad0214/sec-financials-excel
+- USAspending Scraper: Federal Contract Awards & Recompete Finder: https://apify.com/pandadad0214/federal-contract-finder
+
+### Leads
+- Building Permit Leads: New Permits, Contractors & Job Values: https://apify.com/pandadad0214/building-permit-leads
+- Colorado New Business Leads: New SOS Filings Daily: https://apify.com/pandadad0214/colorado-new-business-leads
+- Company Hiring Signals: Job Openings & Hiring Intent by Company: https://apify.com/pandadad0214/company-hiring-signals
+- Company Team & Decision-Maker Finder: Names, Titles, Emails: https://apify.com/pandadad0214/company-team-finder
+- Company Website Enricher: Tech Stack, Emails & Socials: https://apify.com/pandadad0214/company-website-enricher
+- Florida New Business Leads: New LLCs & Corporations Daily: https://apify.com/pandadad0214/florida-new-business-leads
+- France Company Leads: SIREN, Directors, Revenue: https://apify.com/pandadad0214/france-company-leads
+- H-1B LCA Visa Sponsor Leads: DOL Employers, Jobs & Wages: https://apify.com/pandadad0214/h1b-lca-sponsor-leads
+- Local Business Leads: Google Maps Alternative (OpenStreetMap): https://apify.com/pandadad0214/local-business-leads
+- New York New Business Leads: New DOS Filings: https://apify.com/pandadad0214/new-york-new-business-leads
+- Nonprofit Leads: IRS Charities & Foundations by State: https://apify.com/pandadad0214/nonprofit-leads-irs
+- NPI Registry Scraper: US Doctors & Healthcare Provider Leads: https://apify.com/pandadad0214/npi-provider-lists
+- Podcast Leads Finder: Podcast Host Emails & Guest Booking List: https://apify.com/pandadad0214/podcast-leads-finder
+- Texas New Business Leads: New Franchise Taxpayers: https://apify.com/pandadad0214/texas-new-business-leads
+- Topic Trends Tracker: Google Trends Alternative, Real Numbers: https://apify.com/pandadad0214/topic-trends-tracker
+- Trucking Company Leads: New FMCSA Carriers, Email & Phone: https://apify.com/pandadad0214/trucking-company-leads
+- VIN Decoder + Recalls: Bulk NHTSA Specs & Safety Recalls: https://apify.com/pandadad0214/vin-decoder-recalls
+
+### Web and email security
+- AI Search & SEO Audit: GEO, llms.txt & Schema Checker: https://apify.com/pandadad0214/ai-search-seo-audit
+- Broken Link Checker: 404s, Redirects and Dead Links: https://apify.com/pandadad0214/broken-link-checker
+- Bulk Domain WHOIS & Expiry Checker (RDAP): Registrar & Dates: https://apify.com/pandadad0214/bulk-domain-whois-expiry
+- Hidden AI Instructions Scanner: Prompt Injection Detector (free): https://apify.com/pandadad0214/hidden-ai-instructions-scanner
+- RSS & Atom Feed Monitor: Only New Items: https://apify.com/pandadad0214/rss-feed-monitor
+- SPF, DKIM & DMARC Checker: Bulk Email Domain Security Audit: https://apify.com/pandadad0214/email-domain-security-checker
+- Website Change Monitor: Page Diffs, Price & Keyword Alerts: https://apify.com/pandadad0214/website-change-monitor
+
+### Apps and kits
+- Manual Remake: Confusing Manual to Clear Printable PDF: https://apify.com/pandadad0214/manual-remake
+- Quiet File Team Setup Kit Generator: https://apify.com/pandadad0214/quiet-file-team-setup
+
+## Local-first apps and repos
+
+- Steel Panda: Run every shell script in a folder, log each exit code, fail if any task fails. Local Bash, no network. https://github.com/pandadad0214/Steel_Panda
+- Watchdog Panda: Restart a local process when it disappears, with backoff, a restart cap and a failure hook. Bash only. https://github.com/pandadad0214/Watchdog_Panda
+- Hidden AI Instructions Watch: Free scanner and evidence log for web pages that hide text from people but address AI agents. https://github.com/pandadad0214/hidden-ai-instructions-watch
+- Manual Remake: Rewrite a confusing manual (PDF or photos) into a clear, printable English PDF. A free sample and paid remake editions are both on the Apify Store listing; the free skill is on Agensi. https://github.com/pandadad0214/manual-remake
+- Quiet File Team: Free Bash kit that lets several AI bots share one computer through files: task queue, pair notes, early exit. A paid setup-kit generator is on the Apify Store and Agensi; a free MCP companion explains and checks a team. https://pandafederation.com/quiet-file-team/ (repo: https://github.com/pandadad0214/quiet-file-team)
+- Panda Federation H.Q.: Live 3D office where each bot on a team shows a real-time status chip (Three.js + Cloudflare Worker). https://panda-federation-hq.pandafederation.workers.dev (repo: https://github.com/pandadad0214/panda-federation-hq)
+- Spirit Panda: Sovereign local-first AI companion with identity, memory, and adaptive prosody. https://github.com/pandadad0214/Spirit_Panda
+- Planned, not shipped yet: Orchid Panda (https://github.com/pandadad0214/Orchid_Panda), Mythical Panda (https://github.com/pandadad0214/Mythical_Panda). Placeholder repos with no code.
+
+More: https://pandafederation.com/apps.html. Quiet File Team agent notes: https://pandafederation.com/quiet-file-team/llms.txt and https://pandafederation.com/quiet-file-team-mcp/llms.txt
 
 ## Free guides
 
-- Free data broker removal guide + US state law map (verified 2026-11-10, not legal advice): https://pandafederation.com/data-broker-removal/ — JSON: https://pandafederation.com/data-broker-removal/state-law-map.json and https://pandafederation.com/data-broker-removal/optout-sites.json — read-only WebMCP tools there: get_state_rights, list_states_with_rights, list_optout_sites, get_removal_steps, get_links. Agent notes: https://pandafederation.com/data-broker-removal/llms.txt
+- Free data broker removal guide + US state law map (not legal advice): https://pandafederation.com/data-broker-removal/ — agent notes and JSON: https://pandafederation.com/data-broker-removal/llms.txt
+
+## Updates
+
+- What's New (changelog from our releases, Registry listings, new Actors and site launches): https://pandafederation.com/whats-new/
+- Atom feed: https://pandafederation.com/feed.xml
+- Weekly digest (MCP, Apify and public-data news with our take): https://pandafederation.com/digest/
+- Latest digest: #1 (2026-11-12), Server Actors, a release calendar for MCP, and an SEC deadline: https://pandafederation.com/digest/001-2026-11-12/
+
+## About
+
+Panda Federation is one dad's workshop. I build public-data tools with a small team of AI bots that share one computer. One bot writes and tests code, another checks listings and links, another keeps the books and the calendar honest, and I decide what ships. https://pandafederation.com/about.html
+
+Free and paid editions of the same tool always name each other and say how to switch. Prices live on the store listing.
+
+## Services and skills
+
+- Services: https://pandafederation.com/services.html
+- 36 Agensi skills, each linked to its related Apify Actor: https://pandafederation.com/agensi.html
 
 ## Other entry points
 
@@ -31,4 +117,5 @@ Focused servers need an `APIFY_TOKEN`. Sources are official or public. Actors bi
 - X: https://x.com/PandaFedHQ  (Follow on X: @PandaFedHQ)
 - Product Hunt: https://www.producthunt.com/products/panda-federation-tools
 - Inventory: https://pandafederation.com/inventory.json
+- Sitemap: https://pandafederation.com/sitemap.xml
 - Full tool notes: https://pandadad0214.github.io/panda-federation-tools/llms.txt

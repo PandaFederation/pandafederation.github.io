@@ -46,3 +46,5 @@ Then open `http://localhost:8080/`. The 3D hero needs a web server (not a `file:
 ## License
 
 MIT. Logo, crest, and headquarters stills are Panda Federation brand assets.
+
+- `scripts/agents.py` (last build step) writes `llms.txt`, the JSON-LD on every page, PyPI/Registry fields in the WebMCP catalogs, and `sitemap.xml` (including `feed.xml` and `llms.txt`). Edit the generator or its sources (`webmcp-catalog.json`, page copy, digest issues), not those outputs.

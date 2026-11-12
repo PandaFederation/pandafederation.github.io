@@ -24,29 +24,154 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/site.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Panda Federation",
-  "url": "https://pandafederation.com/",
-  "logo": "https://pandafederation.com/assets/logo.png",
-  "sameAs": [
-    "https://github.com/pandadad0214",
-    "https://x.com/PandaFedHQ",
-    "https://apify.com/pandadad0214",
-    "https://www.agensi.io/creators/panda-federation",
-    "https://dev.to/pandadad0214",
-    "https://www.producthunt.com/products/panda-federation-tools",
-    "https://www.fiverr.com/pandafederation",
-    "https://www.upwork.com/freelancers/~010efd521970a9d3e1"
-  ],
-  "description": "Self-healing, local-first AI systems and data tools that run themselves."
-}
-</script>
 <link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt">
 <!-- Chrome WebMCP origin-trial token for this origin. Expires 2027-03-29. -->
 <meta http-equiv="origin-trial" content="Aqw7v/gbIv8YKr3gufk32qKfwpTCqHtX+usd81zn/QBf5wkPHo7Cj1pUsS5uvHfIRYCyAVV9z1yeKrSBRHSS9wcAAABmeyJvcmlnaW4iOiJodHRwczovL3BhbmRhZmVkZXJhdGlvbi5jb206NDQzIiwiZmVhdHVyZSI6IldlYk1DUCIsImV4cGlyeSI6MTgwNjM2NDgwMCwiaXNTdWJkb21haW4iOnRydWV9">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://pandafederation.com/#org",
+      "name": "Panda Federation",
+      "url": "https://pandafederation.com/",
+      "logo": "https://pandafederation.com/assets/logo.png",
+      "description": "Free public-data tools for AI agents: check references, find federal grants and bids, pull official lead lists and audit domains. On Apify and as MCP servers.",
+      "sameAs": [
+        "https://github.com/pandadad0214",
+        "https://x.com/PandaFedHQ",
+        "https://apify.com/pandadad0214",
+        "https://www.agensi.io/creators/panda-federation",
+        "https://dev.to/pandadad0214",
+        "https://www.producthunt.com/products/panda-federation-tools",
+        "https://www.fiverr.com/pandafederation",
+        "https://www.upwork.com/freelancers/~010efd521970a9d3e1"
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "url": "https://pandafederation.com/mcp.html",
+      "name": "MCP Servers",
+      "description": "Panda Federation MCP servers for research, public funding, leads, and web security.",
+      "mainEntity": {
+        "@type": "ItemList",
+        "numberOfItems": 6,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Panda Research Tools",
+              "applicationCategory": "DeveloperApplication",
+              "description": "8 research-integrity tools: citation checks, OpenAlex and literature search, PubMed evidence tables, experts, PDF tables, Wayback snapshots and topic trends.",
+              "url": "https://pandadad0214.github.io/panda-federation-tools/",
+              "codeRepository": "https://github.com/pandadad0214/panda-research-tools",
+              "isAccessibleForFree": true,
+              "publisher": {
+                "@id": "https://pandafederation.com/#org"
+              },
+              "softwareVersion": "0.2.0",
+              "downloadUrl": "https://pypi.org/project/panda-research-tools/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Panda Public Funding Tools",
+              "applicationCategory": "DeveloperApplication",
+              "description": "10 public-funding tools: grants, contracts, SAM.gov bids, SBIR/STTR, SEC financials, clinical trials, Federal Register, recalls, VIN decode and EU tenders.",
+              "url": "https://pandadad0214.github.io/panda-federation-tools/",
+              "codeRepository": "https://github.com/pandadad0214/panda-public-funding-tools",
+              "isAccessibleForFree": true,
+              "publisher": {
+                "@id": "https://pandafederation.com/#org"
+              },
+              "softwareVersion": "0.2.0",
+              "downloadUrl": "https://pypi.org/project/panda-public-funding-tools/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Panda Leads Tools",
+              "applicationCategory": "DeveloperApplication",
+              "description": "15 public lead tools: NPI, podcasts, local businesses, hiring, enrichment, teams, trucking, IRS nonprofits, building permits, new Florida, Texas, New York and Colorado businesses, H-1B sponsors and French companies.",
+              "url": "https://pandadad0214.github.io/panda-federation-tools/",
+              "codeRepository": "https://github.com/pandadad0214/panda-leads-tools",
+              "isAccessibleForFree": true,
+              "publisher": {
+                "@id": "https://pandafederation.com/#org"
+              },
+              "softwareVersion": "0.2.0",
+              "downloadUrl": "https://pypi.org/project/panda-leads-tools/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Panda Web Security Tools",
+              "applicationCategory": "DeveloperApplication",
+              "description": "7 site and email safety tools: SPF/DKIM/DMARC, AI/SEO audit, hidden-AI scanner, domain WHOIS/expiry, broken links, website change monitor and RSS feed monitor.",
+              "url": "https://pandadad0214.github.io/panda-federation-tools/",
+              "codeRepository": "https://github.com/pandadad0214/panda-web-security-tools",
+              "isAccessibleForFree": true,
+              "publisher": {
+                "@id": "https://pandafederation.com/#org"
+              },
+              "softwareVersion": "0.2.0",
+              "downloadUrl": "https://pypi.org/project/panda-web-security-tools/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Panda Federation Tools (umbrella)",
+              "applicationCategory": "DeveloperApplication",
+              "description": "Index package for all 40 public-data tools across the four focused servers. Prefer a focused server unless an older config still loads the umbrella.",
+              "url": "https://pandadad0214.github.io/panda-federation-tools/",
+              "codeRepository": "https://github.com/pandadad0214/panda-federation-tools",
+              "isAccessibleForFree": true,
+              "publisher": {
+                "@id": "https://pandafederation.com/#org"
+              },
+              "softwareVersion": "1.8.0",
+              "downloadUrl": "https://pypi.org/project/panda-federation-tools/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Quiet File Team MCP",
+              "applicationCategory": "DeveloperApplication",
+              "description": "Six free offline MCP tools that explain, configure and check a Quiet File Team. No network calls, no paid APIs, no disk reads of your machine.",
+              "url": "https://pandafederation.com/quiet-file-team-mcp/",
+              "codeRepository": "https://github.com/pandadad0214/quiet-file-team-mcp",
+              "isAccessibleForFree": true,
+              "publisher": {
+                "@id": "https://pandafederation.com/#org"
+              },
+              "softwareVersion": "0.1.1",
+              "downloadUrl": "https://pypi.org/project/quiet-file-team-mcp/"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>

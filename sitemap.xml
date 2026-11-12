@@ -6,6 +6,8 @@
   <url><loc>https://pandafederation.com/apify.html</loc></url>
   <url><loc>https://pandafederation.com/apps.html</loc></url>
   <url><loc>https://pandafederation.com/books.html</loc></url>
+  <url><loc>https://pandafederation.com/feed.xml</loc></url>
+  <url><loc>https://pandafederation.com/llms.txt</loc></url>
   <url><loc>https://pandafederation.com/mcp.html</loc></url>
   <url><loc>https://pandafederation.com/services.html</loc></url>
   <url><loc>https://pandafederation.com/data-broker-removal/</loc></url>

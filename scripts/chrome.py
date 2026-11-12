@@ -1,4 +1,4 @@
-"""Site chrome: one nav, one footer link row, the analytics beacon and the sitemap,
+"""Site chrome: one nav, one footer link row and the analytics beacon,
 applied to every HTML page so they never drift apart."""
 import glob
 import os
@@ -71,17 +71,5 @@ def run(get, read, write, warn, values, actors):
         if write(p, s2):
             changed.append(p)
 
-    # sitemap: every public page except 404 and redirects
-    urls = []
-    for p in pages:
-        if p in ("404.html",) or 'http-equiv="refresh"' in read(p):
-            continue
-        loc = p[:-len("index.html")] if p.endswith("index.html") else p
-        urls.append(f"{SITE}/{loc}")
-    urls = sorted(set(urls), key=lambda u: (u.count("/"), u))
-    sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    sm += [f"  <url><loc>{u}</loc></url>" for u in urls]
-    sm.append("</urlset>\n")
-    if write("sitemap.xml", "\n".join(sm)):
-        changed.append("sitemap.xml")
+    # sitemap.xml is written by scripts/agents.py (last build step)
     return changed

@@ -4,7 +4,7 @@
   "source": "Panda Federation public catalog. Tool counts come from this file, not from page copy.",
   "site": {
     "name": "Panda Federation",
-    "description": "Public-data tools, MCP servers, local-first apps and services from Panda Federation.",
+    "description": "Free public-data tools for AI agents: check references, find federal grants and bids, pull official lead lists and audit domains. On Apify and as MCP servers.",
     "url": "https://pandafederation.com/",
     "links": {
       "github": "https://github.com/pandadad0214",
@@ -464,9 +464,9 @@
       "description": "Six free offline MCP tools that explain, configure and check a Quiet File Team. No network calls, no paid APIs, no disk reads of your machine.",
       "repo": "https://github.com/pandadad0214/quiet-file-team-mcp",
       "homepage": "https://pandafederation.com/quiet-file-team-mcp/",
-      "pypi": null,
-      "pypi_version": null,
-      "registry": null,
+      "pypi": "https://pypi.org/project/quiet-file-team-mcp/",
+      "pypi_version": "0.1.1",
+      "registry": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/quiet-file-team-mcp",
       "listings": {
         "glama": "https://glama.ai/mcp/servers/pandadad0214/quiet-file-team-mcp",
         "mcprepository": "https://mcprepository.com/pandadad0214/quiet-file-team-mcp",

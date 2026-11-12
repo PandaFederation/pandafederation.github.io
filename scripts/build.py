@@ -129,6 +129,8 @@ def main() -> int:
     }
     for k, v in tools.items():
         values[f"tools:{k}"] = str(v)
+    for n in reg:
+        values[f"registry:{n.split('/', 1)[1]}"] = "listed"
     for p, v in versions.items():
         if v:
             values[f"pypi:{p}"] = v
@@ -187,7 +189,7 @@ def main() -> int:
         changed.append("inventory.json")
 
     # extra build steps (changelog, digest, chrome) live in sibling modules
-    for mod in ("chrome", "samples", "changelog", "digest"):
+    for mod in ("chrome", "samples", "changelog", "digest", "agents"):
         path = os.path.join(ROOT, "scripts", f"{mod}.py")
         if os.path.exists(path):
             ns: dict = {"__file__": path, "__name__": f"build_{mod}"}
