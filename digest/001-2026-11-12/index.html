@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digest #1: Server Actors, a release calendar for MCP, and an SEC deadline · Panda Federation</title>
+<meta name="description" content="Panda Federation weekly digest #1, 2026-11-12: MCP, Apify and public-data news with our take.">
+<link rel="canonical" href="https://pandafederation.com/digest/001-2026-11-12/">
+<meta name="theme-color" content="#0f1420">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Panda Federation">
+<meta property="og:title" content="Digest #1: Server Actors, a release calendar for MCP, and an SEC deadline · Panda Federation">
+<meta property="og:description" content="Panda Federation weekly digest #1, 2026-11-12: MCP, Apify and public-data news with our take.">
+<meta property="og:url" content="https://pandafederation.com/digest/001-2026-11-12/">
+<meta property="og:image" content="https://pandafederation.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@PandaFedHQ">
+<meta name="twitter:title" content="Digest #1: Server Actors, a release calendar for MCP, and an SEC deadline · Panda Federation">
+<meta name="twitter:description" content="Panda Federation weekly digest #1, 2026-11-12: MCP, Apify and public-data news with our take.">
+<meta name="twitter:image" content="https://pandafederation.com/assets/og.png">
+<link rel="icon" type="image/png" href="../../assets/favicon.png">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/site.css">
+<link rel="alternate" type="application/atom+xml" title="Panda Federation: What's New" href="https://pandafederation.com/feed.xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="../../index.html"><img src="../../assets/logo.png" width="36" height="36" alt="">Panda Federation</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-label="Open menu">Menu</button>
+    <nav class="tabs" aria-label="Primary"><a href="../../index.html">Home</a><a href="../../mcp.html">MCP Servers</a><a href="../../apify.html">Apify Tools</a><a href="../../apps.html">Apps &amp; Repos</a><a href="../../services.html">Services</a><a href="../../data-broker-removal/">Data Broker Removal</a><a href="../../whats-new/" aria-current="page">What&#39;s New</a><a href="../../about.html">About</a></nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+<article class="prose"><p class="kicker">Digest #1 · <time datetime="2026-11-12">2026-11-12</time></p><h1>Server Actors, a release calendar for MCP, and an SEC deadline</h1><p>Five things from the last few days that matter if your agent works with public data, with our take on each, and then what we shipped.</p>
+<h2>MCP gets a release calendar (Nov 11)</h2>
+<p>The MCP maintainers are moving spec releases to a fixed six-month schedule, on the last Tuesday of March and September. The next one is targeted for March 30, 2027. A proposal that isn&#x27;t ready moves to the next release instead of holding up the spec. <strong>Our take:</strong> this is the most useful MCP news of the week for small server authors. We can plan our server updates around two known dates instead of watching the spec repo. <a href="https://blog.modelcontextprotocol.io/posts/mcp-release-cycle/" rel="noopener">Read the post</a></p>
+<h2>File uploads and downloads are coming to MCP, as an experiment (Nov 10)</h2>
+<p>An optional extension, <code>io.modelcontextprotocol/files</code>, would let clients and tools move files in and out of band. It&#x27;s explicitly experimental, has no reference implementation yet, and the maintainers hope to stabilize it before the end of the year. <strong>Our take:</strong> PDF table extraction and Excel exports are the clumsiest part of agent data work today, so a standard way to hand a file to a tool would help a lot. We won&#x27;t build on it until it reaches Beta. <a href="https://blog.modelcontextprotocol.io/posts/exploring-file-uploads-and-downloads-in-mcp/" rel="noopener">Read the post</a></p>
+<h2>Apify makes Server Actors generally available (Nov 10)</h2>
+<p>At its Run by Apify event, Apify announced general availability of Server Actors: always-ready services that answer requests like an API, without starting a new run for each call. Apify AI also gained the ability to orchestrate several Actors and build new ones from plain-language instructions. <strong>Our take:</strong> for agent tool calls, start-up time matters as much as the data does. Quick lookups such as a single domain check or one VIN are the obvious first candidates for an always-on version. <a href="https://www.globenewswire.com/news-release/2026/11/10/3399579/0/en/apify-unveils-new-ai-agent-capabilities-and-server-actors-to-support-growing-demand.html" rel="noopener">Read the announcement</a></p>
+<h2>Apify MCP server 0.21.5 and 0.21.6 (Nov 10–11)</h2>
+<p>Two quick releases. 0.21.5 lists only dataset field selections that actually work and explains empty or past-the-end dataset pages. 0.21.6 identifies MCP-server Actors in Actor details. <strong>Our take:</strong> small fixes, but they target a real failure mode. Agents that page past the end of a dataset and read the empty page as &quot;no results&quot; give wrong answers. <a href="https://github.com/apify/apify-mcp-server/releases" rel="noopener">Release notes</a></p>
+<h2>SEC draft 2027 taxonomies: technical feedback closes Nov 16</h2>
+<p>The SEC posted its draft 2027 taxonomy update on Sept. 14 and is taking technical feedback until 4 p.m. ET on Nov. 16, 2026. It&#x27;s a draft for comment, not an approved change. <strong>Our take:</strong> anyone who pulls XBRL facts from EDGAR, including our SEC Financials Actor, should read the release notes now, before element changes show up in real filings. <a href="https://www.sec.gov/newsroom/whats-new/260914-draft-2027-sec-taxonomies" rel="noopener">SEC notice</a></p>
+<h2>What we shipped</h2>
+<ul><li><a href="https://pypi.org/project/quiet-file-team-mcp/" rel="noopener">Quiet File Team MCP 0.1.1</a> is on PyPI and the Official MCP Registry. Install with <code>uvx quiet-file-team-mcp</code>.</li><li><a href="https://apify.com/pandadad0214/sam-gov-opportunities" rel="noopener">SAM.gov Contract Opportunities</a> is a new Actor that finds open federal bids from the official public data extract, with no API key.</li><li>The four focused MCP servers reached v0.2.0, and the umbrella package reached v1.8.0 (<a href="https://pandafederation.com/mcp.html" rel="noopener">all servers</a>).</li><li>The <a href="https://pandafederation.com/data-broker-removal/" rel="noopener">free data broker removal guide + state law map</a> has opt-out links checked November 10, 2026.</li><li>The site now has a <a href="https://pandafederation.com/whats-new/" rel="noopener">What&#x27;s New</a> changelog with an Atom feed, plus real sample output on the homepage.</li></ul><p class="note"><a href="../">All issues</a> · <a href="../../whats-new/">What's New</a></p></article>
+</main>
+<footer class="site">
+  <div class="foot-inner">
+    <div>
+      <strong>Panda Federation</strong><br>
+      Built slow. Built steady. Built sovereign.
+    </div>
+    <div>
+      <a href="https://github.com/pandadad0214">GitHub</a> ·
+      <a href="https://x.com/PandaFedHQ">Follow on X: @PandaFedHQ</a> ·
+      <a href="https://apify.com/pandadad0214">Apify Store</a> ·
+      <a href="../../whats-new/">What&#39;s New</a> ·
+      <a href="../../feed.xml">Atom feed</a> ·
+      <a href="../../books.html">Books</a> ·
+      <a href="../../about.html">About / contact</a>
+    </div>
+    <div class="oath">Contact is GitHub and X only.</div>
+  </div>
+  <div class="listed-on">
+    <p class="listed-on-label">Listed on</p>
+    <ul class="listed-on-row">
+      <li>
+        <a href="https://fazier.com/launches/pandafederation.com" target="_blank"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=light" width=120 alt="Fazier badge" /></a>
+      </li>
+      <li>
+        <a href="https://dang.ai" target="_blank" rel="dofollow noopener"><img src="https://assets.dang.ai/badges/dang-verified-light.png" alt="Verified on DANG!" width="260" height="94"></a>
+      </li>
+      <li><a href="https://startupbase.io">StartupBase</a></li>
+      <li><a href="https://www.indiehackers.com/product/panda-federation-tools">Indie Hackers</a></li>
+      <li><a href="https://www.saashub.com/panda-federation-tools">SaaSHub</a></li>
+      <li><a href="https://devhunt.org/tool/panda-federation-tools">DevHunt</a></li>
+      <li><a href="https://peerlist.io/pandadad0214/project/panda-federation-tools">Peerlist</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="../../js/nav.js"></script>
+<!-- cf-beacon --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "4c08ba2f90764497865713996270e0e5"}'></script><!-- /cf-beacon -->
+</body>
+</html>

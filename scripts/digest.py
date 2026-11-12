@@ -40,6 +40,7 @@ def parse(text):
 def inline(s):
     s = html.escape(s)
     s = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", r'<a href="\2" rel="noopener">\1</a>', s)
+    s = re.sub(r"\[([^\]]+)\]\(([A-Za-z0-9_./#-]+)\)", r'<a href="\2">\1</a>', s)  # site-relative links
     s = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", s)
     s = re.sub(r"`([^`]+)`", r"<code>\1</code>", s)
     return s

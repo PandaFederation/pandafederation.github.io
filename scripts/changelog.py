@@ -107,13 +107,31 @@ def run(get, read, write, warn, values, actors):
         when = dt.datetime.fromisoformat(e["date"] + "T19:00:00+00:00")
         items.append({"when": when, "kind": e["kind"], "title": e["title"], "url": e["url"], "note": e.get("note", "")})
 
+    # Published digest issues (digest/issues/*.md with status: published)
+    import glob
+    import re
+    for p in sorted(glob.glob("digest/issues/*.md")):
+        m = re.match(r"---\n(.*?)\n---\n(.*)", read(p), re.S)
+        if not m:
+            continue
+        meta = {k.strip(): v.split("#", 1)[0].strip() for k, v in (l.split(":", 1) for l in m.group(1).splitlines() if ":" in l)}
+        if meta.get("status") != "published":
+            continue
+        slug = f"{int(meta['number']):03d}-{meta['date']}"
+        first = next((l for l in m.group(2).splitlines() if l.strip() and not l.startswith("#")), "")
+        items.append({
+            "when": dt.datetime.fromisoformat(meta["date"] + "T07:00:00+00:00"),  # midnight Arizona
+            "kind": "digest", "title": f"Digest #{meta['number']}: {meta.get('title', '')}",
+            "url": f"{SITE}/digest/{slug}/", "note": _t(first),
+        })
+
     items.sort(key=lambda x: (x["when"], x["title"]), reverse=True)
     if not items:
         warn.append("What's New: no items; leaving pages unchanged")
         return []
 
     # ---- HTML
-    label = {"release": "Release", "registry": "MCP Registry", "actor": "Apify", "site": "Site", "guide": "Guide"}
+    label = {"release": "Release", "registry": "MCP Registry", "actor": "Apify", "site": "Site", "guide": "Guide", "digest": "Digest"}
     rows = []
     for it in items:
         day = it["when"].astimezone(dt.timezone(dt.timedelta(hours=-7))).date().isoformat()

@@ -5,8 +5,15 @@
   <link href="https://pandafederation.com/feed.xml" rel="self"/>
   <link href="https://pandafederation.com/whats-new/"/>
   <id>https://pandafederation.com/whats-new/</id>
-  <updated>2026-11-11T21:27:12Z</updated>
+  <updated>2026-11-12T07:00:00Z</updated>
   <author><name>Panda Federation</name><uri>https://pandafederation.com/</uri></author>
+  <entry>
+    <title>Digest #1: Server Actors, a release calendar for MCP, and an SEC deadline</title>
+    <link href="https://pandafederation.com/digest/001-2026-11-12/"/>
+    <id>tag:pandafederation.com,2026:26f1cc876aa9de207b699297b1080fb560830107</id>
+    <updated>2026-11-12T07:00:00Z</updated>
+    <summary>Five things from the last few days that matter if your agent works with public data, with our take on each, and then what we shipped.</summary>
+  </entry>
   <entry>
     <title>quiet-file-team-mcp v0.1.1</title>
     <link href="https://github.com/pandadad0214/quiet-file-team-mcp/releases/tag/v0.1.1"/>
@@ -349,12 +356,5 @@
     <id>tag:pandafederation.com,2026:fcbcc10a04e6e1fc8e7de94ff681a785cabef5fb</id>
     <updated>2026-11-04T23:45:38Z</updated>
     <summary>Build nonprofit and foundation lead lists from the official IRS Exempt Organizations file. EIN, name, address, in-care-of contact, NTEE cause, 501(c) type…</summary>
-  </entry>
-  <entry>
-    <title>New Apify Actor: VIN Decoder + Recalls: Bulk NHTSA Specs &amp; Safety Recalls</title>
-    <link href="https://apify.com/pandadad0214/vin-decoder-recalls"/>
-    <id>tag:pandafederation.com,2026:9c8053535f66a6a232f884470bb2c05f116467fd</id>
-    <updated>2026-11-04T23:45:38Z</updated>
-    <summary>Bulk-decode VINs with the official NHTSA vPIC API and add safety recalls in the same run. Year, make, model, trim, body, engine, fuel, drivetrain, GVWR, plant…</summary>
   </entry>
 </feed>
