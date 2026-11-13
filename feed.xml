@@ -5,8 +5,15 @@
   <link href="https://pandafederation.com/feed.xml" rel="self"/>
   <link href="https://pandafederation.com/whats-new/"/>
   <id>https://pandafederation.com/whats-new/</id>
-  <updated>2026-11-12T07:00:00Z</updated>
+  <updated>2026-11-13T20:42:53Z</updated>
   <author><name>Panda Federation</name><uri>https://pandafederation.com/</uri></author>
+  <entry>
+    <title>quiet-file-team-mcp v0.1.3</title>
+    <link href="https://github.com/pandadad0214/quiet-file-team-mcp/releases/tag/v0.1.3"/>
+    <id>tag:pandafederation.com,2026:4500701b56acb302a5284ccf1c7332ecc921098c</id>
+    <updated>2026-11-13T20:42:53Z</updated>
+    <summary>Six free offline MCP tools that explain, configure and check a Quiet File Team (bots sharing files).</summary>
+  </entry>
   <entry>
     <title>Digest #1: Server Actors, a release calendar for MCP, and an SEC deadline</title>
     <link href="https://pandafederation.com/digest/001-2026-11-12/"/>
@@ -349,12 +356,5 @@
     <id>tag:pandafederation.com,2026:31e63476a89bf007cac983b6f74ed34bdbd96aec</id>
     <updated>2026-11-05T01:27:39Z</updated>
     <summary>Check citations, catch fake/retracted papers, search OpenAlex &amp; PubMed, format references.</summary>
-  </entry>
-  <entry>
-    <title>New Apify Actor: Clinical Trial Leads: Sponsors, Sites &amp; Contacts</title>
-    <link href="https://apify.com/pandadad0214/clinical-trial-leads"/>
-    <id>tag:pandafederation.com,2026:54c338e52b73170fc3f646ac9a426e53039ca8fb</id>
-    <updated>2026-11-04T23:45:38Z</updated>
-    <summary>Find clinical trials and the people running them from the official ClinicalTrials.gov API. Search by condition, drug, sponsor, phase, status and location; get…</summary>
   </entry>
 </feed>

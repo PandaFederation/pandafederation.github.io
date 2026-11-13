@@ -2,6 +2,7 @@
 
 Source: https://pandafederation.com/whats-new/
 
+- 2026-11-13 Release[quiet-file-team-mcp v0.1.3](https://github.com/pandadad0214/quiet-file-team-mcp/releases/tag/v0.1.3) — Six free offline MCP tools that explain, configure and check a Quiet File Team (bots sharing files).
 - 2026-11-12 Digest[Digest #1: Server Actors, a release calendar for MCP, and an SEC deadline](https://pandafederation.com/digest/001-2026-11-12/) — Five things from the last few days that matter if your agent works with public data, with our take on each, and then what we shipped.
 - 2026-11-11 Release[quiet-file-team-mcp v0.1.2](https://github.com/pandadad0214/quiet-file-team-mcp/releases/tag/v0.1.2) — Six free offline MCP tools that explain, configure and check a Quiet File Team (bots sharing files).
 - 2026-11-11 Release[quiet-file-team-mcp v0.1.1](https://github.com/pandadad0214/quiet-file-team-mcp/releases/tag/v0.1.1) — Six free offline MCP tools that explain, configure and check a Quiet File Team (bots sharing files).
@@ -89,4 +90,4 @@ Source: https://pandafederation.com/whats-new/
 - 2026-10-29 Apify[New Apify Actor: Citation Generator API: DOI to APA, MLA, Chicago & BibTeX](https://apify.com/pandadad0214/citation-formatter) — Turn DOIs, ISBNs, PMIDs, arXiv IDs, titles or messy references into clean citations, each checked against Crossref. Output: APA 7, MLA 9, Chicago, Harvard…
 - 2026-10-28 Apify[New Apify Actor: Reference Checker: Fake, AI-Hallucinated & Retracted Citations](https://apify.com/pandadad0214/reference-checker) — Catch fake (AI-hallucinated), miscited and retracted references in any bibliography, DOI list or set of titles. Checked against Crossref, Retraction Watch and…
 
-86 entries. Rebuilt 2026-11-13 (Arizona time).
+87 entries. Rebuilt 2026-11-13 (Arizona time).

@@ -110,7 +110,7 @@ Ask your agent
 [GitHub](https://github.com/pandadad0214/panda-federation-tools) [Docs](https://pandadad0214.github.io/panda-federation-tools/) [PyPI 1.8.0](https://pypi.org/project/panda-federation-tools/) [Glama](https://glama.ai/mcp/servers/pandadad0214/panda-federation-tools) [MCP Repository](https://mcprepository.com/pandadad0214/panda-federation-tools)
 
 The four focused domain servers and Quiet File Team MCP are on the Official MCP Registry. This umbrella package is installed from PyPI or GitHub.
-MCPPyPI 0.1.2Official Registry
+MCPPyPI 0.1.3Official Registry
 
 ### Quiet File Team MCP
 

@@ -266,12 +266,44 @@ def run(get, read, write, warn, values, actors):
            "logo": f"{SITE}/assets/logo.png", "description": site_desc, "sameAs": SAME_AS}
     ctx = "https://schema.org"
 
+    def _card_bodies(page):
+        return re.findall(r'<article class="card"[^>]*>(.*?)</article>', read(page), re.S)
+
+    def _abs_url(href, page=""):
+        if not href:
+            return None
+        if href.startswith("http://") or href.startswith("https://"):
+            return href
+        if href.startswith("/"):
+            return SITE + href
+        base = f"{SITE}/" + (page.rsplit("/", 1)[0] + "/" if "/" in page else "")
+        return base + href
+
+    def _plain(frag):
+        return re.sub(r"\s+", " ", H.unescape(re.sub(r"<[^>]+>", " ", frag or ""))).strip()
+
     def page_ld(p):
         url = f"{SITE}/" + (p[:-len("index.html")] if p.endswith("index.html") else p)
         desc = _meta_desc(read, p)
         if p == "index.html":
-            return {"@context": ctx, "@graph": [org, {"@type": "WebSite", "@id": f"{SITE}/#site", "name": "Panda Federation",
-                    "url": f"{SITE}/", "description": f"{headline} {site_desc}", "publisher": {"@id": f"{SITE}/#org"}}]}
+            website = {"@type": "WebSite", "@id": f"{SITE}/#site", "name": "Panda Federation",
+                       "url": f"{SITE}/", "description": f"{headline} {site_desc}", "publisher": {"@id": f"{SITE}/#org"}}
+            items = []
+            for n, body in enumerate(_card_bodies("index.html"), 1):
+                heading = re.search(r"<h[23][^>]*>(.*?)</h[23]>", body, re.S)
+                lede = re.search(r"<p>(.*?)</p>", body, re.S)
+                hrefs = re.findall(r'href="([^"]+)"', body)
+                item_url = _abs_url(hrefs[0], "index.html") if hrefs else None
+                if not heading or not item_url:
+                    continue
+                entry = {"@type": "WebPage", "name": _plain(heading.group(1)), "url": item_url}
+                if lede:
+                    entry["description"] = _plain(lede.group(1))
+                items.append({"@type": "ListItem", "position": n, "item": entry})
+            if items:
+                website["mainEntity"] = {"@type": "ItemList", "name": "Catalogs and guides on this site",
+                                         "numberOfItems": len(items), "itemListElement": items}
+            return {"@context": ctx, "@graph": [org, website]}
         if p == "about.html":
             return {"@context": ctx, "@graph": [org, {"@type": "AboutPage", "url": url, "name": "About Panda Federation",
                     "description": about_lede, "about": {"@id": f"{SITE}/#org"}}]}
@@ -300,13 +332,41 @@ def run(get, read, write, warn, values, actors):
             return {"@context": ctx, "@graph": [org, {"@type": "CollectionPage", "url": url, "name": "MCP Servers",
                     "description": desc, "mainEntity": {"@type": "ItemList", "numberOfItems": len(items), "itemListElement": items}}]}
         if p == "apps.html":
-            items = [{"@type": "ListItem", "position": n, "name": a["name"], "url": a.get("homepage") or a.get("repo")}
-                     for n, a in enumerate(cat.get("apps", []), 1)]
+            items = []
+            for n, a in enumerate(cat.get("apps", []), 1):
+                item_url = a.get("homepage") or a.get("repo")
+                item_url = _abs_url(item_url, "apps.html") if item_url else None
+                app = {"@type": "SoftwareApplication", "name": a["name"],
+                       "applicationCategory": "DeveloperApplication",
+                       "description": a.get("description") or "",
+                       "url": item_url, "publisher": {"@id": f"{SITE}/#org"}}
+                if a.get("repo"):
+                    app["codeRepository"] = a["repo"]
+                if (a.get("description") or "").lower().startswith("free "):
+                    app["isAccessibleForFree"] = True
+                items.append({"@type": "ListItem", "position": n, "item": app})
             return {"@context": ctx, "@graph": [org, {"@type": "CollectionPage", "url": url, "name": "Apps & Repos",
                     "description": desc, "mainEntity": {"@type": "ItemList", "numberOfItems": len(items), "itemListElement": items}}]}
         if p == "agensi.html":
+            items = []
+            for n, body in enumerate(_card_bodies("agensi.html"), 1):
+                heading = re.search(r"<h3[^>]*>(.*?)</h3>", body, re.S)
+                hrefs = re.findall(r'href="([^"]+)"', body)
+                item_url = next((h for h in hrefs if "agensi.io/" in h), hrefs[0] if hrefs else None)
+                if not heading or not item_url:
+                    warn.append(f"agensi.html card {n}: missing name or url")
+                    continue
+                app = {"@type": "SoftwareApplication", "name": _plain(heading.group(1)),
+                       "url": item_url, "applicationCategory": "DeveloperApplication",
+                       "publisher": {"@id": f"{SITE}/#org"}}
+                if re.search(r"Free skill", body):
+                    app["isAccessibleForFree"] = True
+                items.append({"@type": "ListItem", "position": n, "item": app})
+            expected = int(values["agensi_skills"])
+            if len(items) != expected:
+                warn.append(f"agensi.html JSON-LD listed {len(items)} skills, page has {expected}")
             return {"@context": ctx, "@graph": [org, {"@type": "CollectionPage", "url": url, "name": "Agensi skills",
-                    "description": desc, "mainEntity": {"@type": "ItemList", "numberOfItems": int(values["agensi_skills"])}}]}
+                    "description": desc, "mainEntity": {"@type": "ItemList", "numberOfItems": len(items), "itemListElement": items}}]}
         if p == "whats-new/index.html":
             return {"@context": ctx, "@graph": [org, {"@type": "CollectionPage", "url": url, "name": "What's New",
                     "description": desc, "isPartOf": {"@id": f"{SITE}/#site"}}]}
