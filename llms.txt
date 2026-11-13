@@ -4,7 +4,7 @@
 
 At a glance: 43 public Apify Actors, 6 MCP servers (40 tools across the four focused domain servers), 7 apps and repos, 36 Agensi skills. These numbers are rebuilt from the Apify Store, PyPI, the MCP Registry and GitHub on every site build.
 
-Use WebMCP tools on this site when a browser or scanner exposes document.modelContext (list_servers, list_tools, search_tools, get_install_command, get_links, list_actors, list_apps, list_editions). Machine-readable catalog: https://pandafederation.com/webmcp-catalog.json
+This site includes read-only WebMCP tools (list_servers, list_tools, search_tools, get_install_command, get_links, list_actors, list_apps, list_editions) when a browser exposes document.modelContext. Catalog: https://pandafederation.com/webmcp-catalog.json
 
 ## MCP servers
 
@@ -85,11 +85,11 @@ Install and client-config snippets for every server: https://pandafederation.com
 - Spirit Panda: Sovereign local-first AI companion with identity, memory, and adaptive prosody. https://github.com/pandadad0214/Spirit_Panda
 - Planned, not shipped yet: Orchid Panda (https://github.com/pandadad0214/Orchid_Panda), Mythical Panda (https://github.com/pandadad0214/Mythical_Panda). Placeholder repos with no code.
 
-More: https://pandafederation.com/apps.html. Quiet File Team agent notes: https://pandafederation.com/quiet-file-team/llms.txt and https://pandafederation.com/quiet-file-team-mcp/llms.txt
+More: https://pandafederation.com/apps.html. Quiet File Team plain-text notes: https://pandafederation.com/quiet-file-team/llms.txt and https://pandafederation.com/quiet-file-team-mcp/llms.txt
 
 ## Free guides
 
-- Free data broker removal guide + US state law map (not legal advice): https://pandafederation.com/data-broker-removal/ — agent notes and JSON: https://pandafederation.com/data-broker-removal/llms.txt
+- Free data broker removal guide + US state law map (not legal advice): https://pandafederation.com/data-broker-removal/ — plain-text notes and JSON: https://pandafederation.com/data-broker-removal/llms.txt
 
 ## Updates
 

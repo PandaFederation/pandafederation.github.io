@@ -162,8 +162,9 @@ def run(get, read, write, warn, values, actors):
           f"({values['tools:total']} tools across the four focused domain servers), {values['apps']} apps and repos, "
           f"{values['agensi_skills']} Agensi skills. These numbers are rebuilt from the Apify Store, PyPI, the MCP Registry "
           f"and GitHub on every site build.", ""]
-    L += ["Use WebMCP tools on this site when a browser or scanner exposes document.modelContext (list_servers, list_tools, "
-          "search_tools, get_install_command, get_links, list_actors, list_apps, list_editions). Machine-readable catalog: "
+    L += ["This site includes read-only WebMCP tools (list_servers, list_tools, "
+          "search_tools, get_install_command, get_links, list_actors, list_apps, list_editions) "
+          "when a browser exposes document.modelContext. Catalog: "
           f"{SITE}/webmcp-catalog.json", ""]
     L += ["## MCP servers", ""]
     for s in servers:
@@ -211,12 +212,12 @@ def run(get, read, write, warn, values, actors):
     if planned:
         L.append("- Planned, not shipped yet: " + ", ".join(f"{p['id'].replace('_', ' ')} ({p['repo']})" for p in planned)
                  + ". Placeholder repos with no code.")
-    L += ["", f"More: {SITE}/apps.html. Quiet File Team agent notes: {SITE}/quiet-file-team/llms.txt and "
+    L += ["", f"More: {SITE}/apps.html. Quiet File Team plain-text notes: {SITE}/quiet-file-team/llms.txt and "
           f"{SITE}/quiet-file-team-mcp/llms.txt", ""]
 
     L += ["## Free guides", "",
           f"- Free data broker removal guide + US state law map (not legal advice): {SITE}/data-broker-removal/ — "
-          f"agent notes and JSON: {SITE}/data-broker-removal/llms.txt", ""]
+          f"plain-text notes and JSON: {SITE}/data-broker-removal/llms.txt", ""]
 
     L += ["## Updates", "",
           f"- What's New (changelog from our releases, Registry listings, new Actors and site launches): {SITE}/whats-new/",

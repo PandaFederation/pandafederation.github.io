@@ -67,6 +67,6 @@ SiteLink usedDate sentVerify email clickedReceipt savedResultRecheck dateStill l
 ## Data and copies
 [state-law-map.json](state-law-map.json)[optout-sites.json](optout-sites.json)[Guide (Markdown)](guide.md)[State map (Markdown)](state-law-map.md)[Source on GitHub](https://github.com/PandaFederation/pandafederation.github.io/tree/main/data-broker-removal)[llms.txt](llms.txt)
 
-This page exposes read-only WebMCP tools for AI assistants: get_state_rights, list_optout_sites, list_states_with_rights, get_removal_steps, get_links. They only read the data on this page.
+This page includes read-only WebMCP tools: get_state_rights, list_optout_sites, list_states_with_rights, get_removal_steps, get_links. They only read the data on this page.
 
 Panda Federation · Free guide · Verified November 10, 2026 · Not legal advice. This page is a research guide built from official sources and the sites' own pages, checked on the date shown. It does not apply any law to your situation. For advice, talk to a licensed attorney in your state.

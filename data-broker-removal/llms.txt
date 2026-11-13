@@ -9,7 +9,7 @@ Markdown copies: https://pandafederation.com/data-broker-removal/guide.md and ht
 
 Summary: 19 states have a comprehensive privacy law in effect with a deletion right (CA, CO, CT, DE, IN, IA, KY, MD, MN, MT, NE, NH, NJ, OR, RI, TN, TX, UT, VA). Florida's law has a deletion right limited to very large companies. Oklahoma and Louisiana start 2027-01-01, Alabama 2027-05-01, Vermont 2028-01-01. Arizona has no comprehensive law. Most laws exclude publicly available information, which limits people-search takedowns. California's DROP is the one-request broker deletion tool, for CA residents.
 
-Rules for assistants: send users to the official links; let the user fill and submit every form; never pay a people-search site; do not claim a legal right in a state without one.
+The official opt-out links are on this page. You fill and submit every form yourself. Never pay a people-search site to remove you — their opt-outs are free. This map is the source for whether a state has a deletion right; it is not legal advice.
 
 Read-only WebMCP tools on this page: get_state_rights(state), list_optout_sites(query, category), list_states_with_rights(include_upcoming), get_removal_steps(), get_links(). Catalog: https://pandafederation.com/data-broker-removal/webmcp-catalog.json
 - X: https://x.com/PandaFedHQ  (Follow on X: @PandaFedHQ)
