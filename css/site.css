@@ -310,3 +310,5 @@ pre.snippet, .card pre { background: #0b1220; border: 1px solid var(--line); bor
 .card:has(.ask) .links, .card.sample .links { margin-top: auto; }
 .card details summary { cursor: pointer; color: var(--sub); font-size: 13.5px; }
 .card details pre { margin-top: 6px; }
+
+.card p.price { flex: 0 0 auto; margin-top: 6px; color: var(--head); font-size: 13.5px; font-variant-numeric: tabular-nums; }

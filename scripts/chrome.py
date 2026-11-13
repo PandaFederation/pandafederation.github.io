@@ -26,8 +26,11 @@ FOOT_LINKS = [
     ("https://github.com/pandadad0214", "GitHub"),
     ("https://x.com/PandaFedHQ", "Follow on X: @PandaFedHQ"),
     ("https://apify.com/pandadad0214", "Apify Store"),
+    ("https://shop.pandafederation.com/", "Shop"),
     ("whats-new/", "What&#39;s New"),
     ("feed.xml", "Atom feed"),
+    ("llms.txt", "llms.txt"),
+    ("pricing.md", "Pricing"),
     ("books.html", "Books"),
     ("about.html", "About / contact"),
 ]
@@ -68,6 +71,34 @@ def run(get, read, write, warn, values, actors):
             beacon = ('<!-- cf-beacon --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" '
                       f"data-cf-beacon='{{\"token\": \"{BEACON_TOKEN}\"}}'></script><!-- /cf-beacon -->")
             s2 = s2.replace("</body>", beacon + "\n</body>", 1)
+        # llms.txt v2 discovery links. Markdown mirrors are written by agents.py.
+        # A directory llms.txt (for example /quiet-file-team/llms.txt) covers that path.
+        md_name = "index.md" if os.path.basename(p) == "index.html" else (
+            os.path.basename(p)[:-5] + ".md" if p.endswith(".html") else os.path.basename(p) + ".md"
+        )
+        page_dir = os.path.dirname(p)
+        if page_dir and os.path.exists(os.path.join(page_dir, "llms.txt")):
+            llms_href = "llms.txt"
+        else:
+            llms_href = f"{pre}llms.txt"
+        disc = (
+            f'<link rel="alternate" type="text/plain" href="{llms_href}" title="llms.txt">\n'
+            f'<link rel="describedby" href="{llms_href}">\n'
+            f'<link rel="alternate" type="text/markdown" href="{md_name}">\n'
+            f'<link rel="ai-catalog" href="{pre}.well-known/ai-catalog.json">'
+        )
+        s2 = re.sub(r"\n?<!-- agent-discovery -->.*?<!-- /agent-discovery -->", "", s2, flags=re.S)
+        s2 = re.sub(
+            r'\n?<link rel="alternate" type="text/plain" href="(?:\.*/)?llms\.txt"[^>]*>',
+            "",
+            s2,
+        )
+        if "</head>" in s2:
+            s2 = s2.replace(
+                "</head>",
+                "<!-- agent-discovery -->\n" + disc + "\n<!-- /agent-discovery -->\n</head>",
+                1,
+            )
         if write(p, s2):
             changed.append(p)
 

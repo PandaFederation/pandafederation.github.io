@@ -47,4 +47,4 @@ Then open `http://localhost:8080/`. The 3D hero needs a web server (not a `file:
 
 MIT. Logo, crest, and headquarters stills are Panda Federation brand assets.
 
-- `scripts/agents.py` (last build step) writes `llms.txt`, the JSON-LD on every page, PyPI/Registry fields in the WebMCP catalogs, and `sitemap.xml` (including `feed.xml` and `llms.txt`). Edit the generator or its sources (`webmcp-catalog.json`, page copy, digest issues), not those outputs.
+- `scripts/agents.py` (last build step) writes `llms.txt`, `pricing.md`, `llms-full.txt`, Markdown mirrors of each public page, `.well-known/ai-catalog.json`, the JSON-LD on every page (including visible-matching Apify list rates on tool cards), PyPI/Registry fields in the WebMCP catalogs, and `sitemap.xml`. Edit the generator or its sources (`webmcp-catalog.json`, page copy, digest issues), not those outputs. Machine-readable rates must match the visible card text.

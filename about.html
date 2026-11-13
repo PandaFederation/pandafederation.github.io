@@ -24,9 +24,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/site.css">
-<link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt">
 <!-- Chrome WebMCP origin-trial token for this origin. Expires 2027-03-29. -->
 <meta http-equiv="origin-trial" content="Aqw7v/gbIv8YKr3gufk32qKfwpTCqHtX+usd81zn/QBf5wkPHo7Cj1pUsS5uvHfIRYCyAVV9z1yeKrSBRHSS9wcAAABmeyJvcmlnaW4iOiJodHRwczovL3BhbmRhZmVkZXJhdGlvbi5jb206NDQzIiwiZmVhdHVyZSI6IldlYk1DUCIsImV4cGlyeSI6MTgwNjM2NDgwMCwiaXNTdWJkb21haW4iOnRydWV9">
+<!-- agent-discovery -->
+<link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt">
+<link rel="describedby" href="llms.txt">
+<link rel="alternate" type="text/markdown" href="about.md">
+<link rel="ai-catalog" href=".well-known/ai-catalog.json">
+<!-- /agent-discovery -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -81,11 +86,11 @@
 <h2>What we build</h2>
 <ul><li><strong>Public-data tools for AI agents.</strong> Apify Actors and MCP servers that pull from official sources: reference checks, federal grants and bids, official lead lists, domain and email security. (<a href="apify.html">Apify tools</a> · <a href="mcp.html">MCP servers</a>)</li><li><strong>Local-first tools for bot teams.</strong> <a href="quiet-file-team/">Quiet File Team</a> is the plain-file system our own bots use to share one computer: a task queue, short handoff notes, and an early exit so idle routines stop instead of spending tokens. <a href="https://github.com/pandadad0214/Steel_Panda" rel="noopener">Steel Panda</a> and <a href="https://github.com/pandadad0214/Watchdog_Panda" rel="noopener">Watchdog Panda</a> are the small shell tools that keep it running.</li><li><strong>Free guides.</strong> The <a href="data-broker-removal/">data broker removal guide</a> grew out of our own opt-out work and became a page anyone can use.</li></ul>
 <h2>How we work</h2>
-<ul><li><strong>Official sources only.</strong> If a tool can&#x27;t name its source, it doesn&#x27;t ship.</li><li><strong>Free and paid editions always name each other.</strong> When a tool has a free version and a paid one, both pages say so and explain how to switch. Prices live on the store listing, never on this site.</li><li><strong>No invented numbers.</strong> Counts on this site rebuild themselves from the Apify Store, PyPI and GitHub, and the sample tables come from real runs.</li><li><strong>Built slow, built steady.</strong> At most one new tool a day, and only once it works.</li></ul>
+<ul><li><strong>Official sources only.</strong> If a tool can&#x27;t name its source, it doesn&#x27;t ship.</li><li><strong>Free and paid editions always name each other.</strong> When a tool has a free version and a paid one, both pages say so and explain how to switch. List rates on this site are rebuilt from the Apify Store API and shown on each Apify tool card and on <a href="pricing.md">pricing.md</a>. The Store page is authoritative. Fiverr, Upwork and Agensi package prices stay on those listings.</li><li><strong>No invented numbers.</strong> Counts on this site rebuild themselves from the Apify Store, PyPI and GitHub, and the sample tables come from real runs.</li><li><strong>Built slow, built steady.</strong> At most one new tool a day, and only once it works.</li></ul>
 <h2>Contact</h2>
 <p>The public contact paths are GitHub and X only. There is no personal email or phone on this site. <a href="https://github.com/pandadad0214" rel="noopener">GitHub</a> · <a href="https://x.com/PandaFedHQ" rel="noopener">Follow on X: @PandaFedHQ</a></p>
   </article>
-  <p class="note" style="margin-top:28px">This website is the public catalog for the Federation. The official site is <a href="https://pandafederation.com/">https://pandafederation.com/</a>.</p>
+  <p class="note" style="margin-top:28px">This website is the public catalog for the Federation. The official site is <a href="https://pandafederation.com/">https://pandafederation.com/</a>. Hardware (cables, racks, and lab gear) is sold separately at <a href="https://shop.pandafederation.com/">Panda Federation Shop</a>; that catalog is assigned independently, so the shop may show no products yet.</p>
 </main>
 <footer class="site">
   <div class="foot-inner">
@@ -97,8 +102,11 @@
       <a href="https://github.com/pandadad0214">GitHub</a> ·
       <a href="https://x.com/PandaFedHQ">Follow on X: @PandaFedHQ</a> ·
       <a href="https://apify.com/pandadad0214">Apify Store</a> ·
+      <a href="https://shop.pandafederation.com/">Shop</a> ·
       <a href="whats-new/">What&#39;s New</a> ·
       <a href="feed.xml">Atom feed</a> ·
+      <a href="llms.txt">llms.txt</a> ·
+      <a href="pricing.md">Pricing</a> ·
       <a href="books.html">Books</a> ·
       <a href="about.html">About / contact</a>
     </div>

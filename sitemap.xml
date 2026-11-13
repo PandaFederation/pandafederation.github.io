@@ -2,18 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://pandafederation.com/</loc></url>
   <url><loc>https://pandafederation.com/about.html</loc></url>
+  <url><loc>https://pandafederation.com/about.md</loc></url>
   <url><loc>https://pandafederation.com/agensi.html</loc></url>
+  <url><loc>https://pandafederation.com/agensi.md</loc></url>
   <url><loc>https://pandafederation.com/apify.html</loc></url>
+  <url><loc>https://pandafederation.com/apify.md</loc></url>
   <url><loc>https://pandafederation.com/apps.html</loc></url>
+  <url><loc>https://pandafederation.com/apps.md</loc></url>
   <url><loc>https://pandafederation.com/books.html</loc></url>
+  <url><loc>https://pandafederation.com/books.md</loc></url>
   <url><loc>https://pandafederation.com/feed.xml</loc></url>
+  <url><loc>https://pandafederation.com/index.md</loc></url>
+  <url><loc>https://pandafederation.com/llms-full.txt</loc></url>
   <url><loc>https://pandafederation.com/llms.txt</loc></url>
   <url><loc>https://pandafederation.com/mcp.html</loc></url>
+  <url><loc>https://pandafederation.com/mcp.md</loc></url>
+  <url><loc>https://pandafederation.com/pricing.md</loc></url>
   <url><loc>https://pandafederation.com/services.html</loc></url>
+  <url><loc>https://pandafederation.com/services.md</loc></url>
+  <url><loc>https://pandafederation.com/.well-known/ai-catalog.json</loc></url>
+  <url><loc>https://pandafederation.com/.well-known/webmcp.json</loc></url>
   <url><loc>https://pandafederation.com/data-broker-removal/</loc></url>
+  <url><loc>https://pandafederation.com/data-broker-removal/guide.md</loc></url>
+  <url><loc>https://pandafederation.com/data-broker-removal/index.md</loc></url>
+  <url><loc>https://pandafederation.com/data-broker-removal/state-law-map.md</loc></url>
   <url><loc>https://pandafederation.com/digest/</loc></url>
+  <url><loc>https://pandafederation.com/digest/index.md</loc></url>
   <url><loc>https://pandafederation.com/quiet-file-team-mcp/</loc></url>
+  <url><loc>https://pandafederation.com/quiet-file-team-mcp/index.md</loc></url>
   <url><loc>https://pandafederation.com/quiet-file-team/</loc></url>
+  <url><loc>https://pandafederation.com/quiet-file-team/index.md</loc></url>
   <url><loc>https://pandafederation.com/whats-new/</loc></url>
+  <url><loc>https://pandafederation.com/whats-new/index.md</loc></url>
   <url><loc>https://pandafederation.com/digest/001-2026-11-12/</loc></url>
+  <url><loc>https://pandafederation.com/digest/001-2026-11-12/index.md</loc></url>
 </urlset>

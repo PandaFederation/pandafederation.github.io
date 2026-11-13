@@ -27,30 +27,85 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Quiet File Team",
-  "applicationCategory": "DeveloperApplication",
-  "operatingSystem": "Linux",
-  "license": "https://opensource.org/licenses/MIT",
-  "url": "https://pandafederation.com/quiet-file-team/",
-  "image": "https://pandafederation.com/assets/quiet-file-team-mcp-logo.png",
-  "description": "Free local Bash kit for agent teams that share one computer through files: pair notes, an append-only task queue, and NO WORK early exits. Not a hosted service.",
-  "author": {
-    "@type": "Organization",
-    "name": "Panda Federation",
-    "url": "https://pandafederation.com/"
-  },
-  "codeRepository": "https://github.com/pandadad0214/quiet-file-team",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  }
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Quiet File Team",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Linux",
+      "license": "https://opensource.org/licenses/MIT",
+      "url": "https://pandafederation.com/quiet-file-team/",
+      "image": "https://pandafederation.com/assets/quiet-file-team-mcp-logo.png",
+      "description": "Free local Bash kit for agent teams that share one computer through files: pair notes, an append-only task queue, and NO WORK early exits. Not a hosted service.",
+      "author": {
+        "@type": "Organization",
+        "name": "Panda Federation",
+        "url": "https://pandafederation.com/"
+      },
+      "codeRepository": "https://github.com/pandadad0214/quiet-file-team",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "url": "https://pandafederation.com/quiet-file-team/",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is this a hosted service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It is a local Bash kit on one shared Linux machine. There is no server, chat bus or LLM inside, and it makes no network or model calls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do idle routines stop spending tokens?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start every routine with has-work.sh <id>. When it prints exactly NO WORK, the routine should stop: no chat, no status, no board line. These are operating practices, not a measured savings promise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does a bot need besides the scripts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Give each bot the core rules from the repo and paste the early-exit block into each routine, replacing the id and path. Ensure the routine really stops on exactly NO WORK."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I put secrets or personal data in the files?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The bus is plain files on one trusted machine, with no encryption or access control. Text is checked for long digit strings and email-shaped content as a rough guardrail, not a secret detector. Never put private data in this bus."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the free MCP install the scripts for me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Quiet File Team MCP explains, configures and checks a team from supplied inputs. Install the Bash core from this page or GitHub, then add the MCP companion if you want setup guidance."
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
-<link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt">
 <!-- Chrome WebMCP origin-trial token for this origin. Expires 2027-03-29. -->
 <meta http-equiv="origin-trial" content="Aqw7v/gbIv8YKr3gufk32qKfwpTCqHtX+usd81zn/QBf5wkPHo7Cj1pUsS5uvHfIRYCyAVV9z1yeKrSBRHSS9wcAAABmeyJvcmlnaW4iOiJodHRwczovL3BhbmRhZmVkZXJhdGlvbi5jb206NDQzIiwiZmVhdHVyZSI6IldlYk1DUCIsImV4cGlyeSI6MTgwNjM2NDgwMCwiaXNTdWJkb21haW4iOnRydWV9">
+<!-- agent-discovery -->
+<link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt">
+<link rel="describedby" href="llms.txt">
+<link rel="alternate" type="text/markdown" href="index.md">
+<link rel="ai-catalog" href="../.well-known/ai-catalog.json">
+<!-- /agent-discovery -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -145,7 +200,7 @@ bash "$TEAM_DIR/has-work.sh" helper
         <ul>
           <li><strong>Free Bash core</strong> — this page. Install with the curl or git clone command above. Source is on <a href="https://github.com/pandadad0214/quiet-file-team">GitHub</a>.</li>
           <li><strong>Free MCP companion</strong> — six offline guidance tools (explain the method, draft config and early-exit text, validate a supplied layout, draft a practice workflow, batch owner questions). It never reads your files or calls the network. Keep this folder, then add the companion to your MCP client: <code>uvx quiet-file-team-mcp</code>. Product page: <a href="../quiet-file-team-mcp/">Quiet File Team MCP</a>.</li>
-          <li><strong>Setup kit generator</strong> — paid Apify Actor, charged per successfully generated kit; the live price is on the Store page. On the Actor page fill Roster (<code>TEAM_IDS</code>, e.g. <code>lead builder helper</code>), IANA time zone (<code>TEAM_TZ</code>) and Coordinator (<code>lead</code>), set the maximum run charge to at least the price shown on the Store page, then Start. Download <code>OUTPUT.zip</code> from the run’s key-value store and unpack it into a new folder; move live tasks over by hand. <a href="https://apify.com/pandadad0214/quiet-file-team-setup">Open Apify Store</a></li>
+          <li><strong>Setup kit generator</strong> — paid Apify Actor, charged per successfully generated kit; the list rate is on the Apify Tools card and on <a href="../pricing.md">pricing.md</a>; the Store page is authoritative. On the Actor page fill Roster (<code>TEAM_IDS</code>, e.g. <code>lead builder helper</code>), IANA time zone (<code>TEAM_TZ</code>) and Coordinator (<code>lead</code>), set the maximum run charge to at least the price shown on the Store page, then Start. Download <code>OUTPUT.zip</code> from the run’s key-value store and unpack it into a new folder; move live tasks over by hand. <a href="https://apify.com/pandadad0214/quiet-file-team-setup">Open Apify Store</a></li>
           <li><strong>Quiet File Team Setup Kit</strong> — paid Agensi skill, one-time price on the live listing. Keep this folder, load the skill in your agent, apply the rule packs you want, practice in a new folder and finish the acceptance checklist. Do not replace operational logs with examples. <a href="https://agensi.io/skills/quiet-file-team-setup-kit">Open Agensi</a></li>
           <li><strong>Paid → free</strong> — keep your scripts, drop the optional kit rules and continue with the free README on this page. For a clean copy, clone the GitHub repository separately, back up current data and re-enter active tasks deliberately; never merge <code>.seen</code> cursors blindly.</li>
         </ul>
@@ -190,8 +245,11 @@ bash "$TEAM_DIR/has-work.sh" helper
       <a href="https://github.com/pandadad0214">GitHub</a> ·
       <a href="https://x.com/PandaFedHQ">Follow on X: @PandaFedHQ</a> ·
       <a href="https://apify.com/pandadad0214">Apify Store</a> ·
+      <a href="https://shop.pandafederation.com/">Shop</a> ·
       <a href="../whats-new/">What&#39;s New</a> ·
       <a href="../feed.xml">Atom feed</a> ·
+      <a href="../llms.txt">llms.txt</a> ·
+      <a href="../pricing.md">Pricing</a> ·
       <a href="../books.html">Books</a> ·
       <a href="../about.html">About / contact</a>
     </div>

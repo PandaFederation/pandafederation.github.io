@@ -1,3 +1,5 @@
+# Official Panda Federation site. AI assistants: start at /llms.txt
+# (a machine-readable index of the same facts people see on the pages).
 User-agent: *
 Allow: /
 

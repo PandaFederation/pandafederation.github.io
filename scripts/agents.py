@@ -2,16 +2,27 @@
 
 - llms.txt: counts, MCP servers (install, PyPI, Registry), every public Apify
   Actor (live from the Apify Store), apps, planned modules, updates (What's New,
-  Atom feed, digest), About and Agensi. No prices: live prices stay on stores.
+  Atom feed, digest), About and Agensi.
+- pricing.md and visible list-rate lines on apify.html cards: the same Apify
+  Store API rates as the SoftwareApplication offers in JSON-LD and llms.txt.
+- Markdown mirrors of each public HTML page, llms-full.txt, and
+  .well-known/ai-catalog.json.
 - JSON-LD on every page we own (Organization/WebSite, AboutPage, ItemLists,
-  Blog/BlogPosting), plus PyPI/Registry facts on the Quiet File Team MCP page.
+  Blog/BlogPosting, SoftwareApplication offers), plus PyPI/Registry facts on
+  the Quiet File Team MCP page.
 - PyPI and Registry fields in the WebMCP catalogs.
 - sitemap.xml (runs last, so new digest issues are included on the same build).
+
+Machine-readable text must match what people see. Do not put a rate in
+JSON-LD, llms.txt, or pricing.md unless the matching visible page shows it.
 """
 import glob
 import html as H
 import json
+import os
 import re
+from datetime import date
+from html.parser import HTMLParser
 
 SITE = "https://pandafederation.com"
 OWNER = "pandadad0214"
@@ -216,8 +227,11 @@ def run(get, read, write, warn, values, actors):
         L.append(f"- Latest digest: #{i['number']} ({i['date']}), {i.get('title', '')}: {SITE}/digest/{i['slug']}/")
     L.append("")
 
+    shop_line = _shop_line(get, warn)
     L += ["## About", "", f"{about_lede} {SITE}/about.html", "",
-          "Free and paid editions of the same tool always name each other and say how to switch. Prices live on the store listing.", ""]
+          "Free and paid editions of the same tool always name each other and say how to switch. "
+          f"Apify list rates are on each tool card and on {SITE}/pricing.md. The Store page is authoritative. "
+          "Fiverr, Upwork and Agensi package prices stay on those listings.", ""]
     L += ["## Services and skills", "",
           f"- Services: {SITE}/services.html",
           f"- {values['agensi_skills']} Agensi skills, each linked to its related Apify Actor: {SITE}/agensi.html", ""]
@@ -227,11 +241,24 @@ def run(get, read, write, warn, values, actors):
           f"- GitHub: https://github.com/{OWNER}",
           "- X: https://x.com/PandaFedHQ  (Follow on X: @PandaFedHQ)",
           "- Product Hunt: https://www.producthunt.com/products/panda-federation-tools",
+          f"- Pricing (same list rates as the Apify cards): {SITE}/pricing.md",
+          f"- Full page markdown: {SITE}/llms-full.txt",
+          f"- AI catalog: {SITE}/.well-known/ai-catalog.json",
+          f"- WebMCP manifest: {SITE}/.well-known/webmcp.json",
           f"- Inventory: {SITE}/inventory.json",
           f"- Sitemap: {SITE}/sitemap.xml",
-          f"- Full tool notes: https://{OWNER}.github.io/panda-federation-tools/llms.txt", ""]
+          f"- Full tool notes: https://{OWNER}.github.io/panda-federation-tools/llms.txt",
+          f"- {shop_line}", ""]
     if write("llms.txt", "\n".join(L)):
         changed.append("llms.txt")
+
+    apify_html = read("apify.html")
+    apify2, price_lines = inject_apify_prices(apify_html, actors, warn)
+    if write("apify.html", apify2):
+        changed.append("apify.html")
+    pricing_md = build_pricing_md(actors, fam, servers, values, shop_line, price_lines)
+    if write("pricing.md", pricing_md):
+        changed.append("pricing.md")
 
     # ---------- JSON-LD
     org = {"@type": "Organization", "@id": f"{SITE}/#org", "name": "Panda Federation", "url": f"{SITE}/",
@@ -331,17 +358,319 @@ def run(get, read, write, warn, values, actors):
         if got != [want]:
             warn.append(f"canonical on {p}: {got} (expected {want})")
 
+    md_changed = write_markdown_mirrors(read, write, warn, pages)
+    catalog_json = build_ai_catalog(values, servers)
+    if write(".well-known/ai-catalog.json", json.dumps(catalog_json, indent=2, ensure_ascii=False) + "\n"):
+        md_changed.append(".well-known/ai-catalog.json")
+
     # ---------- sitemap (last step, so it sees pages built by earlier modules)
     urls = []
     for p in pages:
         if p == "404.html" or 'http-equiv="refresh"' in read(p):
             continue
         urls.append(f"{SITE}/" + (p[:-len("index.html")] if p.endswith("index.html") else p))
-    urls += [f"{SITE}/feed.xml", f"{SITE}/llms.txt"]
+    urls += [
+        f"{SITE}/feed.xml",
+        f"{SITE}/llms.txt",
+        f"{SITE}/llms-full.txt",
+        f"{SITE}/pricing.md",
+        f"{SITE}/.well-known/ai-catalog.json",
+        f"{SITE}/.well-known/webmcp.json",
+    ]
+    skip_md = ("README.md", "LICENSE")
+    for md in glob.glob("**/*.md", recursive=True):
+        if md.startswith(SKIP) or md.startswith("digest/issues/") or md.startswith("scripts/"):
+            continue
+        if os.path.basename(md) in skip_md:
+            continue
+        urls.append(f"{SITE}/{md}")
     urls = sorted(set(urls), key=lambda u: (u.count("/"), u))
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sm += [f"  <url><loc>{u}</loc></url>" for u in urls]
     sm.append("</urlset>\n")
     if write("sitemap.xml", "\n".join(sm)):
         changed.append("sitemap.xml")
+    changed += md_changed
     return changed
+
+
+SHOP = "https://shop.pandafederation.com/"
+CARD_RE = re.compile(r'(<article class="card"[^>]*>)(.*?)(</article>)', re.S)
+
+
+def _shop_line(get, warn):
+    """Honest shop inventory sentence from the public product feed."""
+    try:
+        data = get("https://shop.pandafederation.com/feeds/products.json")
+        n = len(data.get("items") or [])
+    except Exception as e:  # noqa: BLE001
+        warn.append(f"shop feed lookup failed: {e}")
+        return (
+            f"Panda Federation Shop (cables, racks, and lab gear): {SHOP} — "
+            "see that site for current inventory and item prices."
+        )
+    if n == 0:
+        return (
+            f"Panda Federation Shop (cables, racks, and lab gear): {SHOP} — "
+            "no products listed in the shop feed when this site built. "
+            "Item prices, when listed, appear on that site."
+        )
+    return (
+        f"Panda Federation Shop (cables, racks, and lab gear): {SHOP} — "
+        f"{n} item{'s' if n != 1 else ''} in the shop feed when this site built. "
+        "Item prices appear on that site."
+    )
+
+
+def _rate_sentence(rate):
+    if rate == "free":
+        return "Free on the Apify Store."
+    return f"List rate: {rate}. The Apify Store page is authoritative."
+
+
+def inject_apify_prices(html, actors, warn):
+    """Add a visible list-rate line to each Actor card, matching JSON-LD/llms.txt."""
+    rates = {a["name"]: pricing(a)[1] for a in actors}
+    price_lines = {}
+
+    def one(m):
+        body = m.group(2)
+        slugs = re.findall(rf"apify\.com/{OWNER}/([a-z0-9-]+)", body)
+        slug = slugs[0] if slugs else None
+        if not slug:
+            return m.group(0)
+        rate = rates.get(slug)
+        if rate is None:
+            warn.append(f"apify card {slug}: no live pricing")
+            text = "Live price is on the Apify Store listing."
+        else:
+            text = _rate_sentence(rate)
+        price_lines[slug] = text
+        body = re.sub(r'\n?<p class="price" data-gen="apify-price:[^"]+">.*?</p>', "", body)
+        body2, n = re.subn(
+            r"(<h3>.*?</h3>\s*<p>.*?</p>)",
+            rf'\1\n<p class="price" data-gen="apify-price:{slug}">{H.escape(text)}</p>',
+            body,
+            count=1,
+            flags=re.S,
+        )
+        if n != 1:
+            warn.append(f"apify card {slug}: could not insert price line")
+            return m.group(0)
+        return m.group(1) + body2 + m.group(3)
+
+    return CARD_RE.sub(one, html), price_lines
+
+
+def build_pricing_md(actors, fam, servers, values, shop_line, price_lines):
+    today = date.today().isoformat()
+    lines = [
+        "# Pricing — Panda Federation tools",
+        "",
+        "> Apify list rates rebuilt from the Apify Store API when this site builds "
+        f"({today}). The same sentences appear on the Apify tool cards at "
+        f"{SITE}/apify.html. The Store page is authoritative. For tiered events, "
+        "the list rate is the Apify free-plan tier; paid Apify plans pay less. "
+        "Every run also has Apify's small Actor-start event.",
+        "",
+        "## Apify Actors",
+        "",
+    ]
+    by = {}
+    for a in actors:
+        by.setdefault(fam.get(a["name"]), []).append(a)
+    for key, label in FAMILY + [(None, "Other")]:
+        if not by.get(key):
+            continue
+        lines.append(f"### {label}")
+        lines.append("")
+        for a in sorted(by[key], key=lambda x: x["title"].lower()):
+            _, rate = pricing(a)
+            sentence = price_lines.get(a["name"]) or (_rate_sentence(rate) if rate else "Live price is on the Apify Store listing.")
+            lines.append(f"- [{a['title']}](https://apify.com/{OWNER}/{a['name']}): {sentence}")
+        lines.append("")
+    lines += [
+        "## MCP servers",
+        "",
+        "Installing a Panda Federation MCP server from PyPI is free. The four focused "
+        "domain servers call our Apify Actors, so they need your own `APIFY_TOKEN`; "
+        "runs bill to your Apify account at the Actor rates above. Quiet File Team MCP "
+        "is free, offline, and needs no token.",
+        "",
+    ]
+    for s in servers:
+        need = s.get("install", {}).get("requires") or []
+        extra = " Needs " + ", ".join(f"`{x}`" for x in need) + "." if need else " No token needed."
+        lines.append(f"- {s['name']}: install with `{s['install']['uvx']}`.{extra} {s.get('homepage') or s.get('repo')}")
+    lines += [
+        "",
+        "## Other listings",
+        "",
+        "Fiverr, Upwork and Agensi package prices stay on those listings. This file does not repeat them.",
+        f"- Services: {SITE}/services.html",
+        f"- Agensi skills: {SITE}/agensi.html",
+        "",
+        "## Hardware shop",
+        "",
+        shop_line,
+        "",
+    ]
+    return "\n".join(lines)
+
+
+def _md_path(page):
+    if os.path.basename(page) == "index.html":
+        return os.path.join(os.path.dirname(page), "index.md") if os.path.dirname(page) else "index.md"
+    if page.endswith(".html"):
+        return page[:-5] + ".md"
+    return page + ".md"
+
+
+class _MD(HTMLParser):
+    """Best-effort HTML-to-Markdown of visible page content only."""
+
+    SKIP = {"script", "style", "nav", "footer", "noscript"}
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.out = []
+        self.skip = 0
+        self.href = None
+        self.li = 0
+        self.heading = None
+
+    def handle_starttag(self, tag, attrs):
+        if tag in self.SKIP:
+            self.skip += 1
+            return
+        if self.skip:
+            return
+        attrs = dict(attrs)
+        if tag in ("h1", "h2", "h3", "h4"):
+            self.heading = "#" * int(tag[1])
+            self.out.append(f"\n\n{self.heading} ")
+        elif tag == "p":
+            self.out.append("\n\n")
+        elif tag == "br":
+            self.out.append("  \n")
+        elif tag == "li":
+            self.out.append("\n- ")
+            self.li += 1
+        elif tag == "a":
+            self.href = attrs.get("href")
+            self.out.append("[")
+        elif tag == "code":
+            self.out.append("`")
+        elif tag in ("strong", "b"):
+            self.out.append("**")
+        elif tag in ("em", "i"):
+            self.out.append("*")
+        elif tag == "pre":
+            self.out.append("\n\n```\n")
+
+    def handle_endtag(self, tag):
+        if tag in self.SKIP:
+            self.skip = max(0, self.skip - 1)
+            return
+        if self.skip:
+            return
+        if tag in ("h1", "h2", "h3", "h4"):
+            self.heading = None
+            self.out.append("\n")
+        elif tag == "a":
+            href = self.href or ""
+            self.out.append(f"]({href})" if href else "]")
+            self.href = None
+        elif tag == "code":
+            self.out.append("`")
+        elif tag in ("strong", "b"):
+            self.out.append("**")
+        elif tag in ("em", "i"):
+            self.out.append("*")
+        elif tag == "pre":
+            self.out.append("\n```\n")
+        elif tag in ("ul", "ol", "p"):
+            self.out.append("\n")
+
+    def handle_data(self, data):
+        if self.skip:
+            return
+        text = re.sub(r"[ \t]+", " ", data)
+        if not text.strip() and "\n" in text:
+            return
+        self.out.append(text)
+
+
+def html_to_markdown(raw, url, title):
+    s = re.sub(r"<script\b.*?</script>", "", raw, flags=re.S | re.I)
+    s = re.sub(r"<style\b.*?</style>", "", s, flags=re.S | re.I)
+    body_m = re.search(r"<body\b[^>]*>(.*?)</body>", s, re.S | re.I)
+    body = body_m.group(1) if body_m else s
+    # Keep the hero (it sits outside <main> on the homepage) and the main column.
+    body = re.sub(r"<header\b.*?</header>", "", body, flags=re.S | re.I)
+    body = re.sub(r"<footer\b.*?</footer>", "", body, flags=re.S | re.I)
+    body = re.sub(r"<canvas\b.*?</canvas>", "", body, flags=re.S | re.I)
+    body = re.sub(r'<a class="skip".*?</a>', "", body, flags=re.S | re.I)
+    parser = _MD()
+    try:
+        parser.feed(body)
+        parser.close()
+    except Exception:  # noqa: BLE001
+        text = _text(body)
+        return f"# {title}\n\nSource: {url}\n\n{text}\n"
+    md = "".join(parser.out)
+    md = re.sub(r"\n{3,}", "\n\n", md).strip()
+    return f"# {title}\n\nSource: {url}\n\n{md}\n"
+
+
+def write_markdown_mirrors(read, write, warn, pages):
+    changed = []
+    parts = ["# Panda Federation — full page markdown", "",
+             "Plain-text versions of the public pages, generated from the same HTML people see. "
+             f"Index: {SITE}/llms.txt. Pricing: {SITE}/pricing.md.", ""]
+    for p in pages:
+        if p == "404.html" or "http-equiv=\"refresh\"" in read(p):
+            continue
+        raw = read(p)
+        title_m = re.search(r"<title[^>]*>(.*?)</title>", raw, re.S | re.I)
+        title = _text(title_m.group(1)) if title_m else p
+        url = f"{SITE}/" + (p[:-len("index.html")] if p.endswith("index.html") else p)
+        md = html_to_markdown(raw, url, title)
+        dest = _md_path(p)
+        if write(dest, md):
+            changed.append(dest)
+        parts.append(md)
+        parts.append("\n---\n")
+    if write("llms-full.txt", "\n".join(parts).rstrip() + "\n"):
+        changed.append("llms-full.txt")
+    return changed
+
+
+def build_ai_catalog(values, servers):
+    return {
+        "name": "Panda Federation",
+        "description": "Official public-data tools for AI agents: MCP servers, Apify Actors, and local kits.",
+        "url": f"{SITE}/",
+        "llms_txt": f"{SITE}/llms.txt",
+        "llms_full": f"{SITE}/llms-full.txt",
+        "pricing": f"{SITE}/pricing.md",
+        "sitemap": f"{SITE}/sitemap.xml",
+        "webmcp": f"{SITE}/.well-known/webmcp.json",
+        "catalog": f"{SITE}/webmcp-catalog.json",
+        "shop": SHOP,
+        "resources": [
+            {"type": "llms.txt", "url": f"{SITE}/llms.txt"},
+            {"type": "llms-full.txt", "url": f"{SITE}/llms-full.txt"},
+            {"type": "pricing", "url": f"{SITE}/pricing.md"},
+            {"type": "sitemap", "url": f"{SITE}/sitemap.xml"},
+            {"type": "webmcp", "url": f"{SITE}/.well-known/webmcp.json"},
+            {"type": "webmcp-catalog", "url": f"{SITE}/webmcp-catalog.json"},
+            {"type": "mcp-registry-search",
+             "url": f"https://registry.modelcontextprotocol.io/v0/servers?search=io.github.{OWNER}"},
+            {"type": "shop", "url": SHOP, "note": "Hardware shop; inventory is on that site."},
+        ] + [
+            {"type": "mcp-server", "name": s["name"], "install": s["install"]["uvx"],
+             "url": s.get("homepage") or s.get("repo")}
+            for s in servers
+        ],
+    }

@@ -1,0 +1,83 @@
+{
+  "name": "Panda Federation",
+  "description": "Official public-data tools for AI agents: MCP servers, Apify Actors, and local kits.",
+  "url": "https://pandafederation.com/",
+  "llms_txt": "https://pandafederation.com/llms.txt",
+  "llms_full": "https://pandafederation.com/llms-full.txt",
+  "pricing": "https://pandafederation.com/pricing.md",
+  "sitemap": "https://pandafederation.com/sitemap.xml",
+  "webmcp": "https://pandafederation.com/.well-known/webmcp.json",
+  "catalog": "https://pandafederation.com/webmcp-catalog.json",
+  "shop": "https://shop.pandafederation.com/",
+  "resources": [
+    {
+      "type": "llms.txt",
+      "url": "https://pandafederation.com/llms.txt"
+    },
+    {
+      "type": "llms-full.txt",
+      "url": "https://pandafederation.com/llms-full.txt"
+    },
+    {
+      "type": "pricing",
+      "url": "https://pandafederation.com/pricing.md"
+    },
+    {
+      "type": "sitemap",
+      "url": "https://pandafederation.com/sitemap.xml"
+    },
+    {
+      "type": "webmcp",
+      "url": "https://pandafederation.com/.well-known/webmcp.json"
+    },
+    {
+      "type": "webmcp-catalog",
+      "url": "https://pandafederation.com/webmcp-catalog.json"
+    },
+    {
+      "type": "mcp-registry-search",
+      "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214"
+    },
+    {
+      "type": "shop",
+      "url": "https://shop.pandafederation.com/",
+      "note": "Hardware shop; inventory is on that site."
+    },
+    {
+      "type": "mcp-server",
+      "name": "Panda Research Tools",
+      "install": "uvx --from panda-federation-tools panda-research-tools",
+      "url": "https://pandadad0214.github.io/panda-federation-tools/"
+    },
+    {
+      "type": "mcp-server",
+      "name": "Panda Public Funding Tools",
+      "install": "uvx --from panda-federation-tools panda-public-funding-tools",
+      "url": "https://pandadad0214.github.io/panda-federation-tools/"
+    },
+    {
+      "type": "mcp-server",
+      "name": "Panda Leads Tools",
+      "install": "uvx --from panda-federation-tools panda-leads-tools",
+      "url": "https://pandadad0214.github.io/panda-federation-tools/"
+    },
+    {
+      "type": "mcp-server",
+      "name": "Panda Web Security Tools",
+      "install": "uvx --from panda-federation-tools panda-web-security-tools",
+      "url": "https://pandadad0214.github.io/panda-federation-tools/"
+    },
+    {
+      "type": "mcp-server",
+      "name": "Panda Federation Tools (umbrella)",
+      "install": "uvx panda-federation-tools",
+      "url": "https://pandadad0214.github.io/panda-federation-tools/"
+    },
+    {
+      "type": "mcp-server",
+      "name": "Quiet File Team MCP",
+      "install": "uvx quiet-file-team-mcp",
+      "url": "https://pandafederation.com/quiet-file-team-mcp/"
+    }
+  ]
+}

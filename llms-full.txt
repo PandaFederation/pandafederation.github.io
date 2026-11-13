@@ -1,0 +1,1225 @@
+# Panda Federation — full page markdown
+
+Plain-text versions of the public pages, generated from the same HTML people see. Index: https://pandafederation.com/llms.txt. Pricing: https://pandafederation.com/pricing.md.
+
+# About · Panda Federation
+
+Source: https://pandafederation.com/about.html
+
+# About Panda Federation
+
+## A dad, a shared computer, and a team of bots
+
+Panda Federation is one dad's workshop. I build public-data tools with a small team of AI bots that share one computer. One bot writes and tests code, another checks listings and links, another keeps the books and the calendar honest, and I decide what ships.
+
+The bots don't run on trust. Every tool they build is tested against the official source it reads (Crossref, SAM.gov, the NPI Registry, state business filings, RDAP and others) before it goes public. Every listing is checked against the live store page. When a bot finds a page that hides instructions aimed at AI agents, it logs the page and doesn't follow them. That habit became a tool: the [Hidden AI Instructions Scanner](https://apify.com/pandadad0214/hidden-ai-instructions-scanner).
+
+## What we build
+
+- **Public-data tools for AI agents.** Apify Actors and MCP servers that pull from official sources: reference checks, federal grants and bids, official lead lists, domain and email security. ([Apify tools](apify.html) · [MCP servers](mcp.html))
+- **Local-first tools for bot teams.** [Quiet File Team](quiet-file-team/) is the plain-file system our own bots use to share one computer: a task queue, short handoff notes, and an early exit so idle routines stop instead of spending tokens. [Steel Panda](https://github.com/pandadad0214/Steel_Panda) and [Watchdog Panda](https://github.com/pandadad0214/Watchdog_Panda) are the small shell tools that keep it running.
+- **Free guides.** The [data broker removal guide](data-broker-removal/) grew out of our own opt-out work and became a page anyone can use.
+
+## How we work
+
+- **Official sources only.** If a tool can't name its source, it doesn't ship.
+- **Free and paid editions always name each other.** When a tool has a free version and a paid one, both pages say so and explain how to switch. List rates on this site are rebuilt from the Apify Store API and shown on each Apify tool card and on [pricing.md](pricing.md). The Store page is authoritative. Fiverr, Upwork and Agensi package prices stay on those listings.
+- **No invented numbers.** Counts on this site rebuild themselves from the Apify Store, PyPI and GitHub, and the sample tables come from real runs.
+- **Built slow, built steady.** At most one new tool a day, and only once it works.
+
+## Contact
+
+The public contact paths are GitHub and X only. There is no personal email or phone on this site. [GitHub](https://github.com/pandadad0214) · [Follow on X: @PandaFedHQ](https://x.com/PandaFedHQ)
+
+This website is the public catalog for the Federation. The official site is [https://pandafederation.com/](https://pandafederation.com/). Hardware (cables, racks, and lab gear) is sold separately at [Panda Federation Shop](https://shop.pandafederation.com/); that catalog is assigned independently, so the shop may show no products yet.
+
+
+---
+
+# Agent skills · Panda Federation
+
+Source: https://pandafederation.com/agensi.html
+
+36 live skills.
+Free skill
+
+### Broken Link Checker: 404s & Redirects to Excel
+[Agensi](https://agensi.io/skills/broken-link-checker-404s-redirects-to-excel) [Related Actor](https://apify.com/pandadad0214/broken-link-checker)Free skill
+
+### EU TED Tenders: Public Procurement Notices
+[Agensi](https://agensi.io/skills/eu-ted-tenders-public-procurement-notices) [Related Actor](https://apify.com/pandadad0214/eu-ted-tenders)Free skill
+
+### New York New Business Leads: New LLCs & Corps
+[Agensi](https://agensi.io/skills/new-york-new-business-leads-new-llcs-corps) [Related Actor](https://apify.com/pandadad0214/new-york-new-business-leads)Free skill
+
+### H-1B LCA Sponsor Leads: Employers, Jobs & Wages
+[Agensi](https://agensi.io/skills/h-1b-lca-sponsor-leads-employers-jobs-wages) [Related Actor](https://apify.com/pandadad0214/h1b-lca-sponsor-leads)Free skill
+
+### Wayback Machine Snapshot Finder: Archive Dates & URLs
+[Agensi](https://agensi.io/skills/wayback-machine-snapshot-finder-archive-dates-urls) [Related Actor](https://apify.com/pandadad0214/wayback-snapshot-finder)Free skill
+
+### Bulk Domain WHOIS & Expiry Check (RDAP) to Excel
+[Agensi](https://agensi.io/skills/bulk-domain-whois-expiry-check-rdap-to-excel) [Related Actor](https://apify.com/pandadad0214/bulk-domain-whois-expiry)Free skill
+
+### Texas New Business Leads: New Franchise Taxpayers
+[Agensi](https://agensi.io/skills/texas-new-business-leads-new-franchise-taxpayers) [Related Actor](https://apify.com/pandadad0214/texas-new-business-leads)Free skill
+
+### Florida New Business Leads: New LLCs & Corps Daily
+[Agensi](https://agensi.io/skills/florida-new-business-leads-new-llcs-corps-daily) [Related Actor](https://apify.com/pandadad0214/florida-new-business-leads)Free skill
+
+### Building Permit Leads: New Permits, Contractors & Job Values
+[Agensi](https://agensi.io/skills/building-permit-leads-new-permits-contractors-job-values) [Related Actor](https://apify.com/pandadad0214/building-permit-leads)Paid skill
+
+### Quiet File Team Setup Kit
+[Agensi](https://agensi.io/skills/quiet-file-team-setup-kit) [Related Actor](https://apify.com/pandadad0214/quiet-file-team-setup)Free skill
+
+### VIN Decoder + NHTSA Recalls (Bulk)
+[Agensi](https://agensi.io/skills/vin-decoder-nhtsa-recalls-bulk) [Related Actor](https://apify.com/pandadad0214/vin-decoder-recalls)Free skill
+
+### Product Recall Monitor: FDA & CPSC Feed
+[Agensi](https://agensi.io/skills/product-recall-monitor-fda-cpsc-feed) [Related Actor](https://apify.com/pandadad0214/product-recall-monitor)Free skill
+
+### Federal Register Monitor: Rules & Deadlines
+[Agensi](https://agensi.io/skills/federal-register-monitor-rules-deadlines) [Related Actor](https://apify.com/pandadad0214/federal-register-monitor)Free skill
+
+### Nonprofit Leads: IRS Charities by State
+[Agensi](https://agensi.io/skills/nonprofit-leads-irs-charities-by-state) [Related Actor](https://apify.com/pandadad0214/nonprofit-leads-irs)Free skill
+
+### Manual Remake: Confusing Manual to Clear PDF
+[Agensi](https://agensi.io/skills/manual-remake-confusing-manual-to-clear-pdf) [Related Actor](https://apify.com/pandadad0214/manual-remake)Free skill
+
+### Hidden AI Instructions Check: Vet Pages for Agents
+[Agensi](https://agensi.io/skills/hidden-ai-instructions-check-vet-pages-for-agents) [Related Actor](https://apify.com/pandadad0214/hidden-ai-instructions-scanner)Free skill
+
+### Clinical Trial Leads: Sponsors, Contacts & Sites
+[Agensi](https://agensi.io/skills/clinical-trial-leads-sponsors-contacts-sites) [Related Actor](https://apify.com/pandadad0214/clinical-trial-leads)Free skill
+
+### Website Change Monitor: Page Diffs, Prices & Alerts
+[Agensi](https://agensi.io/skills/website-change-monitor-page-diffs-prices-alerts) [Related Actor](https://apify.com/pandadad0214/website-change-monitor)Paid skill
+
+### SEC Financials to Comps & DCF Excel: EDGAR XBRL, Cited
+[Agensi](https://agensi.io/skills/sec-financials-to-comps-dcf-excel-edgar-xbrl-cited) [Related Actor](https://apify.com/pandadad0214/sec-financials-excel)Paid skill
+
+### SBIR/STTR Topic Radar: Live Open Topics, Fit Scores & Dates
+[Agensi](https://agensi.io/skills/sbir-sttr-topic-radar-live-open-topics-fit-scores-dates) [Related Actor](https://apify.com/pandadad0214/sbir-sttr-topic-radar)Free skill
+
+### RFP Compliance Matrix + Incumbent Intel (Federal Proposals)
+[Agensi](https://agensi.io/skills/rfp-compliance-matrix-incumbent-intel-federal-proposals)Paid skill
+
+### Medical Writing Pack: Evidence Tables, Ref Checks & KOLs
+[Agensi](https://agensi.io/skills/medical-writing-pack-evidence-tables-ref-checks-kols)Free skill
+
+### Topic Trends: Google Trends Alternative with Real Numbers
+[Agensi](https://agensi.io/skills/topic-trends-google-trends-alternative-with-real-numbers) [Related Actor](https://apify.com/pandadad0214/topic-trends-tracker)Free skill
+
+### Podcast Guest Booking: Active Shows, Host Contacts & Pitches
+[Agensi](https://agensi.io/skills/podcast-guest-booking-active-shows-host-contacts-pitches) [Related Actor](https://apify.com/pandadad0214/podcast-leads-finder)Free skill
+
+### PDF Tables to Excel & CSV: Reports, Statements, Filings
+[Agensi](https://agensi.io/skills/pdf-tables-to-excel-csv-reports-statements-filings) [Related Actor](https://apify.com/pandadad0214/pdf-table-extractor)Free skill
+
+### Email Deliverability Audit: Live SPF/DKIM/DMARC in Bulk
+[Agensi](https://agensi.io/skills/email-deliverability-audit-live-spf-dkim-dmarc-in-bulk) [Related Actor](https://apify.com/pandadad0214/email-domain-security-checker)Paid skill
+
+### GEO & SEO Site Audit: Real Crawl, 0-100 Score
+[Agensi](https://agensi.io/skills/geo-seo-site-audit-real-crawl-0-100-score-0-004-page) [Related Actor](https://apify.com/pandadad0214/ai-search-seo-audit)Free skill
+
+### Local Business Prospecting: OSM Leads + Website Audit
+[Agensi](https://agensi.io/skills/local-business-prospecting-osm-leads-website-audit) [Related Actor](https://apify.com/pandadad0214/local-business-leads)Free skill
+
+### Expert & KOL Finder: Ranked Academic Experts by Topic
+[Agensi](https://agensi.io/skills/expert-kol-finder-ranked-academic-experts-by-topic) [Related Actor](https://apify.com/pandadad0214/researcher-expert-finder)Free skill
+
+### Literature Review Starter: Papers, PubMed Table & Citations
+[Agensi](https://agensi.io/skills/literature-review-starter-papers-pubmed-table-citations) [Related Actor](https://apify.com/pandadad0214/literature-search)Free skill
+
+### Healthcare Provider Lists: NPI by Specialty & Territory
+[Agensi](https://agensi.io/skills/healthcare-provider-lists-npi-by-specialty-territory) [Related Actor](https://apify.com/pandadad0214/npi-provider-lists)Free skill
+
+### Trucking & Logistics Leads: New FMCSA Carriers & Brokers
+[Agensi](https://agensi.io/skills/trucking-logistics-leads-new-fmcsa-carriers-brokers) [Related Actor](https://apify.com/pandadad0214/trucking-company-leads)Free skill
+
+### Panda Federation MCP: 4 Focused Public-Data Servers
+[Agensi](https://agensi.io/skills/panda-federation-mcp-4-focused-public-data-servers)Free skill
+
+### B2B Lead Generation & Enrichment
+[Agensi](https://agensi.io/skills/b2b-lead-generation-enrichment) [Related Actor](https://apify.com/pandadad0214/company-website-enricher)Free skill
+
+### Federal Funding Radar: Grants & Contract Recompetes
+[Agensi](https://agensi.io/skills/federal-funding-radar-grants-contract-recompetes) [Related Actor](https://apify.com/pandadad0214/grants-finder)Free skill
+
+### Citation Check: Fake, Miscited & Retracted References
+[Agensi](https://agensi.io/skills/citation-check-fake-miscited-retracted-references) [Related Actor](https://apify.com/pandadad0214/reference-checker)
+
+
+---
+
+# Apify Tools · Panda Federation
+
+Source: https://pandafederation.com/apify.html
+
+AllResearchFundingLeadsWeb & safetyAppsresearch
+
+### Reference Checker: Fake, AI-Hallucinated & Retracted Citations
+
+Check a bibliography, DOIs or paper titles for fake (AI-hallucinated), miscited or retracted references.
+
+List rate: 0.01 USD per reference checked (down to 0.007 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/reference-checker) [Agensi (free)](https://agensi.io/skills/citation-check-fake-miscited-retracted-references)research
+
+### Citation Generator API: DOI to APA, MLA, Chicago & BibTeX
+
+Turn DOIs, ISBNs, PMIDs, arXiv IDs, titles or messy references into APA, MLA, Chicago, Harvard and BibTeX citations.
+
+List rate: 0.003 USD per citation formatted (down to 0.0021 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/citation-formatter)research
+
+### Google Scholar Scraper Alternative: Papers, Citations & BibTeX
+
+Find scholarly papers on a topic through OpenAlex, with filters and BibTeX/RIS export. A Google Scholar scraper alternative.
+
+List rate: 0.003 USD per paper found (down to 0.0021 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/literature-search) [Agensi (free)](https://agensi.io/skills/literature-review-starter-papers-pubmed-table-citations)research
+
+### PubMed Scraper: Articles, Abstracts & Evidence Table to Excel
+
+Search PubMed and get a screening-ready evidence table with study fields and export files.
+
+List rate: 0.004 USD per article found (down to 0.0028 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/pubmed-evidence-table)research
+
+### Academic Research MCP Server: OpenAlex, PubMed & Citation Check
+
+Hosted MCP server that gives an AI agent citation checks, OpenAlex and PubMed search, and reference formatting.
+
+List rate: 0.01 USD per reference tool call (down to 0.007 on paid Apify plans); 0.02 USD per search tool call (down to 0.014 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/panda-research-mcp) [Research MCP repo](https://github.com/pandadad0214/panda-research-tools)funding
+
+### Grants.gov Scraper: Federal Grants, NIH & NSF Awards API
+
+Find US federal funding: open and forecasted Grants.gov opportunities plus funded NIH and NSF awards.
+
+List rate: 0.003 USD per grant found (down to 0.0021 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/grants-finder) [Agensi (free)](https://agensi.io/skills/federal-funding-radar-grants-contract-recompetes)research
+
+### PDF Table Extractor: PDF to Excel & CSV Converter with OCR
+
+Extract tables from PDF files into Excel and CSV, with OCR for scans.
+
+List rate: 0.001 USD per page analysed (down to 0.0007 on paid Apify plans); 0.003 USD per table extracted (down to 0.0021 on paid Apify plans); 0.02 USD per scanned page ocr (down to 0.014 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/pdf-table-extractor) [Agensi (free)](https://agensi.io/skills/pdf-tables-to-excel-csv-reports-statements-filings)leads
+
+### NPI Registry Scraper: US Doctors & Healthcare Provider Leads
+
+Build lists of US healthcare providers from the official NPI Registry by specialty and place.
+
+List rate: 0.0015 USD per provider in list (down to 0.00105 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/npi-provider-lists) [Agensi (free)](https://agensi.io/skills/healthcare-provider-lists-npi-by-specialty-territory)research
+
+### Google Scholar Author Alternative: Find Experts & KOLs by Topic
+
+Find academic experts and key opinion leaders on a research topic.
+
+List rate: 0.0025 USD per expert found (down to 0.00175 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/researcher-expert-finder) [Agensi (free)](https://agensi.io/skills/expert-kol-finder-ranked-academic-experts-by-topic)funding
+
+### USAspending Scraper: Federal Contract Awards & Recompete Finder
+
+Find US federal contract awards and contracts ending soon from USAspending.gov.
+
+List rate: 0.002 USD per contract found (down to 0.0014 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/federal-contract-finder)leads
+
+### Local Business Leads: Google Maps Alternative (OpenStreetMap)
+
+List local businesses by category and city from OpenStreetMap, with address and public contact fields.
+
+List rate: 0.001 USD per business found (down to 0.0007 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/local-business-leads) [Agensi (free)](https://agensi.io/skills/local-business-prospecting-osm-leads-website-audit)leads
+
+### Podcast Leads Finder: Podcast Host Emails & Guest Booking List
+
+Find podcasts to pitch by topic, including host contacts published in show RSS feeds.
+
+List rate: 0.004 USD per podcast found (down to 0.0028 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/podcast-leads-finder) [Agensi (free)](https://agensi.io/skills/podcast-guest-booking-active-shows-host-contacts-pitches)security
+
+### AI Search & SEO Audit: GEO, llms.txt & Schema Checker
+
+Audit pages for SEO and AI-search readiness: schema, crawler rules, scores and related checks.
+
+List rate: 0.004 USD per page audited (down to 0.0028 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/ai-search-seo-audit) [Agensi (paid)](https://agensi.io/skills/geo-seo-site-audit-real-crawl-0-100-score-0-004-page)security
+
+### SPF, DKIM & DMARC Checker: Bulk Email Domain Security Audit
+
+Check SPF, DKIM, DMARC and related email authentication for a list of domains.
+
+List rate: 0.002 USD per domain checked (down to 0.0014 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/email-domain-security-checker) [Agensi (free)](https://agensi.io/skills/email-deliverability-audit-live-spf-dkim-dmarc-in-bulk)leads
+
+### Company Hiring Signals: Job Openings & Hiring Intent by Company
+
+See which companies are hiring and for what, from company domains, names or job-board links.
+
+List rate: 0.003 USD per company analyzed (down to 0.0021 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/company-hiring-signals)leads
+
+### Company Website Enricher: Tech Stack, Emails & Socials
+
+Enrich company domains with name, description, public contact fields, socials and tech stack.
+
+List rate: 0.003 USD per domain enriched (down to 0.0021 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/company-website-enricher) [Agensi (free)](https://agensi.io/skills/b2b-lead-generation-enrichment)leads
+
+### Topic Trends Tracker: Google Trends Alternative, Real Numbers
+
+Compare public interest in topics over time using Wikipedia pageviews.
+
+List rate: 0.002 USD per topic tracked (down to 0.0014 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/topic-trends-tracker) [Agensi (free)](https://agensi.io/skills/topic-trends-google-trends-alternative-with-real-numbers)leads
+
+### Trucking Company Leads: New FMCSA Carriers, Email & Phone
+
+Fresh trucking leads from official FMCSA data: new USDOT carriers, brokers and freight forwarders.
+
+List rate: 0.002 USD per carrier returned (down to 0.0014 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/trucking-company-leads) [Agensi (free)](https://agensi.io/skills/trucking-logistics-leads-new-fmcsa-carriers-brokers)leads
+
+### Company Team & Decision-Maker Finder: Names, Titles, Emails
+
+Find people listed on a company's own website: names, titles, published emails and LinkedIn links.
+
+List rate: 0.002 USD per person found (down to 0.0014 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/company-team-finder)security
+
+### Website Change Monitor: Page Diffs, Price & Keyword Alerts
+
+Watch pages for changes: added and removed text, change percent, price changes and keyword alerts.
+
+List rate: 0.0015 USD per page checked (down to 0.00105 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/website-change-monitor) [Agensi (free)](https://agensi.io/skills/website-change-monitor-page-diffs-prices-alerts)security
+
+### RSS & Atom Feed Monitor: Only New Items
+
+Watch many RSS, Atom or JSON feeds (or websites, with feed autodiscovery) and get only the items that are new since the last run.
+
+List rate: 0.0005 USD per feed item returned (down to 0.00035 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/rss-feed-monitor?utm_source=pandafederation&utm_medium=listing&utm_campaign=rss-feed-monitor)funding
+
+### SBIR/STTR Topic Radar: Open Topics, Deadlines & DoD Q&A
+
+Find open SBIR and STTR topics from US agencies by keyword, with close dates and topic text.
+
+List rate: 0.003 USD per topic found (down to 0.0021 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/sbir-sttr-topic-radar) [Agensi (paid)](https://agensi.io/skills/sbir-sttr-topic-radar-live-open-topics-fit-scores-dates)funding
+
+### SEC Financials to Excel: EDGAR XBRL Comps & Model Data
+
+Standardized income statement, balance sheet and cash-flow lines for US-listed companies from SEC EDGAR XBRL.
+
+List rate: 0.002 USD per company-year of financials (down to 0.0014 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/sec-financials-excel) [Agensi (paid)](https://agensi.io/skills/sec-financials-to-comps-dcf-excel-edgar-xbrl-cited)security
+
+### Hidden AI Instructions Scanner: Prompt Injection Detector
+
+Free scanner for web pages that hide text from people but address AI agents.
+
+Free on the Apify Store.
+[Apify Store](https://apify.com/pandadad0214/hidden-ai-instructions-scanner) [Agensi (free)](https://agensi.io/skills/hidden-ai-instructions-check-vet-pages-for-agents) [GitHub](https://github.com/pandadad0214/hidden-ai-instructions-watch)funding
+
+### Federal Register Monitor: New Rules & Comment Deadlines
+
+Track new US federal rules, proposed rules and notices, including comment deadlines.
+
+List rate: 0.001 USD per document returned (down to 0.0007 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/federal-register-monitor) [Agensi (free)](https://agensi.io/skills/federal-register-monitor-rules-deadlines)funding
+
+### Product Recall Monitor: FDA Food, Drug, Device & CPSC Recalls
+
+One feed of US product recalls from FDA and CPSC sources.
+
+List rate: 0.0015 USD per recall returned (down to 0.00105 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/product-recall-monitor) [Agensi (free)](https://agensi.io/skills/product-recall-monitor-fda-cpsc-feed)leads
+
+### VIN Decoder + Recalls: Bulk NHTSA Specs & Safety Recalls
+
+Bulk-decode VINs with the official NHTSA vPIC API and list related recall campaigns.
+
+List rate: 0.001 USD per vin decoded (down to 0.0007 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/vin-decoder-recalls) [Agensi (free)](https://agensi.io/skills/vin-decoder-nhtsa-recalls-bulk)leads
+
+### Nonprofit Leads: IRS Charities & Foundations by State
+
+Nonprofit and foundation lists from the official IRS Exempt Organizations file.
+
+List rate: 0.001 USD per nonprofit returned (down to 0.0007 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/nonprofit-leads-irs) [Agensi (free)](https://agensi.io/skills/nonprofit-leads-irs-charities-by-state)funding
+
+### Clinical Trial Leads: Sponsors, Sites & Contacts
+
+Find clinical trials from the official ClinicalTrials.gov API by condition, drug, sponsor and place.
+
+List rate: 0.002 USD per trial returned (down to 0.0014 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/clinical-trial-leads) [Agensi (free)](https://agensi.io/skills/clinical-trial-leads-sponsors-contacts-sites)leads
+
+### Florida New Business Leads: New LLCs & Corporations Daily
+
+New Florida LLCs, corporations and nonprofits from official Sunbiz daily data.
+
+List rate: 0.0015 USD per business returned (down to 0.00105 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/florida-new-business-leads) [Agensi (free)](https://agensi.io/skills/florida-new-business-leads-new-llcs-corps-daily)security
+
+### Bulk Domain WHOIS & Expiry Checker (RDAP): Registrar & Dates
+
+Check many domains at once with official RDAP (WHOIS fallback): registrar, dates, locks and nameservers.
+
+List rate: 0.001 USD per domain checked (down to 0.0007 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/bulk-domain-whois-expiry) [Agensi (free)](https://agensi.io/skills/bulk-domain-whois-expiry-check-rdap-to-excel)leads
+
+### Building Permit Leads: New Permits, Contractors & Job Values
+
+Newly issued building permits from eight US city open-data portals.
+
+List rate: 0.0015 USD per permit returned (down to 0.00105 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/building-permit-leads) [Agensi (free)](https://agensi.io/skills/building-permit-leads-new-permits-contractors-job-values)apps
+
+### Manual Remake: Confusing Manual to Clear Printable PDF
+
+Turn a confusing manual into a clear English print PDF. Free sample and paid Text-only and Standard remake editions are on the Store listing.
+
+List rate: 39 USD per standard remake; 9 USD per text-only remake. The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/manual-remake) [Agensi (free)](https://agensi.io/skills/manual-remake-confusing-manual-to-clear-pdf) [GitHub](https://github.com/pandadad0214/manual-remake)
+
+#### Switch editions
+
+- **Free sample** — on the Store page, tick Free sample or leave files and links empty, then start. No key required.
+- **Text-only remake** — same Store listing; upload your manual, add your key, and turn picture reuse and cleaning off. List rate is on this card and on pricing.md; the Store page is authoritative.
+- **Standard remake** — same listing with picture reuse and cleaning on. List rate is on this card and on pricing.md; the Store page is authoritative.
+leads
+
+### Texas New Business Leads: New Franchise Taxpayers
+
+New Texas LLCs and corporations from official Comptroller franchise taxpayer open data.
+
+List rate: 0.0015 USD per business returned (down to 0.00105 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/texas-new-business-leads) [Agensi (free)](https://agensi.io/skills/texas-new-business-leads-new-franchise-taxpayers)leads
+
+### H-1B LCA Visa Sponsor Leads: DOL Employers, Jobs & Wages
+
+H-1B LCA visa sponsor leads from official U.S. Department of Labor filings: employers, jobs and wages.
+
+List rate: 0.002 USD per lca case returned (down to 0.0014 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/h1b-lca-sponsor-leads) [Agensi (free)](https://agensi.io/skills/h-1b-lca-sponsor-leads-employers-jobs-wages)research
+
+### Wayback Machine Snapshot Finder: Archive Dates & URLs
+
+Find Internet Archive Wayback Machine snapshots for pages or domains via the official CDX API.
+
+List rate: 0.001 USD per snapshot returned (down to 0.0007 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/wayback-snapshot-finder) [Agensi (free)](https://agensi.io/skills/wayback-machine-snapshot-finder-archive-dates-urls)apps
+
+### Quiet File Team Setup Kit Generator
+
+Generate a configured Quiet File Team starter ZIP so several bots can share one computer through files. Paid generator; the free kit lives on GitHub.
+
+List rate: 29 USD per complete setup kit. The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/quiet-file-team-setup) [Agensi (paid)](https://agensi.io/skills/quiet-file-team-setup-kit)
+
+#### Switch editions
+
+- **Free kit** — the open-source Bash kit on [GitHub](https://github.com/pandadad0214/quiet-file-team).
+- **Free MCP companion** — [Quiet File Team MCP](quiet-file-team-mcp/) on this site ([GitHub](https://github.com/pandadad0214/quiet-file-team-mcp)).
+- **Paid setup generator** — this Actor (and the paid Agensi skill). List rate is on this card and on pricing.md; the Store page is authoritative.
+leads
+
+### New York New Business Leads: New DOS Filings
+
+New York LLCs, corporations and other DOS entities from official data.ny.gov Active Corporations data.
+
+List rate: 0.0015 USD per business returned (down to 0.00105 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/new-york-new-business-leads) [Agensi (free)](https://agensi.io/skills/new-york-new-business-leads-new-llcs-corps)leads
+
+### Colorado New Business Leads: New SOS Filings Daily
+
+New Colorado LLCs, corporations and nonprofits from official Secretary of State open data, with a likely-owner flag.
+
+List rate: 0.0015 USD per business returned (down to 0.00105 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/colorado-new-business-leads?utm_source=pandafederation&utm_medium=listing&utm_campaign=colorado-new-business-leads)leads
+
+### France Company Leads: SIREN, Directors, Revenue
+
+French B2B lead lists from the official SIRENE and RNE company directory, including directors and revenue when published.
+
+List rate: 0.002 USD per company returned (down to 0.0014 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/france-company-leads?utm_source=pandafederation&utm_medium=listing&utm_campaign=france-company-leads)funding
+
+### SAM.gov Contract Opportunities: Open Federal Bids, No API Key
+
+Find open federal contract opportunities from the official SAM.gov public data extract: solicitations, sources sought and award notices, filtered by NAICS, PSC, set-aside, agency, state and deadline.
+
+List rate: 0.0015 USD per opportunity returned (down to 0.00105 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/sam-gov-opportunities)funding
+
+### EU TED Tenders: Public Procurement Notices
+
+Search official EU TED (Tenders Electronic Daily) public procurement notices.
+
+List rate: 0.002 USD per notice returned (down to 0.0014 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/eu-ted-tenders) [Agensi (free)](https://agensi.io/skills/eu-ted-tenders-public-procurement-notices)security
+
+### Broken Link Checker: 404s, Redirects and Dead Links
+
+Crawl starting pages, check unique http(s) URLs, and list status, final URL, redirects and broken links.
+
+List rate: 0.001 USD per link checked (down to 0.0007 on paid Apify plans). The Apify Store page is authoritative.
+[Apify Store](https://apify.com/pandadad0214/broken-link-checker) [Agensi (free)](https://agensi.io/skills/broken-link-checker-404s-redirects-to-excel)
+
+
+---
+
+# Apps & Repos · Panda Federation
+
+Source: https://pandafederation.com/apps.html
+
+App
+
+### Steel Panda
+
+Run every shell script in a folder, log each exit code, fail if any task fails. Local Bash, no network.
+[GitHub](https://github.com/pandadad0214/Steel_Panda) [DevHunt](https://devhunt.org/tool/steel-panda)App
+
+### Watchdog Panda
+
+Restart a local process when it disappears, with backoff, a restart cap and a failure hook. Bash only.
+[GitHub](https://github.com/pandadad0214/Watchdog_Panda) [DevHunt](https://devhunt.org/tool/watchdog-panda)App
+
+### Hidden AI Instructions Watch
+
+Free scanner and evidence log for web pages that hide text from people but address AI agents.
+[GitHub](https://github.com/pandadad0214/hidden-ai-instructions-watch) [Apify Store](https://apify.com/pandadad0214/hidden-ai-instructions-scanner) [DevHunt](https://devhunt.org/tool/hidden-ai-instructions-watch)App
+
+### Manual Remake
+
+Rewrite a confusing manual (PDF or photos) into a clear, printable English PDF. A free sample and paid remake editions are both on the Apify Store listing; the free skill is on Agensi.
+[GitHub](https://github.com/pandadad0214/manual-remake) [Apify Store](https://apify.com/pandadad0214/manual-remake) [Agensi](https://agensi.io/skills/manual-remake-confusing-manual-to-clear-pdf) [DevHunt](https://devhunt.org/tool/manual-remake)
+
+#### Switch editions
+
+- **Free sample** — Apify Store — start a run with Free sample ticked, or with files and links left empty; no key required. [Open](https://apify.com/pandadad0214/manual-remake)
+- **Text-only remake** — Paid Apify edition. Upload your manual, add your key, and turn off picture reuse and cleaning. List rate is on the Apify Tools card and on pricing.md; the Store page is authoritative. [Open](https://apify.com/pandadad0214/manual-remake)
+- **Standard remake** — Paid Apify edition with picture reuse and cleaning on. List rate is on the Apify Tools card and on pricing.md; the Store page is authoritative. [Open](https://apify.com/pandadad0214/manual-remake)
+- **Agensi skill** — Free skill that points at the same tool. [Open](https://agensi.io/skills/manual-remake-confusing-manual-to-clear-pdf)
+App
+
+### Quiet File Team
+
+Free Bash kit that lets several AI bots share one computer through files: task queue, pair notes, early exit. A paid setup-kit generator is on the Apify Store and Agensi; a free MCP companion explains and checks a team.
+[Product page](quiet-file-team/) [GitHub](https://github.com/pandadad0214/quiet-file-team) [MCP product page](quiet-file-team-mcp/) [MCP repo](https://github.com/pandadad0214/quiet-file-team-mcp) [Apify Store](https://apify.com/pandadad0214/quiet-file-team-setup) [Agensi](https://agensi.io/skills/quiet-file-team-setup-kit)
+
+#### Switch editions
+
+- **Free kit** — product page on this site, plus the GitHub repo — clone and follow the README. [Open](quiet-file-team/)
+- **Free MCP companion** — product page on this site, plus the GitHub repo. [Open](quiet-file-team-mcp/)
+- **Setup kit generator** — Paid Apify Actor that builds a configured starter ZIP. List rate is on the Apify Tools card and on pricing.md; the Store page is authoritative. [Open](https://apify.com/pandadad0214/quiet-file-team-setup)
+- **Agensi skill** — Paid skill for the same setup kit. Live price is on the Agensi listing. [Open](https://agensi.io/skills/quiet-file-team-setup-kit)
+App
+
+### Panda Federation H.Q.
+
+Live 3D office where each bot on a team shows a real-time status chip (Three.js + Cloudflare Worker).
+[GitHub](https://github.com/pandadad0214/panda-federation-hq) [Live demo](https://panda-federation-hq.pandafederation.workers.dev) [DevHunt](https://devhunt.org/tool/panda-federation-hq) [AlternativeTo](https://alternativeto.net/software/panda-federation-h-q)App
+
+### Spirit Panda
+
+Sovereign local-first AI companion with identity, memory, and adaptive prosody.
+[GitHub](https://github.com/pandadad0214/Spirit_Panda)
+
+Planned, not shipped yet: [Orchid Panda](https://github.com/pandadad0214/Orchid_Panda) and [Mythical Panda](https://github.com/pandadad0214/Mythical_Panda) (placeholder repos, no code). They will get cards when they have a first release.
+
+
+---
+
+# Books · Panda Federation
+
+Source: https://pandafederation.com/books.html
+
+Books from the Spiral Saga are in progress. There is no published store page or Amazon link yet. This tab is the placeholder that other Federation repos can point to, and it will carry real buy links when they exist.
+In progress
+
+### Spiral Saga
+
+Story world / planned book series
+In progress
+
+### The Hollowlands
+
+Ring 4 standalone series, first priority
+In progress
+
+### Gatewalkers Guide
+
+Companion / world guide in planning
+
+
+---
+
+# Free Data Broker Removal Guide + State Law Map · Panda Federation
+
+Source: https://pandafederation.com/data-broker-removal/
+
+**Not legal advice. This page is a research guide built from official sources and the sites' own pages, checked on the date shown. It does not apply any law to your situation. For advice, talk to a licensed attorney in your state.**
+
+Panda Federation does not submit forms for you, does not ask for your personal details, and is not paid by any site listed here. You open every link and fill every form yourself.
+[Steps](#steps)[Pitfalls](#pitfalls)[Opt-out links](#sites)[State law map](#state-map)[Checklist](#checklist)[State map JSON](state-law-map.json)[Links JSON](optout-sites.json)
+
+## Order of steps
+
+- **Inventory first.** List the emails, phone numbers and old accounts you still control. Search each inbox for sign-up and marketing mail to find forgotten accounts.
+- **Delete old accounts while you can still sign in.** Some sites only accept deletion from a signed-in session. Finish those before you close the email address that gets their codes.
+- **Find your listings and confirm they are you.** Common names pull up other people. Only opt out of a record that is actually yours.
+- **Opt out at the official link, in your own browser.** Use the links below. Captchas often fail in automated or remote browsers, so open them yourself.
+- **Click verification emails right away.** Links commonly expire in 24 hours, and some much sooner. One in our testing expired in about 15 minutes.
+- **Save the receipt.** Keep the confirmation email or screenshot. Log the result from that message, not from memory. A reply that says denied is easy to misread as done.
+- **Recheck later.** Look again after the window the site gives (often 3 days), then every month or two. Listings can come back when new public records arrive.
+
+## Pitfalls
+
+- Never pay a people-search site to remove you. Their opt-outs are free.
+- Delete linked accounts before you delete an old email address.
+- Where you live matters. Many sites only grant formal privacy rights to residents of states with a comprehensive privacy law. Everyone else gets a courtesy opt-out, if that.
+- Most state laws exclude publicly available information, such as government records. That is what many listings are built from, so a legal deletion right may not force a takedown.
+- Do not misstate your state of residence on a form.
+- If an account-deletion email tells you not to sign back in, don't. Signing in can cancel the deletion on some sites.
+
+## Official opt-out links
+
+Checked November 10, 2026. “Bot check” means our automated check hit a captcha or firewall. The address is still the site's own opt-out path, so open it in your own browser.
+
+### Opt out here
+SiteOfficial linkStatusNotesSpokeo[www.spokeo.com/optout](https://www.spokeo.com/optout)LoadedEmail verification finishes the request. Click the link promptly.Anywho[www.anywho.com/optout](https://www.anywho.com/optout)LoadedIn our check this address redirected to Spokeo's opt-out page.BeenVerified[www.beenverified.com/app/optout/search](https://www.beenverified.com/app/optout/search)Bot check (open in your browser)Redirects to /svc/optout/search/. Email verification finishes the request.PeopleConnect Suppression Center (Intelius family)[suppression.peopleconnect.us/](https://suppression.peopleconnect.us/)LoadedFree suppression portal for PeopleConnect-owned people-search sites. Do the email step in one sitting: a link in our testing expired in about 15 minutes.Intelius / Addresses.com[www.intelius.com/privacy-center/](https://www.intelius.com/privacy-center/)LoadedAddresses.com's footer link 'Exercise My Data Privacy Rights' points here. The old addresses.com/optout path returned 404.PeopleFinders[www.peoplefinders.com/opt-out](https://www.peoplefinders.com/opt-out)LoadedForm-based. It may ask for details such as a phone number and birth date to match your record.SearchPeopleFree[www.searchpeoplefree.com/opt-out](https://www.searchpeoplefree.com/opt-out)LoadedEmails a link to the form (link valid 24 hours). After you validate, the page says you have 30 minutes to remove your record. Allow 3 days.Whitepages[www.whitepages.com/suppression-requests](https://www.whitepages.com/suppression-requests)LoadedFive-step suppression form. Paste the URL of your listing.MyLife[www.mylife.com/privacyrequest](https://www.mylife.com/privacyrequest)LoadedPage titled 'MyLife Opt-Out Form'. The form is embedded; allow scripts if it looks blank.ThatsThem[thatsthem.com/optout](https://thatsthem.com/optout)Bot check (open in your browser)Open in your own browser.Nuwber[nuwber.com/removal/link](https://nuwber.com/removal/link)Bot check (open in your browser)Cloudflare blocks are common, sometimes in ordinary browsers too. Try another network, such as phone data.IDCrawl[idcrawl.com/remove-my-information](https://idcrawl.com/remove-my-information)Bot check (open in your browser)Asks for the URL of the IDCrawl page that lists you, then emails a link.CocoFinder[cocofinder.com/remove-my-info](https://cocofinder.com/remove-my-info)Bot check (open in your browser)Open in your own browser.PeopleSearchNow[www.peoplesearchnow.com/opt-out](https://www.peoplesearchnow.com/opt-out)Bot check (open in your browser)Open in your own browser.TruePeopleSearch[www.truepeoplesearch.com/removal](https://www.truepeoplesearch.com/removal)Bot check (open in your browser)Open in your own browser. Often grouped with the sites above; we could not read its current policy page.CyberBackgroundChecks[www.cyberbackgroundchecks.com/removal](https://www.cyberbackgroundchecks.com/removal)Bot check (open in your browser)Open in your own browser. Often grouped with the sites above; we could not read its current policy page.FamilyTreeNow[www.familytreenow.com/optout](https://www.familytreenow.com/optout)Bot check (open in your browser)Open in your own browser. Its opt-out runs from the record page and confirms by email.
+
+### Rights depend on your state
+
+SmartBackgroundChecks, USPhonebook and FastPeopleSearch publish near-identical privacy notices. They say your privacy rights depend on your state of residence and point residents of states with comprehensive privacy laws to a supplemental notice. They take requests through a web form or by phone. They also say their data is publicly available information, which they consider outside state privacy laws, and that they apply opt-outs to it as a courtesy. If you live in a state without a comprehensive law, such as Arizona, expect a formal privacy request to be refused. The opt-out form is still worth trying.
+SiteOfficial linkStatusNotesSmartBackgroundChecks[www.smartbackgroundchecks.com/optout](https://www.smartbackgroundchecks.com/optout)LoadedEmailed form link expires in 24 hours. Allow 3 days. Privacy rights depend on your state of residence. Phone on its privacy notice: 800-571-0614.USPhonebook[www.usphonebook.com/removal](https://www.usphonebook.com/removal)LoadedSame 24-hour link and 3-day wording. Privacy rights depend on your state of residence. Phone on its privacy notice: 888-747-4095.FastPeopleSearch[www.fastpeoplesearch.com/optout](https://www.fastpeoplesearch.com/optout)LoadedThe older /removal path redirects here. Privacy rights depend on your state of residence. Phone on its privacy notice: (866) 679-8725.
+
+### Official state tool
+SiteOfficial linkStatusNotesCalifornia DROP (official, CA residents)[consumer.drop.privacy.ca.gov/](https://consumer.drop.privacy.ca.gov/)LoadedOne verified request to registered data brokers. California residents only.
+
+### Skip these
+SiteOfficial linkStatusNotesRadaris[radaris.com/](https://radaris.com/)Court/domain notice — skipDomain shows 'This Domain Has Been Transferred by Court Order' (Atlas Data Privacy Corporation v. Radaris.com, N.J. Super. Ct., Middlesex County, MID-L-000847-24; default judgment dated August 27, 2026, per the notice). No search and no opt-out. Reporting says the judgment is being challenged.Rehold[rehold.com/](https://rehold.com/)Court/domain notice — skipSame court-order transfer notice as Radaris.PeekYou[peekyou.com/](https://peekyou.com/)Court/domain notice — skipDomain shows a 'Domain Update' notice: now controlled by Atlas Data Privacy Corporation after a settlement (N.J. Super. Ct., Essex County, ESX-L-003299-25). No search and no opt-out.ClustrMaps[clustrmaps.com/bl/opt-out](https://clustrmaps.com/bl/opt-out)Unreachable as of November 10, 2026Connection failed on November 10, 2026. Retry later.
+
+## State law map: who has a legal right to deletion
+
+**19 states** have a comprehensive privacy law in effect with a right to delete. Florida's narrow law adds a deletion right that reaches only very large companies. Oklahoma and Louisiana start January 1, 2027, Alabama May 1, 2027, and Vermont January 1, 2028. California's free [DROP](https://consumer.drop.privacy.ca.gov/) tool sends one deletion request to registered data brokers, for California residents only.
+
+**The catch:** most of these laws exclude publicly available information, such as government records, from the data they cover. People-search listings are largely built from those records, so a deletion right may not force a takedown. Sites often apply opt-outs to that data only as a courtesy.
+
+### Arizona
+
+Arizona has no comprehensive consumer privacy law, so Arizona residents have no general legal right to make a people-search site delete a listing. The Arizona Attorney General's consumer pages cover data-breach notice, not deletion, and SB 1815 (2026) was only introduced. Arizona residents can still use each site's free opt-out form. Many sites honor those as a courtesy. Sites that tie formal rights to state law may refuse.
+
+Arkansas: we found no enacted comprehensive privacy law. Some sites cite “Act 549 of 2023,” but the [official Act 549](https://arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2023/2023R&file=549.pdf&path=%2FACTS%2F2023R%2FPublic%2F) is a firearms bill.
+StateDeletion rightEffectiveScope and limitsOfficial sourceAlabamaEnacted, starts 2027-05-012027-05-01statute text not yet re-read by us[source](https://alison.legislature.state.al.us/)AlaskaNo———ArizonaNo——[source](https://www.azag.gov/consumer/data-breach/faq) [source 2](https://www.azleg.gov/legtext/57leg/2r/bills/sb1815p.htm)ArkansasNo——[source](https://arkleg.state.ar.us/Acts/FTPDocument?ddBienniumSession=2023/2023R&file=549.pdf&path=%2FACTS%2F2023R%2FPublic%2F)CaliforniaYes (in effect)2020-01-01DROP portal (CA residents)[source](https://oag.ca.gov/privacy/ccpa) [source 2](https://privacy.ca.gov/drop/about-drop-and-the-delete-act/) [source 3](https://consumer.drop.privacy.ca.gov/)ColoradoYes (in effect)2023-07-01public-records exemption[source](https://coag.gov/resources/colorado-privacy-act/)ConnecticutYes (in effect)2023-07-01Data provided by or obtained about you; public-records exemption[source](https://www.cga.ct.gov/current/pub/chap_743jj.htm)DelawareYes (in effect)2025-01-01Data provided by or obtained about you; public-records exemption[source](https://delcode.delaware.gov/title6/c012d/index.html)FloridaLimited (in effect)2024-07-01public-records exemption; very large companies only[source](https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.701.html) [source 2](https://flsenate.gov/Laws/Statutes/2026/501.702) [source 3](https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.705.html)GeorgiaNo———HawaiiNo———IdahoNo———IllinoisNo———IndianaYes (in effect)2026-01-01statute text not yet re-read by us[source](https://iga.in.gov/laws/2025/ic/titles/24#24-15)IowaYes (in effect)2025-01-01Only data you gave the company; public-records exemption[source](https://www.legis.iowa.gov/docs/code/715D.pdf)KansasNo———KentuckyYes (in effect)2026-01-01statute text not yet re-read by us[source](https://legislature.ky.gov/)LouisianaEnacted, starts 2027-01-012027-01-01statute text not yet re-read by us[source](https://www.legis.la.gov/)MaineNo———MarylandYes (in effect)2025-10-01statute text not yet re-read by us[source](https://mgaleg.maryland.gov/)MassachusettsNo———MichiganNo———MinnesotaYes (in effect)2025-07-31statute text not yet re-read by us[source](https://www.revisor.mn.gov/)MississippiNo———MissouriNo———MontanaYes (in effect)2024-10-01statute text not yet re-read by us[source](https://mca.legmt.gov/bills/mca/title_0300/chapter_0140/part_0280/sections_index.html)NebraskaYes (in effect)2025-01-01statute text not yet re-read by us[source](https://nebraskalegislature.gov/)NevadaNo———New HampshireYes (in effect)2025-01-01statute text not yet re-read by us[source](https://www.gencourt.state.nh.us/rsa/html/NHTOC/NHTOC-LII-507-H.htm)New JerseyYes (in effect)2025-01-15statute text not yet re-read by us[source](https://www.njleg.state.nj.us/)New MexicoNo———New YorkNo———North CarolinaNo———North DakotaNo———OhioNo———OklahomaEnacted, starts 2027-01-012027-01-01statute text not yet re-read by us[source](https://www.okhouse.gov/posts/news-20260323_2) [source 2](https://www.oklegislature.gov/)OregonYes (in effect)2024-07-01Data provided by or obtained about you; public-records exemption[source](https://olis.oregonlegislature.gov/liz/2023R1/Downloads/MeasureDocument/SB619/Enrolled) [source 2](https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2023orLaw0395.pdf)PennsylvaniaNo———Rhode IslandYes (in effect)2026-01-01statute text not yet re-read by us[source](http://webserver.rilin.state.ri.us/Statutes/TITLE6/6-48.1/INDEX.HTM)South CarolinaNo———South DakotaNo———TennesseeYes (in effect)2025-07-01statute text not yet re-read by us[source](https://www.capitol.tn.gov/)TexasYes (in effect)2024-07-01Data provided by or obtained about you; public-records exemption[source](https://tcss.legis.texas.gov/resources/BC/htm/BC.541.htm) [source 2](https://tcss.legis.texas.gov/resources/BC/htm/BC.510.htm) [source 3](https://www.sos.texas.gov/statdoc/data-brokers.shtml)UtahYes (in effect)2023-12-31Only data you gave the company[source](https://le.utah.gov/xcode/Title13/Chapter61/13-61-S201.html)VermontEnacted, starts 2028-01-012028-01-01Data provided by or obtained about you[source](https://legislature.vermont.gov/statutes/section/09/061a/02415d) [source 2](https://legislature.vermont.gov/statutes/section/09/062/02446) [source 3](https://sos.vermont.gov/business-services/other-filings/data-broker)VirginiaYes (in effect)2023-01-01Data provided by or obtained about you[source](https://law.lis.virginia.gov/vacode/title59.1/chapter53/section59.1-577/)WashingtonNo———West VirginiaNo———WisconsinNo———WyomingNo———District of ColumbiaNo———
+
+“Statute text not yet re-read by us” means we confirmed the law and its date but have not yet saved the official text of the deletion section. We check this map monthly. Full notes and every source URL are in [state-law-map.json](state-law-map.json).
+
+## Tracking checklist
+
+One row per site. Fill it in from receipts, not memory.
+SiteLink usedDate sentVerify email clickedReceipt savedResultRecheck dateStill listed? 
+
+## Data and copies
+[state-law-map.json](state-law-map.json)[optout-sites.json](optout-sites.json)[Guide (Markdown)](guide.md)[State map (Markdown)](state-law-map.md)[Source on GitHub](https://github.com/PandaFederation/pandafederation.github.io/tree/main/data-broker-removal)[llms.txt](llms.txt)
+
+This page exposes read-only WebMCP tools for AI assistants: get_state_rights, list_optout_sites, list_states_with_rights, get_removal_steps, get_links. They only read the data on this page.
+
+Panda Federation · Free guide · Verified November 10, 2026 · Not legal advice. This page is a research guide built from official sources and the sites' own pages, checked on the date shown. It does not apply any law to your situation. For advice, talk to a licensed attorney in your state.
+
+
+---
+
+# Digest #1: Server Actors, a release calendar for MCP, and an SEC deadline · Panda Federation
+
+Source: https://pandafederation.com/digest/001-2026-11-12/
+
+Digest #1 · 2026-11-12
+
+# Server Actors, a release calendar for MCP, and an SEC deadline
+
+Five things from the last few days that matter if your agent works with public data, with our take on each, and then what we shipped.
+
+## MCP gets a release calendar (Nov 11)
+
+The MCP maintainers are moving spec releases to a fixed six-month schedule, on the last Tuesday of March and September. The next one is targeted for March 30, 2027. A proposal that isn't ready moves to the next release instead of holding up the spec. **Our take:** this is the most useful MCP news of the week for small server authors. We can plan our server updates around two known dates instead of watching the spec repo. [Read the post](https://blog.modelcontextprotocol.io/posts/mcp-release-cycle/)
+
+## File uploads and downloads are coming to MCP, as an experiment (Nov 10)
+
+An optional extension, `io.modelcontextprotocol/files`, would let clients and tools move files in and out of band. It's explicitly experimental, has no reference implementation yet, and the maintainers hope to stabilize it before the end of the year. **Our take:** PDF table extraction and Excel exports are the clumsiest part of agent data work today, so a standard way to hand a file to a tool would help a lot. We won't build on it until it reaches Beta. [Read the post](https://blog.modelcontextprotocol.io/posts/exploring-file-uploads-and-downloads-in-mcp/)
+
+## Apify makes Server Actors generally available (Nov 10)
+
+At its Run by Apify event, Apify announced general availability of Server Actors: always-ready services that answer requests like an API, without starting a new run for each call. Apify AI also gained the ability to orchestrate several Actors and build new ones from plain-language instructions. **Our take:** for agent tool calls, start-up time matters as much as the data does. Quick lookups such as a single domain check or one VIN are the obvious first candidates for an always-on version. [Read the announcement](https://www.globenewswire.com/news-release/2026/11/10/3399579/0/en/apify-unveils-new-ai-agent-capabilities-and-server-actors-to-support-growing-demand.html)
+
+## Apify MCP server 0.21.5 and 0.21.6 (Nov 10–11)
+
+Two quick releases. 0.21.5 lists only dataset field selections that actually work and explains empty or past-the-end dataset pages. 0.21.6 identifies MCP-server Actors in Actor details. **Our take:** small fixes, but they target a real failure mode. Agents that page past the end of a dataset and read the empty page as "no results" give wrong answers. [Release notes](https://github.com/apify/apify-mcp-server/releases)
+
+## SEC draft 2027 taxonomies: technical feedback closes Nov 16
+
+The SEC posted its draft 2027 taxonomy update on Sept. 14 and is taking technical feedback until 4 p.m. ET on Nov. 16, 2026. It's a draft for comment, not an approved change. **Our take:** anyone who pulls XBRL facts from EDGAR, including our SEC Financials Actor, should read the release notes now, before element changes show up in real filings. [SEC notice](https://www.sec.gov/newsroom/whats-new/260914-draft-2027-sec-taxonomies)
+
+## What we shipped
+
+- [Quiet File Team MCP 0.1.1](https://pypi.org/project/quiet-file-team-mcp/) is on PyPI and the Official MCP Registry. Install with `uvx quiet-file-team-mcp`.
+- [SAM.gov Contract Opportunities](https://apify.com/pandadad0214/sam-gov-opportunities) is a new Actor that finds open federal bids from the official public data extract, with no API key.
+- The four focused MCP servers reached v0.2.0, and the umbrella package reached v1.8.0 ([all servers](https://pandafederation.com/mcp.html)).
+- The [free data broker removal guide + state law map](https://pandafederation.com/data-broker-removal/) has opt-out links checked November 10, 2026.
+- The site now has a [What's New](https://pandafederation.com/whats-new/) changelog with an Atom feed, plus real sample output on the homepage.
+
+[All issues](../) · [What's New](../../whats-new/)
+
+
+---
+
+# Weekly digest · Panda Federation
+
+Source: https://pandafederation.com/digest/
+
+- 2026-11-12 [#1: Server Actors, a release calendar for MCP, and an SEC deadline](001-2026-11-12/)
+
+
+---
+
+# Panda Federation · Public-Data MCP Servers & Apify Tools for AI Agents
+
+Source: https://pandafederation.com/
+
+Free public-data tools for AI agents
+
+# Official public data your agent can check, cite and use.
+
+Catch fake or retracted references, find federal grants and bids, pull official lead lists, and audit domains. Every tool reads official sources and runs in the browser on Apify or inside Claude, Cursor and other MCP clients.
+[Find a tool](apify.html)[or add the MCP servers →](mcp.html)
+
+6 MCP servers · 43 public Apify Actors · 7 apps & repos · 36 live Agensi skills. Counts update automatically from the Apify Store, PyPI and GitHub. Apify list rates are on each tool card and on [pricing.md](pricing.md); the Store page is authoritative.
+
+## Start free
+
+Free guide
+
+### Data broker removal guide + state law map
+
+Official opt-out links for people-search sites, the steps that actually work, and a state-by-state map of who has a legal right to deletion. Opt-out links checked November 10, 2026. Not legal advice.
+[Open the guide](data-broker-removal/) [State map JSON](data-broker-removal/state-law-map.json)
+
+Free kit · MIT
+
+### Quiet File Team
+
+A small Bash kit that lets several AI bots share one computer through plain files: an append-only task queue, pair notes, and an early exit so idle routines stop instead of spending tokens. No server, no chat bus, no model calls.
+[Get the free kit](quiet-file-team/) [Free MCP companion](quiet-file-team-mcp/)
+
+## Real output from real runs
+
+Rows copied from our own test runs of the live Actors (not mock-ups). Each table says when it ran and how many rows it returned.
+
+### Reference Checker
+Cited titleVerdictWhyIleal-lymphoid-nodular hyperplasia, non-specific colitis, and…RealRetracted (Retraction Watch notice)Hydroxychloroquine or chloroquine with or without a macrolide for…RealRetracted (Retraction Watch notice)Deep residual learning for image recognitionReal, minor mismatchjournal: cited Proc, actual 2016 IEEE Conference on Computer Vision and…Deep learningReal, major mismatchyear: cited 2017, actual 2015Neural lattice frameworks for quantum basket weaving in arid climatesNot foundNo matching record (likely fabricated)
+
+Platform test run of Reference Checker v0.1 (October 2026), 48 references; 5 rows shown.
+[Open on Apify Store](https://apify.com/pandadad0214/reference-checker)
+
+### SAM.gov Contract Opportunities
+PostedNotice typeTitleAgencySet-aside2026-11-09Award Notice[DA10--New Action: TIC Application Firewall Maintenance Renewal…](https://sam.gov/opp/34024d55d7654668bcdfcb81acc19b68/view)Veterans Affairs, Department ofService-Disabled Veteran-Owned Small Business2026-11-09Presolicitation[C1DA--657-27-209JB Renovate Main Lobby, Bldgs 1 & 53](https://sam.gov/opp/b2c8f63a5b5b476fb1aee7dddbbaef67/view)Veterans Affairs, Department ofService-Disabled Veteran-Owned Small Business2026-11-09Combined Synopsis/Solicitation[30 RS Mission Planning Software Tool (MPST)](https://sam.gov/opp/73d918da3ba340a28a2d7e5d23c270b1/view)Dept. of DefenseSmall Business Set Aside - Total2026-11-06Sources Sought[C1DA--Renovate Specialty Clinics on 2nd](https://sam.gov/opp/cc0fd029e4f94dd28f101314a39d38cd/view)Veterans Affairs, Department ofService-Disabled Veteran-Owned Small Business2026-11-06Presolicitation[B533--VANIHCS SPS Water Testing (VA-27-00000760)](https://sam.gov/opp/557503071f3d4719a8196424d78b2b7b/view)Veterans Affairs, Department ofService-Disabled Veteran-Owned Small Business
+
+Platform test run, build 0.1.1, checked 2026-11-10: NAICS 5415/5413, last 7 days, small-business set-asides; 38 notices, 5 shown. Contact fields omitted here.
+[Open on Apify Store](https://apify.com/pandadad0214/sam-gov-opportunities)
+
+### SPF, DKIM & DMARC Checker
+DomainGradeScoreDMARC policySPF ends withMail providerapify.comA100reject-all (fail)Google Workspacegithub.comB87quarantine~all (softfail)Microsoft 365harvard.eduB87quarantine~all (softfail)Proofpointmayoclinic.orgC65none-all (fail)Self-hosted / otherasu.eduB80none~all (softfail)Self-hosted / other
+
+Platform test run, build 0.1.1, checked 2026-11-02; 11 inputs, 5 shown.
+[Open on Apify Store](https://apify.com/pandadad0214/email-domain-security-checker)
+
+### Bulk Domain WHOIS & Expiry Checker (RDAP)
+DomainRegisteredRegistrarCreatedExpiresnytimes.comyesMarkMonitor Inc.1994-01-182027-01-19bbc.co.ukyesBritish Broadcasting Corporation1994-12-132034-12-13apify.comyesAmazon Registrar, Inc.2009-06-022035-06-02t.coyesCSC Corporate Domains, Inc.2010-04-262027-04-25zzqx-panda-unregistered-2026.comno (available)———
+
+Platform test run, build 0.1.1, checked 2026-11-05; 12 domains, 5 shown.
+[Open on Apify Store](https://apify.com/pandadad0214/bulk-domain-whois-expiry)
+
+## Everything else
+
+### MCP servers
+
+Four focused public-data servers, the umbrella package, and Quiet File Team MCP — on GitHub, PyPI, Glama, and the Official MCP Registry where listed.
+[Browse servers](mcp.html) [Quiet File Team MCP](quiet-file-team-mcp/)
+
+### Apify tools
+
+Public-data Actors for research, federal funding, leads, and site safety. Each card links the Store page and the matching Agensi skill when one exists.
+[Browse Actors](apify.html) [Apify Store](https://apify.com/pandadad0214)
+
+### Apps & repos
+
+Steel Panda, Watchdog Panda, Manual Remake, Quiet File Team, Hidden AI Instructions Watch, and the 3D H.Q.
+[Browse apps](apps.html) [Quiet File Team](quiet-file-team/)
+
+### Services
+
+Human-checked citation, research, and public-data work on Fiverr and Upwork.
+[Hire us](services.html)
+
+### Writing & launch
+
+Notes on dev.to, news on X, and Panda Federation Tools on Product Hunt (launched November 2026).
+[dev.to](https://dev.to/pandadad0214) [Follow on X: @PandaFedHQ](https://x.com/PandaFedHQ) [Product Hunt](https://www.producthunt.com/products/panda-federation-tools)
+
+## A live 3D headquarters
+
+Panda Federation H.Q. is a Three.js office where each bot on a team can show a real-time status chip. It is open source and hosted as a public demo.
+[Open H.Q.](https://panda-federation-hq.pandafederation.workers.dev) [GitHub](https://github.com/pandadad0214/panda-federation-hq) [More apps](apps.html)
+
+## Free and paid editions stay linked
+
+When a tool has a free sample or kit and a paid edition, both are named on the tool’s card, with the exact place to switch. Apify list rates are on the card and on [pricing.md](pricing.md); the Store page is authoritative. Agensi package prices stay on the Agensi listing.
+
+
+---
+
+# MCP Servers · Panda Federation
+
+Source: https://pandafederation.com/mcp.html
+
+MCPPyPI 0.2.0Official Registry
+
+### Panda Research Tools
+
+MCP server: 8 research-integrity tools — fake/retracted citation checks, OpenAlex, PubMed, experts.
+
+Install
+
+```
+uvx panda-research-tools
+```
+MCP client config
+
+```
+{"mcpServers":{"panda-research-tools":{"command":"uvx","args":["panda-research-tools"],"env":{"APIFY_TOKEN":"YOUR_APIFY_TOKEN"}}}}
+```
+
+Ask your agent
+
+- “Check these 12 references for fake, miscited or retracted papers and tell me which to replace.”
+- “Find recent PubMed studies on intermittent fasting and build an evidence table I can open in Excel.”
+[GitHub](https://github.com/pandadad0214/panda-research-tools) [PyPI 0.2.0](https://pypi.org/project/panda-research-tools/) [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-tools) [Glama](https://glama.ai/mcp/servers/pandadad0214/panda-research-tools) [MCP Repository](https://mcprepository.com/pandadad0214/panda-research-tools)MCPPyPI 0.2.0Official Registry
+
+### Panda Public Funding Tools
+
+MCP server: 10 public funding tools — grants, contracts, SBIR/STTR, SEC financials, recalls.
+
+Install
+
+```
+uvx panda-public-funding-tools
+```
+MCP client config
+
+```
+{"mcpServers":{"panda-public-funding-tools":{"command":"uvx","args":["panda-public-funding-tools"],"env":{"APIFY_TOKEN":"YOUR_APIFY_TOKEN"}}}}
+```
+
+Ask your agent
+
+- “Find open SAM.gov bids for NAICS 541511 with a small-business set-aside.”
+- “List open Grants.gov opportunities about rural broadband and their close dates.”
+[GitHub](https://github.com/pandadad0214/panda-public-funding-tools) [PyPI 0.2.0](https://pypi.org/project/panda-public-funding-tools/) [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-public-funding-tools) [Glama](https://glama.ai/mcp/servers/pandadad0214/panda-public-funding-tools) [MCP Repository](https://mcprepository.com/pandadad0214/panda-public-funding-tools) [cursor.directory](https://cursor.directory/plugins/panda-public-funding-tools)MCPPyPI 0.2.0Official Registry
+
+### Panda Leads Tools
+
+MCP server: 15 public lead tools — local businesses, NPI, hiring signals, new businesses, permits.
+
+Install
+
+```
+uvx panda-leads-tools
+```
+MCP client config
+
+```
+{"mcpServers":{"panda-leads-tools":{"command":"uvx","args":["panda-leads-tools"],"env":{"APIFY_TOKEN":"YOUR_APIFY_TOKEN"}}}}
+```
+
+Ask your agent
+
+- “Find cardiologists in Phoenix, Arizona from the official NPI Registry.”
+- “Pull new Florida LLC and corporation filings from the last few days.”
+[GitHub](https://github.com/pandadad0214/panda-leads-tools) [PyPI 0.2.0](https://pypi.org/project/panda-leads-tools/) [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-leads-tools) [Glama](https://glama.ai/mcp/servers/pandadad0214/panda-leads-tools) [MCP Repository](https://mcprepository.com/pandadad0214/panda-leads-tools)MCPPyPI 0.2.0Official Registry
+
+### Panda Web Security Tools
+
+MCP server: 7 site and email safety tools — SPF/DKIM/DMARC, AI/SEO audit, prompt-injection scan.
+
+Install
+
+```
+uvx panda-web-security-tools
+```
+MCP client config
+
+```
+{"mcpServers":{"panda-web-security-tools":{"command":"uvx","args":["panda-web-security-tools"],"env":{"APIFY_TOKEN":"YOUR_APIFY_TOKEN"}}}}
+```
+
+Ask your agent
+
+- “Check SPF, DKIM and DMARC for these 10 domains and list the fixes.”
+- “Which of these domains expire in the next 90 days, and who is the registrar?”
+[GitHub](https://github.com/pandadad0214/panda-web-security-tools) [PyPI 0.2.0](https://pypi.org/project/panda-web-security-tools/) [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-web-security-tools) [Glama](https://glama.ai/mcp/servers/pandadad0214/panda-web-security-tools) [MCP Repository](https://mcprepository.com/pandadad0214/panda-web-security-tools)MCPPyPI 1.8.0
+
+### Panda Federation Tools (umbrella)
+
+Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, federal funding, leads, web security.
+
+Install
+
+```
+uvx panda-federation-tools
+```
+MCP client config
+
+```
+{"mcpServers":{"panda-federation-tools":{"command":"uvx","args":["panda-federation-tools"],"env":{"APIFY_TOKEN":"YOUR_APIFY_TOKEN"}}}}
+```
+
+Ask your agent
+
+- “Which Panda tool should I use to find federal contract recompetes?”
+- “Search the full tool list for anything about product recalls.”
+[GitHub](https://github.com/pandadad0214/panda-federation-tools) [Docs](https://pandadad0214.github.io/panda-federation-tools/) [PyPI 1.8.0](https://pypi.org/project/panda-federation-tools/) [Glama](https://glama.ai/mcp/servers/pandadad0214/panda-federation-tools) [MCP Repository](https://mcprepository.com/pandadad0214/panda-federation-tools)
+
+The four focused domain servers and Quiet File Team MCP are on the Official MCP Registry. This umbrella package is installed from PyPI or GitHub.
+MCPPyPI 0.1.2Official Registry
+
+### Quiet File Team MCP
+
+Six free offline MCP tools that explain, configure and check a Quiet File Team (bots sharing files).
+
+Install
+
+```
+uvx quiet-file-team-mcp
+```
+MCP client config
+
+```
+{"mcpServers":{"quiet-file-team":{"command":"uvx","args":["quiet-file-team-mcp"]}}}
+```
+
+Ask your agent
+
+- “Draft a team.conf for three bots named lead, builder and helper in America/Phoenix.”
+- “Explain how the NO WORK early exit works before I set up my routines.”
+[Product page](quiet-file-team-mcp/) [Free Bash core](quiet-file-team/) [GitHub](https://github.com/pandadad0214/quiet-file-team-mcp) [PyPI](https://pypi.org/project/quiet-file-team-mcp/) [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/quiet-file-team-mcp) [Glama](https://glama.ai/mcp/servers/pandadad0214/quiet-file-team-mcp) [MCP Repository](https://mcprepository.com/pandadad0214/quiet-file-team-mcp) [DevHunt](https://devhunt.org/tool/quiet-file-team-mcp)
+
+
+---
+
+# Quiet File Team MCP · Panda Federation
+
+Source: https://pandafederation.com/quiet-file-team-mcp/
+
+Quiet File Team MCP gives Claude, Cursor or any MCP client six offline tools that explain, configure and check a Quiet File Team — several bots sharing one computer through files. Nothing leaves your machine: no network calls, no file reads of your disk, no paid APIs.
+
+Use it with the free [Bash core](../quiet-file-team/) (scripts on [GitHub](https://github.com/pandadad0214/quiet-file-team)), or with the optional paid [Quiet File Team Setup Kit](https://agensi.io/skills/quiet-file-team-setup-kit) on Agensi when you want a guided install.
+
+## Install
+
+Python 3.11+ and [uv](https://docs.astral.sh/uv/) on the client. No account or token is required.
+
+```
+uvx quiet-file-team-mcp
+```
+
+Published on [PyPI](https://pypi.org/project/quiet-file-team-mcp/) and listed on the [Official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/quiet-file-team-mcp) as `io.github.pandadad0214/quiet-file-team-mcp`.
+
+MCP client config:
+
+```
+{"mcpServers":{"quiet-file-team":{"command":"uvx","args":["quiet-file-team-mcp"]}}}
+```
+
+## Tools
+**explain_method**Concepts and trust limits before an exercise.**generate_team_config**Safe roster and zone defaults; lead-only coordinator.**generate_early_exit**Draft a quoted early-exit block for a supplied role/path.**validate_layout_manifest**Compare supplied relative paths (no real filesystem scan).**draft_workflow**Fictional practice steps for the default roster.**draft_owner_batch**Deduplicate owner questions; keep unresolved task refs.
+
+## Switch editions
+
+- **Free MCP companion** — this page. Install with the uvx command above. Source is on [GitHub](https://github.com/pandadad0214/quiet-file-team-mcp).
+- **Free Bash core** — product page: [Quiet File Team](../quiet-file-team/). Clone [quiet-file-team](https://github.com/pandadad0214/quiet-file-team), set TEAM_DIR to the checkout, and follow its README. This MCP explains and checks a team; it does not install those scripts.
+- **Quiet File Team Setup Kit** — paid Agensi skill, one-time price on the live listing. Guided local install, ready rules, and practice files. [Open Agensi](https://agensi.io/skills/quiet-file-team-setup-kit)
+- **Setup kit generator** — paid Apify Actor that builds a configured starter ZIP. List rate is on the Apify Tools card and on [pricing.md](../pricing.md); the Store page is authoritative. [Open Apify Store](https://apify.com/pandadad0214/quiet-file-team-setup)
+
+## Links
+[GitHub repo](https://github.com/pandadad0214/quiet-file-team-mcp)[PyPI](https://pypi.org/project/quiet-file-team-mcp/)[MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/quiet-file-team-mcp)[Free Bash core](../quiet-file-team/)[Core GitHub repo](https://github.com/pandadad0214/quiet-file-team)[Glama](https://glama.ai/mcp/servers/pandadad0214/quiet-file-team-mcp)[Agensi setup kit (price on Agensi)](https://agensi.io/skills/quiet-file-team-setup-kit)[Apify Store](https://apify.com/pandadad0214/quiet-file-team-setup)[All MCP servers](../mcp.html)[Follow on X: @PandaFedHQ](https://x.com/PandaFedHQ)
+
+Built by Panda Federation · MIT License · Product page for Quiet File Team MCP.
+
+
+---
+
+# Quiet File Team · Panda Federation
+
+Source: https://pandafederation.com/quiet-file-team/
+
+## What it is
+
+Quiet File Team lets several AI bots share one computer through plain files, so idle routines stop on `NO WORK` instead of spending tokens. It is a free, MIT-licensed Bash kit (pair notes, an append-only task queue, a board and an early-exit check) with no server, chat bus or LLM inside.
+
+It runs on one shared Linux machine. It is not a hosted service, not a replacement for the owner’s chat, and not a way for bots to talk behind the owner’s back.
+[GitHub repo](https://github.com/pandadad0214/quiet-file-team)[Free MCP companion](../quiet-file-team-mcp/)[Latest release (v0.1.0)](https://github.com/pandadad0214/quiet-file-team/releases/tag/v0.1.0)
+
+## Who it is for
+
+Use it when two or more bots or scheduled routines share one machine and you want idle runs to exit early and handoffs to live in files.
+
+Do not use it when bots run on different machines without a shared local disk, you need authentication or encryption, or you need real-time chat.
+
+## How it works
+
+Each bot’s chat is for the owner. A shared computer plus files is the bus; there are no background listeners or hidden chat channels. Every routine starts with `has-work.sh <id>`. Exactly `NO WORK` means stop: no chat, no status, no board line. Otherwise pick up only the listed work.
+**Pair files**`pairs/<a-b>.md` hold short, directed handoffs. Notes over 2000 characters get an overflow file under `pairs/long/`.**Task queue**`tasks.log` is append-only. The latest event for a task is its state: `open`, `claimed`, `done`, `blocked`, `needs-owner`, `decided` or `cancelled`.**Board**`board.md` is an append-only summary, updated via `post.sh`. It is not a transcript.**Early exit**Start every routine with `has-work.sh` and stop when it prints exactly `NO WORK`. It always exits 0, so check the output.
+
+Scripts serialize mutations using `flock`. All writes stay on the local disk: no network, no scheduler, no model calls. Requirements are Linux, Bash 4+, GNU coreutils, awk, sed, tar and util-linux `flock`.
+
+Ids label records; they do not prove identity. This is not authentication, access control or encrypted storage. Never put private data in this bus.
+
+## Install and quick start
+
+Copy the kit into a shared local folder. Keep its scripts and `team.conf` together. No package registry is required.
+
+```
+curl -fsSL https://github.com/pandadad0214/quiet-file-team/archive/refs/tags/v0.1.0.tar.gz | tar xz && mv quiet-file-team-0.1.0 team
+export TEAM_DIR="$PWD/team"
+bash "$TEAM_DIR/has-work.sh" helper # a fresh kit prints: NO WORK
+```
+
+Or clone the repo: `git clone https://github.com/pandadad0214/quiet-file-team.git team`.
+
+- Name your bots in `team/team.conf` (`TEAM_IDS="lead builder helper"`) and set `TEAM_TZ` (default `UTC`).
+- Start every routine with `bash "$TEAM_DIR/has-work.sh" <id>` and stop the routine when it prints exactly `NO WORK`.
+- Give each bot the core rules in the repo and paste the early-exit block into each routine. Then run the practice exercise once in a fresh folder.
+
+A short practice run on an untouched demo log:
+
+```
+export TEAM_DIR="$PWD/team"
+bash "$TEAM_DIR/task.sh" new lead helper "Sort a sample inbox"
+bash "$TEAM_DIR/task.sh" claim T0001 helper
+bash "$TEAM_DIR/task.sh" set T0001 done helper "Sample inbox sorted"
+bash "$TEAM_DIR/post.sh" helper done "Demo checklist updated"
+bash "$TEAM_DIR/pair.sh" lead builder "Review the demo checklist"
+bash "$TEAM_DIR/has-work.sh" helper
+# NO WORK
+```
+
+Use the task id printed by `new` if the folder already contains tasks. Do not run the demo against a production data folder. Full commands and trust limits are in the [GitHub README](https://github.com/pandadad0214/quiet-file-team#how-to-use-this).
+
+## Commands
+**has-work.sh <id>**Print pending `TASKS:` / `HANDOFFS:` or exactly `NO WORK`.**task.sh**`new`, `claim`, `set`, `list`, `owner`, `stale`, `show`.**pair.sh**Append a directed pair note; `read [count]` reads recent lines.**post.sh**Append `done`, `needs-owner`, `handoff: <id>`, `fyi` or `resolved`.**backup.sh**Optional local snapshot of board, task log and pairs. No upload.
+
+## Switch editions
+
+The free core on this page is enough to run a team. A free MCP companion explains and checks a layout. A paid setup kit is also live if you want a guided install or a pre-configured ZIP.
+
+- **Free Bash core** — this page. Install with the curl or git clone command above. Source is on [GitHub](https://github.com/pandadad0214/quiet-file-team).
+- **Free MCP companion** — six offline guidance tools (explain the method, draft config and early-exit text, validate a supplied layout, draft a practice workflow, batch owner questions). It never reads your files or calls the network. Keep this folder, then add the companion to your MCP client: `uvx quiet-file-team-mcp`. Product page: [Quiet File Team MCP](../quiet-file-team-mcp/).
+- **Setup kit generator** — paid Apify Actor, charged per successfully generated kit; the list rate is on the Apify Tools card and on [pricing.md](../pricing.md); the Store page is authoritative. On the Actor page fill Roster (`TEAM_IDS`, e.g. `lead builder helper`), IANA time zone (`TEAM_TZ`) and Coordinator (`lead`), set the maximum run charge to at least the price shown on the Store page, then Start. Download `OUTPUT.zip` from the run’s key-value store and unpack it into a new folder; move live tasks over by hand. [Open Apify Store](https://apify.com/pandadad0214/quiet-file-team-setup)
+- **Quiet File Team Setup Kit** — paid Agensi skill, one-time price on the live listing. Keep this folder, load the skill in your agent, apply the rule packs you want, practice in a new folder and finish the acceptance checklist. Do not replace operational logs with examples. [Open Agensi](https://agensi.io/skills/quiet-file-team-setup-kit)
+- **Paid → free** — keep your scripts, drop the optional kit rules and continue with the free README on this page. For a clean copy, clone the GitHub repository separately, back up current data and re-enter active tasks deliberately; never merge `.seen` cursors blindly.
+
+## FAQ
+
+### Is this a hosted service?
+
+No. It is a local Bash kit on one shared Linux machine. There is no server, chat bus or LLM inside, and it makes no network or model calls.
+
+### How do idle routines stop spending tokens?
+
+Start every routine with `has-work.sh <id>`. When it prints exactly `NO WORK`, the routine should stop: no chat, no status, no board line. These are operating practices, not a measured savings promise.
+
+### What does a bot need besides the scripts?
+
+Give each bot the core rules from the repo and paste the early-exit block into each routine, replacing the id and path. Ensure the routine really stops on exactly `NO WORK`.
+
+### Can I put secrets or personal data in the files?
+
+No. The bus is plain files on one trusted machine, with no encryption or access control. Text is checked for long digit strings and email-shaped content as a rough guardrail, not a secret detector. Never put private data in this bus.
+
+### Does the free MCP install the scripts for me?
+
+No. [Quiet File Team MCP](../quiet-file-team-mcp/) explains, configures and checks a team from supplied inputs. Install the Bash core from this page or GitHub, then add the MCP companion if you want setup guidance.
+
+## Links
+[GitHub repo](https://github.com/pandadad0214/quiet-file-team)[Quiet File Team MCP](../quiet-file-team-mcp/)[Apify setup kit (price on the Store page)](https://apify.com/pandadad0214/quiet-file-team-setup)[Agensi setup kit (price on Agensi)](https://agensi.io/skills/quiet-file-team-setup-kit)[All apps & repos](../apps.html)[Follow on X: @PandaFedHQ](https://x.com/PandaFedHQ)
+
+Built by Panda Federation · MIT License · Product page for Quiet File Team.
+
+
+---
+
+# Services · Panda Federation
+
+Source: https://pandafederation.com/services.html
+
+## Fiverr
+
+Seller profile: [https://www.fiverr.com/pandafederation](https://www.fiverr.com/pandafederation)
+Fiverr
+
+### Reference verification
+
+Verify a reference list for fake, mismatched or retracted citations and receive a color-coded report.
+[Open gig](https://www.fiverr.com/pandafederation/verify-your-references-find-fake-citations-and-retracted-papers)Fiverr
+
+### Reference list formatting
+
+Format or convert a reference list to APA, MLA, Chicago, Harvard, IEEE or Vancouver.
+[Open gig](https://www.fiverr.com/pandafederation/format-or-convert-your-reference-list-to-apa-mla-chicago-or-harvard)Fiverr
+
+### Web data to CSV/Excel
+
+Collect public business data from a website into a clean CSV or Excel file. No logins, paywalls or personal contact lists.
+[Open gig](https://www.fiverr.com/pandafederation/scrape-website-data-into-a-clean-csv-or-excel-spreadsheet)Fiverr
+
+### Scholarly source lists
+
+Screened scholarly sources on a topic, with retraction flags and Excel, BibTeX and RIS files.
+[Open gig](https://www.fiverr.com/pandafederation/find-and-screen-scholarly-sources-for-your-topic-with-excel-bibtex-and-ris)
+
+## Upwork
+
+### Public profile
+
+Web scraping, PDF-to-Excel, and research data automation under the Panda Federation name.
+[Upwork profile](https://www.upwork.com/freelancers/~010efd521970a9d3e1)
+
+## Agent skills
+
+### Agensi skills
+
+Free and paid skills that wrap our tools for Claude, Cursor and other agents, each linked to its Apify Actor.
+[See all 36 skills](agensi.html) [Agensi creator page](https://www.agensi.io/creators/panda-federation)
+
+## Writing and launches
+
+- 2026-11-08[4 more public-data tools for AI agents: H-1B sponsors, NY new businesses, EU tenders and broken links](https://dev.to/pandadad0214/4-more-public-data-tools-for-ai-agents-h-1b-sponsors-ny-new-businesses-eu-tenders-and-broken-1g6m)
+- 2026-11-07[5 more public-data tools for AI agents: building permits, new FL/TX businesses, domain WHOIS and Wayback snapshots](https://dev.to/pandadad0214/5-more-public-data-tools-for-ai-agents-building-permits-new-fltx-businesses-domain-whois-and-56ib)
+- 2026-11-06[Manual Remake: turn a confusing manual into a clear printable PDF](https://dev.to/pandadad0214/manual-remake-turn-a-confusing-manual-into-a-clear-printable-pdf-13cn)
+- 2026-11-05[Steel Panda and Watchdog Panda: tiny local-first shell tools](https://dev.to/pandadad0214/steel-panda-and-watchdog-panda-tiny-local-first-shell-tools-463)
+- 2026-11-04[5 new public-data tools for AI agents: SBIR topics, SEC comps, clinical trials, page diffs and a free prompt-injection scanner](https://dev.to/pandadad0214/5-new-public-data-tools-for-ai-agents-sbir-topics-sec-comps-clinical-trials-page-diffs-and-a-551p)
+- 2026-11-04[Build a B2B account list from public data (no LinkedIn scraping)](https://dev.to/pandadad0214/build-a-b2b-account-list-from-public-data-no-linkedin-scraping-4lnm)
+- 2026-11-04[Catching fake citations with an AI agent (and a 2-minute manual check)](https://dev.to/pandadad0214/catching-fake-citations-with-an-ai-agent-and-a-2-minute-manual-check-hme)
+
+[Product Hunt — Panda Federation Tools](https://www.producthunt.com/products/panda-federation-tools). Launched on Product Hunt in November 2026.
+
+[Follow on X: @PandaFedHQ](https://x.com/PandaFedHQ).
+
+
+---
+
+# What's New · Panda Federation
+
+Source: https://pandafederation.com/whats-new/
+
+- 2026-11-12 Digest[Digest #1: Server Actors, a release calendar for MCP, and an SEC deadline](https://pandafederation.com/digest/001-2026-11-12/) — Five things from the last few days that matter if your agent works with public data, with our take on each, and then what we shipped.
+- 2026-11-11 Release[quiet-file-team-mcp v0.1.2](https://github.com/pandadad0214/quiet-file-team-mcp/releases/tag/v0.1.2) — Six free offline MCP tools that explain, configure and check a Quiet File Team (bots sharing files).
+- 2026-11-11 Release[quiet-file-team-mcp v0.1.1](https://github.com/pandadad0214/quiet-file-team-mcp/releases/tag/v0.1.1) — Six free offline MCP tools that explain, configure and check a Quiet File Team (bots sharing files).
+- 2026-11-11 Site[Quiet File Team product page](https://pandafederation.com/quiet-file-team/) — Free Bash kit for several bots sharing one computer through files.
+- 2026-11-11 Site[New homepage, real sample output and MCP install blocks](https://pandafederation.com/) — Counts now rebuild automatically from the Apify Store, PyPI and GitHub.
+- 2026-11-10 Site[Read-only WebMCP tools across the official site](https://pandafederation.com/.well-known/webmcp.json) — Agents in WebMCP-capable browsers can query the catalog directly.
+- 2026-11-10 Guide[Free data broker removal guide + state law map](https://pandafederation.com/data-broker-removal/) — Official people-search opt-out links checked November 10, 2026, with JSON for agents.
+- 2026-11-10 Release[panda-web-security-tools v0.2.0](https://github.com/pandadad0214/panda-web-security-tools/releases/tag/v0.2.0) — MCP server: 7 site and email safety tools - SPF/DKIM/DMARC, AI/SEO audit, prompt-injection scan, RSS monitor.
+- 2026-11-10 Release[panda-research-tools v0.2.0](https://github.com/pandadad0214/panda-research-tools/releases/tag/v0.2.0) — MCP server: 8 research-integrity tools - fake/retracted citation checks, OpenAlex, PubMed, experts, PDF tables, trends.
+- 2026-11-10 Release[panda-public-funding-tools v0.2.0](https://github.com/pandadad0214/panda-public-funding-tools/releases/tag/v0.2.0) — MCP server: 10 public-money tools - grants, contracts, SAM.gov, SBIR/STTR, SEC financials, recalls, EU tenders.
+- 2026-11-10 Release[panda-leads-tools v0.2.0](https://github.com/pandadad0214/panda-leads-tools/releases/tag/v0.2.0) — MCP server: 15 public lead tools - local businesses, NPI, hiring signals, new businesses, permits.
+- 2026-11-10 Release[panda-federation-tools v1.8.0](https://github.com/pandadad0214/panda-federation-tools/releases/tag/v1.8.0) — Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, public funding, leads, web security.
+- 2026-11-10 MCP Registry[Panda Research MCP (hosted subset) 1.8.0 on the Official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-mcp) — Hosted research subset: check citations, catch fake/retracted papers, search OpenAlex & PubMed.
+- 2026-11-10 Apify[New Apify Actor: SAM.gov Contract Opportunities: Open Federal Bids, No API Key](https://apify.com/pandadad0214/sam-gov-opportunities) — Use this to find open federal contract opportunities from the official SAM.gov public data extract, no API key: solicitations, sources sought, award notices.…
+- 2026-11-09 Release[panda-web-security-tools v0.1.0](https://github.com/pandadad0214/panda-web-security-tools/releases/tag/v0.1.0) — MCP server: 7 site and email safety tools - SPF/DKIM/DMARC, AI/SEO audit, prompt-injection scan, RSS monitor.
+- 2026-11-09 Release[panda-leads-tools v0.1.0](https://github.com/pandadad0214/panda-leads-tools/releases/tag/v0.1.0) — MCP server: 15 public lead tools - local businesses, NPI, hiring signals, new businesses, permits.
+- 2026-11-09 Release[panda-public-funding-tools v0.1.0](https://github.com/pandadad0214/panda-public-funding-tools/releases/tag/v0.1.0) — MCP server: 10 public-money tools - grants, contracts, SAM.gov, SBIR/STTR, SEC financials, recalls, EU tenders.
+- 2026-11-09 Release[panda-research-tools v0.1.0](https://github.com/pandadad0214/panda-research-tools/releases/tag/v0.1.0) — MCP server: 8 research-integrity tools - fake/retracted citation checks, OpenAlex, PubMed, experts, PDF tables, trends.
+- 2026-11-09 Site[pandafederation.com goes live](https://pandafederation.com/) — Official catalog site for the MCP servers, Apify Actors and apps.
+- 2026-11-09 Release[quiet-file-team v0.1.0](https://github.com/pandadad0214/quiet-file-team/releases/tag/v0.1.0) — Free Bash kit that lets several AI bots share one computer through files: task queue, pair notes, early exit.
+- 2026-11-09 Apify[New Apify Actor: Colorado New Business Leads: New SOS Filings Daily](https://apify.com/pandadad0214/colorado-new-business-leads) — Get new Colorado LLCs, corporations and nonprofits from official Secretary of State open data. Name, type, formation date, address, registered agent and a…
+- 2026-11-09 Apify[New Apify Actor: France Company Leads: SIREN, Directors, Revenue](https://apify.com/pandadad0214/france-company-leads) — Build French B2B lead lists from the official company directory (SIRENE + RNE). SIREN, SIRET, VAT, NAF activity, size, address, revenue and directors; filter…
+- 2026-11-09 Apify[New Apify Actor: RSS & Atom Feed Monitor: Only New Items](https://apify.com/pandadad0214/rss-feed-monitor) — Watch many RSS, Atom or JSON feeds — or just website URLs, with feed autodiscovery — and get only items that are new since your last run. Keyword and age…
+- 2026-11-08 Release[panda-federation-tools v1.7.0](https://github.com/pandadad0214/panda-federation-tools/releases/tag/v1.7.0) — Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, public funding, leads, web security.
+- 2026-11-08 MCP Registry[Panda Research MCP (hosted subset) 1.7.0 on the Official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-mcp) — Hosted research subset: check citations, catch fake/retracted papers, search OpenAlex & PubMed.
+- 2026-11-08 Apify[New Apify Actor: Broken Link Checker: 404s, Redirects and Dead Links](https://apify.com/pandadad0214/broken-link-checker) — Find broken links on a website: crawl your start pages (optional same-host follow) and check every unique http(s) link. Status, final URL, redirect and broken…
+- 2026-11-08 Apify[New Apify Actor: EU TED Tenders: Public Procurement Notices](https://apify.com/pandadad0214/eu-ted-tenders) — Search official EU public procurement notices from TED (Tenders Electronic Daily). Title, publication date, buyer country, CPV, procedure and notice type…
+- 2026-11-08 Apify[New Apify Actor: New York New Business Leads: New DOS Filings](https://apify.com/pandadad0214/new-york-new-business-leads) — Get new New York LLCs, corporations and other DOS entities from the official data.ny.gov Active Corporations dataset. Name, entity type, filing date, county…
+- 2026-11-07 Release[panda-federation-tools v1.6.0](https://github.com/pandadad0214/panda-federation-tools/releases/tag/v1.6.0) — Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, public funding, leads, web security.
+- 2026-11-07 MCP Registry[Panda Research MCP (hosted subset) 1.6.0 on the Official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-mcp) — Hosted research subset: check citations, catch fake/retracted papers, search OpenAlex & PubMed.
+- 2026-11-06 Apify[New Apify Actor: Quiet File Team Setup Kit Generator](https://apify.com/pandadad0214/quiet-file-team-setup) — Generate a configured Quiet File Team starter ZIP (several bots sharing one computer through files) with rules, guided install and acceptance checks. $29 per…
+- 2026-11-06 Release[quiet-file-team-mcp v0.1.0](https://github.com/pandadad0214/quiet-file-team-mcp/releases/tag/v0.1.0) — Six free offline MCP tools that explain, configure and check a Quiet File Team (bots sharing files).
+- 2026-11-06 Release[Watchdog_Panda v0.2.0](https://github.com/pandadad0214/Watchdog_Panda/releases/tag/v0.2.0) — Restart a local process when it disappears, with backoff, a restart cap and a failure hook. Bash only.
+- 2026-11-06 Release[Steel_Panda v0.3.0](https://github.com/pandadad0214/Steel_Panda/releases/tag/v0.3.0) — Run every shell script in a folder, log each exit code, fail if any task fails. Local Bash, no network.
+- 2026-11-06 Release[manual-remake v0.1.4](https://github.com/pandadad0214/manual-remake/releases/tag/v0.1.4) — Rewrite a confusing manual (PDF or photos) into a clear, printable English PDF. Free sample on Apify.
+- 2026-11-06 Apify[New Apify Actor: Wayback Machine Snapshot Finder: Archive Dates & URLs](https://apify.com/pandadad0214/wayback-snapshot-finder) — Find Internet Archive Wayback Machine snapshots for pages or whole domains via the official CDX API. Capture dates, archive URLs, status, MIME type and first…
+- 2026-11-06 Release[panda-federation-tools v1.5.0](https://github.com/pandadad0214/panda-federation-tools/releases/tag/v1.5.0) — Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, public funding, leads, web security.
+- 2026-11-06 MCP Registry[Panda Research MCP (hosted subset) 1.5.0 on the Official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-mcp) — Hosted research subset: check citations, catch fake/retracted papers, search OpenAlex & PubMed.
+- 2026-11-06 Apify[New Apify Actor: H-1B LCA Visa Sponsor Leads: DOL Employers, Jobs & Wages](https://apify.com/pandadad0214/h1b-lca-sponsor-leads) — Find H-1B, H-1B1 and E-3 visa sponsors from official DOL OFLC LCA disclosure data. One row per case with employer, job title, SOC, worksite, wage and status…
+- 2026-11-06 Apify[New Apify Actor: Texas New Business Leads: New Franchise Taxpayers](https://apify.com/pandadad0214/texas-new-business-leads) — Use this to get new Texas LLCs and corporations from official Comptroller franchise taxpayer open data: name, address, county, org type, SOS file number…
+- 2026-11-06 Release[manual-remake v0.1.3](https://github.com/pandadad0214/manual-remake/releases/tag/v0.1.3) — Rewrite a confusing manual (PDF or photos) into a clear, printable English PDF. Free sample on Apify.
+- 2026-11-05 Apify[New Apify Actor: Manual Remake: Confusing Manual to Clear Printable PDF](https://apify.com/pandadad0214/manual-remake) — Rewrite a confusing manual (PDF or photos) into a clear, printable English PDF. Free sample: tick Free sample or leave files empty, no key. Text-only $9…
+- 2026-11-05 MCP Registry[Panda Research MCP (hosted subset) 1.4.0 on the Official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-mcp) — Hosted research subset: check citations, catch fake/retracted papers, search OpenAlex & PubMed.
+- 2026-11-05 Release[panda-federation-tools v1.4.0](https://github.com/pandadad0214/panda-federation-tools/releases/tag/v1.4.0) — Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, public funding, leads, web security.
+- 2026-11-05 Apify[New Apify Actor: Building Permit Leads: New Permits, Contractors & Job Values](https://apify.com/pandadad0214/building-permit-leads) — Get newly issued building permits from 8 US city open-data portals (NYC, LA, Chicago, SF, Seattle, Austin, New Orleans, Cambridge). Address, work, trade…
+- 2026-11-05 Apify[New Apify Actor: Bulk Domain WHOIS & Expiry Checker (RDAP): Registrar & Dates](https://apify.com/pandadad0214/bulk-domain-whois-expiry) — Check many domains at once with official RDAP (WHOIS fallback) for availability and expiry. Registrar, created and expiry dates, days left, locks…
+- 2026-11-05 Apify[New Apify Actor: Florida New Business Leads: New LLCs & Corporations Daily](https://apify.com/pandadad0214/florida-new-business-leads) — Get every new Florida LLC, corporation and nonprofit from official Sunbiz daily data. Address, officers and managers, registered agent, EIN when filed and an…
+- 2026-11-04 Release[panda-federation-tools v1.3.0](https://github.com/pandadad0214/panda-federation-tools/releases/tag/v1.3.0) — Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, public funding, leads, web security.
+- 2026-11-04 MCP Registry[Panda Research MCP 1.3.0 on the Official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-mcp) — Check citations, catch fake/retracted papers, search OpenAlex & PubMed, format references.
+- 2026-11-04 Apify[New Apify Actor: Clinical Trial Leads: Sponsors, Sites & Contacts](https://apify.com/pandadad0214/clinical-trial-leads) — Find clinical trials and the people running them from the official ClinicalTrials.gov API. Search by condition, drug, sponsor, phase, status and location; get…
+- 2026-11-04 Apify[New Apify Actor: Nonprofit Leads: IRS Charities & Foundations by State](https://apify.com/pandadad0214/nonprofit-leads-irs) — Build nonprofit and foundation lead lists from the official IRS Exempt Organizations file. EIN, name, address, in-care-of contact, NTEE cause, 501(c) type…
+- 2026-11-04 Apify[New Apify Actor: VIN Decoder + Recalls: Bulk NHTSA Specs & Safety Recalls](https://apify.com/pandadad0214/vin-decoder-recalls) — Bulk-decode VINs with the official NHTSA vPIC API and add safety recalls in the same run. Year, make, model, trim, body, engine, fuel, drivetrain, GVWR, plant…
+- 2026-11-04 Apify[New Apify Actor: Product Recall Monitor: FDA Food, Drug, Device & CPSC Recalls](https://apify.com/pandadad0214/product-recall-monitor) — Get one feed of US product recalls from FDA (food, drugs, medical devices) and CPSC (consumer products). Product, reason or hazard, firm, class, status…
+- 2026-11-04 Apify[New Apify Actor: Federal Register Monitor: New Rules & Comment Deadlines](https://apify.com/pandadad0214/federal-register-monitor) — Track new US federal rules, proposed rules and notices from the official FederalRegister.gov API. Agency, comment deadline and days left, effective date…
+- 2026-11-04 Release[Watchdog_Panda v0.1.0](https://github.com/pandadad0214/Watchdog_Panda/releases/tag/v0.1.0) — Restart a local process when it disappears, with backoff, a restart cap and a failure hook. Bash only.
+- 2026-11-04 Release[Steel_Panda v0.2.0](https://github.com/pandadad0214/Steel_Panda/releases/tag/v0.2.0) — Run every shell script in a folder, log each exit code, fail if any task fails. Local Bash, no network.
+- 2026-11-04 Release[panda-federation-tools v1.2.0](https://github.com/pandadad0214/panda-federation-tools/releases/tag/v1.2.0) — Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, public funding, leads, web security.
+- 2026-11-04 MCP Registry[Panda Research MCP 1.2.0 on the Official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-mcp) — Check citations, catch fake/retracted papers, search OpenAlex & PubMed, format references.
+- 2026-11-04 Apify[New Apify Actor: Hidden AI Instructions Scanner: Prompt Injection Detector](https://apify.com/pandadad0214/hidden-ai-instructions-scanner) — Free: check web pages for text hidden from people but read by AI agents, and flag prompt injection. Finds display:none, off-screen, tiny or same-color text…
+- 2026-11-03 Apify[New Apify Actor: SEC Financials to Excel: EDGAR XBRL Comps & Model Data](https://apify.com/pandadad0214/sec-financials-excel) — Get standardized annual income statement, balance sheet and cash-flow lines for US-listed companies from SEC EDGAR XBRL. EBITDA, FCF, net debt, margins and a…
+- 2026-11-03 Apify[New Apify Actor: SBIR/STTR Topic Radar: Open Topics, Deadlines & DoD Q&A](https://apify.com/pandadad0214/sbir-sttr-topic-radar) — Find open SBIR and STTR topics from every agency (DoD branches, NIH, NASA, NSF, DOE, USDA, DHS...) by keyword. Full topic text, close dates, days left, topic…
+- 2026-11-03 MCP Registry[Panda Research MCP 1.1.1 on the Official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-mcp) — Check citations, catch fake/retracted papers, search OpenAlex & PubMed, format references.
+- 2026-11-03 Release[panda-federation-tools v1.1.1](https://github.com/pandadad0214/panda-federation-tools/releases/tag/v1.1.1) — Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, public funding, leads, web security.
+- 2026-11-03 Release[panda-federation-tools v1.1.0](https://github.com/pandadad0214/panda-federation-tools/releases/tag/v1.1.0) — Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, public funding, leads, web security.
+- 2026-11-03 Release[panda-federation-tools v1.0.0](https://github.com/pandadad0214/panda-federation-tools/releases/tag/v1.0.0) — Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, public funding, leads, web security.
+- 2026-11-03 Apify[New Apify Actor: Website Change Monitor: Page Diffs, Price & Keyword Alerts](https://apify.com/pandadad0214/website-change-monitor) — Know when competitor pricing, terms, product or careers pages change. Each run shows added and removed text, change percent, price changes and keyword alerts…
+- 2026-11-03 Apify[New Apify Actor: Company Team & Decision-Maker Finder: Names, Titles, Emails](https://apify.com/pandadad0214/company-team-finder) — Find the people behind a company from its own website, with no LinkedIn scraping. Names, job titles, seniority, department, published emails, LinkedIn links…
+- 2026-11-03 Apify[New Apify Actor: Trucking Company Leads: New FMCSA Carriers, Email & Phone](https://apify.com/pandadad0214/trucking-company-leads) — Get fresh trucking company leads from official FMCSA data: new USDOT carriers, brokers and freight forwarders. Phone, email, officers, fleet size, drivers…
+- 2026-11-02 Apify[New Apify Actor: Topic Trends Tracker: Google Trends Alternative, Real Numbers](https://apify.com/pandadad0214/topic-trends-tracker) — Compare public interest in topics, brands, products or people with real view counts (Wikipedia pageviews), a Google Trends alternative. Daily and monthly…
+- 2026-11-02 Apify[New Apify Actor: Company Website Enricher: Tech Stack, Emails & Socials](https://apify.com/pandadad0214/company-website-enricher) — Enrich a list of company domains in one run with contacts, socials and tech stack. Name, description, public emails and phones, LinkedIn and social links…
+- 2026-11-02 Apify[New Apify Actor: Company Hiring Signals: Job Openings & Hiring Intent by Company](https://apify.com/pandadad0214/company-hiring-signals) — See which companies are hiring, for which teams and how fast. Give domains, names or job-board links; get open jobs, new jobs in 7/30 days, teams hiring…
+- 2026-11-01 Apify[New Apify Actor: SPF, DKIM & DMARC Checker: Bulk Email Domain Security Audit](https://apify.com/pandadad0214/email-domain-security-checker) — Check SPF, DKIM, DMARC, MX provider, BIMI and MTA-STS for a list of domains or emails in bulk. One row per domain with an A-F grade, spoofing risk, mail…
+- 2026-11-01 Apify[New Apify Actor: AI Search & SEO Audit: GEO, llms.txt & Schema Checker](https://apify.com/pandadad0214/ai-search-seo-audit) — Audit web pages for SEO and AI search readiness (ChatGPT, Perplexity, Claude, Google AI Overviews). Per URL: SEO and AI scores, blocked AI crawlers, schema…
+- 2026-11-01 Apify[New Apify Actor: Podcast Leads Finder: Podcast Host Emails & Guest Booking List](https://apify.com/pandadad0214/podcast-leads-finder) — Find active podcasts to pitch by topic and country. One row per show with host, the contact email published in its RSS feed, website, socials, episode count…
+- 2026-11-01 Apify[New Apify Actor: Local Business Leads: Google Maps Alternative (OpenStreetMap)](https://apify.com/pandadad0214/local-business-leads) — List local businesses by category and city, e.g. dentists in Tempe AZ, from OpenStreetMap (open license), a Google Maps alternative. One row per business with…
+- 2026-11-01 Apify[New Apify Actor: USAspending Scraper: Federal Contract Awards & Recompete Finder](https://apify.com/pandadad0214/federal-contract-finder) — Find US federal contract awards and contracts ending soon (recompete leads) from USAspending.gov. Search by keyword, NAICS, PSC, agency, state or set-aside…
+- 2026-10-30 MCP Registry[Panda Research MCP 1.0.0 on the Official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-mcp) — Check citations, catch fake/retracted papers, search OpenAlex & PubMed, format references.
+- 2026-10-30 Apify[New Apify Actor: Google Scholar Author Alternative: Find Experts & KOLs by Topic](https://apify.com/pandadad0214/researcher-expert-finder) — Find the academic experts and key opinion leaders on any research topic, a Google Scholar author search alternative. Filter by country, institution and years…
+- 2026-10-29 Apify[New Apify Actor: NPI Registry Scraper: US Doctors & Healthcare Provider Leads](https://apify.com/pandadad0214/npi-provider-lists) — Build de-duplicated lists of US doctors and healthcare providers from the official NPI Registry. Type specialties in plain words plus states, cities or ZIPs…
+- 2026-10-29 Apify[New Apify Actor: PDF Table Extractor: PDF to Excel & CSV Converter with OCR](https://apify.com/pandadad0214/pdf-table-extractor) — Extract every table from PDF files into Excel and CSV, with OCR for scanned pages. Give PDF URLs or uploads and optional page ranges; get one row per table…
+- 2026-10-29 Apify[New Apify Actor: Grants.gov Scraper: Federal Grants, NIH & NSF Awards API](https://apify.com/pandadad0214/grants-finder) — Find US federal funding in one run: open and forecasted Grants.gov opportunities plus funded NIH and NSF awards. Filter by keyword, agency, date and amount…
+- 2026-10-29 Apify[New Apify Actor: Academic Research MCP Server: OpenAlex, PubMed & Citation Check](https://apify.com/pandadad0214/panda-research-mcp) — Give Claude, Cursor or any AI agent academic research tools over MCP: verify citations, catch fake and retracted papers, search OpenAlex and PubMed, and…
+- 2026-10-29 Apify[New Apify Actor: PubMed Scraper: Articles, Abstracts & Evidence Table to Excel](https://apify.com/pandadad0214/pubmed-evidence-table) — Turn PubMed searches into a screening-ready Excel evidence table. One row per article with PMID, journal, study design, sample size and retraction status…
+- 2026-10-29 Apify[New Apify Actor: Google Scholar Scraper Alternative: Papers, Citations & BibTeX](https://apify.com/pandadad0214/literature-search) — Find real scholarly papers on any topic across 250M+ OpenAlex works, a Google Scholar scraper alternative. Filter by year and citations or start from seed…
+- 2026-10-29 Apify[New Apify Actor: Citation Generator API: DOI to APA, MLA, Chicago & BibTeX](https://apify.com/pandadad0214/citation-formatter) — Turn DOIs, ISBNs, PMIDs, arXiv IDs, titles or messy references into clean citations, each checked against Crossref. Output: APA 7, MLA 9, Chicago, Harvard…
+- 2026-10-28 Apify[New Apify Actor: Reference Checker: Fake, AI-Hallucinated & Retracted Citations](https://apify.com/pandadad0214/reference-checker) — Catch fake (AI-hallucinated), miscited and retracted references in any bibliography, DOI list or set of titles. Checked against Crossref, Retraction Watch and…
+
+86 entries. Rebuilt 2026-11-13 (Arizona time).
+
+
+---

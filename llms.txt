@@ -102,7 +102,7 @@ More: https://pandafederation.com/apps.html. Quiet File Team agent notes: https:
 
 Panda Federation is one dad's workshop. I build public-data tools with a small team of AI bots that share one computer. One bot writes and tests code, another checks listings and links, another keeps the books and the calendar honest, and I decide what ships. https://pandafederation.com/about.html
 
-Free and paid editions of the same tool always name each other and say how to switch. Prices live on the store listing.
+Free and paid editions of the same tool always name each other and say how to switch. Apify list rates are on each tool card and on https://pandafederation.com/pricing.md. The Store page is authoritative. Fiverr, Upwork and Agensi package prices stay on those listings.
 
 ## Services and skills
 
@@ -116,6 +116,11 @@ Free and paid editions of the same tool always name each other and say how to sw
 - GitHub: https://github.com/pandadad0214
 - X: https://x.com/PandaFedHQ  (Follow on X: @PandaFedHQ)
 - Product Hunt: https://www.producthunt.com/products/panda-federation-tools
+- Pricing (same list rates as the Apify cards): https://pandafederation.com/pricing.md
+- Full page markdown: https://pandafederation.com/llms-full.txt
+- AI catalog: https://pandafederation.com/.well-known/ai-catalog.json
+- WebMCP manifest: https://pandafederation.com/.well-known/webmcp.json
 - Inventory: https://pandafederation.com/inventory.json
 - Sitemap: https://pandafederation.com/sitemap.xml
 - Full tool notes: https://pandadad0214.github.io/panda-federation-tools/llms.txt
+- Panda Federation Shop (cables, racks, and lab gear): https://shop.pandafederation.com/ — no products listed in the shop feed when this site built. Item prices, when listed, appear on that site.
