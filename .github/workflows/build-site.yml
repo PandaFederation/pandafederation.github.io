@@ -33,6 +33,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/build.py
+      - name: Check catalog JSON-LD
+        run: python3 scripts/check_jsonld.py
       - name: Commit changes
         run: |
           if git diff --quiet; then echo "No changes"; exit 0; fi

@@ -200,6 +200,17 @@ def main() -> int:
     print("changed:", ", ".join(changed) or "nothing")
     for w in WARN:
         print("WARN:", w)
+
+    check_path = os.path.join(ROOT, "scripts", "check_jsonld.py")
+    ns_check: dict = {"__file__": check_path, "__name__": "check_jsonld"}
+    exec(compile(read(check_path), check_path, "exec"), ns_check)  # noqa: S102
+    ld_errors = ns_check["check"](ROOT)
+    for e in ld_errors:
+        print("JSON-LD ERROR:", e)
+    if ld_errors:
+        print(f"JSON-LD check failed ({len(ld_errors)} error(s))")
+        return 1
+    print("JSON-LD check passed")
     return 0
 
 

@@ -29,9 +29,12 @@ Inventory used to build the pages (verified URLs only) lives in this repo as `in
 - `digest/`: weekly digest issues from `digest/issues/*.md`; only `status: published` issues are rendered
 - `index.html` sample tables from `data/samples.json` (rows from real Actor test runs)
 - nav, footer links, the Cloudflare Web Analytics beacon and `sitemap.xml` on every page (`scripts/chrome.py`)
+- `scripts/agents.py` (last build step) writes `llms.txt`, `pricing.md`, `llms-full.txt`, Markdown mirrors of each public page, `.well-known/ai-catalog.json`, the JSON-LD on every page (including visible-matching Apify list rates on tool cards), PyPI/Registry fields in the WebMCP catalogs, and `sitemap.xml`. Edit the generator or its sources (`webmcp-catalog.json`, page copy, digest issues), not those outputs. Machine-readable rates must match the visible card text.
+
+**Catalog schema is automatic.** Every catalog page, and any new page that uses `article.card`, gets SoftwareApplication and/or ItemList JSON-LD from the same visible cards (tool-like links become SoftwareApplication; other cards become WebPage or a name-only item — no invented urls or prices). Hand-written JSON-LD on product landings (`quiet-file-team`, `data-broker-removal`) is left in place and only patched with live facts such as the PyPI version. `scripts/check_jsonld.py` runs at the end of `scripts/build.py` and as a step in the Rebuild generated site data workflow (CI and the daily 6:17 AM Arizona build). The check fails the build if JSON-LD does not parse, a required field is missing, a JSON-LD price differs from the visible card, or a catalog page has no schema.
 
 Run locally with `python3 scripts/build.py`. Warnings (for example a public Actor without a card on
-`apify.html`) are printed as `WARN:` lines in the workflow log.
+`apify.html`) are printed as `WARN:` lines in the workflow log. A failed JSON-LD check exits non-zero and is not committed.
 
 ## Local preview
 
@@ -46,5 +49,3 @@ Then open `http://localhost:8080/`. The 3D hero needs a web server (not a `file:
 ## License
 
 MIT. Logo, crest, and headquarters stills are Panda Federation brand assets.
-
-- `scripts/agents.py` (last build step) writes `llms.txt`, `pricing.md`, `llms-full.txt`, Markdown mirrors of each public page, `.well-known/ai-catalog.json`, the JSON-LD on every page (including visible-matching Apify list rates on tool cards), PyPI/Registry fields in the WebMCP catalogs, and `sitemap.xml`. Edit the generator or its sources (`webmcp-catalog.json`, page copy, digest issues), not those outputs. Machine-readable rates must match the visible card text.

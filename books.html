@@ -35,22 +35,66 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://pandafederation.com/#org",
-  "name": "Panda Federation",
-  "url": "https://pandafederation.com/",
-  "logo": "https://pandafederation.com/assets/logo.png",
-  "description": "Free public-data tools for AI agents: check references, find federal grants and bids, pull official lead lists and audit domains. On Apify and as MCP servers.",
-  "sameAs": [
-    "https://github.com/pandadad0214",
-    "https://x.com/PandaFedHQ",
-    "https://apify.com/pandadad0214",
-    "https://www.agensi.io/creators/panda-federation",
-    "https://dev.to/pandadad0214",
-    "https://www.producthunt.com/products/panda-federation-tools",
-    "https://www.fiverr.com/pandafederation",
-    "https://www.upwork.com/freelancers/~010efd521970a9d3e1",
-    "https://peerlist.io/pandadad0214/project/panda-federation-tools"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://pandafederation.com/#org",
+      "name": "Panda Federation",
+      "url": "https://pandafederation.com/",
+      "logo": "https://pandafederation.com/assets/logo.png",
+      "description": "Free public-data tools for AI agents: check references, find federal grants and bids, pull official lead lists and audit domains. On Apify and as MCP servers.",
+      "sameAs": [
+        "https://github.com/pandadad0214",
+        "https://x.com/PandaFedHQ",
+        "https://apify.com/pandadad0214",
+        "https://www.agensi.io/creators/panda-federation",
+        "https://dev.to/pandadad0214",
+        "https://www.producthunt.com/products/panda-federation-tools",
+        "https://www.fiverr.com/pandafederation",
+        "https://www.upwork.com/freelancers/~010efd521970a9d3e1",
+        "https://peerlist.io/pandadad0214/project/panda-federation-tools"
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "url": "https://pandafederation.com/books.html",
+      "name": "Spiral Saga, coming soon.",
+      "description": "Spiral Saga books from Panda Federation — coming soon.",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Spiral Saga, coming soon.",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Thing",
+              "name": "Spiral Saga",
+              "description": "Story world / planned book series"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Thing",
+              "name": "The Hollowlands",
+              "description": "Ring 4 standalone series, first priority"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Thing",
+              "name": "Gatewalkers Guide",
+              "description": "Companion / world guide in planning"
+            }
+          }
+        ]
+      }
+    }
   ]
 }
 </script>

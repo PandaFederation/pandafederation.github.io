@@ -282,6 +282,13 @@ def run(get, read, write, warn, values, actors):
     def _plain(frag):
         return re.sub(r"\s+", " ", H.unescape(re.sub(r"<[^>]+>", " ", frag or ""))).strip()
 
+    def _is_tool_url(u):
+        low = (u or "").lower()
+        return any(h in low for h in (
+            "apify.com", "github.com", "pypi.org", "agensi.io",
+            "npmjs.com", "modelcontextprotocol.io", "gitlab.com",
+        ))
+
     def page_ld(p):
         url = f"{SITE}/" + (p[:-len("index.html")] if p.endswith("index.html") else p)
         desc = _meta_desc(read, p)
@@ -383,6 +390,43 @@ def run(get, read, write, warn, values, actors):
                         "headline": f"Digest #{i['number']}: {i.get('title', '')}", "description": i["lede"],
                         "datePublished": i["date"], "author": {"@id": f"{SITE}/#org"}, "publisher": {"@id": f"{SITE}/#org"},
                         "isPartOf": {"@type": "Blog", "url": f"{SITE}/digest/"}}]}
+        # Automatic catalog fallback: any page with visible article.card
+        # elements (books, services, and any future catalog) gets an ItemList
+        # built from those cards. Do not invent urls or prices.
+        cards = _card_bodies(p)
+        if cards:
+            h1 = re.search(r"<h1[^>]*>(.*?)</h1>", read(p), re.S)
+            name = _plain(h1.group(1)) if h1 else p
+            items = []
+            for n, body in enumerate(cards, 1):
+                heading = re.search(r"<h[23][^>]*>(.*?)</h[23]>", body, re.S)
+                if not heading:
+                    warn.append(f"{p} card {n}: missing heading")
+                    continue
+                lede = re.search(r"<p>(.*?)</p>", body, re.S)
+                hrefs = re.findall(r'href="([^"]+)"', body)
+                item_url = _abs_url(hrefs[0], p) if hrefs else None
+                typ = "SoftwareApplication" if item_url and _is_tool_url(item_url) else (
+                    "WebPage" if item_url else "Thing"
+                )
+                entry = {"@type": typ, "name": _plain(heading.group(1))}
+                if item_url:
+                    entry["url"] = item_url
+                if typ == "SoftwareApplication":
+                    entry["applicationCategory"] = "DeveloperApplication"
+                    entry["publisher"] = {"@id": f"{SITE}/#org"}
+                if lede:
+                    entry["description"] = _plain(lede.group(1))
+                items.append({"@type": "ListItem", "position": n, "item": entry})
+            if items:
+                return {"@context": ctx, "@graph": [org, {
+                    "@type": "CollectionPage", "url": url, "name": name,
+                    "description": desc,
+                    "mainEntity": {
+                        "@type": "ItemList", "name": name,
+                        "numberOfItems": len(items), "itemListElement": items,
+                    },
+                }]}
         return {"@context": ctx, **org}
 
     pages = sorted(p for p in glob.glob("**/*.html", recursive=True) if not p.startswith(SKIP))
