@@ -211,6 +211,12 @@ footer .oath { color: var(--sub); font-style: italic; }
   width: 150px;
   max-width: 150px;
 }
+.listed-on-row a[href^="https://submitaitools.org/pandadad0214-github-io-panda-federation-tools"] img {
+  height: 60px;
+  width: 200px;
+  max-width: 200px;
+  border-radius: 10px;
+}
 
 .coming {
   background:
