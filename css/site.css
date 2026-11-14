@@ -206,6 +206,11 @@ footer .oath { color: var(--sub); font-style: italic; }
   height: auto;
   width: 120px;
 }
+.listed-on-row a[href^="https://www.saashub.com/panda-federation-tools"] img {
+  height: auto;
+  width: 150px;
+  max-width: 150px;
+}
 
 .coming {
   background:

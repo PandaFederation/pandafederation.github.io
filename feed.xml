@@ -110,7 +110,7 @@
     <link href="https://apify.com/pandadad0214/sam-gov-opportunities"/>
     <id>tag:pandafederation.com,2026:68ea90d0df618a52bda2faef61da914a4b6d4113</id>
     <updated>2026-11-10T15:27:50Z</updated>
-    <summary>Use this to find open federal contract opportunities from the official SAM.gov public data extract, no API key: solicitations, sources sought, award notices.…</summary>
+    <summary>Find open federal contract opportunities from the official SAM.gov public data extract, no API key: solicitations, sources sought, award notices. Filter by…</summary>
   </entry>
   <entry>
     <title>panda-web-security-tools v0.1.0</title>
@@ -292,7 +292,7 @@
     <link href="https://apify.com/pandadad0214/texas-new-business-leads"/>
     <id>tag:pandafederation.com,2026:9c0e3d57f07c83670eaf52c1c1d8f78db81d4267</id>
     <updated>2026-11-06T15:31:28Z</updated>
-    <summary>Use this to get new Texas LLCs and corporations from official Comptroller franchise taxpayer open data: name, address, county, org type, SOS file number…</summary>
+    <summary>Get new Texas LLCs and corporations from official Comptroller franchise taxpayer open data: name, address, county, org type, SOS file number, charter date…</summary>
   </entry>
   <entry>
     <title>manual-remake v0.1.3</title>

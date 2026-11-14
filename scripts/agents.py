@@ -35,6 +35,7 @@ SAME_AS = [
     "https://www.producthunt.com/products/panda-federation-tools", "https://www.fiverr.com/pandafederation",
     "https://www.upwork.com/freelancers/~010efd521970a9d3e1",
     "https://peerlist.io/pandadad0214/project/panda-federation-tools",
+    "https://www.saashub.com/panda-federation-tools",
 ]
 LD_RE = re.compile(r'\n?[ \t]*<script type="application/ld\+json">.*?</script>', re.S)
 SKIP = ("node_modules/", ".git/")
@@ -242,6 +243,7 @@ def run(get, read, write, warn, values, actors):
           f"- GitHub: https://github.com/{OWNER}",
           "- X: https://x.com/PandaFedHQ  (Follow on X: @PandaFedHQ)",
           "- Product Hunt: https://www.producthunt.com/products/panda-federation-tools",
+          "- SaaSHub: https://www.saashub.com/panda-federation-tools",
           f"- Pricing (same list rates as the Apify cards): {SITE}/pricing.md",
           f"- Full page markdown: {SITE}/llms-full.txt",
           f"- AI catalog: {SITE}/.well-known/ai-catalog.json",

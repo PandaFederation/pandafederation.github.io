@@ -1,6 +1,6 @@
 # Pricing — Panda Federation tools
 
-> Apify list rates rebuilt from the Apify Store API when this site builds (2026-11-13). The same sentences appear on the Apify tool cards at https://pandafederation.com/apify.html. The Store page is authoritative. For tiered events, the list rate is the Apify free-plan tier; paid Apify plans pay less. Every run also has Apify's small Actor-start event.
+> Apify list rates rebuilt from the Apify Store API when this site builds (2026-11-14). The same sentences appear on the Apify tool cards at https://pandafederation.com/apify.html. The Store page is authoritative. For tiered events, the list rate is the Apify free-plan tier; paid Apify plans pay less. Every run also has Apify's small Actor-start event.
 
 ## Apify Actors
 

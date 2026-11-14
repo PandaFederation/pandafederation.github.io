@@ -116,6 +116,7 @@ Free and paid editions of the same tool always name each other and say how to sw
 - GitHub: https://github.com/pandadad0214
 - X: https://x.com/PandaFedHQ  (Follow on X: @PandaFedHQ)
 - Product Hunt: https://www.producthunt.com/products/panda-federation-tools
+- SaaSHub: https://www.saashub.com/panda-federation-tools
 - Pricing (same list rates as the Apify cards): https://pandafederation.com/pricing.md
 - Full page markdown: https://pandafederation.com/llms-full.txt
 - AI catalog: https://pandafederation.com/.well-known/ai-catalog.json
