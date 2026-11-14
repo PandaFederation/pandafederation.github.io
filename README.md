@@ -46,6 +46,8 @@ python3 -m http.server 8080
 
 Then open `http://localhost:8080/`. The 3D hero needs a web server (not a `file://` page) so the logo texture can load.
 
+**Listed on:** [![Approved on SaaSHub](https://cdn-b.saashub.com/img/badges/approved-color.png?v=1)](https://www.saashub.com/panda-federation-tools?utm_source=badge&utm_campaign=badge&utm_content=panda-federation-tools&badge_variant=color&badge_kind=approved)
+
 ## License
 
 MIT. Logo, crest, and headquarters stills are Panda Federation brand assets.
