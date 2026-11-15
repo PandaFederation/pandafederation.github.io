@@ -62,7 +62,7 @@ Arizona has no comprehensive consumer privacy law, so Arizona residents have no 
 | Oklahoma | Enacted, starts 2027-01-01 | 2027-01-01 | statute text not yet re-read by us | https://www.okhouse.gov/posts/news-20260323_2 |
 | Oregon | Yes (in effect) | 2024-07-01 | Data provided by or obtained about you; public-records exemption | https://olis.oregonlegislature.gov/liz/2023R1/Downloads/MeasureDocument/SB619/Enrolled |
 | Pennsylvania | No | — | — | — |
-| Rhode Island | Yes (in effect) | 2026-01-01 | statute text not yet re-read by us | http://webserver.rilin.state.ri.us/Statutes/TITLE6/6-48.1/INDEX.HTM |
+| Rhode Island | Yes (in effect) | 2026-01-01 | statute text not yet re-read by us | https://webserver.rilegislature.gov/Statutes/TITLE6/6-48.1/INDEX.htm |
 | South Carolina | No | — | — | — |
 | South Dakota | No | — | — | — |
 | Tennessee | Yes (in effect) | 2025-07-01 | statute text not yet re-read by us | https://www.capitol.tn.gov/ |
