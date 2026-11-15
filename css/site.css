@@ -77,7 +77,7 @@ nav.tabs a[aria-current="page"] {
   z-index: 0;
   background:
     linear-gradient(180deg, rgba(15,20,32,.25), rgba(15,20,32,.82)),
-    url("../assets/hq-still.png") center/cover no-repeat;
+    url("../assets/hq-still.jpg") center/cover no-repeat;
 }
 .hero.no-webgl #hero-canvas { display: none; }
 .hero.webgl-on .hero-fallback { display: none; }
@@ -314,7 +314,7 @@ pre.snippet, .card pre { background: #0b1220; border: 1px solid var(--line); bor
   .hero-fallback {
     background:
       linear-gradient(180deg, rgba(15,20,32,.86), rgba(15,20,32,.96)),
-      url("../assets/hq-still.png") center/cover no-repeat;
+      url("../assets/hq-still.jpg") center/cover no-repeat;
   }
 }
 .card:has(.ask) p, .card.sample p { flex: 0 0 auto; }

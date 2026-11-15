@@ -47,7 +47,7 @@ App
 
 ### Panda Federation H.Q.
 
-Live 3D office where each bot on a team shows a real-time status chip (Three.js + Cloudflare Worker).
+Live 3D office for the 14-bot Panda Federation team, with real-time status chips. Four floors: Office (desks grouped by team, including a Credit Repair desk in Family Office), Rec Deck (café, pool with diving board, tennis, game room, TV lounge), and Residences A and B (14 themed apartments). Vite + Three.js on a Cloudflare Worker.
 [GitHub](https://github.com/pandadad0214/panda-federation-hq) [Live demo](https://panda-federation-hq.pandafederation.workers.dev) [DevHunt](https://devhunt.org/tool/panda-federation-hq) [AlternativeTo](https://alternativeto.net/software/panda-federation-h-q)App
 
 ### Spirit Panda

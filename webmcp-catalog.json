@@ -881,7 +881,7 @@
     {
       "id": "panda-federation-hq",
       "name": "Panda Federation H.Q.",
-      "description": "Live 3D office where each bot on a team shows a real-time status chip (Three.js + Cloudflare Worker).",
+      "description": "Live 3D office for the 14-bot Panda Federation team, with real-time status chips. Four floors: Office (desks grouped by team, including a Credit Repair desk in Family Office), Rec Deck (café, pool with diving board, tennis, game room, TV lounge), and Residences A and B (14 themed apartments). Vite + Three.js on a Cloudflare Worker.",
       "repo": "https://github.com/pandadad0214/panda-federation-hq",
       "homepage": "https://panda-federation-hq.pandafederation.workers.dev",
       "listings": {

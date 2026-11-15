@@ -84,7 +84,7 @@ Notes on dev.to, news on X, and Panda Federation Tools on Product Hunt (launched
 
 ## A live 3D headquarters
 
-Panda Federation H.Q. is a Three.js office where each bot on a team can show a real-time status chip. It is open source and hosted as a public demo.
+Panda Federation H.Q. is a live 3D office where each of the 14 bots shows a real-time status chip. Four floors: the Office (desks grouped by team, Overlord's office at center back, and a Credit Repair desk in Family Office), the Rec Deck (café kitchen with coffee and soda machines, pool with diving board, tennis court, game room, TV lounge), and Residences A and B (14 apartments themed to each bot). Switch floors from the floor list, Page Up/Page Down, or an elevator click. Open source and password-gated.
 [Open H.Q.](https://panda-federation-hq.pandafederation.workers.dev) [GitHub](https://github.com/pandadad0214/panda-federation-hq) [More apps](apps.html)
 
 ## Free and paid editions stay linked
