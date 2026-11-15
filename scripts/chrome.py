@@ -81,11 +81,14 @@ def run(get, read, write, warn, values, actors):
             llms_href = "llms.txt"
         else:
             llms_href = f"{pre}llms.txt"
+        # 404.html has no Markdown mirror (agents.py skips it), so it gets no
+        # text/markdown alternate; that link would itself be a 404.
+        md_link = "" if p == "404.html" else f'<link rel="alternate" type="text/markdown" href="{md_name}">\n'
         disc = (
             f'<link rel="alternate" type="text/plain" href="{llms_href}" title="llms.txt">\n'
             f'<link rel="describedby" href="{llms_href}">\n'
-            f'<link rel="alternate" type="text/markdown" href="{md_name}">\n'
-            f'<link rel="ai-catalog" href="{pre}.well-known/ai-catalog.json">'
+            + md_link +
+            f'<link rel="ai-catalog" href="{pre}.well-known/ai-catalog.json" type="application/ai-catalog+json">'
         )
         s2 = re.sub(r"\n?<!-- agent-discovery -->.*?<!-- /agent-discovery -->", "", s2, flags=re.S)
         s2 = re.sub(

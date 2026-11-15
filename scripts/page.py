@@ -24,7 +24,10 @@ def shell(read, *, title, description, canonical, prefix, body, current=None, ex
         header = header.replace(f'<a href="{current}">', f'<a href="{current}" aria-current="page">', 1)
     footer = about[about.index('<footer class="site">'):about.index("</footer>") + 9]
     tail = about[about.index("</footer>") + 9:about.index("</body>")]
-    tail = re.sub(r'<script src="js/panda-webmcp\.js"[^>]*></script>\s*', "", tail)
+    # Keep the read-only WebMCP helper on generated pages too (standard: every
+    # public page ships WebMCP). Its catalog path is page-relative, so prefix it.
+    tail = tail.replace('data-webmcp-catalog="webmcp-catalog.json"',
+                        f'data-webmcp-catalog="{prefix}webmcp-catalog.json"')
     t = html.escape(title)
     d = html.escape(description)
     return f"""<!DOCTYPE html>

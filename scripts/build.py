@@ -189,7 +189,9 @@ def main() -> int:
         changed.append("inventory.json")
 
     # extra build steps (changelog, digest, chrome) live in sibling modules
-    for mod in ("chrome", "samples", "changelog", "digest", "agents"):
+    # chrome runs after changelog/digest so generated pages also get the shared
+    # nav, footer, beacon and agent-discovery links; agents (JSON-LD, sitemap) runs last.
+    for mod in ("samples", "changelog", "digest", "chrome", "agents"):
         path = os.path.join(ROOT, "scripts", f"{mod}.py")
         if os.path.exists(path):
             ns: dict = {"__file__": path, "__name__": f"build_{mod}"}

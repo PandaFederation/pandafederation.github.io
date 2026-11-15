@@ -1,4 +1,132 @@
 {
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Panda Federation",
+    "identifier": "pandafederation.com",
+    "documentationUrl": "https://pandafederation.com/llms.txt"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:pandafederation.com:mcp:panda-research-tools",
+      "displayName": "Panda Research Tools",
+      "type": "application/json",
+      "url": "https://registry.modelcontextprotocol.io/v0/servers/io.github.pandadad0214%2Fpanda-research-tools/versions/latest",
+      "description": "8 research-integrity tools: citation checks, OpenAlex and literature search, PubMed evidence tables, experts, PDF tables, Wayback snapshots and topic trends.",
+      "tags": [
+        "mcp",
+        "local",
+        "stdio"
+      ],
+      "publisher": {
+        "identifier": "pandafederation.com",
+        "displayName": "Panda Federation",
+        "identityType": "dns"
+      },
+      "extensions": {
+        "com.pandafederation.artifact": {
+          "format": "Official MCP Registry server entry (server.json inside)",
+          "install": "uvx --from panda-federation-tools panda-research-tools",
+          "homepage": "https://pandadad0214.github.io/panda-federation-tools/"
+        }
+      }
+    },
+    {
+      "identifier": "urn:air:pandafederation.com:mcp:panda-public-funding-tools",
+      "displayName": "Panda Public Funding Tools",
+      "type": "application/json",
+      "url": "https://registry.modelcontextprotocol.io/v0/servers/io.github.pandadad0214%2Fpanda-public-funding-tools/versions/latest",
+      "description": "10 public-funding tools: grants, contracts, SAM.gov bids, SBIR/STTR, SEC financials, clinical trials, Federal Register, recalls, VIN decode and EU tenders.",
+      "tags": [
+        "mcp",
+        "local",
+        "stdio"
+      ],
+      "publisher": {
+        "identifier": "pandafederation.com",
+        "displayName": "Panda Federation",
+        "identityType": "dns"
+      },
+      "extensions": {
+        "com.pandafederation.artifact": {
+          "format": "Official MCP Registry server entry (server.json inside)",
+          "install": "uvx --from panda-federation-tools panda-public-funding-tools",
+          "homepage": "https://pandadad0214.github.io/panda-federation-tools/"
+        }
+      }
+    },
+    {
+      "identifier": "urn:air:pandafederation.com:mcp:panda-leads-tools",
+      "displayName": "Panda Leads Tools",
+      "type": "application/json",
+      "url": "https://registry.modelcontextprotocol.io/v0/servers/io.github.pandadad0214%2Fpanda-leads-tools/versions/latest",
+      "description": "15 public lead tools: NPI, podcasts, local businesses, hiring, enrichment, teams, trucking, IRS nonprofits, building permits, new Florida, Texas, New York and Colorado businesses, H-1B sponsors and French companies.",
+      "tags": [
+        "mcp",
+        "local",
+        "stdio"
+      ],
+      "publisher": {
+        "identifier": "pandafederation.com",
+        "displayName": "Panda Federation",
+        "identityType": "dns"
+      },
+      "extensions": {
+        "com.pandafederation.artifact": {
+          "format": "Official MCP Registry server entry (server.json inside)",
+          "install": "uvx --from panda-federation-tools panda-leads-tools",
+          "homepage": "https://pandadad0214.github.io/panda-federation-tools/"
+        }
+      }
+    },
+    {
+      "identifier": "urn:air:pandafederation.com:mcp:panda-web-security-tools",
+      "displayName": "Panda Web Security Tools",
+      "type": "application/json",
+      "url": "https://registry.modelcontextprotocol.io/v0/servers/io.github.pandadad0214%2Fpanda-web-security-tools/versions/latest",
+      "description": "7 site and email safety tools: SPF/DKIM/DMARC, AI/SEO audit, hidden-AI scanner, domain WHOIS/expiry, broken links, website change monitor and RSS feed monitor.",
+      "tags": [
+        "mcp",
+        "local",
+        "stdio"
+      ],
+      "publisher": {
+        "identifier": "pandafederation.com",
+        "displayName": "Panda Federation",
+        "identityType": "dns"
+      },
+      "extensions": {
+        "com.pandafederation.artifact": {
+          "format": "Official MCP Registry server entry (server.json inside)",
+          "install": "uvx --from panda-federation-tools panda-web-security-tools",
+          "homepage": "https://pandadad0214.github.io/panda-federation-tools/"
+        }
+      }
+    },
+    {
+      "identifier": "urn:air:pandafederation.com:mcp:quiet-file-team-mcp",
+      "displayName": "Quiet File Team MCP",
+      "type": "application/json",
+      "url": "https://registry.modelcontextprotocol.io/v0/servers/io.github.pandadad0214%2Fquiet-file-team-mcp/versions/latest",
+      "description": "Six free offline MCP tools that explain, configure and check a Quiet File Team. No network calls, no paid APIs, no disk reads of your machine.",
+      "tags": [
+        "mcp",
+        "local",
+        "stdio"
+      ],
+      "publisher": {
+        "identifier": "pandafederation.com",
+        "displayName": "Panda Federation",
+        "identityType": "dns"
+      },
+      "extensions": {
+        "com.pandafederation.artifact": {
+          "format": "Official MCP Registry server entry (server.json inside)",
+          "install": "uvx quiet-file-team-mcp",
+          "homepage": "https://pandafederation.com/quiet-file-team-mcp/"
+        }
+      }
+    }
+  ],
   "name": "Panda Federation",
   "description": "Official public-data tools for AI agents: MCP servers, Apify Actors, and local kits.",
   "url": "https://pandafederation.com/",

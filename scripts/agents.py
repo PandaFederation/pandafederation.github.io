@@ -494,8 +494,10 @@ def run(get, read, write, warn, values, actors):
             continue
         urls.append(f"{SITE}/{md}")
     urls = sorted(set(urls), key=lambda u: (u.count("/"), u))
+    lastmods = _git_lastmods(urls)
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    sm += [f"  <url><loc>{u}</loc></url>" for u in urls]
+    sm += [f"  <url><loc>{u}</loc><lastmod>{lastmods[u]}</lastmod></url>" if lastmods.get(u)
+           else f"  <url><loc>{u}</loc></url>" for u in urls]
     sm.append("</urlset>\n")
     if write("sitemap.xml", "\n".join(sm)):
         changed.append("sitemap.xml")
@@ -755,8 +757,75 @@ def write_markdown_mirrors(read, write, warn, pages):
     return changed
 
 
+def _url_to_file(u):
+    path = u[len(SITE) + 1:] if u.startswith(SITE + "/") else u
+    if path == "" or path.endswith("/"):
+        path += "index.html"
+    return path
+
+
+def _git_lastmods(urls):
+    """lastmod for each sitemap URL from git: today if the file changed in this
+    build (uncommitted), otherwise the date of the last commit that touched it.
+    Returns {} when git history is unavailable, so no lastmod is guessed."""
+    import subprocess
+    try:
+        dirty = subprocess.run(["git", "status", "--porcelain", "--untracked-files=all"],
+                               capture_output=True, text=True, check=True).stdout
+        shallow = subprocess.run(["git", "rev-parse", "--is-shallow-repository"],
+                                 capture_output=True, text=True, check=True).stdout.strip()
+    except (OSError, subprocess.CalledProcessError):
+        return {}
+    if shallow == "true":
+        return {}
+    changed = {line[3:].strip().strip('"') for line in dirty.splitlines() if len(line) > 3}
+    today = date.today().isoformat()
+    out = {}
+    for u in urls:
+        f = _url_to_file(u)
+        if not os.path.exists(f):
+            continue
+        if f in changed:
+            out[u] = today
+            continue
+        d = subprocess.run(["git", "log", "-1", "--format=%cs", "--", f],
+                           capture_output=True, text=True).stdout.strip()
+        if d:
+            out[u] = d
+    return out
+
+
 def build_ai_catalog(values, servers):
+    # AI Catalog (https://ai-catalog.io/spec/) Level 1/2 fields: specVersion, host
+    # and entries. Our MCP servers are local (stdio via uvx), so there is no
+    # remote MCP Server Card; each entry points to the server's record on the
+    # Official MCP Registry, and only for servers the Registry actually lists.
+    # The older top-level fields stay for existing readers (spec: unrecognized
+    # members are allowed and must be ignored).
+    entries = []
+    for s in servers:
+        if not values.get(f"registry:{s['id']}"):
+            continue
+        entries.append({
+            "identifier": f"urn:air:pandafederation.com:mcp:{s['id']}",
+            "displayName": s["name"],
+            "type": "application/json",
+            "url": f"https://registry.modelcontextprotocol.io/v0/servers/io.github.{OWNER}%2F{s['id']}/versions/latest",
+            "description": s["description"],
+            "tags": ["mcp", "local", "stdio"],
+            "publisher": {"identifier": "pandafederation.com", "displayName": "Panda Federation",
+                          "identityType": "dns"},
+            "extensions": {"com.pandafederation.artifact": {
+                "format": "Official MCP Registry server entry (server.json inside)",
+                "install": s["install"]["uvx"],
+                "homepage": s.get("homepage") or s.get("repo"),
+            }},
+        })
     return {
+        "specVersion": "1.0",
+        "host": {"displayName": "Panda Federation", "identifier": "pandafederation.com",
+                 "documentationUrl": f"{SITE}/llms.txt"},
+        "entries": entries,
         "name": "Panda Federation",
         "description": "Official public-data tools for AI agents: MCP servers, Apify Actors, and local kits.",
         "url": f"{SITE}/",
