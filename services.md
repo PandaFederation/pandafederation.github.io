@@ -7,25 +7,17 @@ Source: https://pandafederation.com/services.html
 Seller profile: [https://www.fiverr.com/pandafederation](https://www.fiverr.com/pandafederation)
 Fiverr
 
-### Reference verification
+### Website or PDF data to Excel/CSV
 
-Verify a reference list for fake, mismatched or retracted citations and receive a color-coded report.
-[Open gig](https://www.fiverr.com/pandafederation/verify-your-references-find-fake-citations-and-retracted-papers)Fiverr
-
-### Reference list formatting
-
-Format or convert a reference list to APA, MLA, Chicago, Harvard, IEEE or Vancouver.
-[Open gig](https://www.fiverr.com/pandafederation/format-or-convert-your-reference-list-to-apa-mla-chicago-or-harvard)Fiverr
-
-### Web data to CSV/Excel
-
-Collect public business data from a website into a clean CSV or Excel file. No logins, paywalls or personal contact lists.
+Extract public website or PDF tables into clean Excel and CSV files, with clear column names and a short data note. Public data only: no logins, captchas, paywalls or personal contact lists.
 [Open gig](https://www.fiverr.com/pandafederation/scrape-website-data-into-a-clean-csv-or-excel-spreadsheet)Fiverr
 
-### Scholarly source lists
+### Federal grants and contract bids report
 
-Screened scholarly sources on a topic, with retraction flags and Excel, BibTeX and RIS files.
+A sorted Excel report of federal grants and contract bids from official sources such as Grants.gov, SAM.gov, NIH RePORTER, NSF awards, USAspending and SBIR/STTR topics. Research only: no proposal writing and no funding guarantee.
 [Open gig](https://www.fiverr.com/pandafederation/find-and-screen-scholarly-sources-for-your-topic-with-excel-bibtex-and-ris)
+
+The seller profile also lists official public-data lead lists and custom MCP servers.
 
 ## Upwork
 

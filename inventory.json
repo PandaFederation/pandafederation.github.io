@@ -689,28 +689,19 @@
     "fiverr_profile_http_from_box": "403 (bot block); gig URLs returned 200",
     "fiverr_gigs": [
       {
-        "name": "Reference verification",
-        "blurb": "Verify a reference list for fake, mismatched or retracted citations and receive a color-coded report.",
-        "url": "https://www.fiverr.com/pandafederation/verify-your-references-find-fake-citations-and-retracted-papers"
-      },
-      {
-        "name": "Reference list formatting",
-        "blurb": "Format or convert a reference list to APA, MLA, Chicago, Harvard, IEEE or Vancouver.",
-        "url": "https://www.fiverr.com/pandafederation/format-or-convert-your-reference-list-to-apa-mla-chicago-or-harvard"
-      },
-      {
-        "name": "Web data to CSV/Excel",
-        "blurb": "Collect public business data from a website into a clean CSV or Excel file. No logins, paywalls or personal contact lists.",
+        "name": "Website or PDF data to Excel/CSV",
+        "blurb": "Extract public website or PDF tables into clean Excel and CSV files, with clear column names and a short data note. Public data only: no logins, captchas, paywalls or personal contact lists.",
         "url": "https://www.fiverr.com/pandafederation/scrape-website-data-into-a-clean-csv-or-excel-spreadsheet"
       },
       {
-        "name": "Scholarly source lists",
-        "blurb": "Screened scholarly sources on a topic, with retraction flags and Excel, BibTeX and RIS files.",
+        "name": "Federal grants and contract bids report",
+        "blurb": "A sorted Excel report of federal grants and contract bids from official sources such as Grants.gov, SAM.gov, NIH RePORTER, NSF awards, USAspending and SBIR/STTR topics. Research only: no proposal writing and no funding guarantee.",
         "url": "https://www.fiverr.com/pandafederation/find-and-screen-scholarly-sources-for-your-topic-with-excel-bibtex-and-ris"
       }
     ],
     "upwork_profile": "https://www.upwork.com/freelancers/~010efd521970a9d3e1",
-    "upwork_http_from_box": "403 (bot block); public freelancer URL confirmed in the 2026-11-04 profile capture"
+    "upwork_http_from_box": "403 (bot block); public freelancer URL confirmed in the 2026-11-04 profile capture",
+    "fiverr_gigs_note": "Checked 2026-11-15: the reference verification and reference formatting gigs were deleted on 2026-11-10. The lead-list and custom MCP server gigs are on the seller profile; their gig URLs are not recorded here yet."
   },
   "agensi_skills": [
     {
