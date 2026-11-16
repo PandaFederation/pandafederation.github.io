@@ -1,6 +1,45 @@
 # Official Panda Federation site. A plain-text index of the same facts
 # people see on the pages is at /llms.txt.
+#
+# Search and answer crawlers stay allowed, including Googlebot, Bingbot,
+# OAI-SearchBot, ChatGPT-User, PerplexityBot, Claude-SearchBot,
+# Claude-User, and any other crawler covered by the * group below.
+# The named groups that follow opt the site out of AI training only.
+
 User-agent: *
 Allow: /
+
+# Opt out of Gemini model training. Google also uses this token for
+# grounding in Gemini Apps and Grounding with Google Search on Vertex AI,
+# so those citations may stop. Google Search itself is unchanged.
+User-agent: Google-Extended
+Disallow: /
+
+# OpenAI training crawler. OAI-SearchBot and ChatGPT-User stay allowed.
+User-agent: GPTBot
+Disallow: /
+
+# Common Crawl. Its open archives are widely used for AI training.
+User-agent: CCBot
+Disallow: /
+
+# Anthropic training crawler. Claude-SearchBot and Claude-User stay allowed.
+User-agent: ClaudeBot
+Disallow: /
+
+# Opt out of training Apple foundation models. Applebot search is unchanged.
+User-agent: Applebot-Extended
+Disallow: /
+
+# Meta crawler used to train foundation models. It may also be used to
+# index content for Meta products. Meta-WebIndexer stays allowed.
+User-agent: meta-externalagent
+Disallow: /
+
+# IETF AIPREF shared training-preference token (draft-kelley-aipref).
+# Disallow means a preference against AI training; it is not a crawl rule.
+# A * group does not count as this token. Google plans support in early 2027.
+User-agent: __usage_ai-training
+Disallow: /
 
 Sitemap: https://pandafederation.com/sitemap.xml
