@@ -32,9 +32,14 @@ FOOT_LINKS = [
     ("llms.txt", "llms.txt"),
     ("pricing.md", "Pricing"),
     ("books.html", "Books"),
-    ("about.html", "About / contact"),
+    ("about.html", "About"),
+    ("contact.html", "Contact"),
+    ("refunds.html", "Refunds"),
+    ("privacy.html", "Privacy"),
+    ("terms.html", "Terms"),
 ]
 BEACON_TOKEN = "4c08ba2f90764497865713996270e0e5"  # Cloudflare Web Analytics site token (public, cookie-free); empty = off
+OATH = ("Email <a href=\"mailto:support@pandafederation.com\">support@pandafederation.com</a>. We do not publish a phone number or a street address.")
 SKIP = ("node_modules/", ".git/")
 
 
@@ -66,6 +71,8 @@ def run(get, read, write, warn, values, actors):
         )
         s2 = re.sub(r'(<div class="foot-inner">\s*<div>.*?</div>\s*<div>)(.*?)(</div>)',
                     lambda m: m.group(1) + "\n      " + foot + "\n    " + m.group(3), s2, count=1, flags=re.S)
+        s2 = re.sub(r'(<div class="oath">)(.*?)(</div>)',
+                    lambda m: m.group(1) + OATH + m.group(3), s2, count=1, flags=re.S)
         s2 = re.sub(r"\n?<!-- cf-beacon -->.*?<!-- /cf-beacon -->", "", s2, flags=re.S)
         if BEACON_TOKEN and "</body>" in s2:
             beacon = ('<!-- cf-beacon --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" '

@@ -17,7 +17,9 @@
     "agensi_creator": "https://www.agensi.io/creators/panda-federation",
     "fiverr": "https://www.fiverr.com/pandafederation",
     "upwork": "https://www.upwork.com/freelancers/~010efd521970a9d3e1",
-    "contact_policy": "GitHub and X only. No personal email or phone on the site."
+    "contact_policy": "Email support@pandafederation.com. We reply within 1 business day. No phone or street address on the site.",
+    "support_email": "support@pandafederation.com",
+    "contact_url": "https://pandafederation.com/contact.html"
   },
   "mcp_servers": [
     {

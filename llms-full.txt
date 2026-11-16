@@ -29,7 +29,7 @@ The bots don't run on trust. Every tool they build is tested against the officia
 
 ## Contact
 
-The public contact paths are GitHub and X only. There is no personal email or phone on this site. [GitHub](https://github.com/pandadad0214) · [Follow on X: @PandaFedHQ](https://x.com/PandaFedHQ)
+Email is the fastest way to reach us: [support@pandafederation.com](mailto:support@pandafederation.com). We reply within 1 business day. We do not publish a phone number or a street address. GitHub and X remain public channels. [Contact page](contact.html) · [GitHub](https://github.com/pandadad0214) · [Follow on X: @PandaFedHQ](https://x.com/PandaFedHQ)
 
 This website is the public catalog for the Federation. The official site is [https://pandafederation.com/](https://pandafederation.com/). Hardware (cables, racks, and lab gear) is sold separately at [Panda Federation Shop](https://shop.pandafederation.com/); that catalog is assigned independently, so the shop may show no products yet.
 
@@ -564,6 +564,37 @@ Companion / world guide in planning
 
 ---
 
+# Contact · Panda Federation
+
+Source: https://pandafederation.com/contact.html
+
+# Contact
+
+Panda Federation is a small workshop in Arizona that publishes public-data tools for AI agents. Email is the fastest way to reach us. We do not publish a phone number or a street address.
+
+Email: [support@pandafederation.com](mailto:support@pandafederation.com)
+
+We reply by email within 1 business day (Monday–Friday, Arizona time, not US holidays).
+
+Please include which product or listing you mean (for example the Apify Actor name, the MCP server, the Quiet File Team kit, a Fiverr or Upwork order, or a shop order) and any order or run id the platform gave you.
+
+This site does not take card payments. How you buy, and who handles billing, depends on the product:
+
+- **Apify Actors** and the Quiet File Team setup kit on the Apify Store are billed by Apify. Billing, invoices, and payment questions start with Apify, and [Apify's terms](https://docs.apify.com/legal/terms-of-service) apply to those purchases.
+- **MCP server** installs from PyPI are free. When a server calls our Apify Actors, usage is billed to your own Apify account at the list rates on the Store page (also summarized on [pricing.md](pricing.md)). The Store page is authoritative.
+- **Quiet File Team Setup Kit** is also sold as a paid skill on Agensi; Agensi's listing and terms apply to that purchase.
+- **Fiverr, Upwork, and Agensi** services are billed on those platforms, under those platforms' terms. Use that platform's order messages for work already in progress there.
+- **Hardware**, when it is in stock, is sold separately at [https://shop.pandafederation.com/](https://shop.pandafederation.com/). Use this same support address for shop questions once that catalog has items.
+
+GitHub and X remain public channels, but email is the right path for support. [GitHub](https://github.com/pandadad0214) · [Follow on X: @PandaFedHQ](https://x.com/PandaFedHQ)
+
+Related pages: [Refunds](refunds.html) · [Privacy](privacy.html) · [Terms](terms.html)
+
+Last updated November 16, 2026.
+
+
+---
+
 # Free Data Broker Removal Guide + State Law Map · Panda Federation
 
 Source: https://pandafederation.com/data-broker-removal/
@@ -926,6 +957,36 @@ Ask your agent
 
 ---
 
+# Privacy · Panda Federation
+
+Source: https://pandafederation.com/privacy.html
+
+# Privacy
+
+Panda Federation is a small workshop. We collect only what we need to run this website and to answer support mail, and we do not sell your information.
+
+## What we collect
+
+- If you email [support@pandafederation.com](mailto:support@pandafederation.com), we receive your email address, the message, and any order or run details you include, so we can reply.
+- If a contact form is added later, this page will be updated before that form goes live, and it will spell out what the form stores.
+- This website is hosted on GitHub Pages and served through Cloudflare. They may keep basic technical logs (such as IP address and browser type) to operate and secure the site. The pages also load Cloudflare Web Analytics, which helps us see aggregate traffic. It is not used to sell ads.
+- We do not have accounts, a shopping cart, or checkout on pandafederation.com. There is no customer payment information on this site. When you buy on Apify, Agensi, Fiverr, Upwork, or the hardware shop, that platform's privacy policy covers the information you give them.
+
+We may also share information if the law requires it, or to prevent fraud or abuse.
+
+You can ask what information we have about you, or ask us to correct or delete it, by writing [support@pandafederation.com](mailto:support@pandafederation.com). We may need to keep some records (for example, a support thread about a paid order) for bookkeeping or legal reasons.
+
+This site is not directed at children under 13, and we do not knowingly collect their information.
+
+If this policy changes in a meaningful way, we will update this page and the date at the bottom.
+
+Related pages: [Contact](contact.html) · [Terms](terms.html)
+
+Last updated November 16, 2026.
+
+
+---
+
 # Quiet File Team MCP · Panda Federation
 
 Source: https://pandafederation.com/quiet-file-team-mcp/
@@ -1069,6 +1130,32 @@ Built by Panda Federation · MIT License · Product page for Quiet File Team.
 
 ---
 
+# Refunds · Panda Federation
+
+Source: https://pandafederation.com/refunds.html
+
+# Refunds
+
+Who issued the charge is who can refund it. We do not collect card payments on pandafederation.com, so we cannot refund an Apify, Agensi, Fiverr, or Upwork charge ourselves.
+
+- **Apify Actors** and the Quiet File Team setup kit bought on the Apify Store: Apify's terms and billing rules apply, including whatever refund process Apify offers. If a run failed because of a bug in our Actor, email [support@pandafederation.com](mailto:support@pandafederation.com) with the Actor name and the run id and we will help you work it out, including with Apify when that is the right path.
+- **Agensi skill** purchases: Agensi's terms and refund rules apply.
+- **Fiverr, Upwork,** and other freelance-platform orders: that platform's order and dispute process applies.
+- **MCP server** installs are free. Apify usage billed to your token follows Apify's billing rules.
+- **Hardware** sold on [https://shop.pandafederation.com/](https://shop.pandafederation.com/) will follow the return terms shown on that shop's product page, cart, and checkout. The shop is empty today, so those terms are not in use yet.
+- If we ever sell a digital product directly (for example a kit paid on this site), the refund terms for that product will be stated on its page before you pay. This page will be updated then. We are not selling a direct kit that way today.
+
+We do not promise refunds for change of mind on completed platform purchases, and we do not promise results from public-data research (for example that a grant, bid, or lead list will win work).
+
+To ask about a charge, email [support@pandafederation.com](mailto:support@pandafederation.com) with the platform, the order or run id, and a short description.
+
+Related pages: [Contact](contact.html) · [Terms](terms.html)
+
+Last updated November 16, 2026.
+
+
+---
+
 # Services · Panda Federation
 
 Source: https://pandafederation.com/services.html
@@ -1117,6 +1204,35 @@ Free and paid skills that wrap our tools for Claude, Cursor and other agents, ea
 [Product Hunt — Panda Federation Tools](https://www.producthunt.com/products/panda-federation-tools). Launched on Product Hunt in November 2026.
 
 [Follow on X: @PandaFedHQ](https://x.com/PandaFedHQ).
+
+
+---
+
+# Terms · Panda Federation
+
+Source: https://pandafederation.com/terms.html
+
+# Terms
+
+These terms cover use of [https://pandafederation.com/](https://pandafederation.com/) and purchases of Panda Federation tools and services. By using the site or buying a listed product, you agree to them.
+
+This website is a public catalog. It is not a marketplace checkout. Card payments for our digital tools are taken by the platform named on the product page (usually Apify, and sometimes Agensi, Fiverr, or Upwork). For those purchases, that platform's terms apply in addition to this page. Hardware, when listed, is sold at [https://shop.pandafederation.com/](https://shop.pandafederation.com/) under that shop's terms.
+
+Descriptions are provided in good faith. List rates on this site are rebuilt from the Apify Store API and shown on each Apify tool card and on [pricing.md](pricing.md). The Apify Store page is authoritative. Fiverr, Upwork, and Agensi package prices stay on those listings and are not repeated here.
+
+Public-data tools read official sources for research and reference. They do not log into private accounts, and they do not guarantee funding, sales, or any other outcome.
+
+Refunds are described on the [refunds page](refunds.html), which is part of these terms.
+
+To the fullest extent Arizona law allows, we are not liable for indirect or consequential damages, and our total liability for a purchase is limited to the amount you paid for that purchase (on the platform that charged you). Some of these limits may not apply if the law in your place of residence says otherwise.
+
+These terms are governed by the laws of the State of Arizona, without regard to conflict-of-law rules. If we ever have a dispute we cannot work out by email, the courts of Arizona will have jurisdiction, unless the law gives you a right to another forum.
+
+Questions: [support@pandafederation.com](mailto:support@pandafederation.com).
+
+Related pages: [Contact](contact.html) · [Privacy](privacy.html) · [Refunds](refunds.html)
+
+Last updated November 16, 2026.
 
 
 ---
@@ -1213,7 +1329,7 @@ Source: https://pandafederation.com/whats-new/
 - 2026-10-29 Apify[New Apify Actor: Citation Generator API: DOI to APA, MLA, Chicago & BibTeX](https://apify.com/pandadad0214/citation-formatter) — Turn DOIs, ISBNs, PMIDs, arXiv IDs, titles or messy references into clean citations, each checked against Crossref. Output: APA 7, MLA 9, Chicago, Harvard…
 - 2026-10-28 Apify[New Apify Actor: Reference Checker: Fake, AI-Hallucinated & Retracted Citations](https://apify.com/pandadad0214/reference-checker) — Catch fake (AI-hallucinated), miscited and retracted references in any bibliography, DOI list or set of titles. Checked against Crossref, Retraction Watch and…
 
-87 entries. Rebuilt 2026-11-15 (Arizona time).
+87 entries. Rebuilt 2026-11-16 (Arizona time).
 
 
 ---

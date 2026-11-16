@@ -12,7 +12,8 @@ It is a static site hosted on GitHub Pages at the root of the `PandaFederation/p
 - **Apps & Repos** — Steel Panda, Watchdog Panda, Manual Remake, Quiet File Team (product page: https://pandafederation.com/quiet-file-team/), Hidden AI Instructions Watch, H.Q., and related modules
 - **Services** — public Fiverr gigs, Upwork profile, live Agensi skills, dev.to writing, Product Hunt, and X
 - **What's New** — changelog generated from our releases, with an Atom feed at `/feed.xml`, plus the weekly digest
-- **About** — contact is GitHub and X only
+- **About** — workshop background, plus email contact at support@pandafederation.com
+- **Contact, Refunds, Privacy, Terms** — support email and policy pages
 - **Books** (footer link) — Spiral Saga titles that are in progress; no store links until a book is actually published
 
 Inventory used to build the pages (verified URLs only) lives in this repo as `inventory.json` and, for the team, at `/workspace/promo/site-inventory.json`.

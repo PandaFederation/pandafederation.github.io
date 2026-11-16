@@ -235,6 +235,19 @@ def run(get, read, write, warn, values, actors):
           "Free and paid editions of the same tool always name each other and say how to switch. "
           f"Apify list rates are on each tool card and on {SITE}/pricing.md. The Store page is authoritative. "
           "Fiverr, Upwork and Agensi package prices stay on those listings.", ""]
+    L += ["## Contact and how to buy", "",
+          "Email is the fastest way to reach us: support@pandafederation.com. "
+          "We reply within 1 business day. We do not publish a phone number or a street address. "
+          f"Contact: {SITE}/contact.html. Refunds: {SITE}/refunds.html. "
+          f"Privacy: {SITE}/privacy.html. Terms: {SITE}/terms.html. "
+          "GitHub and X remain public channels.",
+          "",
+          "This site does not take card payments. Apify Actors and the Quiet File Team setup kit "
+          "on the Apify Store are billed by Apify; Apify's terms apply. MCP server installs from "
+          "PyPI are free; when a server calls our Actors, usage bills to your own Apify account. "
+          "The Quiet File Team Setup Kit is also sold as a paid Agensi skill. Fiverr, Upwork and "
+          "Agensi services are billed on those platforms. Hardware, when in stock, is sold at "
+          f"{SHOP} (the catalog may be empty).", ""]
     L += ["## Services and skills", "",
           f"- Services: {SITE}/services.html",
           f"- {values['agensi_skills']} Agensi skills, each linked to its related Apify Actor: {SITE}/agensi.html", ""]
@@ -267,7 +280,11 @@ def run(get, read, write, warn, values, actors):
 
     # ---------- JSON-LD
     org = {"@type": "Organization", "@id": f"{SITE}/#org", "name": "Panda Federation", "url": f"{SITE}/",
-           "logo": f"{SITE}/assets/logo.png", "description": site_desc, "sameAs": SAME_AS}
+           "logo": f"{SITE}/assets/logo.png", "description": site_desc, "sameAs": SAME_AS,
+           "email": "support@pandafederation.com",
+           "contactPoint": {"@type": "ContactPoint", "contactType": "customer support",
+                            "email": "support@pandafederation.com",
+                            "url": f"{SITE}/contact.html", "availableLanguage": "English"}}
     ctx = "https://schema.org"
 
     def _card_bodies(page):
@@ -394,6 +411,18 @@ def run(get, read, write, warn, values, actors):
                         "headline": f"Digest #{i['number']}: {i.get('title', '')}", "description": i["lede"],
                         "datePublished": i["date"], "author": {"@id": f"{SITE}/#org"}, "publisher": {"@id": f"{SITE}/#org"},
                         "isPartOf": {"@type": "Blog", "url": f"{SITE}/digest/"}}]}
+        POLICY_PAGES = {
+            "contact.html": ("ContactPage", "Contact"),
+            "refunds.html": ("WebPage", "Refunds"),
+            "privacy.html": ("WebPage", "Privacy"),
+            "terms.html": ("WebPage", "Terms"),
+        }
+        if p in POLICY_PAGES:
+            typ, name = POLICY_PAGES[p]
+            return {"@context": ctx, "@graph": [org, {
+                "@type": typ, "url": url, "name": name, "description": desc,
+                "isPartOf": {"@id": f"{SITE}/#site"}, "about": {"@id": f"{SITE}/#org"},
+            }]}
         # Automatic catalog fallback: any page with visible article.card
         # elements (books, services, and any future catalog) gets an ItemList
         # built from those cards. Do not invent urls or prices.
@@ -846,6 +875,10 @@ def build_ai_catalog(values, servers):
             {"type": "mcp-registry-search",
              "url": f"https://registry.modelcontextprotocol.io/v0/servers?search=io.github.{OWNER}"},
             {"type": "shop", "url": SHOP, "note": "Hardware shop; inventory is on that site."},
+            {"type": "contact", "url": f"{SITE}/contact.html", "email": "support@pandafederation.com"},
+            {"type": "refunds", "url": f"{SITE}/refunds.html"},
+            {"type": "privacy", "url": f"{SITE}/privacy.html"},
+            {"type": "terms", "url": f"{SITE}/terms.html"},
         ] + [
             {"type": "mcp-server", "name": s["name"], "install": s["install"]["uvx"],
              "url": s.get("homepage") or s.get("repo")}

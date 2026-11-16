@@ -25,6 +25,6 @@ The bots don't run on trust. Every tool they build is tested against the officia
 
 ## Contact
 
-The public contact paths are GitHub and X only. There is no personal email or phone on this site. [GitHub](https://github.com/pandadad0214) · [Follow on X: @PandaFedHQ](https://x.com/PandaFedHQ)
+Email is the fastest way to reach us: [support@pandafederation.com](mailto:support@pandafederation.com). We reply within 1 business day. We do not publish a phone number or a street address. GitHub and X remain public channels. [Contact page](contact.html) · [GitHub](https://github.com/pandadad0214) · [Follow on X: @PandaFedHQ](https://x.com/PandaFedHQ)
 
 This website is the public catalog for the Federation. The official site is [https://pandafederation.com/](https://pandafederation.com/). Hardware (cables, racks, and lab gear) is sold separately at [Panda Federation Shop](https://shop.pandafederation.com/); that catalog is assigned independently, so the shop may show no products yet.

@@ -172,6 +172,23 @@
       "note": "Hardware shop; inventory is on that site."
     },
     {
+      "type": "contact",
+      "url": "https://pandafederation.com/contact.html",
+      "email": "support@pandafederation.com"
+    },
+    {
+      "type": "refunds",
+      "url": "https://pandafederation.com/refunds.html"
+    },
+    {
+      "type": "privacy",
+      "url": "https://pandafederation.com/privacy.html"
+    },
+    {
+      "type": "terms",
+      "url": "https://pandafederation.com/terms.html"
+    },
+    {
       "type": "mcp-server",
       "name": "Panda Research Tools",
       "install": "uvx --from panda-federation-tools panda-research-tools",
