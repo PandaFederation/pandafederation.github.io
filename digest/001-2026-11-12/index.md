@@ -1,4 +1,4 @@
-# Digest #1: Server Actors, a release calendar for MCP, and an SEC deadline · Panda Federation
+# Digest #1: MCP calendar and SEC deadline · Panda Federation
 
 Source: https://pandafederation.com/digest/001-2026-11-12/
 

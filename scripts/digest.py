@@ -5,9 +5,16 @@ Each issue starts with a front-matter block:
 number: 1
 date: 2026-11-16
 title: This week in public-data agents
+document_title: "Digest #1: Short document title"   # optional; HTML <title> only
 status: draft        # only "published" issues are rendered and linked
 ---
 Body is simple Markdown: "## " headings, paragraphs, "- " bullets, [text](url) links.
+`title` is the visible H1 and the label used in listings, the feed, JSON-LD, and llms.txt.
+Optional `document_title` (also accepted as `document-title`) sets only the HTML
+<title>, og:title, and twitter:title. Quote the value when it contains "#", as
+unquoted "#" starts a comment. Do not include " · Panda Federation"; the page
+template appends that suffix. If it is omitted, the document title is
+"Digest #{number}: {title}".
 Drafts are never rendered, so a draft can sit in a branch or a local folder safely.
 """
 import glob
@@ -31,10 +38,26 @@ def parse(text):
         return None, text
     meta = {}
     for line in m.group(1).splitlines():
-        if ":" in line:
-            k, v = line.split(":", 1)
-            meta[k.strip()] = v.split("#", 1)[0].strip()
+        if ":" not in line:
+            continue
+        k, v = line.split(":", 1)
+        v = v.strip()
+        if len(v) >= 2 and v[0] in ("'", '"'):
+            q = v[0]
+            end = v.find(q, 1)
+            if end != -1:
+                meta[k.strip()] = v[1:end]
+                continue
+        meta[k.strip()] = v.split("#", 1)[0].strip()
     return meta, m.group(2)
+
+def document_title(meta):
+    """HTML document title. The page template appends ' · Panda Federation'."""
+    for key in ("document_title", "document-title"):
+        val = (meta.get(key) or "").strip()
+        if val:
+            return val
+    return f"Digest #{meta['number']}: {meta.get('title', '')}"
 
 
 def inline(s):
@@ -81,7 +104,7 @@ def run(get, read, write, warn, values, actors):
             continue
         slug = f"{int(meta['number']):03d}-{meta['date']}"
         published.append((meta, slug))
-        page = shell(read, title=f"Digest #{meta['number']}: {meta.get('title', '')}",
+        page = shell(read, title=document_title(meta),
                      description=f"Panda Federation weekly digest #{meta['number']}, {meta['date']}: MCP, Apify and public-data news with our take.",
                      canonical=f"{SITE}/digest/{slug}/", prefix="../../", current="whats-new/",
                      body=f'<article class="prose"><p class="kicker">Digest #{html.escape(meta["number"])} · <time datetime="{meta["date"]}">{meta["date"]}</time></p>'
