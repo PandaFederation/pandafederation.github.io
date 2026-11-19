@@ -6,7 +6,7 @@ import re
 
 SITE = "https://pandafederation.com"
 NAV = [
-    ("index.html", "Home"),
+    ("/", "Home"),
     ("mcp.html", "MCP Servers"),
     ("apify.html", "Apify Tools"),
     ("apps.html", "Apps &amp; Repos"),
@@ -16,7 +16,7 @@ NAV = [
     ("about.html", "About"),
 ]
 SECTION = {
-    "index.html": "index.html", "mcp.html": "mcp.html", "quiet-file-team-mcp/index.html": "mcp.html",
+    "index.html": "/", "mcp.html": "mcp.html", "quiet-file-team-mcp/index.html": "mcp.html",
     "apify.html": "apify.html", "apps.html": "apps.html", "quiet-file-team/index.html": "apps.html",
     "services.html": "services.html", "agensi.html": "services.html",
     "data-broker-removal/index.html": "data-broker-removal/", "whats-new/index.html": "whats-new/",
@@ -48,6 +48,13 @@ def _prefix(path):
     return "../" * depth
 
 
+def _href(pre, href):
+    """Root-absolute and external hrefs are already complete; others are page-relative."""
+    if href.startswith(("http://", "https://", "/", "mailto:", "#")):
+        return href
+    return pre + href
+
+
 def _section(path):
     if path.startswith("digest/"):
         return "whats-new/"
@@ -62,17 +69,19 @@ def run(get, read, write, warn, values, actors):
         pre = _prefix(p)
         cur = _section(p)
         links = "".join(
-            f'<a href="{pre}{href}"{" aria-current=\"page\"" if href == cur else ""}>{label}</a>' for href, label in NAV
+            f'<a href="{_href(pre, href)}"{" aria-current=\"page\"" if href == cur else ""}>{label}</a>' for href, label in NAV
         )
         s2 = re.sub(r'<nav class="tabs" aria-label="Primary">.*?</nav>',
                     lambda m: f'<nav class="tabs" aria-label="Primary">{links}</nav>', s, count=1, flags=re.S)
         foot = " ·\n      ".join(
-            f'<a href="{h if h.startswith("http") else pre + h}">{t}</a>' for h, t in FOOT_LINKS
+            f'<a href="{_href(pre, h)}">{t}</a>' for h, t in FOOT_LINKS
         )
         s2 = re.sub(r'(<div class="foot-inner">\s*<div>.*?</div>\s*<div>)(.*?)(</div>)',
                     lambda m: m.group(1) + "\n      " + foot + "\n    " + m.group(3), s2, count=1, flags=re.S)
         s2 = re.sub(r'(<div class="oath">)(.*?)(</div>)',
                     lambda m: m.group(1) + OATH + m.group(3), s2, count=1, flags=re.S)
+        s2 = re.sub(r'(<a class="brand" href=")[^"]*(")', r"\1/\2", s2, count=1)
+        s2 = re.sub(r'(<a class="btn" href=")(?:\.\./)*index\.html(")>Back home</a>', r"\1/\2>Back home</a>", s2)
         s2 = re.sub(r"\n?<!-- cf-beacon -->.*?<!-- /cf-beacon -->", "", s2, flags=re.S)
         if BEACON_TOKEN and "</body>" in s2:
             beacon = ('<!-- cf-beacon --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" '
