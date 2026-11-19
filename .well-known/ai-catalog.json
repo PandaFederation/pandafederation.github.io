@@ -103,6 +103,30 @@
       }
     },
     {
+      "identifier": "urn:air:pandafederation.com:mcp:panda-federation-tools",
+      "displayName": "Panda Federation Tools (umbrella)",
+      "type": "application/json",
+      "url": "https://registry.modelcontextprotocol.io/v0/servers/io.github.pandadad0214%2Fpanda-federation-tools/versions/latest",
+      "description": "Index package for all 40 public-data tools across the four focused servers. Prefer a focused server unless an older config still loads the umbrella.",
+      "tags": [
+        "mcp",
+        "local",
+        "stdio"
+      ],
+      "publisher": {
+        "identifier": "pandafederation.com",
+        "displayName": "Panda Federation",
+        "identityType": "dns"
+      },
+      "extensions": {
+        "com.pandafederation.artifact": {
+          "format": "Official MCP Registry server entry (server.json inside)",
+          "install": "uvx panda-federation-tools",
+          "homepage": "https://pandadad0214.github.io/panda-federation-tools/"
+        }
+      }
+    },
+    {
       "identifier": "urn:air:pandafederation.com:mcp:quiet-file-team-mcp",
       "displayName": "Quiet File Team MCP",
       "type": "application/json",

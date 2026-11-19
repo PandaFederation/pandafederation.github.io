@@ -911,7 +911,7 @@ Ask your agent
 
 - “Check SPF, DKIM and DMARC for these 10 domains and list the fixes.”
 - “Which of these domains expire in the next 90 days, and who is the registrar?”
-[GitHub](https://github.com/pandadad0214/panda-web-security-tools) [PyPI 0.2.0](https://pypi.org/project/panda-web-security-tools/) [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-web-security-tools) [Glama](https://glama.ai/mcp/servers/pandadad0214/panda-web-security-tools) [MCP Repository](https://mcprepository.com/pandadad0214/panda-web-security-tools)MCPPyPI 1.8.0
+[GitHub](https://github.com/pandadad0214/panda-web-security-tools) [PyPI 0.2.0](https://pypi.org/project/panda-web-security-tools/) [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-web-security-tools) [Glama](https://glama.ai/mcp/servers/pandadad0214/panda-web-security-tools) [MCP Repository](https://mcprepository.com/pandadad0214/panda-web-security-tools)MCPPyPI 1.8.1
 
 ### Panda Federation Tools (umbrella)
 
@@ -932,7 +932,7 @@ Ask your agent
 
 - “Which Panda tool should I use to find federal contract recompetes?”
 - “Search the full tool list for anything about product recalls.”
-[GitHub](https://github.com/pandadad0214/panda-federation-tools) [Docs](https://pandadad0214.github.io/panda-federation-tools/) [PyPI 1.8.0](https://pypi.org/project/panda-federation-tools/) [Glama](https://glama.ai/mcp/servers/pandadad0214/panda-federation-tools) [MCP Repository](https://mcprepository.com/pandadad0214/panda-federation-tools)
+[GitHub](https://github.com/pandadad0214/panda-federation-tools) [Docs](https://pandadad0214.github.io/panda-federation-tools/) [PyPI 1.8.1](https://pypi.org/project/panda-federation-tools/) [Glama](https://glama.ai/mcp/servers/pandadad0214/panda-federation-tools) [MCP Repository](https://mcprepository.com/pandadad0214/panda-federation-tools)
 
 The four focused domain servers and Quiet File Team MCP are on the Official MCP Registry. This umbrella package is installed from PyPI or GitHub.
 MCPPyPI 0.1.3Official Registry
@@ -1245,6 +1245,8 @@ Last updated November 16, 2026.
 
 Source: https://pandafederation.com/whats-new/
 
+- 2026-11-18 Release[panda-federation-tools v1.8.1](https://github.com/pandadad0214/panda-federation-tools/releases/tag/v1.8.1) — Give Claude, Cursor or any MCP client 40 public-data tools on Apify: research, public funding, leads, web security.
+- 2026-11-18 MCP Registry[Panda Research MCP (hosted subset) 1.8.1 on the Official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pandadad0214/panda-research-mcp) — Hosted research subset: check citations, catch fake/retracted papers, search OpenAlex & PubMed.
 - 2026-11-13 Release[quiet-file-team-mcp v0.1.3](https://github.com/pandadad0214/quiet-file-team-mcp/releases/tag/v0.1.3) — Six free offline MCP tools that explain, configure and check a Quiet File Team (bots sharing files).
 - 2026-11-12 Digest[Digest #1: Server Actors, a release calendar for MCP, and an SEC deadline](https://pandafederation.com/digest/001-2026-11-12/) — Five things from the last few days that matter if your agent works with public data, with our take on each, and then what we shipped.
 - 2026-11-11 Release[quiet-file-team-mcp v0.1.2](https://github.com/pandadad0214/quiet-file-team-mcp/releases/tag/v0.1.2) — Six free offline MCP tools that explain, configure and check a Quiet File Team (bots sharing files).
@@ -1333,7 +1335,7 @@ Source: https://pandafederation.com/whats-new/
 - 2026-10-29 Apify[New Apify Actor: Citation Generator API: DOI to APA, MLA, Chicago & BibTeX](https://apify.com/pandadad0214/citation-formatter) — Turn DOIs, ISBNs, PMIDs, arXiv IDs, titles or messy references into clean citations, each checked against Crossref. Output: APA 7, MLA 9, Chicago, Harvard…
 - 2026-10-28 Apify[New Apify Actor: Reference Checker: Fake, AI-Hallucinated & Retracted Citations](https://apify.com/pandadad0214/reference-checker) — Catch fake (AI-hallucinated), miscited and retracted references in any bibliography, DOI list or set of titles. Checked against Crossref, Retraction Watch and…
 
-87 entries. Rebuilt 2026-11-18 (Arizona time).
+89 entries. Rebuilt 2026-11-18 (Arizona time).
 
 
 ---
