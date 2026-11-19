@@ -10,6 +10,10 @@ Email: [support@pandafederation.com](mailto:support@pandafederation.com)
 
 We reply by email within 1 business day (Monday–Friday, Arizona time, not US holidays).
 
+## Contact form
+
+You can also use this form. It asks for your name, your email address, a topic, an optional order or run id, and your message. It sends your message to support@pandafederation.com, and we reply to the email address you enter. We do not send an automatic copy to you. The form needs JavaScript; if it does not work for you, email us instead.
+
 Please include which product or listing you mean (for example the Apify Actor name, the MCP server, the Quiet File Team kit, a Fiverr or Upwork order, or a shop order) and any order or run id the platform gave you.
 
 This site does not take card payments. How you buy, and who handles billing, depends on the product:
@@ -24,4 +28,4 @@ GitHub and X remain public channels, but email is the right path for support. [G
 
 Related pages: [Refunds](refunds.html) · [Privacy](privacy.html) · [Terms](terms.html)
 
-Last updated November 16, 2026.
+Last updated November 18, 2026.

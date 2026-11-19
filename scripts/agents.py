@@ -237,6 +237,7 @@ def run(get, read, write, warn, values, actors):
           "Fiverr, Upwork and Agensi package prices stay on those listings.", ""]
     L += ["## Contact and how to buy", "",
           "Email is the fastest way to reach us: support@pandafederation.com. "
+          f"There is also a contact form at {SITE}/contact.html#form that emails the same address. "
           "We reply within 1 business day. We do not publish a phone number or a street address. "
           f"Contact: {SITE}/contact.html. Refunds: {SITE}/refunds.html. "
           f"Privacy: {SITE}/privacy.html. Terms: {SITE}/terms.html. "
@@ -669,7 +670,7 @@ def _md_path(page):
 class _MD(HTMLParser):
     """Best-effort HTML-to-Markdown of visible page content only."""
 
-    SKIP = {"script", "style", "nav", "footer", "noscript"}
+    SKIP = {"script", "style", "nav", "footer", "noscript", "form"}
 
     def __init__(self):
         super().__init__(convert_charrefs=True)

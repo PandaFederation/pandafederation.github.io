@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact · Panda Federation</title>
-<meta name="description" content="Email Panda Federation at support@pandafederation.com. We reply within 1 business day. We do not publish a phone number or a street address.">
+<meta name="description" content="Email Panda Federation at support@pandafederation.com or use the contact form. We reply within 1 business day. We do not publish a phone number or a street address.">
 <link rel="canonical" href="https://pandafederation.com/contact.html">
 <meta name="theme-color" content="#0f1420">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Panda Federation">
 <meta property="og:title" content="Contact · Panda Federation">
-<meta property="og:description" content="Email Panda Federation at support@pandafederation.com. We reply within 1 business day. We do not publish a phone number or a street address.">
+<meta property="og:description" content="Email Panda Federation at support@pandafederation.com or use the contact form. We reply within 1 business day. We do not publish a phone number or a street address.">
 <meta property="og:url" content="https://pandafederation.com/contact.html">
 <meta property="og:image" content="https://pandafederation.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@PandaFedHQ">
 <meta name="twitter:title" content="Contact · Panda Federation">
-<meta name="twitter:description" content="Email Panda Federation at support@pandafederation.com. We reply within 1 business day. We do not publish a phone number or a street address.">
+<meta name="twitter:description" content="Email Panda Federation at support@pandafederation.com or use the contact form. We reply within 1 business day. We do not publish a phone number or a street address.">
 <meta name="twitter:image" content="https://pandafederation.com/assets/og.png">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -69,7 +69,7 @@
       "@type": "ContactPage",
       "url": "https://pandafederation.com/contact.html",
       "name": "Contact",
-      "description": "Email Panda Federation at support@pandafederation.com. We reply within 1 business day. We do not publish a phone number or a street address.",
+      "description": "Email Panda Federation at support@pandafederation.com or use the contact form. We reply within 1 business day. We do not publish a phone number or a street address.",
       "isPartOf": {
         "@id": "https://pandafederation.com/#site"
       },
@@ -96,6 +96,25 @@
 <p>Panda Federation is a small workshop in Arizona that publishes public-data tools for AI agents. Email is the fastest way to reach us. We do not publish a phone number or a street address.</p>
 <p>Email: <a href="mailto:support@pandafederation.com">support@pandafederation.com</a></p>
 <p>We reply by email within 1 business day (Monday–Friday, Arizona time, not US holidays).</p>
+<h2 id="form">Contact form</h2>
+<p>You can also use this form. It asks for your name, your email address, a topic, an optional order or run id, and your message. It sends your message to support@pandafederation.com, and we reply to the email address you enter. We do not send an automatic copy to you. The form needs JavaScript; if it does not work for you, email us instead.</p>
+<form class="contact-form" id="contact-form" method="post" action="https://forms.pandafederation.com/contact">
+  <p><label for="cf-name">Name</label><br><input id="cf-name" name="name" type="text" required minlength="2" maxlength="80" autocomplete="name"></p>
+  <p><label for="cf-email">Email</label><br><input id="cf-email" name="email" type="email" required maxlength="200" autocomplete="email"></p>
+  <p><label for="cf-topic">Topic</label><br><select id="cf-topic" name="topic" required>
+    <option value="">Choose a topic</option>
+    <option value="tools">Apify Actor or MCP server</option>
+    <option value="quiet-file-team">Quiet File Team kit</option>
+    <option value="services">Fiverr, Upwork, or Agensi order</option>
+    <option value="shop">Shop order</option>
+    <option value="other">Other</option>
+  </select></p>
+  <p><label for="cf-reference">Order or run id (optional)</label><br><input id="cf-reference" name="reference" type="text" maxlength="80"></p>
+  <p><label for="cf-message">Message</label><br><textarea id="cf-message" name="message" required minlength="10" maxlength="4000" rows="7"></textarea></p>
+  <input type="hidden" name="token" value="">
+  <p><button type="submit">Send message</button></p>
+  <p class="form-status" role="status" aria-live="polite"></p>
+</form>
 <p>Please include which product or listing you mean (for example the Apify Actor name, the MCP server, the Quiet File Team kit, a Fiverr or Upwork order, or a shop order) and any order or run id the platform gave you.</p>
 <p>This site does not take card payments. How you buy, and who handles billing, depends on the product:</p>
 <ul>
@@ -107,7 +126,7 @@
 </ul>
 <p>GitHub and X remain public channels, but email is the right path for support. <a href="https://github.com/pandadad0214" rel="noopener">GitHub</a> · <a href="https://x.com/PandaFedHQ" rel="noopener">Follow on X: @PandaFedHQ</a></p>
 <p>Related pages: <a href="refunds.html">Refunds</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
-<p class="note">Last updated November 16, 2026.</p>
+<p class="note">Last updated November 18, 2026.</p>
   </article>
 </main>
 <footer class="site">
@@ -157,6 +176,7 @@
   </div>
 </footer>
 <script src="js/nav.js"></script>
+<script src="js/contact-form.js" defer></script>
 <script src="js/panda-webmcp.js" defer data-webmcp-catalog="webmcp-catalog.json" data-webmcp-scope="site"></script>
 <!-- cf-beacon --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "4c08ba2f90764497865713996270e0e5"}'></script><!-- /cf-beacon -->
 </body>

@@ -106,7 +106,7 @@ Free and paid editions of the same tool always name each other and say how to sw
 
 ## Contact and how to buy
 
-Email is the fastest way to reach us: support@pandafederation.com. We reply within 1 business day. We do not publish a phone number or a street address. Contact: https://pandafederation.com/contact.html. Refunds: https://pandafederation.com/refunds.html. Privacy: https://pandafederation.com/privacy.html. Terms: https://pandafederation.com/terms.html. GitHub and X remain public channels.
+Email is the fastest way to reach us: support@pandafederation.com. There is also a contact form at https://pandafederation.com/contact.html#form that emails the same address. We reply within 1 business day. We do not publish a phone number or a street address. Contact: https://pandafederation.com/contact.html. Refunds: https://pandafederation.com/refunds.html. Privacy: https://pandafederation.com/privacy.html. Terms: https://pandafederation.com/terms.html. GitHub and X remain public channels.
 
 This site does not take card payments. Apify Actors and the Quiet File Team setup kit on the Apify Store are billed by Apify; Apify's terms apply. MCP server installs from PyPI are free; when a server calls our Actors, usage bills to your own Apify account. The Quiet File Team Setup Kit is also sold as a paid Agensi skill. Fiverr, Upwork and Agensi services are billed on those platforms. Hardware, when in stock, is sold at https://shop.pandafederation.com/ (the catalog may be empty).
 
