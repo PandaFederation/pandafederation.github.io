@@ -1,6 +1,6 @@
 # Pricing — Panda Federation tools
 
-> Apify list rates rebuilt from the Apify Store API when this site builds (2026-11-20). The same sentences appear on the Apify tool cards at https://pandafederation.com/apify.html. The Store page is authoritative. For tiered events, the list rate is the Apify free-plan tier; paid Apify plans pay less. Every run also has Apify's small Actor-start event.
+> Apify list rates rebuilt from the Apify Store API when this site builds (2026-11-21). The same sentences appear on the Apify tool cards at https://pandafederation.com/apify.html. The Store page is authoritative. For tiered events, the list rate is the Apify free-plan tier; paid Apify plans pay less. Every run also has Apify's small Actor-start event.
 
 ## Apify Actors
 
@@ -8,19 +8,19 @@
 
 - [Academic Research MCP Server: OpenAlex, PubMed & Citation Check](https://apify.com/pandadad0214/panda-research-mcp): List rate: 0.01 USD per reference tool call (down to 0.007 on paid Apify plans); 0.02 USD per search tool call (down to 0.014 on paid Apify plans). The Apify Store page is authoritative.
 - [Citation Generator API: DOI to APA, MLA, Chicago & BibTeX](https://apify.com/pandadad0214/citation-formatter): List rate: 0.003 USD per citation formatted (down to 0.0021 on paid Apify plans). The Apify Store page is authoritative.
+- [Fake Citation Checker: AI-Hallucinated Refs + APA, MLA, BibTeX](https://apify.com/pandadad0214/reference-checker): List rate: 0.01 USD per reference checked (down to 0.007 on paid Apify plans). The Apify Store page is authoritative.
 - [Google Scholar Author Alternative: Find Experts & KOLs by Topic](https://apify.com/pandadad0214/researcher-expert-finder): List rate: 0.0025 USD per expert found (down to 0.00175 on paid Apify plans). The Apify Store page is authoritative.
-- [Google Scholar Scraper Alternative: Papers, Citations & BibTeX](https://apify.com/pandadad0214/literature-search): List rate: 0.003 USD per paper found (down to 0.0021 on paid Apify plans). The Apify Store page is authoritative.
-- [PDF Table Extractor: PDF to Excel & CSV Converter with OCR](https://apify.com/pandadad0214/pdf-table-extractor): List rate: 0.001 USD per page analysed (down to 0.0007 on paid Apify plans); 0.003 USD per table extracted (down to 0.0021 on paid Apify plans); 0.02 USD per scanned page ocr (down to 0.014 on paid Apify plans). The Apify Store page is authoritative.
-- [PubMed Scraper: Articles, Abstracts & Evidence Table to Excel](https://apify.com/pandadad0214/pubmed-evidence-table): List rate: 0.004 USD per article found (down to 0.0028 on paid Apify plans). The Apify Store page is authoritative.
-- [Reference Checker: Fake, AI-Hallucinated & Retracted Citations](https://apify.com/pandadad0214/reference-checker): List rate: 0.01 USD per reference checked (down to 0.007 on paid Apify plans). The Apify Store page is authoritative.
+- [Google Scholar Scraper Alternative: Papers, Authors & Experts](https://apify.com/pandadad0214/literature-search): List rate: 0.003 USD per paper found (down to 0.0021 on paid Apify plans). The Apify Store page is authoritative.
+- [PDF Table Extractor: Bank Statement PDF & Reports to Excel, CSV](https://apify.com/pandadad0214/pdf-table-extractor): List rate: 0.001 USD per page analysed (down to 0.0007 on paid Apify plans); 0.003 USD per table extracted (down to 0.0021 on paid Apify plans); 0.02 USD per scanned page ocr (down to 0.014 on paid Apify plans). The Apify Store page is authoritative.
+- [PubMed Evidence Table for Systematic Reviews & Medical Writers](https://apify.com/pandadad0214/pubmed-evidence-table): List rate: 0.004 USD per article found (down to 0.0028 on paid Apify plans). The Apify Store page is authoritative.
 - [Wayback Machine Snapshot Finder: Archive Dates & URLs](https://apify.com/pandadad0214/wayback-snapshot-finder): List rate: 0.001 USD per snapshot returned (down to 0.0007 on paid Apify plans). The Apify Store page is authoritative.
 
 ### Public funding
 
 - [Clinical Trial Leads: Sponsors, Sites & Contacts](https://apify.com/pandadad0214/clinical-trial-leads): List rate: 0.002 USD per trial returned (down to 0.0014 on paid Apify plans). The Apify Store page is authoritative.
 - [EU TED Tenders: Public Procurement Notices](https://apify.com/pandadad0214/eu-ted-tenders): List rate: 0.002 USD per notice returned (down to 0.0014 on paid Apify plans). The Apify Store page is authoritative.
+- [Federal Grant Finder for Grant Writers & Nonprofits: Grants.gov](https://apify.com/pandadad0214/grants-finder): List rate: 0.003 USD per grant found (down to 0.0021 on paid Apify plans). The Apify Store page is authoritative.
 - [Federal Register Monitor: New Rules & Comment Deadlines](https://apify.com/pandadad0214/federal-register-monitor): List rate: 0.001 USD per document returned (down to 0.0007 on paid Apify plans). The Apify Store page is authoritative.
-- [Grants.gov Scraper: Federal Grants, NIH & NSF Awards API](https://apify.com/pandadad0214/grants-finder): List rate: 0.003 USD per grant found (down to 0.0021 on paid Apify plans). The Apify Store page is authoritative.
 - [Product Recall Monitor: FDA Food, Drug, Device & CPSC Recalls](https://apify.com/pandadad0214/product-recall-monitor): List rate: 0.0015 USD per recall returned (down to 0.00105 on paid Apify plans). The Apify Store page is authoritative.
 - [SAM.gov Contract Opportunities: Open Federal Bids, No API Key](https://apify.com/pandadad0214/sam-gov-opportunities): List rate: 0.0015 USD per opportunity returned (down to 0.00105 on paid Apify plans). The Apify Store page is authoritative.
 - [SBIR/STTR Topic Radar: Open Topics, Deadlines & DoD Q&A](https://apify.com/pandadad0214/sbir-sttr-topic-radar): List rate: 0.003 USD per topic found (down to 0.0021 on paid Apify plans). The Apify Store page is authoritative.
@@ -40,7 +40,7 @@
 - [Local Business Leads: Google Maps Alternative (OpenStreetMap)](https://apify.com/pandadad0214/local-business-leads): List rate: 0.001 USD per business found (down to 0.0007 on paid Apify plans). The Apify Store page is authoritative.
 - [New York New Business Leads: New DOS Filings](https://apify.com/pandadad0214/new-york-new-business-leads): List rate: 0.0015 USD per business returned (down to 0.00105 on paid Apify plans). The Apify Store page is authoritative.
 - [Nonprofit Leads: IRS Charities & Foundations by State](https://apify.com/pandadad0214/nonprofit-leads-irs): List rate: 0.001 USD per nonprofit returned (down to 0.0007 on paid Apify plans). The Apify Store page is authoritative.
-- [NPI Registry Scraper: US Doctors & Healthcare Provider Leads](https://apify.com/pandadad0214/npi-provider-lists): List rate: 0.0015 USD per provider in list (down to 0.00105 on paid Apify plans). The Apify Store page is authoritative.
+- [NPI Registry Scraper: NPPES Healthcare Providers by Specialty](https://apify.com/pandadad0214/npi-provider-lists): List rate: 0.0015 USD per provider in list (down to 0.00105 on paid Apify plans). The Apify Store page is authoritative.
 - [Podcast Leads Finder: Podcast Host Emails & Guest Booking List](https://apify.com/pandadad0214/podcast-leads-finder): List rate: 0.004 USD per podcast found (down to 0.0028 on paid Apify plans). The Apify Store page is authoritative.
 - [Texas New Business Leads: New Franchise Taxpayers](https://apify.com/pandadad0214/texas-new-business-leads): List rate: 0.0015 USD per business returned (down to 0.00105 on paid Apify plans). The Apify Store page is authoritative.
 - [Topic Trends Tracker: Google Trends Alternative, Real Numbers](https://apify.com/pandadad0214/topic-trends-tracker): List rate: 0.002 USD per topic tracked (down to 0.0014 on paid Apify plans). The Apify Store page is authoritative.

@@ -83,7 +83,7 @@
               "url": "https://apify.com/pandadad0214/panda-research-mcp",
               "applicationCategory": "DeveloperApplication",
               "operatingSystem": "Apify platform (cloud)",
-              "description": "Give Claude, Cursor or any AI agent academic research tools over MCP: verify citations, catch fake and retracted papers, search OpenAlex and PubMed, and format references. Returns JSON with OK/CHECK/FIX status, DOIs and citations.",
+              "description": "Give Claude, Cursor or any AI agent academic research tools over MCP: catch fake and retracted citations, search OpenAlex and PubMed, format APA/MLA references. Try any tool with a normal run first; then connect your agent to the Standby URL.",
               "publisher": {
                 "@id": "https://pandafederation.com/#org"
               },
@@ -319,7 +319,7 @@
               "url": "https://apify.com/pandadad0214/citation-formatter",
               "applicationCategory": "DeveloperApplication",
               "operatingSystem": "Apify platform (cloud)",
-              "description": "Turn DOIs, ISBNs, PMIDs, arXiv IDs, titles or messy references into clean citations, each checked against Crossref. Output: APA 7, MLA 9, Chicago, Harvard, IEEE, Vancouver, BibTeX and RIS per reference; paste a list or .bib/.ris text.",
+              "description": "Turn DOIs, ISBNs, PMIDs, arXiv IDs, titles or messy references into APA 7, MLA 9, Chicago, Harvard, IEEE, Vancouver, BibTeX and RIS. Still live for format-only jobs; to also catch fake or retracted references first, use the merged Reference Checker.",
               "publisher": {
                 "@id": "https://pandafederation.com/#org"
               },
@@ -644,6 +644,100 @@
             "position": 13,
             "item": {
               "@type": "SoftwareApplication",
+              "name": "Fake Citation Checker: AI-Hallucinated Refs + APA, MLA, BibTeX",
+              "url": "https://apify.com/pandadad0214/reference-checker",
+              "applicationCategory": "DeveloperApplication",
+              "operatingSystem": "Apify platform (cloud)",
+              "description": "Check a bibliography, DOIs or titles from ChatGPT or any draft for fake (AI-hallucinated), miscited and retracted citations, then format the real ones. Output: one row per reference with OK/CHECK/FIX, matched DOI, what is wrong, and APA, MLA or BibTeX ready to paste.",
+              "publisher": {
+                "@id": "https://pandafederation.com/#org"
+              },
+              "offers": {
+                "@type": "Offer",
+                "url": "https://apify.com/pandadad0214/reference-checker",
+                "priceCurrency": "USD",
+                "price": "0.01",
+                "priceSpecification": [
+                  {
+                    "@type": "UnitPriceSpecification",
+                    "price": "0.01",
+                    "priceCurrency": "USD",
+                    "unitText": "Reference checked",
+                    "referenceQuantity": {
+                      "@type": "QuantitativeValue",
+                      "value": 1,
+                      "unitText": "Reference checked"
+                    },
+                    "description": "Apify free-plan rate; paid Apify plans pay down to 0.007 USD"
+                  },
+                  {
+                    "@type": "UnitPriceSpecification",
+                    "price": "0.00005",
+                    "priceCurrency": "USD",
+                    "unitText": "Actor Start",
+                    "referenceQuantity": {
+                      "@type": "QuantitativeValue",
+                      "value": 1,
+                      "unitText": "Actor Start"
+                    }
+                  }
+                ],
+                "description": "Pay per event on Apify. Rates are read from the Apify Store API when this site builds; the Store page is authoritative."
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Federal Grant Finder for Grant Writers & Nonprofits: Grants.gov",
+              "url": "https://apify.com/pandadad0214/grants-finder",
+              "applicationCategory": "DeveloperApplication",
+              "operatingSystem": "Apify platform (cloud)",
+              "description": "Find open federal grants a nonprofit, small business, school or city can apply for, plus who NIH and NSF already fund, in one run. For grant writers and nonprofits: one row per grant with deadline, award ceiling, eligibility and official link, in Excel or CSV.",
+              "publisher": {
+                "@id": "https://pandafederation.com/#org"
+              },
+              "offers": {
+                "@type": "Offer",
+                "url": "https://apify.com/pandadad0214/grants-finder",
+                "priceCurrency": "USD",
+                "price": "0.003",
+                "priceSpecification": [
+                  {
+                    "@type": "UnitPriceSpecification",
+                    "price": "0.003",
+                    "priceCurrency": "USD",
+                    "unitText": "Grant found",
+                    "referenceQuantity": {
+                      "@type": "QuantitativeValue",
+                      "value": 1,
+                      "unitText": "Grant found"
+                    },
+                    "description": "Apify free-plan rate; paid Apify plans pay down to 0.0021 USD"
+                  },
+                  {
+                    "@type": "UnitPriceSpecification",
+                    "price": "0.00005",
+                    "priceCurrency": "USD",
+                    "unitText": "Actor Start",
+                    "referenceQuantity": {
+                      "@type": "QuantitativeValue",
+                      "value": 1,
+                      "unitText": "Actor Start"
+                    }
+                  }
+                ],
+                "description": "Pay per event on Apify. Rates are read from the Apify Store API when this site builds; the Store page is authoritative."
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 15,
+            "item": {
+              "@type": "SoftwareApplication",
               "name": "Federal Register Monitor: New Rules & Comment Deadlines",
               "url": "https://apify.com/pandadad0214/federal-register-monitor",
               "applicationCategory": "DeveloperApplication",
@@ -688,7 +782,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 14,
+            "position": 16,
             "item": {
               "@type": "SoftwareApplication",
               "name": "Florida New Business Leads: New LLCs & Corporations Daily",
@@ -735,7 +829,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 15,
+            "position": 17,
             "item": {
               "@type": "SoftwareApplication",
               "name": "France Company Leads: SIREN, Directors, Revenue",
@@ -782,14 +876,14 @@
           },
           {
             "@type": "ListItem",
-            "position": 16,
+            "position": 18,
             "item": {
               "@type": "SoftwareApplication",
               "name": "Google Scholar Author Alternative: Find Experts & KOLs by Topic",
               "url": "https://apify.com/pandadad0214/researcher-expert-finder",
               "applicationCategory": "DeveloperApplication",
               "operatingSystem": "Apify platform (cloud)",
-              "description": "Find the academic experts and key opinion leaders on any research topic, a Google Scholar author search alternative. Filter by country, institution and years; get ranked experts with ORCID, affiliation, h-index and their topic papers.",
+              "description": "Find the academic experts and KOLs on any research topic, a Google Scholar author search alternative. Ranked experts with ORCID, affiliation, h-index and papers. Still live; the same search is now also experts mode in Literature Search.",
               "publisher": {
                 "@id": "https://pandafederation.com/#org"
               },
@@ -829,14 +923,14 @@
           },
           {
             "@type": "ListItem",
-            "position": 17,
+            "position": 19,
             "item": {
               "@type": "SoftwareApplication",
-              "name": "Google Scholar Scraper Alternative: Papers, Citations & BibTeX",
+              "name": "Google Scholar Scraper Alternative: Papers, Authors & Experts",
               "url": "https://apify.com/pandadad0214/literature-search",
               "applicationCategory": "DeveloperApplication",
               "operatingSystem": "Apify platform (cloud)",
-              "description": "Find real scholarly papers on any topic across 250M+ OpenAlex works, a Google Scholar scraper alternative. Filter by year and citations or start from seed DOIs; get ranked papers with DOI, citation count, free PDF link, retraction flag and BibTeX.",
+              "description": "Find real scholarly papers on any topic across 250M+ OpenAlex works, or switch to experts mode to find the researchers and KOLs behind it. Output: ranked papers with DOI, citations, free PDF, retraction flag and BibTeX, or ranked experts with ORCID and h-index.",
               "publisher": {
                 "@id": "https://pandafederation.com/#org"
               },
@@ -876,54 +970,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 18,
-            "item": {
-              "@type": "SoftwareApplication",
-              "name": "Grants.gov Scraper: Federal Grants, NIH & NSF Awards API",
-              "url": "https://apify.com/pandadad0214/grants-finder",
-              "applicationCategory": "DeveloperApplication",
-              "operatingSystem": "Apify platform (cloud)",
-              "description": "Find US federal funding in one run: open and forecasted Grants.gov opportunities plus funded NIH and NSF awards. Filter by keyword, agency, date and amount; one row per grant with agency, dates, amount (USD), eligibility and official link.",
-              "publisher": {
-                "@id": "https://pandafederation.com/#org"
-              },
-              "offers": {
-                "@type": "Offer",
-                "url": "https://apify.com/pandadad0214/grants-finder",
-                "priceCurrency": "USD",
-                "price": "0.003",
-                "priceSpecification": [
-                  {
-                    "@type": "UnitPriceSpecification",
-                    "price": "0.003",
-                    "priceCurrency": "USD",
-                    "unitText": "Grant found",
-                    "referenceQuantity": {
-                      "@type": "QuantitativeValue",
-                      "value": 1,
-                      "unitText": "Grant found"
-                    },
-                    "description": "Apify free-plan rate; paid Apify plans pay down to 0.0021 USD"
-                  },
-                  {
-                    "@type": "UnitPriceSpecification",
-                    "price": "0.00005",
-                    "priceCurrency": "USD",
-                    "unitText": "Actor Start",
-                    "referenceQuantity": {
-                      "@type": "QuantitativeValue",
-                      "value": 1,
-                      "unitText": "Actor Start"
-                    }
-                  }
-                ],
-                "description": "Pay per event on Apify. Rates are read from the Apify Store API when this site builds; the Store page is authoritative."
-              }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 19,
+            "position": 20,
             "item": {
               "@type": "SoftwareApplication",
               "name": "H-1B LCA Visa Sponsor Leads: DOL Employers, Jobs & Wages",
@@ -970,7 +1017,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 20,
+            "position": 21,
             "item": {
               "@type": "SoftwareApplication",
               "name": "Hidden AI Instructions Scanner: Prompt Injection Detector",
@@ -992,7 +1039,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 21,
+            "position": 22,
             "item": {
               "@type": "SoftwareApplication",
               "name": "Local Business Leads: Google Maps Alternative (OpenStreetMap)",
@@ -1039,7 +1086,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 22,
+            "position": 23,
             "item": {
               "@type": "SoftwareApplication",
               "name": "Manual Remake: Confusing Manual to Clear Printable PDF",
@@ -1085,7 +1132,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 23,
+            "position": 24,
             "item": {
               "@type": "SoftwareApplication",
               "name": "New York New Business Leads: New DOS Filings",
@@ -1132,7 +1179,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 24,
+            "position": 25,
             "item": {
               "@type": "SoftwareApplication",
               "name": "Nonprofit Leads: IRS Charities & Foundations by State",
@@ -1179,14 +1226,14 @@
           },
           {
             "@type": "ListItem",
-            "position": 25,
+            "position": 26,
             "item": {
               "@type": "SoftwareApplication",
-              "name": "NPI Registry Scraper: US Doctors & Healthcare Provider Leads",
+              "name": "NPI Registry Scraper: NPPES Healthcare Providers by Specialty",
               "url": "https://apify.com/pandadad0214/npi-provider-lists",
               "applicationCategory": "DeveloperApplication",
               "operatingSystem": "Apify platform (cloud)",
-              "description": "Build de-duplicated lists of US doctors and healthcare providers from the official NPI Registry. Type specialties in plain words plus states, cities or ZIPs; get NPI, name, specialty, address and phone per provider, with Excel.",
+              "description": "Scrape the NPPES NPI Registry for US doctors, clinics and healthcare providers by specialty (taxonomy), state, city, ZIP, name or NPI number. One de-duplicated row per provider with NPI, taxonomy, license, address and phone, in Excel or CSV; no 1,200-result cap.",
               "publisher": {
                 "@id": "https://pandafederation.com/#org"
               },
@@ -1226,14 +1273,14 @@
           },
           {
             "@type": "ListItem",
-            "position": 26,
+            "position": 27,
             "item": {
               "@type": "SoftwareApplication",
-              "name": "PDF Table Extractor: PDF to Excel & CSV Converter with OCR",
+              "name": "PDF Table Extractor: Bank Statement PDF & Reports to Excel, CSV",
               "url": "https://apify.com/pandadad0214/pdf-table-extractor",
               "applicationCategory": "DeveloperApplication",
               "operatingSystem": "Apify platform (cloud)",
-              "description": "Extract every table from PDF files into Excel and CSV, with OCR for scanned pages. Give PDF URLs or uploads and optional page ranges; get one row per table with pages, header, row and column counts and cell data.",
+              "description": "PDF to Excel and CSV: extract every table from reports, filings and bank or card statements. Bank-statement preset combines all transactions into one sheet; financial-report preset skips narrative text. OCR (beta) for scans, clear errors for bad links.",
               "publisher": {
                 "@id": "https://pandafederation.com/#org"
               },
@@ -1297,7 +1344,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 27,
+            "position": 28,
             "item": {
               "@type": "SoftwareApplication",
               "name": "Podcast Leads Finder: Podcast Host Emails & Guest Booking List",
@@ -1344,7 +1391,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 28,
+            "position": 29,
             "item": {
               "@type": "SoftwareApplication",
               "name": "Product Recall Monitor: FDA Food, Drug, Device & CPSC Recalls",
@@ -1391,14 +1438,14 @@
           },
           {
             "@type": "ListItem",
-            "position": 29,
+            "position": 30,
             "item": {
               "@type": "SoftwareApplication",
-              "name": "PubMed Scraper: Articles, Abstracts & Evidence Table to Excel",
+              "name": "PubMed Evidence Table for Systematic Reviews & Medical Writers",
               "url": "https://apify.com/pandadad0214/pubmed-evidence-table",
               "applicationCategory": "DeveloperApplication",
               "operatingSystem": "Apify platform (cloud)",
-              "description": "Turn PubMed searches into a screening-ready Excel evidence table. One row per article with PMID, journal, study design, sample size and retraction status, plus PRISMA counts; filter by date and study design.",
+              "description": "Turn PubMed searches into a screening-ready Excel evidence table for systematic reviews and medical writing: one row per study with design, sample size, population and retraction status, plus PRISMA counts and Rayyan, Covidence and EndNote import files.",
               "publisher": {
                 "@id": "https://pandafederation.com/#org"
               },
@@ -1438,7 +1485,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 30,
+            "position": 31,
             "item": {
               "@type": "SoftwareApplication",
               "name": "Quiet File Team Setup Kit Generator",
@@ -1464,53 +1511,6 @@
                       "@type": "QuantitativeValue",
                       "value": 1,
                       "unitText": "Complete setup kit"
-                    }
-                  }
-                ],
-                "description": "Pay per event on Apify. Rates are read from the Apify Store API when this site builds; the Store page is authoritative."
-              }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 31,
-            "item": {
-              "@type": "SoftwareApplication",
-              "name": "Reference Checker: Fake, AI-Hallucinated & Retracted Citations",
-              "url": "https://apify.com/pandadad0214/reference-checker",
-              "applicationCategory": "DeveloperApplication",
-              "operatingSystem": "Apify platform (cloud)",
-              "description": "Catch fake (AI-hallucinated), miscited and retracted references in any bibliography, DOI list or set of titles. Checked against Crossref, Retraction Watch and OpenAlex: one row per reference with OK/CHECK/FIX status, matched DOI and what is wrong.",
-              "publisher": {
-                "@id": "https://pandafederation.com/#org"
-              },
-              "offers": {
-                "@type": "Offer",
-                "url": "https://apify.com/pandadad0214/reference-checker",
-                "priceCurrency": "USD",
-                "price": "0.01",
-                "priceSpecification": [
-                  {
-                    "@type": "UnitPriceSpecification",
-                    "price": "0.01",
-                    "priceCurrency": "USD",
-                    "unitText": "Reference checked",
-                    "referenceQuantity": {
-                      "@type": "QuantitativeValue",
-                      "value": 1,
-                      "unitText": "Reference checked"
-                    },
-                    "description": "Apify free-plan rate; paid Apify plans pay down to 0.007 USD"
-                  },
-                  {
-                    "@type": "UnitPriceSpecification",
-                    "price": "0.00005",
-                    "priceCurrency": "USD",
-                    "unitText": "Actor Start",
-                    "referenceQuantity": {
-                      "@type": "QuantitativeValue",
-                      "value": 1,
-                      "unitText": "Actor Start"
                     }
                   }
                 ],
