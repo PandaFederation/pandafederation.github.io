@@ -278,7 +278,11 @@ def run(get, read, write, warn, values, actors):
     pricing_md = build_pricing_md(actors, fam, servers, values, shop_line, price_lines)
     if write("pricing.md", pricing_md):
         changed.append("pricing.md")
-    from scripts.page import write_pricing_html
+    import importlib.util as _ilu
+    _spec = _ilu.spec_from_file_location("pf_page", os.path.join(os.path.dirname(os.path.abspath(__file__)), "page.py"))
+    _pg = _ilu.module_from_spec(_spec)
+    _spec.loader.exec_module(_pg)
+    write_pricing_html = _pg.write_pricing_html
     if write_pricing_html(read, write):
         changed.append("pricing.html")
 
