@@ -18,7 +18,7 @@ Please include which product or listing you mean (for example the Apify Actor na
 
 This site does not take card payments. How you buy, and who handles billing, depends on the product:
 
-- **Apify Actors** and the Quiet File Team setup kit on the Apify Store are billed by Apify. Billing, invoices, and payment questions start with Apify, and [Apify's terms](https://docs.apify.com/legal/terms-of-service) apply to those purchases.
+- **Apify Actors** and the Quiet File Team setup kit on the Apify Store are billed by Apify. Billing, invoices, and payment questions start with Apify, and [Apify's terms](https://docs.apify.com/legal/general-terms-and-conditions) apply to those purchases.
 - **MCP server** installs from PyPI are free. When a server calls our Apify Actors, usage is billed to your own Apify account at the list rates on the Store page (also summarized on [pricing.md](pricing.md)). The Store page is authoritative.
 - **Quiet File Team Setup Kit** is also sold as a paid skill on Agensi; Agensi's listing and terms apply to that purchase.
 - **Fiverr, Upwork, and Agensi** services are billed on those platforms, under those platforms' terms. Use that platform's order messages for work already in progress there.
