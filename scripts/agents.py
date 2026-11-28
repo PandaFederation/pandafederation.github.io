@@ -278,6 +278,9 @@ def run(get, read, write, warn, values, actors):
     pricing_md = build_pricing_md(actors, fam, servers, values, shop_line, price_lines)
     if write("pricing.md", pricing_md):
         changed.append("pricing.md")
+    from scripts.page import write_pricing_html
+    if write_pricing_html(read, write):
+        changed.append("pricing.html")
 
     # ---------- JSON-LD
     org = {"@type": "Organization", "@id": f"{SITE}/#org", "name": "Panda Federation", "url": f"{SITE}/",
