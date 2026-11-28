@@ -1,0 +1,21 @@
+name: Weekly link check
+
+# Fails (and GitHub emails the owner) when an internal link, a sitemap URL, or a
+# stable external link (GitHub, PyPI, Apify, our own domains) is broken.
+on:
+  schedule:
+    - cron: "43 14 * * 1"   # Mondays, 7:43 AM Arizona time
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 scripts/check_links.py
