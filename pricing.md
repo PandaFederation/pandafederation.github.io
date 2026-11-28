@@ -1,6 +1,10 @@
+# Pricing · Panda Federation
+
+Source: https://pandafederation.com/pricing.html
+
 # Pricing — Panda Federation tools
 
-> Apify list rates rebuilt from the Apify Store API when this site builds (2026-11-27). The same sentences appear on the Apify tool cards at https://pandafederation.com/apify.html. The Store page is authoritative. For tiered events, the list rate is the Apify free-plan tier; paid Apify plans pay less. Every run also has Apify's small Actor-start event.
+Apify list rates rebuilt from the Apify Store API when this site builds (2026-11-28). The same sentences appear on the Apify tool cards at [https://pandafederation.com/apify.html](https://pandafederation.com/apify.html). The Store page is authoritative. For tiered events, the list rate is the Apify free-plan tier; paid Apify plans pay less. Every run also has Apify's small Actor-start event.
 
 ## Apify Actors
 
@@ -66,19 +70,20 @@
 
 Installing a Panda Federation MCP server from PyPI is free. The four focused domain servers call our Apify Actors, so they need your own `APIFY_TOKEN`; runs bill to your Apify account at the Actor rates above. Quiet File Team MCP is free, offline, and needs no token.
 
-- Panda Research Tools: install with `uvx --from panda-federation-tools panda-research-tools`. Needs `APIFY_TOKEN`. https://pandadad0214.github.io/panda-federation-tools/
-- Panda Public Funding Tools: install with `uvx --from panda-federation-tools panda-public-funding-tools`. Needs `APIFY_TOKEN`. https://pandadad0214.github.io/panda-federation-tools/
-- Panda Leads Tools: install with `uvx --from panda-federation-tools panda-leads-tools`. Needs `APIFY_TOKEN`. https://pandadad0214.github.io/panda-federation-tools/
-- Panda Web Security Tools: install with `uvx --from panda-federation-tools panda-web-security-tools`. Needs `APIFY_TOKEN`. https://pandadad0214.github.io/panda-federation-tools/
-- Panda Federation Tools (umbrella): install with `uvx panda-federation-tools`. Needs `APIFY_TOKEN`. https://pandadad0214.github.io/panda-federation-tools/
-- Quiet File Team MCP: install with `uvx quiet-file-team-mcp`. No token needed. https://pandafederation.com/quiet-file-team-mcp/
+- Panda Research Tools: install with `uvx --from panda-federation-tools panda-research-tools`. Needs `APIFY_TOKEN`. [https://pandadad0214.github.io/panda-federation-tools/](https://pandadad0214.github.io/panda-federation-tools/)
+- Panda Public Funding Tools: install with `uvx --from panda-federation-tools panda-public-funding-tools`. Needs `APIFY_TOKEN`. [https://pandadad0214.github.io/panda-federation-tools/](https://pandadad0214.github.io/panda-federation-tools/)
+- Panda Leads Tools: install with `uvx --from panda-federation-tools panda-leads-tools`. Needs `APIFY_TOKEN`. [https://pandadad0214.github.io/panda-federation-tools/](https://pandadad0214.github.io/panda-federation-tools/)
+- Panda Web Security Tools: install with `uvx --from panda-federation-tools panda-web-security-tools`. Needs `APIFY_TOKEN`. [https://pandadad0214.github.io/panda-federation-tools/](https://pandadad0214.github.io/panda-federation-tools/)
+- Panda Federation Tools (umbrella): install with `uvx panda-federation-tools`. Needs `APIFY_TOKEN`. [https://pandadad0214.github.io/panda-federation-tools/](https://pandadad0214.github.io/panda-federation-tools/)
+- Quiet File Team MCP: install with `uvx quiet-file-team-mcp`. No token needed. [https://pandafederation.com/quiet-file-team-mcp/](https://pandafederation.com/quiet-file-team-mcp/)
 
 ## Other listings
 
 Fiverr, Upwork and Agensi package prices stay on those listings. This file does not repeat them.
-- Services: https://pandafederation.com/services.html
-- Agensi skills: https://pandafederation.com/agensi.html
+
+- Services: [https://pandafederation.com/services.html](https://pandafederation.com/services.html)
+- Agensi skills: [https://pandafederation.com/agensi.html](https://pandafederation.com/agensi.html)
 
 ## Hardware shop
 
-Panda Federation Shop (cables, racks, and lab gear): https://shop.pandafederation.com/ — no products listed in the shop feed when this site built. Item prices, when listed, appear on that site.
+Panda Federation Shop (cables, racks, and lab gear): [https://shop.pandafederation.com/](https://shop.pandafederation.com/) — no products listed in the shop feed when this site built. Item prices, when listed, appear on that site.
